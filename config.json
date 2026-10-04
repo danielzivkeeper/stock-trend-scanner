@@ -1,0 +1,53 @@
+{
+  "_help": "Edit numbers here, no code changes needed. Score = sum(weight x strength of fired signals) / sum(all weights) x 10. Set a weight to 0 to switch a signal off entirely.",
+  "alert_threshold": 5.0,
+  "hold_days": 10,
+  "alert_cooldown_days": 3,
+  "pause_between_tickers_seconds": 1,
+  "weights": {
+    "earnings_drift": 3.0,
+    "insider_buying": 2.5,
+    "short_squeeze_setup": 2.0,
+    "congressional_trades": 1.5,
+    "social_spike": 1.0
+  },
+  "signals": {
+    "earnings_drift": {
+      "min_surprise_pct": 5.0,
+      "full_strength_multiple": 3.0,
+      "max_days_since_report": 30
+    },
+    "insider_buying": {
+      "lookback_days": 14,
+      "min_distinct_insiders": 2,
+      "min_value_per_insider_usd": 10000,
+      "full_strength_multiple": 2.0
+    },
+    "short_squeeze_setup": {
+      "min_short_pct_float": 15.0,
+      "min_days_to_cover": 5.0,
+      "full_strength_multiple": 3.0
+    },
+    "congressional_trades": {
+      "lookback_days": 45,
+      "min_distinct_members": 2,
+      "full_strength_multiple": 2.0,
+      "house_url": "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json",
+      "senate_url": "https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json"
+    },
+    "social_spike": {
+      "min_zscore": 2.0,
+      "full_strength_multiple": 2.0,
+      "use_google_trends": true,
+      "trends_timeframe": "today 3-m",
+      "trends_baseline_window": 28,
+      "trends_pause_seconds": 5,
+      "reddit_subreddits": ["wallstreetbets", "stocks", "investing", "smallstreetbets"],
+      "reddit_lookback_days": 30,
+      "reddit_baseline_window": 21
+    }
+  },
+  "paper_trading": {
+    "starting_cash": 10000
+  }
+}

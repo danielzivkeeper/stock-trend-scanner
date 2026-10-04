@@ -1,0 +1,24 @@
+# Runs the offline unit tests whenever code changes. No secrets, no network.
+name: Tests
+
+on:
+  push:
+    paths-ignore: ["docs/data/**"]
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Python tests (scoring, signal rules, alerts, backtest)
+        run: python -m unittest discover -s tests -t . -v
+      - name: JavaScript tests (paper-trading P/L math)
+        run: node --test tests/papertrade.test.js

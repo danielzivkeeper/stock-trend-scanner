@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trend Scanner</title>
+<meta name="description" content="Personal stock trend scanner and paper-trading log">
+<meta name="theme-color" content="#0f172a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Scanner">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Trend Scanner</h1>
+    <p id="updated" class="muted">Loading…</p>
+  </div>
+  <button id="refresh" class="icon-btn" aria-label="Reload data">↻</button>
+</header>
+
+<main>
+  <!-- ======================= SIGNALS ======================= -->
+  <section id="tab-signals" class="tab">
+    <div id="stale" class="banner warn" hidden></div>
+    <div id="load-error" class="banner err" hidden></div>
+    <p class="disclaimer">Hobby tool. Scores flag historically-documented patterns, not guaranteed
+      outcomes. Paper-trade before risking real money.</p>
+
+    <div id="track" class="card track" hidden></div>
+    <div id="tickers"></div>
+
+    <details class="card about">
+      <summary>How the score works</summary>
+      <p id="formula"></p>
+      <ul id="weights" class="plain"></ul>
+      <h3>Not implemented (on purpose)</h3>
+      <ul id="stubs" class="plain"></ul>
+    </details>
+  </section>
+
+  <!-- ===================== PAPER TRADES ==================== -->
+  <section id="tab-paper" class="tab" hidden>
+    <div class="stats" id="stats"></div>
+
+    <form id="trade-form" class="card" novalidate>
+      <h2>Log a paper buy</h2>
+      <div class="grid2">
+        <label>Ticker<input name="ticker" list="ticker-list" autocapitalize="characters" autocomplete="off" required></label>
+        <label>Date<input name="date" type="date" required></label>
+        <label>Price / share<input name="price" inputmode="decimal" placeholder="0.00" required></label>
+        <label>Dollar amount<input name="amount" inputmode="decimal" placeholder="1000" required></label>
+      </div>
+      <label>Reason (optional)<input name="reason" placeholder="e.g. score 6.1: EPS beat + insiders"></label>
+      <div id="form-errors" class="errors" role="alert"></div>
+      <button type="submit" class="primary">Add trade</button>
+      <datalist id="ticker-list"></datalist>
+    </form>
+
+    <h2 class="section-h">Open positions</h2>
+    <div id="open-trades"></div>
+    <h2 class="section-h">Closed trades</h2>
+    <div id="closed-trades"></div>
+
+    <details class="card settings">
+      <summary>Settings &amp; backup</summary>
+      <p class="muted small">Trades are saved only in this browser on this device. Export a backup now
+        and then - clearing website data or switching phones erases them.</p>
+      <form id="cash-form" class="row">
+        <label class="grow">Starting cash<input name="cash" inputmode="decimal"></label>
+        <button type="submit">Save</button>
+      </form>
+      <div class="row wrap">
+        <button id="export" type="button">Export backup</button>
+        <label class="file-btn">Import backup<input id="import" type="file" accept="application/json,.json"></label>
+        <button id="reset" type="button" class="danger">Erase all trades</button>
+      </div>
+      <p id="settings-msg" class="muted small" role="status"></p>
+    </details>
+  </section>
+</main>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-tab="signals" aria-selected="true">📊<span>Signals</span></button>
+  <button role="tab" data-tab="paper" aria-selected="false">📝<span>Paper trades</span></button>
+</nav>
+
+<script src="papertrade.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

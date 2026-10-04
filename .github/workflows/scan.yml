@@ -1,0 +1,68 @@
+# Runs the scanner on GitHub's servers (free) - your computer can be off.
+# Schedule is in UTC. 12:30 UTC = 8:30am New York (before the open) and
+# 21:30 UTC = 5:30pm New York (after the close) during daylight time; an hour
+# earlier in local time during winter. GitHub may start scheduled runs 5-30
+# minutes late at busy times - that's normal.
+name: Scan watchlist
+
+on:
+  schedule:
+    - cron: "30 12 * * 1-5"
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {}   # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write         # lets the job commit docs/data/*.json back to the repo
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run offline tests first (a broken scorer should never send texts)
+        run: python -m unittest discover -s tests -t .
+
+      - name: Scan and alert
+        env:
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
+          SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+          ALERT_PHONE: ${{ secrets.ALERT_PHONE }}
+          ALERT_CARRIER_GATEWAY: ${{ secrets.ALERT_CARRIER_GATEWAY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: python -m scanner.run_scan
+
+      - name: Update track record (forward test of past alerts)
+        continue-on-error: true
+        run: python -m scanner.backtest
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "scan results $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1

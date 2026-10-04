@@ -1,0 +1,7 @@
+# Scanner runtime (installed by GitHub Actions). Tests need none of these.
+yfinance>=0.2.54
+pandas>=2.0
+lxml>=5.0
+requests>=2.31
+pytrends>=4.9.2
+praw>=7.7
