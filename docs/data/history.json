@@ -292,5 +292,103 @@
   "alert": false,
   "close": 30.4,
   "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "HIMS",
+  "score": 1.25,
+  "alert": false,
+  "close": 30.64,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "PTON",
+  "score": 0.95,
+  "alert": false,
+  "close": 5.14,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "DUOL",
+  "score": 0.91,
+  "alert": false,
+  "close": 147.74,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "SOFI",
+  "score": 0.75,
+  "alert": false,
+  "close": 15.23,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "CELH",
+  "score": 0.0,
+  "alert": false,
+  "close": 28.39,
+  "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "ELF",
+  "score": 0.0,
+  "alert": false,
+  "close": 109.94,
+  "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "CROX",
+  "score": 0.0,
+  "alert": false,
+  "close": 116.9,
+  "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "ONON",
+  "score": 0.0,
+  "alert": false,
+  "close": 35.35,
+  "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "PLTR",
+  "score": 0.0,
+  "alert": false,
+  "close": 209.0,
+  "fired": []
+ },
+ {
+  "t": "2026-10-13T01:48:56+00:00",
+  "date": "2026-10-13",
+  "ticker": "CMG",
+  "score": 0.0,
+  "alert": false,
+  "close": 30.4,
+  "fired": []
  }
 ]
