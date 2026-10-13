@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T00:05:05+00:00",
+ "generated_at": "2026-10-13T00:17:32+00:00",
  "alert_threshold": 5.0,
  "hold_days": 10,
  "weights": {
@@ -62,9 +62,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=HIMS&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -102,10 +111,11 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-1.6; need z >= 2).",
      "raw": {
       "zscores": {
+       "wikipedia": -1.56,
        "google_trends": null
       },
       "notes": {
@@ -119,10 +129,10 @@
    "summary": "1.2/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-10 (64d ago) is older than the 30-day drift window (surprise was -640.0%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=HIMS&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "FIRED short_squeeze_setup: strength 0.63 x weight 2 = 1.25 pts (+1.25 to score). 28.2% of float sold short, 5.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-1.6; need z >= 2).",
     "Math: 1.25 pts / 10 possible x 10 = 1.25. Alert threshold 5."
    ]
   },
@@ -160,9 +170,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PTON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -200,14 +219,14 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.4, google trends z=-0.7; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": -0.43,
+       "google_trends": -0.72
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
@@ -217,10 +236,10 @@
    "summary": "0.9/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was +8.3%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PTON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "FIRED short_squeeze_setup: strength 0.47 x weight 2 = 0.95 pts (+0.95 to score). 16.1% of float sold short, 7.1 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-0.4, google trends z=-0.7; need z >= 2).",
     "Math: 0.95 pts / 10 possible x 10 = 0.95. Alert threshold 5."
    ]
   },
@@ -258,9 +277,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -298,10 +326,11 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-2.4; need z >= 2).",
      "raw": {
       "zscores": {
+       "wikipedia": -2.44,
        "google_trends": null
       },
       "notes": {
@@ -315,10 +344,10 @@
    "summary": "0.9/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was -19.5%).",
-    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "FIRED short_squeeze_setup: strength 0.45 x weight 2 = 0.91 pts (+0.91 to score). 20.4% of float sold short, 6.0 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-2.4; need z >= 2).",
     "Math: 0.91 pts / 10 possible x 10 = 0.91. Alert threshold 5."
    ]
   },
@@ -356,9 +385,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=SOFI&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -396,14 +434,14 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.2, google trends z=-0.5; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": -0.19,
+       "google_trends": -0.55
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
@@ -413,10 +451,10 @@
    "summary": "0.8/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +9.1%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=SOFI&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "FIRED short_squeeze_setup: strength 0.37 x weight 2 = 0.75 pts (+0.75 to score). 16.9% of float sold short, 4.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-0.2, google trends z=-0.5; need z >= 2).",
     "Math: 0.75 pts / 10 possible x 10 = 0.75. Alert threshold 5."
    ]
   },
@@ -454,9 +492,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CELH&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -494,27 +541,27 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-1.8, google trends z=-1.5; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": -1.79,
+       "google_trends": -1.52
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was -14.3%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CELH&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 12.4% of float, 4.3 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-1.8, google trends z=-1.5; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   },
@@ -552,9 +599,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -592,10 +648,11 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {
       "zscores": {
+       "wikipedia": -0.08,
        "google_trends": null
       },
       "notes": {
@@ -606,13 +663,13 @@
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was +143.1%).",
-    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 8.2% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-0.1; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   },
@@ -650,9 +707,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CROX&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -690,10 +756,11 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {
       "zscores": {
+       "wikipedia": 0.07,
        "google_trends": null
       },
       "notes": {
@@ -704,13 +771,13 @@
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-07-30 (75d ago) is older than the 30-day drift window (surprise was +4.6%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CROX&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 14.0% of float, 4.4 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=+0.1; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   },
@@ -748,9 +815,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=ONON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -788,27 +864,27 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.6, google trends z=-0.8; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": -0.56,
+       "google_trends": -0.79
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-11 (63d ago) is older than the 30-day drift window (surprise was +2.9%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=ONON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 11.1% of float, 2.5 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-0.6, google trends z=-0.8; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   },
@@ -846,9 +922,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PLTR&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -886,27 +971,27 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.6, google trends z=-0.5; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": -0.56,
+       "google_trends": -0.51
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-08-03 (71d ago) is older than the 30-day drift window (surprise was +17.1%).",
-    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PLTR&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 2.6% of float, 2.2 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=-0.6, google trends z=-0.5; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   },
@@ -944,9 +1029,18 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "error",
-     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
-     "raw": {},
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {
+      "distinct_insiders": 0,
+      "insiders": [],
+      "titles": [],
+      "purchase_count": 0,
+      "ignored_small_buyers": [],
+      "ignored_10b5_1_plan_purchases": 0,
+      "total_value_usd": 0,
+      "source": "SEC EDGAR Form 4"
+     },
      "evidence": "moderate"
     },
     {
@@ -984,27 +1078,27 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.3, google trends z=-1.4; need z >= 2).",
      "raw": {
       "zscores": {
-       "google_trends": null
+       "wikipedia": 0.31,
+       "google_trends": -1.43
       },
       "notes": {
-       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
      "evidence": "short-lived"
     }
    ],
-   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 5 could be checked); below alert threshold (5).",
    "explanation": [
     "no    earnings_drift: Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +3.1%).",
-    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "no    insider_buying: 0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
     "no    short_squeeze_setup: Short interest 3.4% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
     "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "no    social_spike: No unusual attention (wikipedia z=+0.3, google trends z=-1.4; need z >= 2).",
     "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
    ]
   }
