@@ -74,38 +74,14 @@
   <!-- ===================== PAPER TRADES ==================== -->
   <section id="tab-paper" class="tab" hidden>
     <div class="stats" id="stats"></div>
-    <p id="stats-note" class="stats-note"></p>
 
     <form id="trade-form" class="card" novalidate>
       <h2>Log a paper buy</h2>
-      <div class="seg" id="kind-seg">
-        <button type="button" data-kind="stock" aria-selected="true">Stock</button>
-        <button type="button" data-kind="option" aria-selected="false">Option</button>
-      </div>
       <div class="grid2">
         <label>Ticker<input name="ticker" list="ticker-list" autocapitalize="characters" autocomplete="off" required></label>
         <label>Date<input name="date" type="date" required></label>
-      </div>
-      <div class="grid2" data-k="stock">
-        <label>Price / share<input name="price" inputmode="decimal" placeholder="0.00"></label>
-        <label>Dollar amount<input name="amount" inputmode="decimal" placeholder="1000"></label>
-      </div>
-      <div data-k="option" hidden>
-        <div class="seg" id="opt-type">
-          <button type="button" data-ot="call" aria-selected="true">Call · bet it rises</button>
-          <button type="button" data-ot="put" aria-selected="false">Put · bet it falls</button>
-        </div>
-        <div class="grid2">
-          <label>Strike price<input name="strike" inputmode="decimal" placeholder="45"></label>
-          <label>Expiration<input name="expiry" type="date"></label>
-          <label>Contracts<input name="contracts" inputmode="numeric" value="1"></label>
-          <label>Premium / share<input name="premium" inputmode="decimal" placeholder="2.35"></label>
-        </div>
-        <p id="opt-preview" class="opt-preview"></p>
-        <p class="muted small">1 contract = 100 shares, so a 2.35 premium costs $235 per contract. Find real
-          prices in the <a id="opt-chain" href="https://finance.yahoo.com/options" target="_blank" rel="noopener">Yahoo
-          options chain</a> (use the "Ask" price). Buying only: you can lose up to 100% of what you pay, and
-          many options expire worthless.</p>
+        <label>Price / share<input name="price" inputmode="decimal" placeholder="0.00" required></label>
+        <label>Dollar amount<input name="amount" inputmode="decimal" placeholder="1000" required></label>
       </div>
       <label>Reason (optional)<input name="reason" placeholder="e.g. score 6.1: EPS beat + insiders"></label>
       <div id="form-errors" class="errors" role="alert"></div>

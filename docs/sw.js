@@ -1,7 +1,7 @@
 /* Service worker: makes the dashboard installable and usable offline.
  * Everything is network-first: always the newest version when online, the
  * last saved copy when offline. */
-var VERSION = "v8";
+var VERSION = "v9";
 var SHELL = ["./", "index.html", "style.css", "app.js", "papertrade.js", "manifest.webmanifest",
              "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
