@@ -1,5 +1,1012 @@
 {
- "generated_at": null,
- "note": "Placeholder - the first run of the 'Scan watchlist' GitHub Action replaces this file.",
- "tickers": []
+ "generated_at": "2026-10-13T00:05:05+00:00",
+ "alert_threshold": 5.0,
+ "hold_days": 10,
+ "weights": {
+  "earnings_drift": 3.0,
+  "insider_buying": 2.5,
+  "short_squeeze_setup": 2.0,
+  "congressional_trades": 1.5,
+  "social_spike": 1.0
+ },
+ "total_weight": 10.0,
+ "paper_trading": {
+  "starting_cash": 10000
+ },
+ "not_implemented": [
+  {
+   "name": "ceo_social_activity",
+   "detail": "Not implemented: reading X/Twitter now requires a paid API tier (free read access ended in 2023), and scraping violates X's ToS."
+  },
+  {
+   "name": "app_store_ranking_jump",
+   "detail": "Not implemented: no free app-ranking history API (Sensor Tower / data.ai are paid); Apple's RSS feed is a current snapshot only."
+  },
+  {
+   "name": "hiring_surge",
+   "detail": "Not implemented: no free job-posting API, and scraping LinkedIn/Indeed/Glassdoor violates their Terms of Service."
+  }
+ ],
+ "tickers": [
+  {
+   "ticker": "HIMS",
+   "keyword": "Hims and Hers",
+   "last_close": 30.92,
+   "score": 1.25,
+   "alert": false,
+   "points": 1.2542,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-10 (64d ago) is older than the 30-day drift window (surprise was -640.0%).",
+     "raw": {
+      "report_date": "2026-08-10",
+      "days_since_report": 64,
+      "eps_estimate": -0.05,
+      "eps_reported": -0.37,
+      "surprise_pct": -640.0
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=HIMS&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": true,
+     "strength": 0.6271,
+     "points": 1.2542,
+     "score_contribution": 1.25,
+     "status": "ok",
+     "detail": "28.2% of float sold short, 5.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+     "raw": {
+      "short_pct_float": 28.22,
+      "days_to_cover": 5.76,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "1.2/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-10 (64d ago) is older than the 30-day drift window (surprise was -640.0%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=HIMS&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "FIRED short_squeeze_setup: strength 0.63 x weight 2 = 1.25 pts (+1.25 to score). 28.2% of float sold short, 5.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 1.25 pts / 10 possible x 10 = 1.25. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "PTON",
+   "keyword": "Peloton",
+   "last_close": 5.12,
+   "score": 0.95,
+   "alert": false,
+   "points": 0.9454,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was +8.3%).",
+     "raw": {
+      "report_date": "2026-08-06",
+      "days_since_report": 68,
+      "eps_estimate": 0.12,
+      "eps_reported": 0.13,
+      "surprise_pct": 8.33
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PTON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": true,
+     "strength": 0.4727,
+     "points": 0.9454,
+     "score_contribution": 0.95,
+     "status": "ok",
+     "detail": "16.1% of float sold short, 7.1 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+     "raw": {
+      "short_pct_float": 16.07,
+      "days_to_cover": 7.09,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.9/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was +8.3%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PTON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "FIRED short_squeeze_setup: strength 0.47 x weight 2 = 0.95 pts (+0.95 to score). 16.1% of float sold short, 7.1 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.95 pts / 10 possible x 10 = 0.95. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "DUOL",
+   "keyword": "Duolingo",
+   "last_close": 149.92,
+   "score": 0.91,
+   "alert": false,
+   "points": 0.9054,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was -19.5%).",
+     "raw": {
+      "report_date": "2026-08-05",
+      "days_since_report": 69,
+      "eps_estimate": 1.54,
+      "eps_reported": 1.24,
+      "surprise_pct": -19.48
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": true,
+     "strength": 0.4527,
+     "points": 0.9054,
+     "score_contribution": 0.91,
+     "status": "ok",
+     "detail": "20.4% of float sold short, 6.0 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+     "raw": {
+      "short_pct_float": 20.37,
+      "days_to_cover": 6.01,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.9/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was -19.5%).",
+    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "FIRED short_squeeze_setup: strength 0.45 x weight 2 = 0.91 pts (+0.91 to score). 20.4% of float sold short, 6.0 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.91 pts / 10 possible x 10 = 0.91. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "SOFI",
+   "keyword": "SoFi",
+   "last_close": 15.8,
+   "score": 0.75,
+   "alert": false,
+   "points": 0.7498,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +9.1%).",
+     "raw": {
+      "report_date": "2026-07-29",
+      "days_since_report": 76,
+      "eps_estimate": 0.11,
+      "eps_reported": 0.12,
+      "surprise_pct": 9.09
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=SOFI&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": true,
+     "strength": 0.3749,
+     "points": 0.7498,
+     "score_contribution": 0.75,
+     "status": "ok",
+     "detail": "16.9% of float sold short, 4.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+     "raw": {
+      "short_pct_float": 16.87,
+      "days_to_cover": 4.84,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.8/10 - 1 of 5 signals fired (short_squeeze_setup); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +9.1%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=SOFI&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "FIRED short_squeeze_setup: strength 0.37 x weight 2 = 0.75 pts (+0.75 to score). 16.9% of float sold short, 4.8 days to cover (FINRA data as of 2026-09-30). Squeeze fuel only - historically high short interest is bearish on average.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.75 pts / 10 possible x 10 = 0.75. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "CELH",
+   "keyword": "Celsius energy drink",
+   "last_close": 28.58,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was -14.3%).",
+     "raw": {
+      "report_date": "2026-08-06",
+      "days_since_report": 68,
+      "eps_estimate": 0.42,
+      "eps_reported": 0.36,
+      "surprise_pct": -14.29
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CELH&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 12.4% of float, 4.3 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 12.45,
+      "days_to_cover": 4.29,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-06 (68d ago) is older than the 30-day drift window (surprise was -14.3%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CELH&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    short_squeeze_setup: Short interest 12.4% of float, 4.3 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "ELF",
+   "keyword": "e.l.f. cosmetics",
+   "last_close": 109.23,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was +143.1%).",
+     "raw": {
+      "report_date": "2026-08-05",
+      "days_since_report": 69,
+      "eps_estimate": 0.72,
+      "eps_reported": 1.75,
+      "surprise_pct": 143.06
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 8.2% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 8.21,
+      "days_to_cover": 2.79,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-05 (69d ago) is older than the 30-day drift window (surprise was +143.1%).",
+    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "no    short_squeeze_setup: Short interest 8.2% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "CROX",
+   "keyword": "Crocs",
+   "last_close": 114.98,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-07-30 (75d ago) is older than the 30-day drift window (surprise was +4.6%).",
+     "raw": {
+      "report_date": "2026-07-30",
+      "days_since_report": 75,
+      "eps_estimate": 4.35,
+      "eps_reported": 4.55,
+      "surprise_pct": 4.6
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CROX&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 14.0% of float, 4.4 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 14.0,
+      "days_to_cover": 4.39,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-07-30 (75d ago) is older than the 30-day drift window (surprise was +4.6%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=CROX&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    short_squeeze_setup: Short interest 14.0% of float, 4.4 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "ONON",
+   "keyword": "On running shoes",
+   "last_close": 35.09,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-11 (63d ago) is older than the 30-day drift window (surprise was +2.9%).",
+     "raw": {
+      "report_date": "2026-08-11",
+      "days_since_report": 63,
+      "eps_estimate": 0.34,
+      "eps_reported": 0.35,
+      "surprise_pct": 2.94
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=ONON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 11.1% of float, 2.5 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 11.1,
+      "days_to_cover": 2.51,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-11 (63d ago) is older than the 30-day drift window (surprise was +2.9%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=ONON&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    short_squeeze_setup: Short interest 11.1% of float, 2.5 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "PLTR",
+   "keyword": "Palantir",
+   "last_close": 209.05,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-03 (71d ago) is older than the 30-day drift window (surprise was +17.1%).",
+     "raw": {
+      "report_date": "2026-08-03",
+      "days_since_report": 71,
+      "eps_estimate": 0.35,
+      "eps_reported": 0.41,
+      "surprise_pct": 17.14
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PLTR&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 2.6% of float, 2.2 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 2.59,
+      "days_to_cover": 2.21,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-08-03 (71d ago) is older than the 30-day drift window (surprise was +17.1%).",
+    "???   insider_buying (error, counts as 0): ConnectionError: HTTPConnectionPool(host='openinsider.com', port=80): Max retries exceeded with url: /screener?s=PLTR&o=&pl=&ph=&ll=&lh=&fd=14&fdr=&td=0&tdr=&fdlyl=&fdlyh=&daysa",
+    "no    short_squeeze_setup: Short interest 2.6% of float, 2.2 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  },
+  {
+   "ticker": "CMG",
+   "keyword": "Chipotle",
+   "last_close": 31.59,
+   "score": 0.0,
+   "alert": false,
+   "points": 0.0,
+   "total_weight": 10.0,
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +3.1%).",
+     "raw": {
+      "report_date": "2026-07-29",
+      "days_since_report": 76,
+      "eps_estimate": 0.32,
+      "eps_reported": 0.33,
+      "surprise_pct": 3.13
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "error",
+     "detail": "ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 3.4% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+     "raw": {
+      "short_pct_float": 3.39,
+      "days_to_cover": 2.77,
+      "short_interest_as_of": "2026-09-30"
+     },
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 1.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "raw": {
+      "zscores": {
+       "google_trends": null
+      },
+      "notes": {
+       "google_trends": "TooManyRequestsError: The request failed: Google returned a response with code 429",
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    }
+   ],
+   "summary": "0.0/10 - no signals fired (2 of 5 could be checked); below alert threshold (5).",
+   "explanation": [
+    "no    earnings_drift: Last report 2026-07-29 (76d ago) is older than the 30-day drift window (surprise was +3.1%).",
+    "???   insider_buying (error, counts as 0): ReadTimeout: HTTPConnectionPool(host='openinsider.com', port=80): Read timed out. (read timeout=30)",
+    "no    short_squeeze_setup: Short interest 3.4% of float, 2.8 days to cover (FINRA data as of 2026-09-30); needs >= 15% or >= 5 days.",
+    "???   congressional_trades (unavailable, counts as 0): Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+    "???   social_spike (unavailable, counts as 0): No social data (google_trends: TooManyRequestsError: The request failed: Google returned a response with code 429; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+    "Math: 0.00 pts / 10 possible x 10 = 0.00. Alert threshold 5."
+   ]
+  }
+ ]
 }
