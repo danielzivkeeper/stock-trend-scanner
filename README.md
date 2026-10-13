@@ -18,7 +18,7 @@ Everything runs inside one free GitHub repository. You pay nothing for hosting, 
 | **Insider buying** | 2.5 | **Moderate to strong.** Seyhun; Lakonishok & Lee (2001); Cohen, Malloy & Pomorski (2012). | Executives buying their own stock with their own money is informative. (Their *selling* isn't.) Treating a "cluster" of buyers as a stronger sign is common practice among traders, but no single study proves that rule. Token buys under $10k are ignored. |
 | **Short-squeeze setup** | 2.0 | **Mixed. Read this one.** | On **average**, heavily shorted stocks do **worse** afterward (Asquith, Pathak & Ritter 2005). A squeeze is the rare exception, and this signal only measures the "fuel", never the trigger. It's only useful alongside other signals. The data updates twice a month. |
 | **Congress trades** | 1.5 | **Weak / mixed.** | 1990s studies found that members of Congress beat the market. Newer studies mostly don't. Disclosures can arrive up to 45 days late. ⚠️ **The free data mirrors are currently offline** (details below). |
-| **Social spike** | 1.0 | **Real but short-lived.** Da, Engelberg & Gao (2011). | A surge in Google searches or Reddit mentions tends to push prices up for days to about 2 weeks, then **reverses**. It only counts as confirming evidence. |
+| **Social spike** | 1.0 | **Real but short-lived.** Da, Engelberg & Gao (2011). | A surge in Wikipedia views, Google searches or Reddit mentions tends to push prices up for days to about 2 weeks, then **reverses**. It only counts as confirming evidence. |
 | CEO social activity | — | Not built | Reading X/Twitter now requires a paid API, and scraping it violates X's terms of service. |
 | App-store rank jumps | — | Not built | There's no free API for ranking history. |
 | Hiring surges | — | Not built | There's no free job-posting API, and scraping job sites violates their terms of service. |
@@ -39,9 +39,9 @@ score = (sum of  weight × strength  for each signal that fired)  ÷  sum of all
 ### Known data-source issues (checked October 2026)
 
 - **Congress trades: offline.** Both House/Senate Stock Watcher S3 mirrors return `403 Access Denied`. The signal reports "unavailable" and never makes up data. Until a working source turns up, the best scores possible are 8.5 out of 10. If that bothers you, open `config.json` and set `"congressional_trades": 0` so its weight leaves the total. If you find a working mirror with the same JSON format, paste its URL into `config.json`.
-- **Google Trends** (via `pytrends`, an unofficial tool) sometimes rate-limits GitHub's servers. When that happens, that ticker's social signal shows "unavailable".
+- **Google Trends** (via `pytrends`, an unofficial tool) blocks GitHub's servers almost every time (tested October 2026). The social signal therefore relies on **Wikipedia page views** (official, free, works from anywhere). Google Trends only adds data when you run the scanner on your own computer.
 - **Yahoo Finance** (via `yfinance`, also unofficial) occasionally breaks for a day after Yahoo changes its website. The scan logs the error and keeps going.
-- **openinsider.com** is a third-party aggregator of SEC Form 4 filings, not the official source. The official source is [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4).
+- **Insider buying** reads Form 4 filings straight from **SEC EDGAR**, the official source. The SEC requires a contact email with automated requests, which goes in the `SEC_CONTACT_EMAIL` secret. Without that secret, the scanner falls back to openinsider.com, a third-party aggregator that does **not** answer GitHub's servers. Purchases under pre-scheduled 10b5-1 plans are ignored, because they aren't conviction buys.
 - **Texting:** AT&T **shut down** its email-to-text gateway in 2025, and other carriers may delay or drop these messages. The optional free **ntfy** app (step 5b) is a more reliable backup.
 
 ---
@@ -86,6 +86,7 @@ Go to **https://github.com/signup** and follow the steps. The free plan is all y
 | `SMTP_APP_PASSWORD` | The 16-letter app password from step 4 | `abcd efgh ijkl mnop` |
 | `ALERT_PHONE` | Your 10-digit mobile number, digits only | `5551234567` |
 | `ALERT_CARRIER_GATEWAY` | Your carrier's email-to-text domain (table below) | `vtext.com` |
+| `SEC_CONTACT_EMAIL` | **Needed for insider buying.** Any email you check. The SEC requires one with automated requests. | `me@gmail.com` |
 
 | Carrier | Gateway |
 |---|---|
@@ -109,7 +110,7 @@ If any of these secrets are missing, the scanner still runs and updates the dash
 3. The short code under "personal use script" is your client ID. The value next to **secret** is your client secret.
 4. Add them as repository secrets named **`REDDIT_CLIENT_ID`** and **`REDDIT_CLIENT_SECRET`**.
 
-Without these, the social signal uses Google Trends only.
+Without these, the social signal uses Wikipedia page views (and Google Trends when it isn't blocked).
 
 ### 6. Turn on the dashboard (GitHub Pages)
 1. In your repo, click **Settings**, then **Pages** in the left sidebar.

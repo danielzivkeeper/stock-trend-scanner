@@ -53,7 +53,8 @@ def load_watchlist(path: str) -> List[Dict[str, str]]:
     out = []
     for e in data["watchlist"]:
         if e.get("ticker") and e.get("keyword"):
-            out.append({"ticker": str(e["ticker"]).upper().strip(), "keyword": str(e["keyword"]).strip()})
+            out.append({"ticker": str(e["ticker"]).upper().strip(), "keyword": str(e["keyword"]).strip(),
+                        "wikipedia": str(e.get("wikipedia") or "").strip()})
     return out
 
 
@@ -67,7 +68,7 @@ def last_close(ticker: str) -> Any:
         return None
 
 
-def scan_one(ticker: str, keyword: str, cfg: Dict[str, Any]) -> Dict[str, SignalResult]:
+def scan_one(ticker: str, keyword: str, cfg: Dict[str, Any], wikipedia: str = "") -> Dict[str, SignalResult]:
     results: Dict[str, SignalResult] = {}
     for name in cfg["weights"]:
         mod = SIGNALS.get(name)
@@ -75,6 +76,8 @@ def scan_one(ticker: str, keyword: str, cfg: Dict[str, Any]) -> Dict[str, Signal
             results[name] = SignalResult(name, detail=f"Unknown signal '{name}' in config.json.", status=ERROR)
             continue
         params = cfg.get("signals", {}).get(name, {})
+        if name == "social_spike" and wikipedia:
+            params = dict(params, wikipedia_article=wikipedia)
         try:
             results[name] = mod.run(ticker, keyword, params)
         except Exception as e:  # noqa: BLE001 - one broken source must not kill the scan
@@ -116,7 +119,7 @@ def main(argv: List[str] = None) -> int:
     tickers = []
     for w in watch:
         print(f"\n== {w['ticker']} ({w['keyword']})")
-        sig = scan_one(w["ticker"], w["keyword"], cfg)
+        sig = scan_one(w["ticker"], w["keyword"], cfg, w["wikipedia"])
         scored = score_ticker(sig, cfg["weights"], threshold)
         for row in scored["signals"]:
             row["evidence"] = EVIDENCE.get(row["name"], "unknown")

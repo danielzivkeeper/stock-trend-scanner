@@ -43,6 +43,7 @@ jobs:
           ALERT_PHONE: ${{ secrets.ALERT_PHONE }}
           ALERT_CARRIER_GATEWAY: ${{ secrets.ALERT_CARRIER_GATEWAY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: python -m scanner.run_scan

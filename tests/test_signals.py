@@ -104,6 +104,45 @@ class InsiderBuying(unittest.TestCase):
         self.assertEqual(r.strength, 1.0)
 
 
+FORM4 = """<?xml version="1.0"?><ownershipDocument>
+<issuer><issuerTradingSymbol>abc</issuerTradingSymbol></issuer>
+<reportingOwner><reportingOwnerId><rptOwnerName>Doe Jane</rptOwnerName></reportingOwnerId>
+<reportingOwnerRelationship><isDirector>0</isDirector><isOfficer>1</isOfficer><officerTitle>CEO</officerTitle>
+</reportingOwnerRelationship></reportingOwner>
+<aff10b5One>{plan}</aff10b5One>
+<nonDerivativeTable>
+<nonDerivativeTransaction><transactionDate><value>2026-09-28</value></transactionDate>
+<transactionCoding><transactionCode>P</transactionCode></transactionCoding>
+<transactionAmounts><transactionShares><value>1000</value></transactionShares>
+<transactionPricePerShare><value>25.5</value></transactionPricePerShare></transactionAmounts></nonDerivativeTransaction>
+<nonDerivativeTransaction><transactionCoding><transactionCode>S</transactionCode></transactionCoding>
+<transactionAmounts><transactionShares><value>99</value></transactionShares>
+<transactionPricePerShare><value>30</value></transactionPricePerShare></transactionAmounts></nonDerivativeTransaction>
+</nonDerivativeTable></ownershipDocument>"""
+
+
+class SecForm4(unittest.TestCase):
+    def test_parses_open_market_purchase_only(self):
+        rows = ib.parse_form4(FORM4.format(plan=0))
+        self.assertEqual(len(rows), 1)
+        r = rows[0]
+        self.assertEqual((r["Ticker"], r["Insider Name"], r["Title"]), ("ABC", "Doe Jane", "CEO"))
+        self.assertAlmostEqual(r["Value"], 25500.0)
+        self.assertFalse(r["plan_10b5_1"])
+
+    def test_10b5_1_plan_purchases_do_not_count(self):
+        rows = ib.parse_form4(FORM4.format(plan=1)) + [
+            {"Ticker": "ABC", "Insider Name": "B", "Trade Type": "P - Purchase", "Value": 50000}]
+        r = ib.evaluate(rows, "ABC", {"min_distinct_insiders": 2})
+        self.assertFalse(r.triggered)
+        self.assertEqual(r.raw["ignored_10b5_1_plan_purchases"], 1)
+
+    def test_two_sec_buyers_fire(self):
+        rows = ib.parse_form4(FORM4.format(plan=0)) + ib.parse_form4(
+            FORM4.format(plan=0).replace("Doe Jane", "Roe Rick"))
+        self.assertTrue(ib.evaluate(rows, "ABC", {"min_distinct_insiders": 2}).triggered)
+
+
 class ShortSqueeze(unittest.TestCase):
     P = {"min_short_pct_float": 15.0, "min_days_to_cover": 5.0, "full_strength_multiple": 3.0}
 

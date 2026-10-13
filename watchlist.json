@@ -1,15 +1,15 @@
 {
-  "_help": "keyword = what people would type into Google (used for Google Trends). ticker = the stock symbol. Add, remove or edit entries; keep the commas between them.",
+  "_help": "keyword = what people would type into Google (used for Google Trends). ticker = the stock symbol. wikipedia (optional) = the company's English Wikipedia article title, used to measure attention. Keep the commas between entries.",
   "watchlist": [
-    {"keyword": "Celsius energy drink", "ticker": "CELH"},
-    {"keyword": "Hims and Hers", "ticker": "HIMS"},
-    {"keyword": "Duolingo", "ticker": "DUOL"},
-    {"keyword": "e.l.f. cosmetics", "ticker": "ELF"},
-    {"keyword": "Crocs", "ticker": "CROX"},
-    {"keyword": "On running shoes", "ticker": "ONON"},
-    {"keyword": "SoFi", "ticker": "SOFI"},
-    {"keyword": "Palantir", "ticker": "PLTR"},
-    {"keyword": "Peloton", "ticker": "PTON"},
-    {"keyword": "Chipotle", "ticker": "CMG"}
+    {"keyword": "Celsius energy drink", "ticker": "CELH", "wikipedia": "Celsius Holdings"},
+    {"keyword": "Hims and Hers", "ticker": "HIMS", "wikipedia": "Hims & Hers Health"},
+    {"keyword": "Duolingo", "ticker": "DUOL", "wikipedia": "Duolingo"},
+    {"keyword": "e.l.f. cosmetics", "ticker": "ELF", "wikipedia": "E.l.f."},
+    {"keyword": "Crocs", "ticker": "CROX", "wikipedia": "Crocs"},
+    {"keyword": "On running shoes", "ticker": "ONON", "wikipedia": "On (company)"},
+    {"keyword": "SoFi", "ticker": "SOFI", "wikipedia": "SoFi"},
+    {"keyword": "Palantir", "ticker": "PLTR", "wikipedia": "Palantir Technologies"},
+    {"keyword": "Peloton", "ticker": "PTON", "wikipedia": "Peloton Interactive"},
+    {"keyword": "Chipotle", "ticker": "CMG", "wikipedia": "Chipotle Mexican Grill"}
   ]
 }

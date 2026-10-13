@@ -1,4 +1,4 @@
-"""Signal 5: Social attention spike (Google Trends and/or Reddit mentions).
+"""Signal 5: Social attention spike (Wikipedia views, Google Trends, Reddit).
 
 EVIDENCE: REAL BUT SHORT-LIVED - weighted lowest, treat as confirmation only.
   - Da, Engelberg & Gao (2011, "In Search of Attention"): a jump in Google
@@ -8,6 +8,10 @@ EVIDENCE: REAL BUT SHORT-LIVED - weighted lowest, treat as confirmation only.
   - So a spike is "people are looking" - not "it will keep going up".
 
 DATA:
+  - Wikipedia page views (official Wikimedia API, free, no key). The most
+    reliable source here: it works from GitHub's servers. Moat et al. (2013)
+    and others use Wikipedia views as an investor-attention proxy. The article
+    comes from the watchlist's optional "wikipedia" field (else the keyword).
   - Google Trends via pytrends (unofficial, no key). Google rate-limits
     aggressively, especially from cloud IPs like GitHub's runners, so expect
     occasional HTTP 429 -> the module reports "unavailable" for that source.
@@ -88,6 +92,29 @@ def _google_trends_series(keyword: str, timeframe: str) -> List[float]:
     return [float(x) for x in df[keyword].tolist()]
 
 
+WIKI_UA = "StockTrendScanner/1.0 (https://github.com/danielzivkeeper/stock-trend-scanner)"
+
+
+def _wikipedia_daily_views(article: str, days: int) -> List[float]:
+    import requests
+    from urllib.parse import quote
+
+    # Follow redirects first ("E.l.f. Cosmetics" -> "E.l.f.") - views are counted on the real title.
+    q = requests.get("https://en.wikipedia.org/w/api.php", headers={"User-Agent": WIKI_UA}, timeout=30,
+                     params={"action": "query", "titles": article, "redirects": 1, "format": "json"}).json()
+    page = next(iter(q["query"]["pages"].values()))
+    if "missing" in page:
+        raise LookupError(f"no Wikipedia article '{article}'")
+    title = page["title"].replace(" ", "_")
+    end = datetime.now(timezone.utc).date() - timedelta(days=1)  # yesterday = last complete day
+    start = end - timedelta(days=days)
+    url = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/"
+           f"{quote(title, safe='')}/daily/{start:%Y%m%d}/{end:%Y%m%d}")
+    r = requests.get(url, headers={"User-Agent": WIKI_UA}, timeout=30)
+    r.raise_for_status()
+    return [float(i["views"]) for i in r.json().get("items", [])]
+
+
 def _reddit_daily_counts(ticker: str, subreddits: List[str], days: int) -> Optional[List[float]]:
     cid, secret = os.environ.get("REDDIT_CLIENT_ID"), os.environ.get("REDDIT_CLIENT_SECRET")
     if not cid or not secret:
@@ -112,6 +139,17 @@ def _reddit_daily_counts(ticker: str, subreddits: List[str], days: int) -> Optio
 def run(ticker: str, keyword: str, params: Dict[str, Any]) -> SignalResult:
     z: Dict[str, Optional[float]] = {}
     notes: Dict[str, str] = {}
+
+    if params.get("use_wikipedia", True):
+        article = params.get("wikipedia_article") or keyword
+        try:
+            views = _wikipedia_daily_views(article, int(params.get("wikipedia_lookback_days", 60)))
+            z["wikipedia"] = zscore_latest(views, int(params.get("wikipedia_baseline_window", 28)))
+            if z["wikipedia"] is None:
+                notes["wikipedia"] = "not enough history"
+        except Exception as e:  # noqa: BLE001
+            z["wikipedia"] = None
+            notes["wikipedia"] = f"{type(e).__name__}: {str(e)[:80]}"
 
     if params.get("use_google_trends", True):
         try:

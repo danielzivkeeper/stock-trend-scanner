@@ -38,6 +38,9 @@
     "social_spike": {
       "min_zscore": 2.0,
       "full_strength_multiple": 2.0,
+      "use_wikipedia": true,
+      "wikipedia_lookback_days": 60,
+      "wikipedia_baseline_window": 28,
       "use_google_trends": true,
       "trends_timeframe": "today 3-m",
       "trends_baseline_window": 28,
