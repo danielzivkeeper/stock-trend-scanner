@@ -188,7 +188,7 @@ def update_market(cfg: Dict[str, Any], out_dir: str) -> Dict[str, Any]:
 
     pct = float(cfg.get("daily_summary", {}).get("drop_threshold_pct", 10))
     try:
-        snap = market.daily_market(out_dir, pct, int(cfg.get("movers_top_n", 15)))
+        snap = market.daily_market(out_dir, pct, int(cfg.get("movers_top_n", 10)))
     except Exception as e:  # noqa: BLE001
         traceback.print_exc()
         snap = {"status": "error", "market_date": None, "drops": [], "gainers": [], "losers": [],

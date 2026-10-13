@@ -154,7 +154,7 @@ def fetch_closes(tickers: List[str]) -> Dict[str, List[Tuple[str, float]]]:
     return out
 
 
-def daily_market(data_dir: str, threshold_pct: float, top_n: int = 15) -> Dict[str, Any]:
+def daily_market(data_dir: str, threshold_pct: float, top_n: int = 10) -> Dict[str, Any]:
     """Every scan: one bulk download of all S&P 500 closes -> big drops + top movers."""
     names, sectors = load_sp500(os.path.join(data_dir, "sp500_constituents.json"))
     if not names:

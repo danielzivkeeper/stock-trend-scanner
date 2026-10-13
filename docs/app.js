@@ -178,7 +178,7 @@
     }).catch(function () { /* no backtest yet - fine */ });
   }
 
-  var market = null, moverView = "gainers";
+  var market = null;
 
   function loadMarket() {
     fetchJSON("data/market.json").then(function (m) { market = m; renderMovers(); })
@@ -186,13 +186,10 @@
   }
 
   function renderMovers() {
-    var head = $("#movers-head"), list = $("#movers-list");
-    document.querySelectorAll("[data-mv]").forEach(function (b) {
-      b.setAttribute("aria-selected", String(b.dataset.mv === moverView));
-    });
+    var head = $("#movers-head");
     if (!market || !market.market_date) {
       head.innerHTML = '<p class="muted small">No market data yet - it appears after the next scan.</p>';
-      list.innerHTML = "";
+      $("#movers-gainers").innerHTML = $("#movers-losers").innerHTML = "";
       return;
     }
     var big = (market.drops || []).length;
@@ -203,13 +200,13 @@
         market.median_pct.toFixed(2) + "%</span>" : "") +
       "<span>" + (big ? '<b class="neg">' + big + " fell " + esc(market.threshold_pct) + "%+</b>" :
         "none fell " + esc(market.threshold_pct) + "%+") + "</span></div>";
-    var rows = market[moverView] || [];
     var held = {};
     ((data && data.tickers) || []).forEach(function (t) { held[t.ticker] = t; });
-    list.innerHTML = rows.map(function (m) {
+    function rowsHtml(rows, what) {
+      return rows.slice(0, 10).map(function (m, i) {
       var bigDrop = m.pct <= -Math.abs(market.threshold_pct);
       var w = held[m.ticker];
-      return '<div class="mv"><div><span class="sym">' + esc(m.ticker) + "</span> " +
+      return '<div class="mv"><div><span class="muted">' + (i + 1) + '.</span> <span class="sym">' + esc(m.ticker) + "</span> " +
         (bigDrop ? '<span class="badge big">' + esc(market.threshold_pct) + "%+ drop</span> " : "") +
         (w ? '<span class="badge src">watchlist ' + w.score.toFixed(1) + "</span>" : "") +
         '<div class="nm">' + esc(m.name) + (m.sector ? " · " + esc(m.sector) : "") + "</div></div>" +
@@ -220,12 +217,11 @@
         '<button type="button" class="link" data-trade="' + esc(m.ticker) + '" data-price="' + esc(m.close) +
         '" data-reason="' + esc((m.pct > 0 ? "Up " : "Down ") + Math.abs(m.pct).toFixed(1) + "% on " + market.market_date) +
         '">Paper-trade</button></div></div>';
-    }).join("") || '<div class="card empty">No ' + (moverView === "gainers" ? "gainers" : "decliners") + " today.</div>";
+      }).join("") || '<div class="card empty">No ' + what + " today.</div>";
+    }
+    $("#movers-gainers").innerHTML = rowsHtml(market.gainers || [], "gainers");
+    $("#movers-losers").innerHTML = rowsHtml(market.losers || [], "decliners");
   }
-
-  document.querySelectorAll("[data-mv]").forEach(function (b) {
-    b.addEventListener("click", function () { moverView = b.dataset.mv; renderMovers(); });
-  });
 
   document.addEventListener("click", function (e) {
     var b = e.target.closest("[data-trade]");
