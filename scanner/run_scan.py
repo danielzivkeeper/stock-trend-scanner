@@ -176,23 +176,34 @@ def main(argv: List[str] = None) -> int:
             for t in to_send:
                 state[t["ticker"]] = {"date": today, "score": t["score"]}
             save_json(state_path, state)
+    market_snapshot = update_market(cfg, args.out)
     if args.daily_summary:
-        send_daily_summary(cfg, tickers, args.out, threshold, no_send=args.no_alerts)
+        send_daily_summary(cfg, tickers, args.out, threshold, market_snapshot, no_send=args.no_alerts)
     return 0
 
 
+def update_market(cfg: Dict[str, Any], out_dir: str) -> Dict[str, Any]:
+    """S&P 500 movers for the Movers tab (and the summary text). Never fails the scan."""
+    from scanner import market
+
+    pct = float(cfg.get("daily_summary", {}).get("drop_threshold_pct", 10))
+    try:
+        snap = market.daily_market(out_dir, pct, int(cfg.get("movers_top_n", 15)))
+    except Exception as e:  # noqa: BLE001
+        traceback.print_exc()
+        snap = {"status": "error", "market_date": None, "drops": [], "gainers": [], "losers": [],
+                "threshold_pct": pct, "error": str(e)[:200]}
+    if snap.get("status") == "ok" or not os.path.exists(os.path.join(out_dir, "market.json")):
+        save_json(os.path.join(out_dir, "market.json"), snap)  # keep the last good snapshot on failure
+    return snap
+
+
 def send_daily_summary(cfg: Dict[str, Any], tickers: List[Dict[str, Any]], out_dir: str, threshold: float,
-                       no_send: bool = False) -> None:
+                       drops: Dict[str, Any], no_send: bool = False) -> None:
     from scanner import market
 
     opts = cfg.get("daily_summary", {})
     pct = float(opts.get("drop_threshold_pct", 10))
-    try:
-        drops = market.daily_drops(out_dir, pct)
-    except Exception as e:  # noqa: BLE001 - still send the rest of the summary
-        traceback.print_exc()
-        drops = {"status": "error", "market_date": None, "drops": [], "threshold_pct": pct, "error": str(e)[:200]}
-    save_json(os.path.join(out_dir, "market.json"), drops)
     rising = [r["ticker"] for r in load_json(os.path.join(out_dir, "trending.json"), {}).get("rows", [])
               if r.get("status") == "rising"]
     texts = market.compose_summary(market.new_york_today(), drops.get("market_date"), drops["drops"], pct,

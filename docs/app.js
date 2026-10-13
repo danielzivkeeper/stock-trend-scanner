@@ -45,7 +45,7 @@
     document.querySelectorAll(".tabs button").forEach(function (b) {
       b.setAttribute("aria-selected", String(b.dataset.tab === name));
     });
-    ["signals", "trending", "paper"].forEach(function (t) { $("#tab-" + t).hidden = name !== t; });
+    ["signals", "movers", "trending", "paper"].forEach(function (t) { $("#tab-" + t).hidden = name !== t; });
     try { localStorage.setItem("trendscanner.tab", name); } catch (e) {}
     window.scrollTo(0, 0);
   }
@@ -69,6 +69,7 @@
       renderSignals();
       renderPaper();
       renderTrending();
+      renderMovers();
     }).catch(function (e) {
       $("#updated").textContent = "No scan data yet";
       var el = $("#load-error");
@@ -177,23 +178,56 @@
     }).catch(function () { /* no backtest yet - fine */ });
   }
 
+  var market = null, moverView = "gainers";
+
   function loadMarket() {
-    fetchJSON("data/market.json").then(function (m) {
-      var el = $("#drops");
-      if (!m.market_date) { el.hidden = true; return; }
-      el.hidden = false;
-      var list = (m.drops || []).map(function (d) {
-        return "<li><b>" + esc(d.ticker) + "</b> " + esc(d.name) + ' <span class="neg">' + d.pct.toFixed(1) +
-          "%</span> → $" + Number(d.close).toFixed(2) + "</li>";
-      }).join("");
-      el.innerHTML = "<h2>S&amp;P 500 drops of " + esc(m.threshold_pct) + "%+ (" + esc(m.market_date) + ")</h2>" +
-        (list ? '<ul class="plain">' + list + "</ul>" : '<p class="muted small">None today.</p>') +
-        '<p class="muted small">Big one-day drops often bounce a little, but drops caused by bad news ' +
-        "(earnings miss, lowered guidance) tend to keep falling. Check why before buying.</p>";
-    }).catch(function () { $("#drops").hidden = true; });
+    fetchJSON("data/market.json").then(function (m) { market = m; renderMovers(); })
+      .catch(function () { market = null; renderMovers(); });
   }
 
-  $("#tickers").addEventListener("click", function (e) {
+  function renderMovers() {
+    var head = $("#movers-head"), list = $("#movers-list");
+    document.querySelectorAll("[data-mv]").forEach(function (b) {
+      b.setAttribute("aria-selected", String(b.dataset.mv === moverView));
+    });
+    if (!market || !market.market_date) {
+      head.innerHTML = '<p class="muted small">No market data yet - it appears after the next scan.</p>';
+      list.innerHTML = "";
+      return;
+    }
+    var big = (market.drops || []).length;
+    head.innerHTML = "<h2>S&amp;P 500 · " + esc(market.market_date) + "</h2>" +
+      '<div class="breadth"><span class="pos">▲ ' + (market.advancers || 0) + " up</span>" +
+      '<span class="neg">▼ ' + (market.decliners || 0) + " down</span>" +
+      (market.median_pct != null ? "<span>typical stock " + (market.median_pct > 0 ? "+" : "") +
+        market.median_pct.toFixed(2) + "%</span>" : "") +
+      "<span>" + (big ? '<b class="neg">' + big + " fell " + esc(market.threshold_pct) + "%+</b>" :
+        "none fell " + esc(market.threshold_pct) + "%+") + "</span></div>";
+    var rows = market[moverView] || [];
+    var held = {};
+    ((data && data.tickers) || []).forEach(function (t) { held[t.ticker] = t; });
+    list.innerHTML = rows.map(function (m) {
+      var bigDrop = m.pct <= -Math.abs(market.threshold_pct);
+      var w = held[m.ticker];
+      return '<div class="mv"><div><span class="sym">' + esc(m.ticker) + "</span> " +
+        (bigDrop ? '<span class="badge big">' + esc(market.threshold_pct) + "%+ drop</span> " : "") +
+        (w ? '<span class="badge src">watchlist ' + w.score.toFixed(1) + "</span>" : "") +
+        '<div class="nm">' + esc(m.name) + (m.sector ? " · " + esc(m.sector) : "") + "</div></div>" +
+        '<div><div class="pct ' + (m.pct > 0 ? "pos" : "neg") + '">' + (m.pct > 0 ? "+" : "") + m.pct.toFixed(2) +
+        '%</div><div class="px">$' + Number(m.close).toFixed(2) + "</div></div>" +
+        '<div class="links"><a href="https://finance.yahoo.com/quote/' + encodeURIComponent(m.ticker) +
+        '/news" target="_blank" rel="noopener">Why? (news)</a>' +
+        '<button type="button" class="link" data-trade="' + esc(m.ticker) + '" data-price="' + esc(m.close) +
+        '" data-reason="' + esc((m.pct > 0 ? "Up " : "Down ") + Math.abs(m.pct).toFixed(1) + "% on " + market.market_date) +
+        '">Paper-trade</button></div></div>';
+    }).join("") || '<div class="card empty">No ' + (moverView === "gainers" ? "gainers" : "decliners") + " today.</div>";
+  }
+
+  document.querySelectorAll("[data-mv]").forEach(function (b) {
+    b.addEventListener("click", function () { moverView = b.dataset.mv; renderMovers(); });
+  });
+
+  document.addEventListener("click", function (e) {
     var b = e.target.closest("[data-trade]");
     if (!b) return;
     var f = $("#trade-form");
@@ -492,7 +526,7 @@
   $("#trade-form").date.value = today();
   var startTab = "signals";
   try { startTab = localStorage.getItem("trendscanner.tab") || "signals"; } catch (e) {}
-  showTab(["paper", "trending"].indexOf(startTab) >= 0 ? startTab : "signals");
+  showTab(["paper", "trending", "movers"].indexOf(startTab) >= 0 ? startTab : "signals");
   loadSignals();
   loadTrack();
   loadTrending();

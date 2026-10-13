@@ -32,7 +32,6 @@
     <p class="disclaimer">Hobby tool. Scores flag historically-documented patterns, not guaranteed
       outcomes. Paper-trade before risking real money.</p>
 
-    <div id="drops" class="card" hidden></div>
     <div id="track" class="card track" hidden></div>
     <div id="tickers"></div>
 
@@ -43,6 +42,19 @@
       <h3>Not implemented (on purpose)</h3>
       <ul id="stubs" class="plain"></ul>
     </details>
+  </section>
+
+  <!-- ======================== MOVERS ======================= -->
+  <section id="tab-movers" class="tab" hidden>
+    <div id="movers-head" class="card"></div>
+    <div class="seg" role="tablist">
+      <button type="button" data-mv="gainers" aria-selected="true">▲ Biggest gains</button>
+      <button type="button" data-mv="losers" aria-selected="false">▼ Biggest drops</button>
+    </div>
+    <div id="movers-list"></div>
+    <p class="disclaimer">S&amp;P 500, today vs. previous close. Updated with each scan (before the open it shows the
+      previous trading day). Big one-day moves usually have a news reason - tap "Why?" before acting. Drops from bad
+      news often keep falling; jumps often fade.</p>
   </section>
 
   <!-- ======================= TRENDING ====================== -->
@@ -99,6 +111,7 @@
 
 <nav class="tabs" role="tablist">
   <button role="tab" data-tab="signals" aria-selected="true">📊<span>Signals</span></button>
+  <button role="tab" data-tab="movers" aria-selected="false">📈<span>Movers</span></button>
   <button role="tab" data-tab="trending" aria-selected="false">🔥<span>Trending</span></button>
   <button role="tab" data-tab="paper" aria-selected="false">📝<span>Paper trades</span></button>
 </nav>

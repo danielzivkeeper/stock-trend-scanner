@@ -1,7 +1,7 @@
 """Offline tests for the S&P 500 big-drop finder and the daily summary text."""
 import unittest
 
-from scanner.market import SMS_LIMIT, compose_summary, find_drops, pack_texts
+from scanner.market import SMS_LIMIT, compose_summary, find_drops, find_moves, pack_texts, top_movers
 
 
 def series(*closes, last="2026-10-12"):
@@ -29,6 +29,22 @@ class Drops(unittest.TestCase):
 
     def test_empty(self):
         self.assertEqual(find_drops({}, 10), (None, []))
+
+
+class Movers(unittest.TestCase):
+    def test_top_gainers_and_losers(self):
+        closes = {"UP1": series(100, 120.0), "UP2": series(100, 105.0), "FLAT": series(100, 100.0),
+                  "DN1": series(100, 97.0), "DN2": series(100, 80.0), "OLD": series(100, 300.0, last="2026-10-09")}
+        day, moves = find_moves(closes, {"UP1": "Up One"}, {"UP1": "Tech"})
+        m = top_movers(moves, 1)
+        self.assertEqual(day, "2026-10-12")
+        self.assertEqual([x["ticker"] for x in m["gainers"]], ["UP1"])
+        self.assertEqual((m["gainers"][0]["name"], m["gainers"][0]["sector"], m["gainers"][0]["pct"]),
+                         ("Up One", "Tech", 20.0))
+        self.assertEqual([x["ticker"] for x in m["losers"]], ["DN2"])
+        all_m = top_movers(moves, 10)
+        self.assertEqual([x["ticker"] for x in all_m["gainers"]], ["UP1", "UP2"])  # flat is neither
+        self.assertEqual([x["ticker"] for x in all_m["losers"]], ["DN2", "DN1"])
 
 
 class Packing(unittest.TestCase):
