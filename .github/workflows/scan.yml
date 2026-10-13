@@ -9,7 +9,12 @@ on:
   schedule:
     - cron: "30 12 * * 1-5"
     - cron: "30 21 * * 1-5"
-  workflow_dispatch: {}   # adds a "Run workflow" button on the Actions tab
+  workflow_dispatch:      # adds a "Run workflow" button on the Actions tab
+    inputs:
+      daily_summary:
+        description: "Also send the end-of-day summary text"
+        type: boolean
+        default: false
 
 permissions:
   contents: write         # lets the job commit docs/data/*.json back to the repo
@@ -54,7 +59,8 @@ jobs:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
-        run: python -m scanner.run_scan
+        # The 21:30 UTC (after-close) run also sends the daily summary text.
+        run: python -m scanner.run_scan ${{ (github.event.schedule == '30 21 * * 1-5' || inputs.daily_summary) && '--daily-summary' || '' }}
 
       - name: Update track record (forward test of past alerts)
         continue-on-error: true

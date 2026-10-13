@@ -138,6 +138,8 @@ After this it runs on its own every weekday at about 8:30am and 5:30pm New York 
 
 ## Everyday use
 
+- **Daily summary text:** after the market closes each weekday (the 5:30pm New York scan), you get one text. It lists any **S&P 500 stock that fell 10% or more that day**, then alerts, today's top scores, and names rising on Trending. Change the 10% (or turn the summary off) in `config.json` → `daily_summary`. The same drop list appears on the dashboard. Note that a big drop is a reason to look, not to buy: drops caused by bad news often keep falling.
+
 - **Edit the watchlist:** in your repo, click `watchlist.json`, click the ✏️ pencil icon, edit, then click **Commit changes**. Each entry has a Google-search `keyword` and a `ticker`, for example `{"keyword": "Celsius energy drink", "ticker": "CELH"}`. Don't remove the commas between entries.
 - **Change weights, the threshold, or the hold period:** edit `config.json` the same way. `alert_threshold` (0–10), `hold_days` (default 10), and `alert_cooldown_days` (how long to wait before texting about the same stock again) are near the top.
 - **Paper trading:** on the dashboard, tap a stock, then **Paper-trade →**, which fills in the ticker and last price. Enter a dollar amount and tap **Add trade**. To close it later, go to **Paper trades → Close trade**. The dashboard shows a planned exit date based on `hold_days`. Your cash, P/L and win rate update automatically.

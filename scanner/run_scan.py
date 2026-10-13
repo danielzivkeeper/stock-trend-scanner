@@ -118,6 +118,8 @@ def main(argv: List[str] = None) -> int:
     ap.add_argument("--out", default=os.path.join(ROOT, "docs", "data"))
     ap.add_argument("--tickers", default="", help="comma-separated subset of the watchlist")
     ap.add_argument("--no-alerts", action="store_true")
+    ap.add_argument("--daily-summary", action="store_true",
+                    help="also check S&P 500 big drops and text the end-of-day summary")
     args = ap.parse_args(argv)
 
     cfg = load_config(args.config)
@@ -174,7 +176,33 @@ def main(argv: List[str] = None) -> int:
             for t in to_send:
                 state[t["ticker"]] = {"date": today, "score": t["score"]}
             save_json(state_path, state)
+    if args.daily_summary:
+        send_daily_summary(cfg, tickers, args.out, threshold, no_send=args.no_alerts)
     return 0
+
+
+def send_daily_summary(cfg: Dict[str, Any], tickers: List[Dict[str, Any]], out_dir: str, threshold: float,
+                       no_send: bool = False) -> None:
+    from scanner import market
+
+    opts = cfg.get("daily_summary", {})
+    pct = float(opts.get("drop_threshold_pct", 10))
+    try:
+        drops = market.daily_drops(out_dir, pct)
+    except Exception as e:  # noqa: BLE001 - still send the rest of the summary
+        traceback.print_exc()
+        drops = {"status": "error", "market_date": None, "drops": [], "threshold_pct": pct, "error": str(e)[:200]}
+    save_json(os.path.join(out_dir, "market.json"), drops)
+    rising = [r["ticker"] for r in load_json(os.path.join(out_dir, "trending.json"), {}).get("rows", [])
+              if r.get("status") == "rising"]
+    texts = market.compose_summary(market.new_york_today(), drops.get("market_date"), drops["drops"], pct,
+                                   tickers, threshold, rising, dashboard_url())
+    if drops["status"] != "ok":
+        texts[0] = texts[0].replace("No S&P500 stock fell", "Couldn't check S&P500 drops; none known")
+    print("[summary]\n" + "\n---\n".join(texts))
+    if opts.get("enabled", True) and not no_send:
+        alerts.send_texts(texts)
+        alerts.send_ntfy("\n".join(texts))
 
 
 if __name__ == "__main__":

@@ -65,6 +65,18 @@ def send_sms(text: str) -> bool:
         return False
 
 
+def send_texts(parts: List[str]) -> bool:
+    """Several SMS-sized messages in order (a long summary split into parts)."""
+    import time
+
+    ok = True
+    for i, part in enumerate(parts):
+        ok = send_sms(part) and ok
+        if i < len(parts) - 1:
+            time.sleep(3)  # helps the carrier deliver them in order
+    return ok
+
+
 def send_ntfy(text: str) -> bool:
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     if not topic:

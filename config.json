@@ -50,6 +50,11 @@
       "reddit_baseline_window": 21
     }
   },
+  "daily_summary": {
+    "_help": "End-of-day text (evening scan only): S&P 500 stocks that fell drop_threshold_pct or more today, alerts, top scores, trending names.",
+    "enabled": true,
+    "drop_threshold_pct": 10
+  },
   "trending": {
     "_help": "Social mention scanner for the Trending tab (StockTwits + Bluesky; Reddit too if its API keys are set). Names that are 'rising' and not on your watchlist get the full five-signal check automatically (up to auto_scan_top of them).",
     "use_stocktwits": true,

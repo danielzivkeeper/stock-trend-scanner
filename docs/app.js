@@ -177,6 +177,22 @@
     }).catch(function () { /* no backtest yet - fine */ });
   }
 
+  function loadMarket() {
+    fetchJSON("data/market.json").then(function (m) {
+      var el = $("#drops");
+      if (!m.market_date) { el.hidden = true; return; }
+      el.hidden = false;
+      var list = (m.drops || []).map(function (d) {
+        return "<li><b>" + esc(d.ticker) + "</b> " + esc(d.name) + ' <span class="neg">' + d.pct.toFixed(1) +
+          "%</span> → $" + Number(d.close).toFixed(2) + "</li>";
+      }).join("");
+      el.innerHTML = "<h2>S&amp;P 500 drops of " + esc(m.threshold_pct) + "%+ (" + esc(m.market_date) + ")</h2>" +
+        (list ? '<ul class="plain">' + list + "</ul>" : '<p class="muted small">None today.</p>') +
+        '<p class="muted small">Big one-day drops often bounce a little, but drops caused by bad news ' +
+        "(earnings miss, lowered guidance) tend to keep falling. Check why before buying.</p>";
+    }).catch(function () { $("#drops").hidden = true; });
+  }
+
   $("#tickers").addEventListener("click", function (e) {
     var b = e.target.closest("[data-trade]");
     if (!b) return;
@@ -188,7 +204,7 @@
     showTab("paper");
     f.amount.focus();
   });
-  $("#refresh").addEventListener("click", function () { loadSignals(); loadTrack(); loadTrending(); });
+  $("#refresh").addEventListener("click", function () { loadSignals(); loadTrack(); loadTrending(); loadMarket(); });
 
   // ------------------------------------------------------------ trending view
   var trending = null;
@@ -480,6 +496,7 @@
   loadSignals();
   loadTrack();
   loadTrending();
+  loadMarket();
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").catch(function () {});
