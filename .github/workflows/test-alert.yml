@@ -1,0 +1,22 @@
+# Sends one test alert. Actions tab -> "Send test alert" -> Run workflow.
+name: Send test alert
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test-alert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send test text / push
+        env:
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
+          SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+          ALERT_PHONE: ${{ secrets.ALERT_PHONE }}
+          ALERT_CARRIER_GATEWAY: ${{ secrets.ALERT_CARRIER_GATEWAY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: pip install requests && python -m scanner.alerts

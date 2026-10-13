@@ -102,3 +102,13 @@ def should_alert(ticker: str, score: float, today_iso: str, state: Dict[str, Any
         return True
     days = (date.fromisoformat(today_iso) - date.fromisoformat(prev["date"])).days
     return days >= cooldown_days or score >= prev["score"] + rearm_delta
+
+
+if __name__ == "__main__":
+    # python -m scanner.alerts  -> sends one test message through every configured channel
+    import sys
+
+    msg = "Test text from your stock scanner - alerts are working. Real ones look like: HIMS 6.1 (EPS+insiders)"
+    ok_sms, ok_push = send_sms(msg), send_ntfy(msg)
+    print(f"[alerts] test result: sms={'sent' if ok_sms else 'NOT sent'}, ntfy={'sent' if ok_push else 'not configured/failed'}")
+    sys.exit(0 if (ok_sms or ok_push) else 1)
