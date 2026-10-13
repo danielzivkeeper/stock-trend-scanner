@@ -164,15 +164,11 @@ def load_sp500(cache_path: str, max_age_days: int = 7) -> Tuple[Dict[str, str], 
 
 
 def fetch_closes(tickers: List[str]) -> Dict[str, List[Tuple[str, float]]]:
-    import yfinance as yf
+    """One bulk download of ~1 year of daily bars (kept in scanner.prices for chart patterns)."""
+    from scanner import prices
 
-    df = yf.download(tickers, period="5d", interval="1d", auto_adjust=True, progress=False, threads=True)
-    closes = df["Close"]
-    out = {}
-    for t in closes.columns:
-        s = closes[t].dropna()
-        out[str(t)] = [(idx.date().isoformat(), float(v)) for idx, v in s.items()]
-    return out
+    bars = prices.bulk_load(tickers, period="1y")
+    return {t: [(b["date"], b["close"]) for b in bs] for t, bs in bars.items()}
 
 
 def daily_market(data_dir: str, threshold_pct: float, top_n: int = 10) -> Dict[str, Any]:

@@ -36,7 +36,7 @@ def build_sms(alerts: List[Dict[str, Any]], dashboard_url: str = "") -> str:
 
 def _short(name: str) -> str:
     return {"earnings_drift": "EPS", "insider_buying": "insiders", "short_squeeze_setup": "short",
-            "congressional_trades": "congress", "social_spike": "social"}.get(name, name)
+            "congressional_trades": "congress", "social_spike": "social", "chart_patterns": "chart"}.get(name, name)
 
 
 def send_sms(text: str) -> bool:

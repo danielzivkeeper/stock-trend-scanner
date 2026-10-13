@@ -110,7 +110,7 @@ class ConfigValidation(unittest.TestCase):
         with open(os.path.join(ROOT, "config.json")) as f:
             cfg = json.load(f)
         validate_config(cfg)
-        self.assertEqual(cfg["weights"], dict(W, congressional_trades=0))  # source offline
+        self.assertEqual(cfg["weights"], dict(W, congressional_trades=0, chart_patterns=1.0))  # congress offline
         self.assertEqual(cfg["alert_threshold"], 5.0)
         self.assertEqual(cfg["hold_days"], 10)
 

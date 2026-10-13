@@ -156,7 +156,8 @@ def main(argv: List[str] = None) -> int:
                 "score": scored["score"], "alert": scored["alert"], "summary": scored["summary"],
                 "math": scored["explanation"][-1],
                 "signals": [dict(r, evidence=EVIDENCE.get(r["name"], "unknown"),
-                                 raw=r["raw"] if (keep_raw or r["triggered"]) else {})
+                                 raw=r["raw"] if (keep_raw or r["triggered"] or
+                                                  (r["name"] == "chart_patterns" and r["raw"].get("forming"))) else {})
                             for r in scored["signals"]]}
 
     with ThreadPoolExecutor(max_workers=int(cfg.get("scan_workers", 8))) as pool:

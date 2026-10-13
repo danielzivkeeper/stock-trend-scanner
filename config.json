@@ -12,7 +12,8 @@
     "insider_buying": 2.5,
     "short_squeeze_setup": 2.0,
     "congressional_trades": 0,
-    "social_spike": 1.0
+    "social_spike": 1.0,
+    "chart_patterns": 1.0
   },
   "signals": {
     "earnings_drift": {
@@ -37,6 +38,22 @@
       "full_strength_multiple": 2.0,
       "house_url": "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json",
       "senate_url": "https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json"
+    },
+    "chart_patterns": {
+      "_help": "Bullish chart patterns; only CONFIRMED breakouts score. 'forming' ones are shown for information.",
+      "patterns": ["52w_high", "double_bottom", "inverse_head_shoulders", "ascending_triangle", "cup_handle", "bull_flag"],
+      "pivot_order": 4,
+      "confirm_days": 5,
+      "min_volume_ratio": 1.2,
+      "failed_breakout_pct": 2.0,
+      "forming_within_pct": 3.0,
+      "near_high_pct": 2.0,
+      "double_bottom_tolerance_pct": 3.0,
+      "shoulder_tolerance_pct": 6.0,
+      "resistance_tolerance_pct": 2.0,
+      "cup_min_depth_pct": 12,
+      "cup_max_depth_pct": 35,
+      "flag_min_pole_pct": 15
     },
     "social_spike": {
       "min_zscore": 2.0,

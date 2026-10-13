@@ -58,7 +58,7 @@
   var LABEL = {
     earnings_drift: "Earnings drift", insider_buying: "Insider buying",
     short_squeeze_setup: "Short-squeeze setup", congressional_trades: "Congress trades",
-    social_spike: "Social spike"
+    social_spike: "Social spike", chart_patterns: "Chart pattern"
   };
 
   function loadSignals() {
@@ -158,6 +158,7 @@
         '<div class="thead"><span class="sym">' + esc(t.ticker) + '</span><span class="kw">' + esc(t.keyword) +
         "</span>" + (t.source === "trending" ? '<span class="badge src">from Trending</span>' : "") +
         (t.on_watchlist ? '<span class="badge src">⭐</span>' : "") +
+        (formingOf(t) ? '<span class="badge src" title="chart pattern forming">📐 forming</span>' : "") +
         (t.alert ? '<span class="badge">ALERT</span>' : t.tier === "watch" ? '<span class="badge building">WATCH</span>' : "") +
         '<span class="score">' + t.score.toFixed(1) + "</span></div>" +
         '<div class="bar' + (t.alert ? " hot" : "") + '" role="img" aria-label="Score ' + t.score + ' of 10">' +
@@ -191,6 +192,12 @@
     renderTickerList();
   });
   $("#sig-search").addEventListener("input", function () { if (data) renderTickerList(); });
+
+  function formingOf(t) {
+    var cp = (t.signals || []).filter(function (s) { return s.name === "chart_patterns"; })[0];
+    var f = cp && cp.raw && cp.raw.forming;
+    return f && Object.keys(f).length ? f : null;
+  }
 
   function renderAbout() {
     var d = data || {};
