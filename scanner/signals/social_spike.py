@@ -103,11 +103,22 @@ def _wikipedia_daily_views(article: str, days: int) -> List[float]:
 
     def resolve() -> str:
         # Follow redirects ("E.l.f. Cosmetics" -> "E.l.f.") - views are counted on the real title.
-        WIKI_LIMIT.wait()
-        q = requests.get("https://en.wikipedia.org/w/api.php", headers={"User-Agent": WIKI_UA}, timeout=30,
-                         params={"action": "query", "titles": article, "redirects": 1, "format": "json"}).json()
-        page = next(iter(q["query"]["pages"].values()))
-        return "" if "missing" in page else page["title"].replace(" ", "_")
+        for attempt in range(5):
+            WIKI_LIMIT.wait()
+            r = requests.get("https://en.wikipedia.org/w/api.php", headers={"User-Agent": WIKI_UA}, timeout=30,
+                             params={"action": "query", "titles": article, "redirects": 1, "format": "json",
+                                     "maxlag": 5})
+            try:
+                q = r.json()
+            except ValueError:  # rate-limited / busy: Wikipedia answers with an HTML page
+                time.sleep(2 ** attempt)
+                continue
+            if "error" in q:  # e.g. maxlag - servers busy, try again shortly
+                time.sleep(2 ** attempt)
+                continue
+            page = next(iter(q["query"]["pages"].values()))
+            return "" if "missing" in page else page["title"].replace(" ", "_")
+        raise RuntimeError("Wikipedia busy (rate limited)")
 
     title = cache("wiki_titles").get_or_fetch(article, 24 * 30, resolve)
     if not title:

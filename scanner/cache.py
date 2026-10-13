@@ -34,7 +34,7 @@ class RateLimiter:
 
 
 SEC_LIMIT = RateLimiter(0.12)    # SEC fair use: max 10 requests/second
-WIKI_LIMIT = RateLimiter(0.07)   # Wikimedia asks clients to stay well below ~100/s
+WIKI_LIMIT = RateLimiter(0.15)   # Wikipedia's API throttles bursts; ~6/s keeps it happy
 YAHOO_LIMIT = RateLimiter(0.05)
 
 
