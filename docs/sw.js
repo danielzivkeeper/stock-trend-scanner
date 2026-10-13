@@ -1,7 +1,7 @@
 /* Service worker: makes the dashboard installable and usable offline.
  * App files: cache-first (bump VERSION when you change them).
  * data/*.json: network-first, falling back to the last copy we saw. */
-var VERSION = "v1";
+var VERSION = "v2";
 var SHELL = ["./", "index.html", "style.css", "app.js", "papertrade.js", "manifest.webmanifest",
              "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 

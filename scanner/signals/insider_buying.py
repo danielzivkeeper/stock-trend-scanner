@@ -171,11 +171,18 @@ def _sec_get(url: str, email: str):
     return r
 
 
-def _cik(ticker: str, email: str) -> Optional[int]:
+def sec_company_map(email: str) -> Dict[str, Dict[str, Any]]:
+    """Every SEC-registered ticker -> {cik, title}. Downloaded once per run."""
     if "map" not in _SEC:
         data = _sec_get("https://www.sec.gov/files/company_tickers.json", email).json()
-        _SEC["map"] = {str(v["ticker"]).upper(): int(v["cik_str"]) for v in data.values()}
-    return _SEC["map"].get(ticker.upper())
+        _SEC["map"] = {str(v["ticker"]).upper(): {"cik": int(v["cik_str"]), "title": v["title"]}
+                       for v in data.values()}
+    return _SEC["map"]
+
+
+def _cik(ticker: str, email: str) -> Optional[int]:
+    hit = sec_company_map(email).get(ticker.upper())
+    return hit["cik"] if hit else None
 
 
 def fetch_edgar(ticker: str, days: int, email: str, today: Optional[date] = None) -> Optional[List[Dict[str, Any]]]:

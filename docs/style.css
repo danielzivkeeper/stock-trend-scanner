@@ -115,4 +115,13 @@ button.link { border: 0; background: none; color: var(--accent); padding: 4px 0;
 .tabs button { flex: 1; border: 0; border-radius: 0; background: none; padding: 8px 0 10px; font-size: 1.2rem; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .tabs button span { font-size: .72rem; }
 .tabs button[aria-selected="true"] { color: var(--accent); }
+.badge.rising { background: var(--bar-hot); }
+.badge.building { background: var(--muted); }
+.badge.steady { background: var(--bar-bg); color: var(--muted); }
+.badge.src { background: var(--chip); color: var(--accent); }
+.trow .meta { font-size: .82rem; color: var(--muted); margin-top: 4px; }
+.trow .quote { display: block; font-size: .82rem; margin-top: 6px; padding-left: 8px; border-left: 3px solid var(--line); color: var(--text); text-decoration: none; overflow-wrap: anywhere; }
+.trow .quote small { color: var(--muted); }
+.trow .act { margin-top: 8px; font-size: .85rem; }
+.trow .act a { color: var(--accent); }
 [hidden] { display: none !important; }

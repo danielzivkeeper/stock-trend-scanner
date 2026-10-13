@@ -58,6 +58,19 @@ def load_watchlist(path: str) -> List[Dict[str, str]]:
     return out
 
 
+def trending_candidates(path: str, already: set, top: int) -> List[Dict[str, str]]:
+    """Rising Reddit names that aren't on the watchlist get a full scan too."""
+    data = load_json(path, {})
+    out = []
+    for r in data.get("rows", []):
+        if len(out) >= top:
+            break
+        if r.get("status") == "rising" and r["ticker"] not in already:
+            out.append({"ticker": r["ticker"], "keyword": r.get("name") or r["ticker"], "wikipedia": "",
+                        "source": "trending"})
+    return out
+
+
 def last_close(ticker: str) -> Any:
     try:
         import yfinance as yf
@@ -112,6 +125,9 @@ def main(argv: List[str] = None) -> int:
     if args.tickers:
         wanted = {t.strip().upper() for t in args.tickers.split(",")}
         watch = [w for w in watch if w["ticker"] in wanted]
+    if not args.tickers:
+        watch += trending_candidates(os.path.join(args.out, "trending.json"), {w["ticker"] for w in watch},
+                                     int(cfg.get("trending", {}).get("auto_scan_top", 5)))
     threshold = float(cfg["alert_threshold"])
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
@@ -124,7 +140,7 @@ def main(argv: List[str] = None) -> int:
         for row in scored["signals"]:
             row["evidence"] = EVIDENCE.get(row["name"], "unknown")
         tickers.append({"ticker": w["ticker"], "keyword": w["keyword"], "last_close": last_close(w["ticker"]),
-                        **scored})
+                        "source": w.get("source", "watchlist"), **scored})
         print(f"  -> {scored['summary']}")
         time.sleep(float(cfg.get("pause_between_tickers_seconds", 1)))
 

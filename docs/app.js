@@ -45,8 +45,7 @@
     document.querySelectorAll(".tabs button").forEach(function (b) {
       b.setAttribute("aria-selected", String(b.dataset.tab === name));
     });
-    $("#tab-signals").hidden = name !== "signals";
-    $("#tab-paper").hidden = name !== "paper";
+    ["signals", "trending", "paper"].forEach(function (t) { $("#tab-" + t).hidden = name !== t; });
     try { localStorage.setItem("trendscanner.tab", name); } catch (e) {}
     window.scrollTo(0, 0);
   }
@@ -69,6 +68,7 @@
       data = d;
       renderSignals();
       renderPaper();
+      renderTrending();
     }).catch(function (e) {
       $("#updated").textContent = "No scan data yet";
       var el = $("#load-error");
@@ -115,7 +115,8 @@
       return '<details class="card tcard">' +
         "<summary>" +
         '<div class="thead"><span class="sym">' + esc(t.ticker) + '</span><span class="kw">' + esc(t.keyword) +
-        "</span>" + (t.alert ? '<span class="badge">ALERT</span>' : "") +
+        "</span>" + (t.source === "trending" ? '<span class="badge src">from Trending</span>' : "") +
+        (t.alert ? '<span class="badge">ALERT</span>' : "") +
         '<span class="score">' + t.score.toFixed(1) + "</span></div>" +
         '<div class="bar' + (t.alert ? " hot" : "") + '" role="img" aria-label="Score ' + t.score + ' of 10">' +
         '<i style="width:' + Math.max(0, Math.min(100, t.score * 10)) + '%"></i>' +
@@ -187,7 +188,82 @@
     showTab("paper");
     f.amount.focus();
   });
-  $("#refresh").addEventListener("click", function () { loadSignals(); loadTrack(); });
+  $("#refresh").addEventListener("click", function () { loadSignals(); loadTrack(); loadTrending(); });
+
+  // ------------------------------------------------------------ trending view
+  var trending = null;
+
+  function repoUrl() {
+    // https://OWNER.github.io/REPO/ -> https://github.com/OWNER/REPO
+    var m = location.hostname.match(/^([^.]+)\.github\.io$/);
+    var repo = location.pathname.split("/").filter(Boolean)[0];
+    return m && repo ? "https://github.com/" + m[1] + "/" + repo : "";
+  }
+
+  function loadTrending() {
+    fetchJSON("data/trending.json").then(function (t) { trending = t; renderTrending(); })
+      .catch(function () {
+        $("#trend-rows").innerHTML = '<div class="card empty">No trending data yet - it appears after the next scan.</div>';
+      });
+  }
+
+  function renderTrending() {
+    var t = trending;
+    if (!t) return;
+    var note = $("#trend-note");
+    note.hidden = !t.note;
+    note.textContent = t.note || "";
+    if (t.status === "needs_credentials") {
+      $("#trend-rows").innerHTML = '<div class="card empty">Trending is waiting for Reddit API keys. ' +
+        "Add the REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET secrets (README step 5c).</div>";
+      $("#trend-private").hidden = true;
+      $("#trend-meta").textContent = "";
+      return;
+    }
+    var scanned = {};
+    ((data && data.tickers) || []).forEach(function (x) { scanned[x.ticker] = x; });
+    var edit = repoUrl() ? repoUrl() + "/edit/main/watchlist.json" : "";
+    $("#trend-rows").innerHTML = (t.rows || []).map(function (r) {
+      var cls = r.status === "rising" ? "rising" : r.status === "steady" ? "steady" : "building";
+      var label = r.status === "rising" ? "RISING" : r.status === "steady" ? "normal" : "new";
+      var vs = r.vs_baseline ? " · " + r.vs_baseline + "× normal" : "";
+      var z = r.zscore != null ? " · z " + r.zscore.toFixed(1) : "";
+      var s = scanned[r.ticker];
+      var act;
+      if (r.on_watchlist) act = "On your watchlist" + (s ? " · score " + s.score.toFixed(1) + "/10" : "");
+      else if (s) act = "Auto-checked: score <b>" + s.score.toFixed(1) + "/10</b> - see Signals tab";
+      else act = (edit ? '<a href="' + esc(edit) + '" target="_blank" rel="noopener">Add to watchlist on GitHub</a>' +
+        ' <button type="button" class="link" data-copy=\'' + esc(JSON.stringify({ keyword: r.name, ticker: r.ticker })) +
+        '\'>copy line</button>' : "Not on your watchlist");
+      return '<div class="card trow"><div class="thead"><span class="sym">' + esc(r.ticker) + '</span><span class="kw">' +
+        esc(r.name) + '</span><span class="badge ' + cls + '">' + label + "</span></div>" +
+        '<div class="meta">' + r.mentions + " mentions by " + r.authors + " people" + vs + z +
+        (r.subs && r.subs.length ? " · r/" + r.subs.map(esc).join(", r/") : "") + "</div>" +
+        (r.samples || []).map(function (q) {
+          return '<a class="quote" href="' + esc(q.url) + '" target="_blank" rel="noopener">“' + esc(q.text) +
+            "” <small>r/" + esc(q.sub) + "</small></a>";
+        }).join("") +
+        '<div class="act">' + act + "</div></div>";
+    }).join("") || '<div class="card empty">Nothing above the minimum mention level right now.</div>';
+
+    var priv = t.private || [];
+    $("#trend-private").hidden = !priv.length;
+    $("#trend-private").innerHTML = "<h2>Buzzing but private</h2><p class=\"muted small\">No public stock to buy.</p>" +
+      '<ul class="plain">' + priv.slice(0, 10).map(function (p) {
+        return "<li>" + esc(p.brand) + " - " + p.mentions + " mentions</li>";
+      }).join("") + "</ul>";
+    $("#trend-meta").textContent = "Scanned " + (t.items_scanned || 0).toLocaleString() + " Reddit posts/comments · " +
+      (t.generated_at ? "updated " + ago(t.generated_at) : "") + " · " + (t.history_days || 0) + " days of history";
+  }
+
+  $("#trend-rows").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (!b) return;
+    var line = b.getAttribute("data-copy") + ",";
+    (navigator.clipboard ? navigator.clipboard.writeText(line) : Promise.reject()).then(function () {
+      b.textContent = "copied - paste it into the list";
+    }).catch(function () { b.textContent = line; });
+  });
 
   // ------------------------------------------------------------ paper trading
   function loadBook() {
@@ -393,9 +469,10 @@
   $("#trade-form").date.value = today();
   var startTab = "signals";
   try { startTab = localStorage.getItem("trendscanner.tab") || "signals"; } catch (e) {}
-  showTab(startTab === "paper" ? "paper" : "signals");
+  showTab(["paper", "trending"].indexOf(startTab) >= 0 ? startTab : "signals");
   loadSignals();
   loadTrack();
+  loadTrending();
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js").catch(function () {});

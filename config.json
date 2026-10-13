@@ -50,6 +50,23 @@
       "reddit_baseline_window": 21
     }
   },
+  "trending": {
+    "_help": "Reddit mention scanner for the Trending tab. Names that are 'rising' and not on your watchlist get the full five-signal check automatically (up to auto_scan_top of them).",
+    "finance_subreddits": ["wallstreetbets", "stocks", "investing", "StockMarket", "smallstreetbets", "options"],
+    "consumer_subreddits": ["SkincareAddiction", "MakeupAddiction", "BuyItForLife", "running", "Sneakers",
+                            "energydrinks", "fastfood", "Costco", "Frugal", "fitness", "GenZ", "tiktokcringe"],
+    "posts_per_sub": 100,
+    "comments_per_sub": 500,
+    "max_age_hours": 48,
+    "min_mentions": 5,
+    "min_authors": 3,
+    "min_zscore": 2.0,
+    "baseline_days": 28,
+    "min_history_days": 5,
+    "history_days": 60,
+    "max_rows": 40,
+    "auto_scan_top": 5
+  },
   "paper_trading": {
     "starting_cash": 10000
   }
