@@ -28,7 +28,7 @@ Malloy & Pomorski found uninformative.
 from __future__ import annotations
 
 import os
-import time
+import threading
 import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 from typing import Any, Dict, List, Optional
@@ -123,6 +123,7 @@ def parse_html(html: str) -> Optional[List[Dict[str, Any]]]:
 # ------------------------------------------------------------ SEC EDGAR
 
 _SEC: Dict[str, Any] = {}  # cache for the ticker -> CIK map, shared across tickers
+_SEC_LOCK = threading.Lock()
 
 
 def _txt(el: Optional[ET.Element], path: str) -> str:
@@ -165,7 +166,9 @@ def parse_form4(xml_text: str) -> List[Dict[str, Any]]:
 def _sec_get(url: str, email: str):
     import requests
 
-    time.sleep(0.15)  # SEC fair-use limit is 10 requests/second
+    from scanner.cache import SEC_LIMIT
+
+    SEC_LIMIT.wait()  # SEC fair-use limit is 10 requests/second, shared by all threads
     r = requests.get(url, headers={"User-Agent": f"StockTrendScanner {email}"}, timeout=30)
     r.raise_for_status()
     return r
@@ -173,19 +176,23 @@ def _sec_get(url: str, email: str):
 
 def sec_company_map(email: str) -> Dict[str, Dict[str, Any]]:
     """Every SEC-registered ticker -> {cik, title}. Downloaded once per run."""
-    if "map" not in _SEC:
-        data = _sec_get("https://www.sec.gov/files/company_tickers.json", email).json()
-        _SEC["map"] = {str(v["ticker"]).upper(): {"cik": int(v["cik_str"]), "title": v["title"]}
-                       for v in data.values()}
+    with _SEC_LOCK:
+        if "map" not in _SEC:
+            data = _sec_get("https://www.sec.gov/files/company_tickers.json", email).json()
+            _SEC["map"] = {str(v["ticker"]).upper(): {"cik": int(v["cik_str"]), "title": v["title"]}
+                           for v in data.values()}
     return _SEC["map"]
 
 
 def _cik(ticker: str, email: str) -> Optional[int]:
-    hit = sec_company_map(email).get(ticker.upper())
+    m = sec_company_map(email)
+    hit = m.get(ticker.upper()) or m.get(ticker.upper().replace("-", "."))  # BRK-B vs BRK.B
     return hit["cik"] if hit else None
 
 
 def fetch_edgar(ticker: str, days: int, email: str, today: Optional[date] = None) -> Optional[List[Dict[str, Any]]]:
+    from scanner.cache import cache
+
     cik = _cik(ticker, email)
     if cik is None:
         return None
@@ -198,7 +205,8 @@ def fetch_edgar(ticker: str, days: int, email: str, today: Optional[date] = None
         xml_name = doc.split("/")[-1]  # primaryDocument points at the styled view; raw XML has the same name
         url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace('-', '')}/{xml_name}"
         try:
-            records.extend(parse_form4(_sec_get(url, email).text))
+            # A filed Form 4 never changes, so each one is downloaded only once, ever.
+            records.extend(cache("form4").get_or_fetch(acc, None, lambda: parse_form4(_sec_get(url, email).text)))
         except Exception as e:  # noqa: BLE001 - one odd filing shouldn't sink the signal
             print(f"    [insider] skipped {url}: {type(e).__name__}")
     return records
@@ -215,6 +223,7 @@ def run(ticker: str, keyword: str, params: Dict[str, Any]) -> SignalResult:
         records = fetch_edgar(ticker, days, email)
         if records is None:
             return unavailable(NAME, f"{ticker} not found in the SEC's ticker list.")
+        records = [dict(r, Ticker=ticker) for r in records]  # issuer symbol formats vary (BRK.B vs BRK-B)
         result = evaluate(records, ticker, params)
         result.raw["source"] = "SEC EDGAR Form 4"
         return result

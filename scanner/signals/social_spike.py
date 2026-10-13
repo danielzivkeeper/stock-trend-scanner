@@ -99,18 +99,29 @@ def _wikipedia_daily_views(article: str, days: int) -> List[float]:
     import requests
     from urllib.parse import quote
 
-    # Follow redirects first ("E.l.f. Cosmetics" -> "E.l.f.") - views are counted on the real title.
-    q = requests.get("https://en.wikipedia.org/w/api.php", headers={"User-Agent": WIKI_UA}, timeout=30,
-                     params={"action": "query", "titles": article, "redirects": 1, "format": "json"}).json()
-    page = next(iter(q["query"]["pages"].values()))
-    if "missing" in page:
+    from scanner.cache import WIKI_LIMIT, cache
+
+    def resolve() -> str:
+        # Follow redirects ("E.l.f. Cosmetics" -> "E.l.f.") - views are counted on the real title.
+        WIKI_LIMIT.wait()
+        q = requests.get("https://en.wikipedia.org/w/api.php", headers={"User-Agent": WIKI_UA}, timeout=30,
+                         params={"action": "query", "titles": article, "redirects": 1, "format": "json"}).json()
+        page = next(iter(q["query"]["pages"].values()))
+        return "" if "missing" in page else page["title"].replace(" ", "_")
+
+    title = cache("wiki_titles").get_or_fetch(article, 24 * 30, resolve)
+    if not title:
         raise LookupError(f"no Wikipedia article '{article}'")
-    title = page["title"].replace(" ", "_")
     end = datetime.now(timezone.utc).date() - timedelta(days=1)  # yesterday = last complete day
     start = end - timedelta(days=days)
     url = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/"
            f"{quote(title, safe='')}/daily/{start:%Y%m%d}/{end:%Y%m%d}")
-    r = requests.get(url, headers={"User-Agent": WIKI_UA}, timeout=30)
+    for attempt in range(4):
+        WIKI_LIMIT.wait()
+        r = requests.get(url, headers={"User-Agent": WIKI_UA}, timeout=30)
+        if r.status_code != 429:
+            break
+        time.sleep(2 ** attempt)  # rate limited: back off and retry
     r.raise_for_status()
     return [float(i["views"]) for i in r.json().get("items", [])]
 

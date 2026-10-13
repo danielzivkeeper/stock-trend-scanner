@@ -138,6 +138,9 @@ After this it runs on its own every weekday at about 8:30am and 5:30pm New York 
 
 ## Everyday use
 
+- **What gets scanned:** every **S&P 500 stock** (about 500) plus your `watchlist.json` (marked ⭐) plus rising Trending names, twice each weekday. The Signals tab opens on **Highlights**: alerts, watch-tier stocks and your list. Use the filters or the search box for anything else.
+- **Two tiers:** 🔔 **Alert** (score ≥ `alert_threshold`, 5.0) texts you. 👀 **Watch** (score ≥ `watch_threshold`, 3.5) shows in the app and in your evening summary text, with no separate text.
+
 - **Daily summary text:** after the market closes each weekday (the 5:30pm New York scan), you get one text. It lists any **S&P 500 stock that fell 10% or more that day**, then alerts, today's top scores, and names rising on Trending. Change the 10% (or turn the summary off) in `config.json` → `daily_summary`. The same drop list appears on the dashboard. Note that a big drop is a reason to look, not to buy: drops caused by bad news often keep falling.
 
 - **Edit the watchlist:** in your repo, click `watchlist.json`, click the ✏️ pencil icon, edit, then click **Commit changes**. Each entry has a Google-search `keyword` and a `ticker`, for example `{"keyword": "Celsius energy drink", "ticker": "CELH"}`. Don't remove the commas between entries.

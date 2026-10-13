@@ -97,8 +97,48 @@
     if (!stale.hidden) stale.textContent = "Last scan was " + ago(d.generated_at) +
       ". It normally runs twice each weekday - check the Actions tab on GitHub if this persists.";
 
+    renderTickerList();
+    renderAbout();
+  }
+
+  // Filter + search over ~500 scanned stocks; only the first 60 matches are drawn.
+  var sigFilter = "top";
+  var MAX_CARDS = 60;
+
+  function renderFilters() {
+    var all = (data && data.tickers) || [];
+    var n = {
+      top: all.filter(function (t) { return t.tier || t.on_watchlist || t.source === "trending"; }).length,
+      alert: all.filter(function (t) { return t.tier === "alert"; }).length,
+      watch: all.filter(function (t) { return t.tier === "watch"; }).length,
+      watchlist: all.filter(function (t) { return t.on_watchlist; }).length,
+      all: all.length
+    };
+    var labels = { top: "Highlights", alert: "🔔 Alerts", watch: "👀 Watch", watchlist: "⭐ My list", all: "All" };
+    $("#sig-filters").innerHTML = Object.keys(labels).map(function (k) {
+      return '<button type="button" data-f="' + k + '" aria-selected="' + (k === sigFilter) + '">' + labels[k] +
+        " <small>" + n[k] + "</small></button>";
+    }).join("");
+    $("#sig-count").textContent = (data.scanned || all.length) + " stocks scanned · alert ≥ " + data.alert_threshold +
+      (data.watch_threshold != null ? " · watch ≥ " + data.watch_threshold : "");
+  }
+
+  function renderTickerList() {
+    var d = data;
+    renderFilters();
+    var q = ($("#sig-search").value || "").trim().toLowerCase();
+    var list = (d.tickers || []).filter(function (t) {
+      if (q) return t.ticker.toLowerCase().indexOf(q) === 0 || (t.keyword || "").toLowerCase().indexOf(q) >= 0;
+      if (sigFilter === "alert") return t.tier === "alert";
+      if (sigFilter === "watch") return t.tier === "watch";
+      if (sigFilter === "watchlist") return t.on_watchlist;
+      if (sigFilter === "top") return t.tier || t.on_watchlist || t.source === "trending";
+      return true;
+    });
+    var extra = list.length > MAX_CARDS ? '<p class="muted small">Showing the top ' + MAX_CARDS + " of " + list.length +
+      " by score - search to find any stock.</p>" : "";
     var thr = d.alert_threshold;
-    $("#tickers").innerHTML = (d.tickers || []).map(function (t) {
+    $("#tickers").innerHTML = list.slice(0, MAX_CARDS).map(function (t) {
       var fired = t.signals.filter(function (s) { return s.triggered; });
       var rows = t.signals.map(function (s) {
         var state = s.triggered ? "fired" : s.status;
@@ -117,7 +157,8 @@
         "<summary>" +
         '<div class="thead"><span class="sym">' + esc(t.ticker) + '</span><span class="kw">' + esc(t.keyword) +
         "</span>" + (t.source === "trending" ? '<span class="badge src">from Trending</span>' : "") +
-        (t.alert ? '<span class="badge">ALERT</span>' : "") +
+        (t.on_watchlist ? '<span class="badge src">⭐</span>' : "") +
+        (t.alert ? '<span class="badge">ALERT</span>' : t.tier === "watch" ? '<span class="badge building">WATCH</span>' : "") +
         '<span class="score">' + t.score.toFixed(1) + "</span></div>" +
         '<div class="bar' + (t.alert ? " hot" : "") + '" role="img" aria-label="Score ' + t.score + ' of 10">' +
         '<i style="width:' + Math.max(0, Math.min(100, t.score * 10)) + '%"></i>' +
@@ -125,10 +166,11 @@
         '<div class="fired-line">' + (fired.length ? "Fired: " + fired.map(function (s) {
           return esc(LABEL[s.name] || s.name);
         }).join(", ") : "No signals fired") +
-        (t.last_close ? " · last close $" + Number(t.last_close).toFixed(2) : "") + "</div>" +
+        (t.last_close ? " · last close $" + Number(t.last_close).toFixed(2) : "") +
+        (t.sector ? " · " + esc(t.sector) : "") + "</div>" +
         "</summary>" +
         '<div class="tbody">' + rows +
-        '<p class="math">' + esc(t.explanation[t.explanation.length - 1]) + "</p>" +
+        '<p class="math">' + esc(t.math || (t.explanation || []).slice(-1)[0] || "") + "</p>" +
         '<button type="button" class="link" data-trade="' + esc(t.ticker) + '" data-price="' +
         esc(t.last_close || "") + '" data-reason="' + esc("Score " + t.score.toFixed(1) +
           (fired.length ? ": " + fired.map(function (s) { return LABEL[s.name] || s.name; }).join(" + ") : "")) +
@@ -136,9 +178,19 @@
         '<details class="raw"><summary>Raw data (debugging)</summary><pre>' +
         esc(JSON.stringify(raw, null, 1)) + "</pre></details>" +
         "</div></details>";
-    }).join("") || '<div class="card empty">Watchlist is empty - edit watchlist.json on GitHub.</div>';
-    renderAbout();
+    }).join("") + extra || '<div class="card empty">' + (q ? "No stock matches \u201c" + esc(q) + "\u201d." :
+      sigFilter === "alert" ? "No alerts right now - they need several signals to agree, so they're rare." :
+      sigFilter === "watch" ? "Nothing on the watch tier right now." : "Nothing to show.") + "</div>";
   }
+
+  $("#sig-filters").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-f]");
+    if (!b) return;
+    sigFilter = b.dataset.f;
+    $("#sig-search").value = "";
+    renderTickerList();
+  });
+  $("#sig-search").addEventListener("input", function () { if (data) renderTickerList(); });
 
   function renderAbout() {
     var d = data || {};

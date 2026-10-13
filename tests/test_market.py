@@ -81,6 +81,11 @@ class Summary(unittest.TestCase):
         self.assertIn("Top scores: CELH 6.0, HIMS 1.2, PTON 0.9", t)
         self.assertIn("Trending up: DECK", t)
 
+    def test_watch_tier_line(self):
+        t = self.text(watch_threshold=1.0)
+        self.assertIn("Watch: HIMS 1.2", t)
+        self.assertNotIn("Watch: CELH", t)  # CELH is an alert, not a watch
+
     def test_quiet_day(self):
         t = self.text()
         self.assertIn("No S&P500 stock fell 10%+ today.", t)

@@ -126,6 +126,10 @@ button.link { border: 0; background: none; color: var(--accent); padding: 4px 0;
 .trow .act a { color: var(--accent); }
 .seg { display: flex; gap: 6px; margin-bottom: 10px; }
 .seg button { flex: 1; border-radius: 99px; font-size: .9rem; }
+.seg.wrap { flex-wrap: wrap; }
+.seg.wrap button { flex: 1 1 auto; padding: 7px 10px; font-size: .82rem; }
+.seg button small { opacity: .75; }
+#sig-search { margin-bottom: 4px; }
 .seg button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 .mv { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; background: var(--card); border: 1px solid var(--line);
       border-radius: 12px; padding: 10px 12px; margin-bottom: 6px; }

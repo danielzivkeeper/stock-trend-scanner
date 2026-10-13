@@ -81,19 +81,30 @@ def evaluate(rows: List[Dict[str, Any]], params: Dict[str, Any], today: date) ->
                         f"(reported {latest['reported']} vs est. {latest['estimate']}).", raw)
 
 
-def run(ticker: str, keyword: str, params: Dict[str, Any], today: Optional[date] = None) -> SignalResult:
+def _fetch_rows(ticker: str) -> List[Dict[str, Any]]:
     import yfinance as yf  # imported lazily so offline tests don't need it
 
-    today = today or date.today()
+    from scanner.cache import YAHOO_LIMIT
+
+    YAHOO_LIMIT.wait()
     df = yf.Ticker(ticker).get_earnings_dates(limit=12)
-    if df is None or len(df) == 0:
-        return unavailable(NAME, "Yahoo returned no earnings dates.")
     rows = []
-    for idx, rec in df.iterrows():
+    for idx, rec in (df.iterrows() if df is not None else []):
         rows.append({
-            "date": idx.date(),  # pandas Timestamp (exchange-local time) -> calendar date
-            "estimate": rec.get("EPS Estimate"),
-            "reported": rec.get("Reported EPS"),
-            "surprise": rec.get("Surprise(%)"),
+            "date": idx.date().isoformat(),  # pandas Timestamp (exchange-local time) -> calendar date
+            "estimate": None if not _is_num(rec.get("EPS Estimate")) else float(rec.get("EPS Estimate")),
+            "reported": None if not _is_num(rec.get("Reported EPS")) else float(rec.get("Reported EPS")),
+            "surprise": None if not _is_num(rec.get("Surprise(%)")) else float(rec.get("Surprise(%)")),
         })
-    return evaluate(rows, params, today)
+    return rows
+
+
+def run(ticker: str, keyword: str, params: Dict[str, Any], today: Optional[date] = None) -> SignalResult:
+    from scanner.cache import cache
+
+    today = today or date.today()
+    # Earnings dates change a few times a year; re-download at most about once a day.
+    rows = cache("earnings").get_or_fetch(ticker, float(params.get("cache_hours", 20)), lambda: _fetch_rows(ticker))
+    if not rows:
+        return unavailable(NAME, "Yahoo returned no earnings dates.")
+    return evaluate([dict(r, date=date.fromisoformat(r["date"])) for r in rows], params, today)

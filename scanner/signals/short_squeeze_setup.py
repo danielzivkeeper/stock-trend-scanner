@@ -61,5 +61,12 @@ def evaluate(info: Dict[str, Any], params: Dict[str, Any]) -> SignalResult:
 def run(ticker: str, keyword: str, params: Dict[str, Any]) -> SignalResult:
     import yfinance as yf
 
-    info = yf.Ticker(ticker).get_info() or {}
-    return evaluate(info, params)
+    from scanner.cache import YAHOO_LIMIT, cache
+
+    def fetch() -> Dict[str, Any]:
+        YAHOO_LIMIT.wait()
+        info = yf.Ticker(ticker).get_info() or {}
+        return {k: info.get(k) for k in ("shortPercentOfFloat", "shortRatio", "dateShortInterest")}
+
+    # FINRA publishes short interest only twice a month, so a 2-day-old copy is as good as new.
+    return evaluate(cache("short_interest").get_or_fetch(ticker, float(params.get("cache_hours", 48)), fetch), params)

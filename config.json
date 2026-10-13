@@ -1,14 +1,17 @@
 {
-  "_help": "Edit numbers here, no code changes needed. Score = sum(weight x strength of fired signals) / sum(all weights) x 10. Set a weight to 0 to switch a signal off entirely.",
+  "_help": "Edit numbers here, no code changes needed. congressional_trades is 0 because its free data source is offline - set it back to 1.5 if a working source is found. Score = sum(weight x strength of fired signals) / sum(all weights) x 10. Set a weight to 0 to switch a signal off entirely.",
   "alert_threshold": 5.0,
+  "watch_threshold": 3.5,
+  "scan_sp500": true,
+  "scan_workers": 8,
+  "history_min_score": 1.0,
   "hold_days": 10,
   "alert_cooldown_days": 3,
-  "pause_between_tickers_seconds": 1,
   "weights": {
     "earnings_drift": 3.0,
     "insider_buying": 2.5,
     "short_squeeze_setup": 2.0,
-    "congressional_trades": 1.5,
+    "congressional_trades": 0,
     "social_spike": 1.0
   },
   "signals": {
@@ -41,7 +44,7 @@
       "use_wikipedia": true,
       "wikipedia_lookback_days": 60,
       "wikipedia_baseline_window": 28,
-      "use_google_trends": true,
+      "use_google_trends": false,
       "trends_timeframe": "today 3-m",
       "trends_baseline_window": 28,
       "trends_pause_seconds": 5,

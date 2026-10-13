@@ -16,6 +16,7 @@ paste its URL into config.json.
 """
 from __future__ import annotations
 
+import threading
 from datetime import date, datetime, timedelta
 from typing import Any, Dict, List, Optional
 
@@ -25,6 +26,7 @@ NAME = "congressional_trades"
 
 # Downloaded once per scan run and shared across tickers (the files are large).
 _CACHE: Dict[str, Any] = {}
+_LOCK = threading.Lock()
 
 
 def parse_date(s: Any) -> Optional[date]:
@@ -86,6 +88,11 @@ def evaluate(trades: List[Dict[str, Any]], ticker: str, params: Dict[str, Any], 
 
 
 def _load(params: Dict[str, Any]) -> List[Dict[str, Any]]:
+    with _LOCK:
+        return _load_locked(params)
+
+
+def _load_locked(params: Dict[str, Any]) -> List[Dict[str, Any]]:
     import requests
 
     if "trades" in _CACHE:

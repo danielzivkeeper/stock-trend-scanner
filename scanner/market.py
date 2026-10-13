@@ -87,7 +87,7 @@ def pack_texts(lines: List[str], limit: int = SMS_LIMIT, max_texts: int = 3) -> 
 
 def compose_summary(day: str, market_date: Optional[str], drops: List[Dict[str, Any]], threshold_pct: float,
                     tickers: List[Dict[str, Any]], alert_threshold: float, rising: List[str],
-                    dashboard_url: str = "") -> List[str]:
+                    dashboard_url: str = "", watch_threshold: Optional[float] = None) -> List[str]:
     """Pure. Builds the daily summary as a list of SMS-sized texts."""
     d = datetime.strptime(day, "%Y-%m-%d")
     lines = [f"Daily scan {d.month}/{d.day}"]
@@ -102,6 +102,11 @@ def compose_summary(day: str, market_date: Optional[str], drops: List[Dict[str, 
     alerts = [t for t in tickers if t["score"] >= alert_threshold]
     if alerts:
         lines.append("ALERTS: " + ", ".join(f"{t['ticker']} {t['score']:.1f}" for t in alerts))
+    if watch_threshold is not None:
+        watch = sorted((t for t in tickers if watch_threshold <= t["score"] < alert_threshold), key=lambda t: -t["score"])
+        if watch:
+            more = f" +{len(watch) - 5}" if len(watch) > 5 else ""
+            lines.append("Watch: " + ", ".join(f"{t['ticker']} {t['score']:.1f}" for t in watch[:5]) + more)
     top = sorted(tickers, key=lambda t: -t["score"])[:3]
     if top:
         lines.append("Top scores: " + ", ".join(f"{t['ticker']} {t['score']:.1f}" for t in top))
@@ -115,31 +120,47 @@ def compose_summary(day: str, market_date: Optional[str], drops: List[Dict[str, 
 
 # ------------------------------------------------------------ network
 
-def load_sp500(cache_path: str, max_age_days: int = 7) -> Tuple[Dict[str, str], Dict[str, str]]:
-    """({ticker: company name}, {ticker: sector}). Refreshes the cached copy from Wikipedia weekly."""
+def _fetch_constituents() -> Dict[str, Dict[str, str]]:
+    import requests
+    from lxml import html as lh
+    from urllib.parse import unquote
+
+    doc = lh.fromstring(requests.get(SP500_URL, headers={"User-Agent": UA}, timeout=30).text)
+    out = {}
+    for tr in doc.xpath('//table[@id="constituents"]/tbody/tr'):
+        tds = tr.xpath("./td")
+        if len(tds) < 3:
+            continue  # header row
+        sym = tds[0].text_content().strip().replace(".", "-")
+        links = tds[1].xpath(".//a/@href")
+        wiki = unquote(links[0].split("/wiki/")[-1]) if links and "/wiki/" in links[0] else ""
+        out[sym] = {"name": tds[1].text_content().strip(), "sector": tds[2].text_content().strip(), "wiki": wiki}
+    if len(out) < 450:  # sanity check: page layout changed
+        raise ValueError(f"only {len(out)} rows parsed")
+    return out
+
+
+def load_constituents(cache_path: str, max_age_days: int = 7) -> Dict[str, Dict[str, str]]:
+    """{ticker: {name, sector, wiki}}. Refreshes the cached copy from Wikipedia weekly."""
     from scanner.run_scan import load_json, save_json
 
     cached = load_json(cache_path, {})
     fresh = cached.get("fetched") and (date.today() - date.fromisoformat(cached["fetched"])).days < max_age_days
-    if fresh and cached.get("constituents") and cached.get("sectors"):
-        return cached["constituents"], cached["sectors"]
+    if fresh and isinstance(cached.get("stocks"), dict) and cached["stocks"]:
+        return cached["stocks"]
     try:
-        from io import StringIO
-
-        import pandas as pd
-        import requests
-
-        html = requests.get(SP500_URL, headers={"User-Agent": UA}, timeout=30).text
-        table = pd.read_html(StringIO(html), attrs={"id": "constituents"}, flavor="lxml")[0]
-        cons = {str(r["Symbol"]).replace(".", "-"): str(r["Security"]) for _, r in table.iterrows()}
-        sectors = {str(r["Symbol"]).replace(".", "-"): str(r.get("GICS Sector", "")) for _, r in table.iterrows()}
-        if len(cons) < 450:  # sanity check: page layout changed
-            raise ValueError(f"only {len(cons)} rows parsed")
-        save_json(cache_path, {"fetched": date.today().isoformat(), "constituents": cons, "sectors": sectors})
-        return cons, sectors
+        stocks = _fetch_constituents()
+        save_json(cache_path, {"fetched": date.today().isoformat(), "stocks": stocks})
+        return stocks
     except Exception as e:  # noqa: BLE001 - fall back to the last good list
         print(f"[market] S&P 500 list refresh failed ({e}); using cached copy")
-        return cached.get("constituents", {}), cached.get("sectors", {})
+        return cached.get("stocks") or {}
+
+
+def load_sp500(cache_path: str, max_age_days: int = 7) -> Tuple[Dict[str, str], Dict[str, str]]:
+    """({ticker: company name}, {ticker: sector})."""
+    stocks = load_constituents(cache_path, max_age_days)
+    return {t: v["name"] for t, v in stocks.items()}, {t: v["sector"] for t, v in stocks.items()}
 
 
 def fetch_closes(tickers: List[str]) -> Dict[str, List[Tuple[str, float]]]:
@@ -160,7 +181,8 @@ def daily_market(data_dir: str, threshold_pct: float, top_n: int = 10) -> Dict[s
     if not names:
         return {"status": "unavailable", "market_date": None, "drops": [], "gainers": [], "losers": [],
                 "threshold_pct": threshold_pct}
-    market_date, moves = find_moves(fetch_closes(sorted(names)), names, sectors)
+    closes = fetch_closes(sorted(names))
+    market_date, moves = find_moves(closes, names, sectors)
     drops = [dict(m, pct=round(m["pct"], 2)) for m in moves if m["pct"] <= -abs(threshold_pct)]
     movers = top_movers(moves, top_n)
     up = sum(1 for m in moves if m["pct"] > 0)
@@ -169,7 +191,8 @@ def daily_market(data_dir: str, threshold_pct: float, top_n: int = 10) -> Dict[s
     return {"status": "ok", "market_date": market_date, "drops": drops, "threshold_pct": threshold_pct,
             "checked": len(moves), "advancers": up, "decliners": len(moves) - up,
             "median_pct": round(statistics.median(m["pct"] for m in moves), 2) if moves else None,
-            **movers, "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+            **movers, "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "_last_close": {t: round(c[-1][1], 4) for t, c in closes.items() if c}}  # not saved; used by the scan
 
 
 def new_york_today() -> str:
