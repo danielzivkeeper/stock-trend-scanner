@@ -279,6 +279,7 @@
     var b = e.target.closest("[data-trade]");
     if (!b) return;
     var f = $("#trade-form");
+    setKind("stock");
     f.ticker.value = b.dataset.trade;
     f.price.value = b.dataset.price ? Number(b.dataset.price).toFixed(2) : "";
     f.reason.value = b.dataset.reason || "";
@@ -403,13 +404,19 @@
       stat("Realized P/L", money(p.realizedPL, true), cls(p.realizedPL)) +
       stat("Unrealized P/L", p.openCount ? money(p.unrealizedPL, true) + (p.unmarked ? "*" : "") : "—", cls(p.unrealizedPL)) +
       stat("Win rate", p.winRate == null ? "—" : pct(p.winRate) + " (" + p.wins + "/" + p.closedCount + ")") +
-      stat("Avg trade", pct(p.avgReturnPct, true), cls(p.avgReturnPct));
+      stat("Avg trade", pct(p.avgReturnPct, true), cls(p.avgReturnPct)) +
+      (p.byKind.option.closed || p.byKind.option.open ?
+        stat("Stocks P/L", money(p.byKind.stock.realizedPL, true), cls(p.byKind.stock.realizedPL)) +
+        stat("Options P/L", money(p.byKind.option.realizedPL, true), cls(p.byKind.option.realizedPL)) : "");
+    $("#stats-note").textContent = p.byKind.option.open ?
+      "Open options are counted at what you paid - there are no free live option prices. P/L is final once closed." : "";
 
     var open = book.trades.filter(function (t) { return !t.exitDate; });
     var closed = book.trades.filter(function (t) { return t.exitDate; })
       .sort(function (a, b) { return a.exitDate < b.exitDate ? 1 : -1; });
 
     $("#open-trades").innerHTML = open.length ? open.map(function (t) {
+      if (t.kind === "option") return openOptionCard(t, m[t.ticker]);
       var u = PT.tradePL(t, m[t.ticker]);
       var exitBy = PT.addTradingDays(t.entryDate, hold);
       var due = today() >= exitBy;
@@ -427,6 +434,7 @@
     }).join("") : '<div class="empty">No open paper trades.</div>';
 
     $("#closed-trades").innerHTML = closed.length ? closed.map(function (t) {
+      if (t.kind === "option") return closedOptionCard(t);
       var r = PT.tradePL(t);
       return '<div class="trade" data-id="' + esc(t.id) + '">' +
         '<div class="l1"><span>' + esc(t.ticker) + " · " + money(t.amount) + '</span><span class="' + cls(r.pl) + '">' +
@@ -444,19 +452,103 @@
     $("#cash-form").cash.value = book.startingCash;
   }
 
+  function openOptionCard(t, stockPx) {
+    var left = PT.daysBetween(today(), t.expiry);
+    var expired = left < 0;
+    var iv = stockPx ? PT.intrinsic(t.optType, t.strike, stockPx) : null;
+    return '<div class="trade" data-id="' + esc(t.id) + '">' +
+      '<div class="l1"><span><span class="tag">' + (t.optType === "call" ? "CALL" : "PUT") + "</span>" +
+      esc(PT.optionLabel(t)) + "</span><span>" + money(t.amount) + "</span></div>" +
+      '<div class="l2">' + t.contracts + " contract" + (t.contracts > 1 ? "s" : "") + " @ $" + t.entryPrice.toFixed(2) +
+      "/sh on " + esc(t.entryDate) + " · breakeven $" + PT.breakeven(t).toFixed(2) + " · " +
+      (expired ? '<b class="neg">expired - tap "Settle at expiration"</b>' :
+        left === 0 ? "<b>expires today</b>" : left + " days left") + "</div>" +
+      (stockPx ? '<div class="l2">Stock last close $' + Number(stockPx).toFixed(2) + " → built-in value $" +
+        iv.toFixed(2) + "/sh (" + money(iv * t.shares) + ")" + (expired ? "" : " plus any time value") + "</div>" : "") +
+      (t.reason ? '<div class="why">' + esc(t.reason) + "</div>" : "") +
+      '<div class="actions"><button type="button" class="link" data-act="close">Sell to close</button>' +
+      '<button type="button" class="link" data-act="expire">Settle at expiration</button>' +
+      '<button type="button" class="link danger" data-act="delete">Delete</button></div></div>';
+  }
+
+  function closedOptionCard(t) {
+    var r = PT.tradePL(t);
+    var how = t.exitReason ? esc(t.exitReason) + " (stock $" + Number(t.underlyingAtExit).toFixed(2) + ")" :
+      "sold @ $" + t.exitPrice.toFixed(2) + "/sh";
+    return '<div class="trade" data-id="' + esc(t.id) + '">' +
+      '<div class="l1"><span><span class="tag">' + (t.optType === "call" ? "CALL" : "PUT") + "</span>" +
+      esc(PT.optionLabel(t)) + '</span><span class="' + cls(r.pl) + '">' + money(r.pl, true) + " (" +
+      pct(r.pct, true) + ")</span></div>" +
+      '<div class="l2">' + t.contracts + " × $" + t.entryPrice.toFixed(2) + " on " + esc(t.entryDate) + " → " + how +
+      " on " + esc(t.exitDate) + "</div>" +
+      (t.reason ? '<div class="why">' + esc(t.reason) + "</div>" : "") +
+      '<div class="actions"><button type="button" class="link danger" data-act="delete">Delete</button></div></div>';
+  }
+
+  // ---- buy form: stock or option
+  var formKind = "stock", optType = "call";
+
+  function setKind(k) {
+    formKind = k;
+    document.querySelectorAll("#kind-seg [data-kind]").forEach(function (b) {
+      b.setAttribute("aria-selected", String(b.dataset.kind === k));
+    });
+    document.querySelectorAll("#trade-form [data-k]").forEach(function (el) { el.hidden = el.dataset.k !== k; });
+    $("#form-errors").innerHTML = "";
+    optionPreview();
+  }
+  function setOptType(k) {
+    optType = k;
+    document.querySelectorAll("#opt-type [data-ot]").forEach(function (b) {
+      b.setAttribute("aria-selected", String(b.dataset.ot === k));
+    });
+    optionPreview();
+  }
+  function optionPreview() {
+    var f = $("#trade-form");
+    var tk = (f.ticker.value || "").trim().toUpperCase();
+    $("#opt-chain").href = tk ? "https://finance.yahoo.com/quote/" + encodeURIComponent(tk) + "/options" :
+      "https://finance.yahoo.com/options";
+    if (formKind !== "option") return;
+    var prem = parseFloat(f.premium.value), n = parseFloat(f.contracts.value), k = parseFloat(f.strike.value);
+    var px = marks()[tk];
+    var parts = [];
+    if (prem > 0 && n >= 1) parts.push("Cost <b>" + money(prem * n * PT.MULTIPLIER) + "</b> (max loss)");
+    if (prem > 0 && k > 0) parts.push("breakeven at expiration <b>$" +
+      PT.breakeven({ optType: optType, strike: k, entryPrice: prem }).toFixed(2) + "</b>");
+    if (px) parts.push(tk + " last close $" + Number(px).toFixed(2));
+    $("#opt-preview").innerHTML = parts.join(" · ");
+  }
+  $("#kind-seg").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-kind]"); if (b) setKind(b.dataset.kind);
+  });
+  $("#opt-type").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-ot]"); if (b) setOptType(b.dataset.ot);
+  });
+  $("#trade-form").addEventListener("input", optionPreview);
+
   $("#trade-form").addEventListener("submit", function (e) {
     e.preventDefault();
     var f = e.target;
     var book = loadBook();
-    var input = { ticker: f.ticker.value, date: f.date.value, price: f.price.value, amount: f.amount.value, reason: f.reason.value };
     var cash = PT.portfolio(book.trades, book.startingCash).cash;
-    var errs = PT.validateOpen(input, cash);
+    var input, errs;
+    if (formKind === "option") {
+      input = { ticker: f.ticker.value, date: f.date.value, optType: optType, strike: f.strike.value,
+                expiry: f.expiry.value, contracts: f.contracts.value, premium: f.premium.value, reason: f.reason.value };
+      errs = PT.validateOpenOption(input, cash);
+    } else {
+      input = { ticker: f.ticker.value, date: f.date.value, price: f.price.value, amount: f.amount.value, reason: f.reason.value };
+      errs = PT.validateOpen(input, cash);
+    }
     $("#form-errors").innerHTML = errs.map(esc).join("<br>");
     if (errs.length) return;
-    book.trades.push(PT.openTrade(input));
+    book.trades.push(formKind === "option" ? PT.openOption(input) : PT.openTrade(input));
     if (saveBook(book)) {
       f.reset();
       f.date.value = today();
+      f.contracts.value = "1";
+      optionPreview();
       renderPaper();
     }
   });
@@ -485,20 +577,32 @@
         saveBook(book);
         renderPaper();
       });
-    } else if (act === "close") {
-      if (card.querySelector(".close-form")) return;
+    } else if (act === "close" || act === "expire") {
+      var existing = card.querySelector(".close-form");
+      if (existing) existing.remove();
       var t = book.trades[idx];
       var last = marks()[t.ticker];
       var form = document.createElement("form");
       form.className = "close-form";
       form.noValidate = true;
-      form.innerHTML = '<div class="grid2"><label>Exit date<input name="date" type="date" value="' + today() +
-        '"></label><label>Exit price<input name="price" inputmode="decimal" value="' +
-        (last ? Number(last).toFixed(2) : "") + '"></label></div><div class="errors"></div>' +
-        '<div class="row"><button type="submit" class="primary">Confirm close</button>' +
+      form.dataset.mode = act;
+      var buttons = '<div class="errors"></div><div class="row"><button type="submit" class="primary">Confirm</button>' +
         '<button type="button" data-act="cancel">Cancel</button></div>';
+      if (act === "expire") {
+        form.innerHTML = '<label>' + esc(t.ticker) + " closing price on " + esc(t.expiry) +
+          '<input name="underlying" inputmode="decimal" value="' + (last && today() >= t.expiry ? Number(last).toFixed(2) : "") +
+          '"></label><p class="muted small">In the money: settles at its built-in value. Otherwise it expires worthless ($0).</p>' + buttons;
+      } else if (t.kind === "option") {
+        form.innerHTML = '<div class="grid2"><label>Sale date<input name="date" type="date" value="' + today() +
+          '"></label><label>Premium / share<input name="price" inputmode="decimal" placeholder="0.00"></label></div>' +
+          '<p class="muted small">Use the "Bid" price in the options chain - that\'s what you could sell for.</p>' + buttons;
+      } else {
+        form.innerHTML = '<div class="grid2"><label>Exit date<input name="date" type="date" value="' + today() +
+          '"></label><label>Exit price<input name="price" inputmode="decimal" value="' +
+          (last ? Number(last).toFixed(2) : "") + '"></label></div>' + buttons;
+      }
       card.appendChild(form);
-      form.price.focus();
+      (form.price || form.underlying).focus();
     } else if (act === "cancel") {
       btn.closest(".close-form").remove();
     }
@@ -510,11 +614,17 @@
     var id = form.closest(".trade").dataset.id;
     var book = loadBook();
     var idx = book.trades.findIndex(function (t) { return t.id === id; });
-    var input = { date: form.date.value, price: form.price.value };
-    var errs = PT.validateClose(book.trades[idx], input);
+    var t = book.trades[idx], input, errs;
+    if (form.dataset.mode === "expire") {
+      input = { underlying: form.underlying.value };
+      errs = PT.validateExpire(t, input);
+    } else {
+      input = { date: form.date.value, price: form.price.value };
+      errs = PT.validateClose(t, input);
+    }
     form.querySelector(".errors").innerHTML = errs.map(esc).join("<br>");
     if (errs.length) return;
-    book.trades[idx] = PT.closeTrade(book.trades[idx], input);
+    book.trades[idx] = form.dataset.mode === "expire" ? PT.expireOption(t, input) : PT.closeTrade(t, input);
     saveBook(book);
     renderPaper();
   }

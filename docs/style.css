@@ -141,4 +141,9 @@ button.link { border: 0; background: none; color: var(--accent); padding: 4px 0;
 .mv .links a, .mv .links button { color: var(--accent); }
 .badge.big { background: var(--bad); }
 .breadth { display: flex; gap: 10px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
+#trade-form .seg { margin-bottom: 10px; }
+.opt-preview { font-size: .85rem; margin: 2px 0 6px; }
+.trade .tag { font-size: .7rem; font-weight: 700; padding: 1px 6px; border-radius: 99px; background: var(--chip);
+              color: var(--accent); margin-right: 4px; vertical-align: 1px; }
+.stats-note { font-size: .75rem; color: var(--muted); margin: -6px 0 10px; }
 [hidden] { display: none !important; }
