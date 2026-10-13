@@ -51,7 +51,11 @@
     }
   },
   "trending": {
-    "_help": "Reddit mention scanner for the Trending tab. Names that are 'rising' and not on your watchlist get the full five-signal check automatically (up to auto_scan_top of them).",
+    "_help": "Social mention scanner for the Trending tab (StockTwits + Bluesky; Reddit too if its API keys are set). Names that are 'rising' and not on your watchlist get the full five-signal check automatically (up to auto_scan_top of them).",
+    "use_stocktwits": true,
+    "stocktwits_pause_seconds": 1.0,
+    "use_bluesky": true,
+    "bluesky_pause_seconds": 0.3,
     "finance_subreddits": ["wallstreetbets", "stocks", "investing", "StockMarket", "smallstreetbets", "options"],
     "consumer_subreddits": ["SkincareAddiction", "MakeupAddiction", "BuyItForLife", "running", "Sneakers",
                             "energydrinks", "fastfood", "Costco", "Frugal", "fitness", "GenZ", "tiktokcringe"],

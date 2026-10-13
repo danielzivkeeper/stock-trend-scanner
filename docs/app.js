@@ -213,9 +213,8 @@
     var note = $("#trend-note");
     note.hidden = !t.note;
     note.textContent = t.note || "";
-    if (t.status === "needs_credentials") {
-      $("#trend-rows").innerHTML = '<div class="card empty">Trending is waiting for Reddit API keys. ' +
-        "Add the REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET secrets (README step 5c).</div>";
+    if (t.status !== "ok") {
+      $("#trend-rows").innerHTML = '<div class="card empty">No trending data yet - it appears after the next scan.</div>';
       $("#trend-private").hidden = true;
       $("#trend-meta").textContent = "";
       return;
@@ -223,11 +222,18 @@
     var scanned = {};
     ((data && data.tickers) || []).forEach(function (x) { scanned[x.ticker] = x; });
     var edit = repoUrl() ? repoUrl() + "/edit/main/watchlist.json" : "";
+    var SRC = { stocktwits: "StockTwits", bluesky: "Bluesky", reddit: "Reddit" };
     $("#trend-rows").innerHTML = (t.rows || []).map(function (r) {
-      var cls = r.status === "rising" ? "rising" : r.status === "steady" ? "steady" : "building";
-      var label = r.status === "rising" ? "RISING" : r.status === "steady" ? "normal" : "new";
-      var vs = r.vs_baseline ? " · " + r.vs_baseline + "× normal" : "";
-      var z = r.zscore != null ? " · z " + r.zscore.toFixed(1) : "";
+      var cls = { rising: "rising", steady: "steady", "below minimum": "steady" }[r.status] || "building";
+      var label = { rising: "RISING", steady: "normal", "below minimum": "quiet" }[r.status] || "new";
+      var lines = Object.keys(r.sources || {}).map(function (k) {
+        var x = r.sources[k];
+        var what = k === "stocktwits" ? Math.round(x.value) + " msgs/day" :
+          (k === "reddit" ? x.mentions + " mentions" : Math.round(x.value) + " posts/day");
+        return "<div>" + esc(SRC[k] || k) + ": " + what + " by " + x.authors + " people" +
+          (x.vs_baseline ? " · " + x.vs_baseline + "× normal" : "") +
+          (x.zscore != null ? " · z " + x.zscore.toFixed(1) : "") + "</div>";
+      }).join("");
       var s = scanned[r.ticker];
       var act;
       if (r.on_watchlist) act = "On your watchlist" + (s ? " · score " + s.score.toFixed(1) + "/10" : "");
@@ -236,12 +242,13 @@
         ' <button type="button" class="link" data-copy=\'' + esc(JSON.stringify({ keyword: r.name, ticker: r.ticker })) +
         '\'>copy line</button>' : "Not on your watchlist");
       return '<div class="card trow"><div class="thead"><span class="sym">' + esc(r.ticker) + '</span><span class="kw">' +
-        esc(r.name) + '</span><span class="badge ' + cls + '">' + label + "</span></div>" +
-        '<div class="meta">' + r.mentions + " mentions by " + r.authors + " people" + vs + z +
-        (r.subs && r.subs.length ? " · r/" + r.subs.map(esc).join(", r/") : "") + "</div>" +
-        (r.samples || []).map(function (q) {
+        esc(r.name) + "</span>" +
+        (r.stocktwits_trending_rank ? '<span class="badge src">#' + r.stocktwits_trending_rank + " on StockTwits</span>" : "") +
+        '<span class="badge ' + cls + '">' + label + "</span></div>" +
+        '<div class="meta">' + (lines || "No mentions measured yet") + "</div>" +
+        (r.samples || []).slice(0, 2).map(function (q) {
           return '<a class="quote" href="' + esc(q.url) + '" target="_blank" rel="noopener">“' + esc(q.text) +
-            "” <small>r/" + esc(q.sub) + "</small></a>";
+            "” <small>" + esc(q.sub === "bluesky" || q.sub === "stocktwits" ? (SRC[q.sub]) : "r/" + q.sub) + "</small></a>";
         }).join("") +
         '<div class="act">' + act + "</div></div>";
     }).join("") || '<div class="card empty">Nothing above the minimum mention level right now.</div>';
@@ -252,7 +259,7 @@
       '<ul class="plain">' + priv.slice(0, 10).map(function (p) {
         return "<li>" + esc(p.brand) + " - " + p.mentions + " mentions</li>";
       }).join("") + "</ul>";
-    $("#trend-meta").textContent = "Scanned " + (t.items_scanned || 0).toLocaleString() + " Reddit posts/comments · " +
+    $("#trend-meta").textContent = "Sources: " + ((t.sources || []).join(", ") || "none") + " · " +
       (t.generated_at ? "updated " + ago(t.generated_at) : "") + " · " + (t.history_days || 0) + " days of history";
   }
 

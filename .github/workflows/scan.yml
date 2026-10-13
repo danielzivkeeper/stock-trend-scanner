@@ -36,7 +36,7 @@ jobs:
       - name: Run offline tests first (a broken scorer should never send texts)
         run: python -m unittest discover -s tests -t .
 
-      - name: Trending - Reddit mention spikes (skipped until Reddit secrets exist)
+      - name: Trending - StockTwits + Bluesky (+ Reddit if keys exist) mention spikes
         continue-on-error: true
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}

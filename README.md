@@ -104,7 +104,9 @@ If any of these secrets are missing, the scanner still runs and updates the dash
 2. In the app, tap **+** and subscribe to a topic name that's hard to guess, like `daniel-scanner-7f3k9q`. Anyone who knows the name can read the messages.
 3. Add one more repository secret: name **`NTFY_TOPIC`**, value: that same topic name.
 
-#### 5c. Reddit keys: power the **Trending** tab and Reddit mentions in the social signal
+#### 5c. (Optional) Reddit keys: add Reddit to the Trending tab and the social signal
+
+> As of 2025, Reddit requires approval for new API apps (its "Responsible Builder Policy"). Trending works without Reddit, using StockTwits and Bluesky, so you can skip this.
 1. While logged in to Reddit, go to **https://www.reddit.com/prefs/apps**, scroll down, and click **create another app…**
 2. Name: `stock-scanner`. Choose **script**. Redirect URI: `http://localhost:8080`. Click **create app**.
 3. The short code under "personal use script" is your client ID. The value next to **secret** is your client secret.
@@ -112,7 +114,7 @@ If any of these secrets are missing, the scanner still runs and updates the dash
 
 Without these, the Trending tab stays off and the social signal uses Wikipedia page views (and Google Trends when it isn't blocked).
 
-**How Trending works:** twice a day it reads new posts and comments from the subreddits listed in `config.json` → `trending`. It picks out companies from `$TICKER` cashtags, plain tickers (in investing subs only) and the brand list in **`brands.json`** (e.g. "hoka" → DECK; edit it to add brands you notice). It then compares each name's mentions with that name's own normal level. Names that are rising and not on your watchlist get the full five-signal check automatically. Private brands (Stanley, Owala…) are shown, but there's nothing to buy. TikTok and Instagram aren't included: their APIs aren't open to personal projects, and scraping breaks their terms.
+**How Trending works:** twice a day, with no signup needed, it reads **StockTwits** (a stock-only social network: its top-30 trending list, plus messages per day for every tracked ticker) and **Bluesky** (public post search for each tracked ticker and brand). Reddit is added if you have keys. It picks out companies from `$TICKER` cashtags and the brand list in **`brands.json`** (e.g. "hoka" → DECK; edit it to add brands you notice), then compares each name's chatter with its own normal level. That needs about 5 days of history first. Names that are rising and not on your watchlist get the full five-signal check automatically. Private brands (Stanley, Owala…) are shown, but there's nothing to buy. TikTok and Instagram aren't included: their APIs aren't open to personal projects, and scraping breaks their terms.
 
 ### 6. Turn on the dashboard (GitHub Pages)
 1. In your repo, click **Settings**, then **Pages** in the left sidebar.
