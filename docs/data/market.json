@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-10-12",
+ "market_date": "2026-10-13",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 502,
- "advancers": 321,
- "decliners": 181,
- "median_pct": 0.43,
+ "checked": 503,
+ "advancers": 292,
+ "decliners": 211,
+ "median_pct": 0.24,
  "gainers": [
   {
-   "ticker": "FICO",
-   "name": "Fair Isaac",
+   "ticker": "CDW",
+   "name": "CDW Corporation",
    "sector": "Information Technology",
-   "pct": 10.85,
-   "close": 740.0,
-   "prev_close": 667.58
+   "pct": 5.21,
+   "close": 151.26,
+   "prev_close": 143.76
   },
   {
-   "ticker": "MDT",
-   "name": "Medtronic",
-   "sector": "Health Care",
-   "pct": 3.9,
-   "close": 91.93,
-   "prev_close": 88.48
-  },
-  {
-   "ticker": "VYLR",
-   "name": "Vylor",
-   "sector": "Consumer Staples",
-   "pct": 3.75,
-   "close": 75.89,
-   "prev_close": 73.15
-  },
-  {
-   "ticker": "ZBH",
-   "name": "Zimmer Biomet",
-   "sector": "Health Care",
-   "pct": 3.4,
-   "close": 92.17,
-   "prev_close": 89.14
-  },
-  {
-   "ticker": "META",
-   "name": "Meta Platforms",
+   "ticker": "CHTR",
+   "name": "Charter Communications",
    "sector": "Communication Services",
-   "pct": 3.38,
-   "close": 742.96,
-   "prev_close": 718.67
+   "pct": 4.87,
+   "close": 107.47,
+   "prev_close": 102.48
   },
   {
-   "ticker": "PODD",
-   "name": "Insulet Corporation",
-   "sector": "Health Care",
-   "pct": 3.35,
-   "close": 139.81,
-   "prev_close": 135.28
+   "ticker": "IFF",
+   "name": "International Flavors & Fragrances",
+   "sector": "Materials",
+   "pct": 4.5,
+   "close": 88.79,
+   "prev_close": 84.96
   },
   {
-   "ticker": "TYL",
-   "name": "Tyler Technologies",
+   "ticker": "ORCL",
+   "name": "Oracle Corporation",
    "sector": "Information Technology",
-   "pct": 3.15,
-   "close": 339.94,
-   "prev_close": 329.55
+   "pct": 4.47,
+   "close": 143.53,
+   "prev_close": 137.39
   },
   {
-   "ticker": "KDP",
-   "name": "Keurig Dr Pepper",
-   "sector": "Consumer Staples",
-   "pct": 3.12,
-   "close": 32.75,
-   "prev_close": 31.76
+   "ticker": "EXE",
+   "name": "Expand Energy",
+   "sector": "Energy",
+   "pct": 4.44,
+   "close": 92.75,
+   "prev_close": 88.81
   },
   {
-   "ticker": "STZ",
-   "name": "Constellation Brands",
-   "sector": "Consumer Staples",
-   "pct": 3.07,
-   "close": 126.4,
-   "prev_close": 122.64
+   "ticker": "FSLR",
+   "name": "First Solar",
+   "sector": "Information Technology",
+   "pct": 4.38,
+   "close": 187.59,
+   "prev_close": 179.72
   },
   {
-   "ticker": "GEHC",
-   "name": "GE HealthCare",
-   "sector": "Health Care",
-   "pct": 3.04,
-   "close": 67.74,
-   "prev_close": 65.74
+   "ticker": "VLO",
+   "name": "Valero Energy",
+   "sector": "Energy",
+   "pct": 3.95,
+   "close": 453.24,
+   "prev_close": 436.0
+  },
+  {
+   "ticker": "GRMN",
+   "name": "Garmin",
+   "sector": "Consumer Discretionary",
+   "pct": 3.71,
+   "close": 276.66,
+   "prev_close": 266.76
+  },
+  {
+   "ticker": "CTSH",
+   "name": "Cognizant",
+   "sector": "Information Technology",
+   "pct": 3.65,
+   "close": 61.86,
+   "prev_close": 59.68
+  },
+  {
+   "ticker": "DRI",
+   "name": "Darden Restaurants",
+   "sector": "Consumer Discretionary",
+   "pct": 3.61,
+   "close": 206.82,
+   "prev_close": 199.61
   }
  ],
  "losers": [
   {
-   "ticker": "CIEN",
-   "name": "Ciena",
+   "ticker": "AMAT",
+   "name": "Applied Materials",
    "sector": "Information Technology",
-   "pct": -9.95,
-   "close": 405.01,
-   "prev_close": 449.77
+   "pct": -7.05,
+   "close": 462.43,
+   "prev_close": 497.53
   },
   {
-   "ticker": "LITE",
-   "name": "Lumentum",
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
    "sector": "Information Technology",
-   "pct": -9.78,
-   "close": 995.41,
-   "prev_close": 1103.35
+   "pct": -5.99,
+   "close": 110.22,
+   "prev_close": 117.24
   },
   {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -7.87,
-   "close": 288.02,
-   "prev_close": 312.62
-  },
-  {
-   "ticker": "CVNA",
-   "name": "Carvana",
-   "sector": "Consumer Discretionary",
-   "pct": -6.62,
-   "close": 59.51,
-   "prev_close": 63.73
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -6.5,
-   "close": 262.28,
-   "prev_close": 280.5
-  },
-  {
-   "ticker": "GLW",
-   "name": "Corning Inc.",
-   "sector": "Information Technology",
-   "pct": -6.0,
-   "close": 147.28,
-   "prev_close": 156.68
-  },
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -5.97,
-   "close": 1487.33,
-   "prev_close": 1581.82
-  },
-  {
-   "ticker": "MRNA",
-   "name": "Moderna",
+   "ticker": "JNJ",
+   "name": "Johnson & Johnson",
    "sector": "Health Care",
-   "pct": -5.0,
-   "close": 213.74,
-   "prev_close": 225.0
+   "pct": -5.41,
+   "close": 249.46,
+   "prev_close": 263.73
   },
   {
-   "ticker": "AKAM",
-   "name": "Akamai Technologies",
+   "ticker": "MU",
+   "name": "Micron Technology",
    "sector": "Information Technology",
-   "pct": -4.96,
-   "close": 101.65,
-   "prev_close": 106.95
+   "pct": -4.87,
+   "close": 940.89,
+   "prev_close": 989.04
   },
   {
-   "ticker": "MPWR",
-   "name": "Monolithic Power Systems",
+   "ticker": "C",
+   "name": "Citigroup",
+   "sector": "Financials",
+   "pct": -4.64,
+   "close": 125.79,
+   "prev_close": 131.92
+  },
+  {
+   "ticker": "KKR",
+   "name": "KKR & Co.",
+   "sector": "Financials",
+   "pct": -4.11,
+   "close": 87.75,
+   "prev_close": 91.51
+  },
+  {
+   "ticker": "DPZ",
+   "name": "Domino's",
+   "sector": "Consumer Discretionary",
+   "pct": -4.1,
+   "close": 298.15,
+   "prev_close": 310.9
+  },
+  {
+   "ticker": "ECHO",
+   "name": "EchoStar",
+   "sector": "Communication Services",
+   "pct": -4.01,
+   "close": 91.29,
+   "prev_close": 95.1
+  },
+  {
+   "ticker": "CDNS",
+   "name": "Cadence Design Systems",
    "sector": "Information Technology",
-   "pct": -4.84,
-   "close": 1319.23,
-   "prev_close": 1386.29
+   "pct": -3.78,
+   "close": 335.24,
+   "prev_close": 348.42
+  },
+  {
+   "ticker": "BX",
+   "name": "Blackstone Inc.",
+   "sector": "Financials",
+   "pct": -3.73,
+   "close": 110.5,
+   "prev_close": 114.78
   }
  ],
- "as_of": "2026-10-13T02:52:13+00:00"
+ "as_of": "2026-10-13T19:31:08+00:00"
 }
