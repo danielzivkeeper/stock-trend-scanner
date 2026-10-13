@@ -108,7 +108,15 @@ if __name__ == "__main__":
     # python -m scanner.alerts  -> sends one test message through every configured channel
     import sys
 
-    msg = "Test text from your stock scanner - alerts are working. Real ones look like: HIMS 6.1 (EPS+insiders)"
+    if "--sample" in sys.argv:
+        # Exactly what a real alert looks like, built by the real formatter, with made-up numbers.
+        fake = {"ticker": "CELH", "score": 6.4,
+                "signals": [{"name": "earnings_drift", "triggered": True},
+                            {"name": "insider_buying", "triggered": True},
+                            {"name": "social_spike", "triggered": False}]}
+        msg = "PRACTICE (not real) " + build_sms([fake], "https://danielzivkeeper.github.io/stock-trend-scanner/")
+    else:
+        msg = "Test text from your stock scanner - alerts are working. Real ones look like: HIMS 6.1 (EPS+insiders)"
     ok_sms, ok_push = send_sms(msg), send_ntfy(msg)
     print(f"[alerts] test result: sms={'sent' if ok_sms else 'NOT sent'}, ntfy={'sent' if ok_push else 'not configured/failed'}")
     sys.exit(0 if (ok_sms or ok_push) else 1)

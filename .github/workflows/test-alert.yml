@@ -2,7 +2,12 @@
 name: Send test alert
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: "Send a practice alert in the real alert format (instead of a plain test)"
+        type: boolean
+        default: false
 
 jobs:
   test-alert:
@@ -19,4 +24,4 @@ jobs:
           ALERT_PHONE: ${{ secrets.ALERT_PHONE }}
           ALERT_CARRIER_GATEWAY: ${{ secrets.ALERT_CARRIER_GATEWAY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: pip install requests && python -m scanner.alerts
+        run: pip install requests && python -m scanner.alerts ${{ inputs.sample && '--sample' || '' }}
