@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-10-13",
+ "market_date": "2026-10-15",
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 267,
- "decliners": 236,
- "median_pct": 0.14,
+ "advancers": 373,
+ "decliners": 130,
+ "median_pct": 1.22,
  "gainers": [
   {
-   "ticker": "CDW",
-   "name": "CDW Corporation",
-   "sector": "Information Technology",
-   "pct": 5.71,
-   "close": 151.97,
-   "prev_close": 143.76
-  },
-  {
-   "ticker": "VLO",
-   "name": "Valero Energy",
-   "sector": "Energy",
-   "pct": 4.69,
-   "close": 456.46,
-   "prev_close": 436.0
-  },
-  {
-   "ticker": "CHTR",
-   "name": "Charter Communications",
-   "sector": "Communication Services",
-   "pct": 4.36,
-   "close": 106.95,
-   "prev_close": 102.48
-  },
-  {
-   "ticker": "ORCL",
-   "name": "Oracle Corporation",
-   "sector": "Information Technology",
-   "pct": 4.23,
-   "close": 143.2,
-   "prev_close": 137.39
-  },
-  {
-   "ticker": "EXE",
-   "name": "Expand Energy",
-   "sector": "Energy",
-   "pct": 4.01,
-   "close": 92.37,
-   "prev_close": 88.81
-  },
-  {
-   "ticker": "PSX",
-   "name": "Phillips 66",
-   "sector": "Energy",
-   "pct": 4.0,
-   "close": 292.73,
-   "prev_close": 281.47
-  },
-  {
-   "ticker": "MPC",
-   "name": "Marathon Petroleum",
-   "sector": "Energy",
-   "pct": 3.96,
-   "close": 476.98,
-   "prev_close": 458.81
-  },
-  {
-   "ticker": "FSLR",
-   "name": "First Solar",
-   "sector": "Information Technology",
-   "pct": 3.83,
-   "close": 186.6,
-   "prev_close": 179.72
-  },
-  {
-   "ticker": "IFF",
-   "name": "International Flavors & Fragrances",
+   "ticker": "IP",
+   "name": "International Paper",
    "sector": "Materials",
-   "pct": 3.81,
-   "close": 88.2,
-   "prev_close": 84.96
+   "pct": 7.7,
+   "close": 34.35,
+   "prev_close": 31.9
   },
   {
-   "ticker": "GRMN",
-   "name": "Garmin",
+   "ticker": "CSGP",
+   "name": "CoStar Group",
+   "sector": "Real Estate",
+   "pct": 6.89,
+   "close": 32.19,
+   "prev_close": 30.11
+  },
+  {
+   "ticker": "INTU",
+   "name": "Intuit",
+   "sector": "Information Technology",
+   "pct": 6.09,
+   "close": 329.34,
+   "prev_close": 310.44
+  },
+  {
+   "ticker": "EXPE",
+   "name": "Expedia Group",
    "sector": "Consumer Discretionary",
-   "pct": 3.62,
-   "close": 276.41,
-   "prev_close": 266.76
+   "pct": 6.06,
+   "close": 291.34,
+   "prev_close": 274.69
+  },
+  {
+   "ticker": "IT",
+   "name": "Gartner",
+   "sector": "Information Technology",
+   "pct": 5.93,
+   "close": 207.37,
+   "prev_close": 195.77
+  },
+  {
+   "ticker": "NKE",
+   "name": "Nike, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": 5.86,
+   "close": 37.37,
+   "prev_close": 35.3
+  },
+  {
+   "ticker": "AJG",
+   "name": "Arthur J. Gallagher & Co.",
+   "sector": "Financials",
+   "pct": 5.82,
+   "close": 250.84,
+   "prev_close": 237.04
+  },
+  {
+   "ticker": "EFX",
+   "name": "Equifax",
+   "sector": "Industrials",
+   "pct": 5.8,
+   "close": 159.08,
+   "prev_close": 150.36
+  },
+  {
+   "ticker": "EBAY",
+   "name": "eBay Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": 5.76,
+   "close": 123.61,
+   "prev_close": 116.88
+  },
+  {
+   "ticker": "APP",
+   "name": "AppLovin",
+   "sector": "Communication Services",
+   "pct": 5.43,
+   "close": 276.43,
+   "prev_close": 262.19
   }
  ],
  "losers": [
   {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
+   "ticker": "DELL",
+   "name": "Dell Technologies",
    "sector": "Information Technology",
-   "pct": -6.69,
-   "close": 464.24,
-   "prev_close": 497.53
+   "pct": -8.9,
+   "close": 462.73,
+   "prev_close": 507.93
   },
   {
-   "ticker": "JNJ",
-   "name": "Johnson & Johnson",
-   "sector": "Health Care",
-   "pct": -5.73,
-   "close": 248.61,
-   "prev_close": 263.73
-  },
-  {
-   "ticker": "C",
-   "name": "Citigroup",
-   "sector": "Financials",
-   "pct": -5.6,
-   "close": 124.53,
-   "prev_close": 131.92
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
+   "ticker": "P",
+   "name": "Everpure",
    "sector": "Information Technology",
-   "pct": -5.42,
-   "close": 110.88,
-   "prev_close": 117.24
+   "pct": -7.63,
+   "close": 130.69,
+   "prev_close": 141.49
   },
   {
-   "ticker": "DPZ",
-   "name": "Domino's",
-   "sector": "Consumer Discretionary",
-   "pct": -4.76,
-   "close": 296.1,
-   "prev_close": 310.9
-  },
-  {
-   "ticker": "KKR",
-   "name": "KKR & Co.",
-   "sector": "Financials",
-   "pct": -4.75,
-   "close": 87.16,
-   "prev_close": 91.51
-  },
-  {
-   "ticker": "VRTX",
-   "name": "Vertex Pharmaceuticals",
-   "sector": "Health Care",
-   "pct": -4.3,
-   "close": 485.22,
-   "prev_close": 507.0
-  },
-  {
-   "ticker": "BX",
-   "name": "Blackstone Inc.",
-   "sector": "Financials",
-   "pct": -4.18,
-   "close": 109.98,
-   "prev_close": 114.78
-  },
-  {
-   "ticker": "CDNS",
-   "name": "Cadence Design Systems",
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -4.08,
-   "close": 334.2,
-   "prev_close": 348.42
+   "pct": -6.6,
+   "close": 245.93,
+   "prev_close": 263.32
   },
   {
-   "ticker": "TTWO",
-   "name": "Take-Two Interactive",
-   "sector": "Communication Services",
-   "pct": -4.07,
-   "close": 200.32,
-   "prev_close": 208.82
+   "ticker": "VRT",
+   "name": "Vertiv",
+   "sector": "Industrials",
+   "pct": -6.6,
+   "close": 208.13,
+   "prev_close": 222.83
+  },
+  {
+   "ticker": "HPE",
+   "name": "Hewlett Packard Enterprise",
+   "sector": "Information Technology",
+   "pct": -6.5,
+   "close": 59.01,
+   "prev_close": 63.11
+  },
+  {
+   "ticker": "ANET",
+   "name": "Arista Networks",
+   "sector": "Information Technology",
+   "pct": -6.3,
+   "close": 183.1,
+   "prev_close": 195.42
+  },
+  {
+   "ticker": "KEYS",
+   "name": "Keysight Technologies",
+   "sector": "Information Technology",
+   "pct": -6.08,
+   "close": 335.86,
+   "prev_close": 357.62
+  },
+  {
+   "ticker": "TER",
+   "name": "Teradyne",
+   "sector": "Information Technology",
+   "pct": -6.03,
+   "close": 337.78,
+   "prev_close": 359.44
+  },
+  {
+   "ticker": "STX",
+   "name": "Seagate Technology",
+   "sector": "Information Technology",
+   "pct": -5.7,
+   "close": 672.84,
+   "prev_close": 713.54
+  },
+  {
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
+   "sector": "Industrials",
+   "pct": -5.53,
+   "close": 1456.39,
+   "prev_close": 1541.68
   }
  ],
- "as_of": "2026-10-15T00:06:35+00:00"
+ "as_of": "2026-10-15T17:19:40+00:00"
 }
