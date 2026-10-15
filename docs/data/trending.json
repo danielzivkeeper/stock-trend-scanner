@@ -1,551 +1,13 @@
 {
- "generated_at": "2026-10-14T17:27:51+00:00",
+ "generated_at": "2026-10-15T00:02:17+00:00",
  "status": "ok",
  "sources": [
-  "StockTwits (94 tickers)",
-  "Bluesky (9451 posts)"
+  "StockTwits (93 tickers)",
+  "Bluesky (9121 posts)"
  ],
- "history_days": 2,
- "note": "Day 2 of 5 building a baseline - until then nothing can be 'rising'; names are ranked by StockTwits trending rank and raw mentions.",
+ "history_days": 3,
+ "note": "Day 3 of 5 building a baseline - until then nothing can be 'rising'; names are ranked by StockTwits trending rank and raw mentions.",
  "rows": [
-  {
-   "ticker": "IBRX",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 2880.0,
-     "mentions": 2880.0,
-     "authors": 24,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 5.0,
-     "mentions": 5,
-     "authors": 4,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2885.0,
-   "stocktwits_trending_rank": 1,
-   "name": "ImmunityBio, Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$IBRX Need the PR on the wire\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498915"
-    },
-    {
-     "text": "$IBRX FDA acceptance is huge",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498913"
-    },
-    {
-     "text": "FDA broadens Anktiva approval to papillary-only bladder cancer, giving $IBRX a larger addressable market in BCG-unresponsive NMIBC. notreloa\u2026",
-     "url": "https://bsky.app/profile/notreload.bsky.social/post/3mxtzjbu5ms2f",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "CRWV",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 2880.0,
-     "mentions": 2880.0,
-     "authors": 28,
-     "status": "building baseline",
-     "baseline": 122.6,
-     "zscore": null,
-     "vs_baseline": 23.5
-    },
-    "bluesky": {
-     "value": 45.0,
-     "mentions": 45,
-     "authors": 30,
-     "status": "building baseline",
-     "baseline": 3.0,
-     "zscore": null,
-     "vs_baseline": 15.0
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2925.0,
-   "stocktwits_trending_rank": 2,
-   "name": "CoreWeave, Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$CRWV Going to $0 yall!",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498866"
-    },
-    {
-     "text": "$IREN $CRWV $NBIS Orchestrated bloodbath of hyperscalers, the same crookies crushing it will be pumping it a month, rigged casino",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498782"
-    },
-    {
-     "text": "Watching $CRWV fall apart in real-time lol. \u201cAI data center owners need to generate a cumulative $8.5T in revenue by 2030,\u201d to cover expense\u2026",
-     "url": "https://bsky.app/profile/rvbdrm.com/post/3mxu32zi7sc2v",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "SOFI",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 2880.0,
-     "mentions": 2880.0,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": 576.9,
-     "zscore": null,
-     "vs_baseline": 5.0
-    },
-    "bluesky": {
-     "value": 65.0,
-     "mentions": 65,
-     "authors": 58,
-     "status": "building baseline",
-     "baseline": 89.3,
-     "zscore": null,
-     "vs_baseline": 0.7
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2945.0,
-   "stocktwits_trending_rank": 3,
-   "name": "SoFi Technologies, Inc.",
-   "on_watchlist": true,
-   "samples": [
-    {
-     "text": "$SOFI not alone",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666499062"
-    },
-    {
-     "text": "$SOFI congrats fkg shorts 13 Hurry short more Maybe fkg shit soros of dik pik piker shorter- dei blsckrock love to see America dump Hurry fk\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666499025"
-    },
-    {
-     "text": "$TGL ran 163% after our Scanner caught it early. #DDAmanda Chart Previous winners: $SKYD $SOFI $CMG This is how DDAmanda finds winning stock\u2026",
-     "url": "https://bsky.app/profile/ddamanda.com/post/3mxtl4oy4ct2x",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "DELL",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 1216.0,
-     "mentions": 1216.0,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 5.0,
-     "mentions": 5,
-     "authors": 5,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1221.0,
-   "stocktwits_trending_rank": 4,
-   "name": "Dell Technologies Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$DELL Mid tertms over next month. Earnings are in. Iran and Houthis get wacked. Market is up.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498760"
-    },
-    {
-     "text": "$DELL my favorite pasttime, bagholding stocks \ud83e\udee0 thought for sure this was safer than micron less target range",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498720"
-    },
-    {
-     "text": "$AAPL $GOOGL holding, relative strength $DELL $HPE downgrade, failing pm, potential shorts $TSLA under 100d, roadster event tomorrow $SPCX s\u2026",
-     "url": "https://bsky.app/profile/julianthelemur.bsky.social/post/3mxtnhlwxhk27",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "APLD",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 1506.5,
-     "mentions": 1506.5,
-     "authors": 29,
-     "status": "building baseline",
-     "baseline": 671.1,
-     "zscore": null,
-     "vs_baseline": 2.2
-    },
-    "bluesky": {
-     "value": 4.0,
-     "mentions": 4,
-     "authors": 3,
-     "status": "below minimum",
-     "baseline": 1.0,
-     "zscore": null,
-     "vs_baseline": 4.0
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1510.5,
-   "stocktwits_trending_rank": 5,
-   "name": "Applied Digital Corp.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$APLD this feels very orchestrated",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498844"
-    },
-    {
-     "text": "$APLD how is this down more than total scams like rgti",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498788"
-    },
-    {
-     "text": "$NXGB +780% - found early. #DDAmanda Chart Also found early: $APLD $GRAB $ONDS This is how DDAmanda finds winning stocks: DDAmanda.com/?utm_\u2026",
-     "url": "https://bsky.app/profile/ddamanda.com/post/3mxs5jbfj2y2x",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "DJT",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 1678.2,
-     "mentions": 1678.2,
-     "authors": 28,
-     "status": "building baseline",
-     "baseline": 895.1,
-     "zscore": null,
-     "vs_baseline": 1.9
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1678.2,
-   "stocktwits_trending_rank": 6,
-   "name": "Trump Media & Technology Group Corp.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$DJT Gas is $6.80 by me Winning",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498661"
-    },
-    {
-     "text": "$DJT DONALD TRUMP'S STOCK IS PLUMMETING TOWARD NEW ALL TIME LOW. DOWN 99%! $SPY",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498657"
-    }
-   ]
-  },
-  {
-   "ticker": "ONDS",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 1043.7,
-     "mentions": 1043.7,
-     "authors": 21,
-     "status": "building baseline",
-     "baseline": 407.6,
-     "zscore": null,
-     "vs_baseline": 2.6
-    },
-    "bluesky": {
-     "value": 7.0,
-     "mentions": 7,
-     "authors": 5,
-     "status": "building baseline",
-     "baseline": 4.0,
-     "zscore": null,
-     "vs_baseline": 1.8
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1050.7,
-   "stocktwits_trending_rank": 7,
-   "name": "Ondas Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$ONDS Shorts are so F'd on this, What is their plan? How the F are they going to buy 250 million shares back when no one is selling this. 6 \u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498993"
-    },
-    {
-     "text": "$ONDS This is going to ruffle some feathers, but just giving it straight... ANY acquisitions or cash raises hurt the company even more than \u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498969"
-    },
-    {
-     "text": "$NXGB +780% - found early. #DDAmanda Chart Also found early: $APLD $GRAB $ONDS This is how DDAmanda finds winning stocks: DDAmanda.com/?utm_\u2026",
-     "url": "https://bsky.app/profile/ddamanda.com/post/3mxs5jbfj2y2x",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "WMT",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 523.9,
-     "mentions": 523.9,
-     "authors": 23,
-     "status": "building baseline",
-     "baseline": 42.1,
-     "zscore": null,
-     "vs_baseline": 12.4
-    },
-    "bluesky": {
-     "value": 943.4,
-     "mentions": 943.4,
-     "authors": 87,
-     "status": "building baseline",
-     "baseline": 734.0,
-     "zscore": null,
-     "vs_baseline": 1.3
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1467.3,
-   "stocktwits_trending_rank": 8,
-   "name": "Walmart Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$WMT we are gonna make them.pay rhe 115 calls for rhis week...KEEP BUYING..",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498861"
-    },
-    {
-     "text": "$WMT where the robot lady that had Walmart calls - good call thanks\ud83d\udc4d",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498644"
-    },
-    {
-     "text": "These charts from $BAC back up $WFC view that energy price rise is manageable. Yes gas spend accelerated markedly in Q3. Even so, discretion\u2026",
-     "url": "https://bsky.app/profile/retailguru.bsky.social/post/3mxtiz4yahk2g",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "TSM",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 208.1,
-     "mentions": 208.1,
-     "authors": 22,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 7.0,
-     "mentions": 7,
-     "authors": 7,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 215.1,
-   "stocktwits_trending_rank": 9,
-   "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$SNDK $MU $NVDA $INTC $TSM well, it's been a horrible day. another negative close for the KOSPI along with hotter than expected CPI exacerba\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497828"
-    },
-    {
-     "text": "$TSM $5M put is hardcore.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497445"
-    },
-    {
-     "text": "EU Hybrid Deal Could Boost Chinese EV Imports library.thecapitolforum.com/docs/9wxx84k... $AAPL $AMZN $APP $AVGO $DIS $FOX $FUFU $GOOG $GOOG\u2026",
-     "url": "https://bsky.app/profile/capitolforum.bsky.social/post/3mxtr6alvus2x",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "PFE",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 291.7,
-     "mentions": 291.7,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 1.0,
-     "mentions": 1,
-     "authors": 1,
-     "status": "below minimum",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 292.7,
-   "stocktwits_trending_rank": 10,
-   "name": "PFIZER INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$PFE sold a 9 day csp to see if I can grab 100 more shares that way. I\u2019m keeping them, no selling.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498558"
-    },
-    {
-     "text": "one at $PFE one at $NVAX",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496812"
-    },
-    {
-     "text": "Pfizer's price target hints at +33.7% gain \ud83d\udcc8 $PFE sits at $28.4, avg target $37.96 \ud83d\udc8a Buy rating stays intact \ud83d\udcb0 What's your take? \ud83d\udcac #investin\u2026",
-     "url": "https://bsky.app/profile/capitalwisdom.bsky.social/post/3mxtqwlbjhy2w",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "SKYD",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 919.6,
-     "mentions": 919.6,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 7.0,
-     "mentions": 7,
-     "authors": 7,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 926.6,
-   "stocktwits_trending_rank": 11,
-   "name": "Skydance Corp",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$SKYD oh, Larry\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496729"
-    },
-    {
-     "text": "$SKYD There appears to be only about 4 billion in tradeable shares at this level..that includes funds and public...could you imagine the run\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496492"
-    },
-    {
-     "text": "$MYRG-2 $GDX-2 $BEPC-2 $HIMS-2 $BF.B-2 $AMZN-2 $NFLX-2 $USO-2 $VST-2 $PENN-2 $O-2 $ROL-2 $XBI-2 $DIA-2 $CELH-1 $MRVL-1 $WM-1 $ELDN-1 $NAC-1 \u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtwmio6c27",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "AAPL",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 788.0,
-     "mentions": 788.0,
-     "authors": 28,
-     "status": "building baseline",
-     "baseline": 569.5,
-     "zscore": null,
-     "vs_baseline": 1.4
-    },
-    "bluesky": {
-     "value": 1534.9,
-     "mentions": 1534.9,
-     "authors": 160,
-     "status": "building baseline",
-     "baseline": 1482.5,
-     "zscore": null,
-     "vs_baseline": 1.0
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2322.9,
-   "stocktwits_trending_rank": 12,
-   "name": "Apple Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$AAPL may go red at this rate.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498074"
-    },
-    {
-     "text": "$AAPL hitting new lows",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497866"
-    },
-    {
-     "text": "$AAPL on our board right now: intraday $340.83-$348.14, close target $344.98 (+0.2%). Five-day target $344.30. Not investment advice.",
-     "url": "https://bsky.app/profile/hadestock.bsky.social/post/3mxtzj2akhw22",
-     "sub": "bluesky"
-    }
-   ]
-  },
   {
    "ticker": "QQQ",
    "status": "building baseline",
@@ -560,126 +22,126 @@
      "vs_baseline": 1.0
     },
     "bluesky": {
-     "value": 37.0,
-     "mentions": 37,
-     "authors": 25,
+     "value": 39.0,
+     "mentions": 39,
+     "authors": 23,
      "status": "building baseline",
-     "baseline": 79.5,
+     "baseline": 58.25,
      "zscore": null,
-     "vs_baseline": 0.5
+     "vs_baseline": 0.7
     }
    },
    "max_zscore": null,
-   "mentions": 2917.0,
-   "stocktwits_trending_rank": 13,
+   "mentions": 2919.0,
+   "stocktwits_trending_rank": 1,
    "name": "Invesco QQQ Trust Series 1",
    "on_watchlist": false,
    "samples": [
     {
+     "text": "$QQQ under 700 soon keep selling",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544719"
+    },
+    {
      "text": "$QQQ",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666499036"
+     "url": "https://stocktwits.com/message/666544706"
     },
     {
-     "text": "$QQQ 700",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666499019"
-    },
-    {
-     "text": "market's open. here's where we're at: $SPY 772.91 -0.7% $QQQ 736.14 -1.0% $NVDA 223.99 -2.0% $TSLA 367.57 -2.0% (down) $AAPL 345.88 +1.4% $N\u2026",
-     "url": "https://bsky.app/profile/babytronai.bsky.social/post/3mxtr4ycrkc2f",
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
   },
   {
-   "ticker": "GFS",
+   "ticker": "CRWV",
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 243.2,
-     "mentions": 243.2,
-     "authors": 17,
+     "value": 2880.0,
+     "mentions": 2880.0,
+     "authors": 26,
      "status": "building baseline",
-     "baseline": null,
+     "baseline": 1501.3,
      "zscore": null,
-     "vs_baseline": null
+     "vs_baseline": 1.9
     },
     "bluesky": {
-     "value": 6.0,
-     "mentions": 6,
-     "authors": 5,
+     "value": 229.7,
+     "mentions": 229.7,
+     "authors": 36,
      "status": "building baseline",
-     "baseline": null,
+     "baseline": 24.0,
      "zscore": null,
-     "vs_baseline": null
+     "vs_baseline": 9.6
     }
    },
    "max_zscore": null,
-   "mentions": 249.2,
-   "stocktwits_trending_rank": 14,
-   "name": "GLOBALFOUNDRIES Inc.",
+   "mentions": 3109.7,
+   "stocktwits_trending_rank": 2,
+   "name": "CoreWeave, Inc.",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$GFS Did you all hear the call? HUGE news! This is the play right now",
+     "text": "$CRWV this one go bankrupt Bonds collapse of Neo clouds for heavy debt load Unsecured debt, sub prime trunch",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498259"
+     "url": "https://stocktwits.com/message/666544635"
     },
     {
-     "text": "$LAES :commercialization has substance. $GFS MoU covers PQC security IP, secure chiplets & cryogenic ASICs. Quobly: SEC discloses \u20ac5M of fut\u2026",
+     "text": "$CRWV it\u2019s over",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498087"
+     "url": "https://stocktwits.com/message/666544559"
     },
     {
-     "text": "$OVV-1 $GOOGL-1 $DHT-1 $XOM-1 $FNF-1 $SNXX-1 $GFS-1 $HDB-1 $VPLS-1 $PAGP-1 $NBIS-1 $CORZ-1 $GLXY-1 $PLTU-1 $SXTC-1 $ALC-1 $STEP-1 $FRPT-1 $C\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtvsryy227",
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
   },
   {
-   "ticker": "IWM",
+   "ticker": "SPY",
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 695.6,
-     "mentions": 695.6,
-     "authors": 21,
+     "value": 2880.0,
+     "mentions": 2880.0,
+     "authors": 28,
      "status": "building baseline",
-     "baseline": null,
+     "baseline": 2880.0,
      "zscore": null,
-     "vs_baseline": null
+     "vs_baseline": 1.0
     },
     "bluesky": {
-     "value": 13.0,
-     "mentions": 13,
-     "authors": 8,
+     "value": 29.0,
+     "mentions": 29,
+     "authors": 19,
      "status": "building baseline",
-     "baseline": null,
+     "baseline": 29.0,
      "zscore": null,
-     "vs_baseline": null
+     "vs_baseline": 1.0
     }
    },
    "max_zscore": null,
-   "mentions": 708.6,
-   "stocktwits_trending_rank": 15,
-   "name": "iShares Russell 2000 ETF",
+   "mentions": 2909.0,
+   "stocktwits_trending_rank": 3,
+   "name": "SPDR S&P 500 ETF TRUST",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$IWM",
+     "text": "$SPCX >> Has Musk cut off Starlink to Ukraine? Elon Musk's SpaceX did not completely turn off Starlink in Ukraine, but it throttled and impo\u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498619"
+     "url": "https://stocktwits.com/message/666544700"
     },
     {
-     "text": "Swing Trade Account Update Shares Added Today \u26aa\ufe0f CoreWeave 930+ @ 64 \u26aa\ufe0f DRAM 500+ @ 50 Made a few adjustments to the trade portfolio today, \u2026",
+     "text": "$QQQ $SPY $MU $SNDK Where is Fking Donnie Hiding \ud83e\udee3",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498529"
+     "url": "https://stocktwits.com/message/666544698"
     },
     {
-     "text": "Final Tally - 341/166/165/10 ... OTEs are ... Daily Wrap - Tickers: $QQQ-139 $TCRT-11 $SOXL-11 $INTC-10 $RMBS-10 $TQQQ-10 $NVDA-9 $SOXS-9 $I\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtx2e5lc27",
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
@@ -689,43 +151,43 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 1352.5,
-     "mentions": 1352.5,
-     "authors": 28,
+     "value": 1791.9,
+     "mentions": 1791.9,
+     "authors": 27,
      "status": "building baseline",
-     "baseline": 756.9,
+     "baseline": 1054.7,
      "zscore": null,
-     "vs_baseline": 1.8
+     "vs_baseline": 1.7
     },
     "bluesky": {
-     "value": 7.0,
-     "mentions": 7,
-     "authors": 7,
+     "value": 8.0,
+     "mentions": 8,
+     "authors": 8,
      "status": "building baseline",
-     "baseline": 1.0,
+     "baseline": 4.0,
      "zscore": null,
-     "vs_baseline": 7.0
+     "vs_baseline": 2.0
     }
    },
    "max_zscore": null,
-   "mentions": 1359.5,
-   "stocktwits_trending_rank": 16,
+   "mentions": 1799.9,
+   "stocktwits_trending_rank": 4,
    "name": "Nebius Group N.V.",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$NBIS next leg down soon.",
+     "text": "$MU $NBIS $NVDA $QQQ $SPY Trying to weaponize a fake Michael Burry narrative because the stock drifted on less than 1,000,000 shares of afte\u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498960"
+     "url": "https://stocktwits.com/message/666544570"
     },
     {
-     "text": "$NBIS \ud83d\udc8e gimme gimme .. selling puts",
+     "text": "$NBIS CNBC has all the bears out when a week ago we were up to $255 .. def a bottom lmaooo",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498886"
+     "url": "https://stocktwits.com/message/666544480"
     },
     {
-     "text": "This tweet appeared under this Techmeme headline: Shay Boloor / @stocksavvyshay: The neocloud massacre continues \ud83d\ude33 \u2022 $CRWV -15% \u2022 $NBIS -10%\u2026",
-     "url": "https://bsky.app/profile/xchatter.techmeme.com/post/3mxtz6nezen2i",
+     "text": "$RSG-3 $AMZN-3 $CART-3 $GLD-3 $IVV-3 $AVGO-3 $TCOM-3 $SNPS-3 $SLV-3 $NBIS-3 $TSCO-3 $WTW-2 $WFC-2 $STX-2 $MU-2 $MDB-2 $BOT-2 $MDT-2 $IE-2 $F\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4dfklk24",
      "sub": "bluesky"
     }
    ]
@@ -735,592 +197,63 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 771.8,
-     "mentions": 771.8,
-     "authors": 27,
+     "value": 1704.7,
+     "mentions": 1704.7,
+     "authors": 23,
      "status": "building baseline",
-     "baseline": 562.5,
+     "baseline": 667.15,
      "zscore": null,
-     "vs_baseline": 1.4
+     "vs_baseline": 2.6
     },
     "bluesky": {
-     "value": 13.0,
-     "mentions": 13,
+     "value": 16.0,
+     "mentions": 16,
      "authors": 3,
      "status": "building baseline",
-     "baseline": 4.0,
+     "baseline": 8.5,
      "zscore": null,
-     "vs_baseline": 3.2
+     "vs_baseline": 1.9
     }
    },
    "max_zscore": null,
-   "mentions": 784.8,
-   "stocktwits_trending_rank": 17,
+   "mentions": 1720.7,
+   "stocktwits_trending_rank": 5,
    "name": "Direxion Daily Semiconductor Bull 3X Shares",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$SOXL Bought more @ 111.45",
+     "text": "$SOXL The overnight crew will get back to $110",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498932"
+     "url": "https://stocktwits.com/message/666544690"
     },
     {
-     "text": "$SOXL extremely oversold and loaded huge but still bring it below 100 and I will put my last pennies into it as this selloff is way beyond j\u2026",
+     "text": "$SOXL no way this is running now",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498518"
+     "url": "https://stocktwits.com/message/666544580"
     },
     {
-     "text": "Final Tally - 341/166/165/10 ... OTEs are ... Daily Wrap - Tickers: $QQQ-139 $TCRT-11 $SOXL-11 $INTC-10 $RMBS-10 $TQQQ-10 $NVDA-9 $SOXS-9 $I\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtx2e5lc27",
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
   },
   {
-   "ticker": "SMH",
+   "ticker": "ORCL",
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 188.7,
-     "mentions": 188.7,
-     "authors": 23,
-     "status": "building baseline",
-     "baseline": 123.8,
-     "zscore": null,
-     "vs_baseline": 1.5
-    },
-    "bluesky": {
-     "value": 6.0,
-     "mentions": 6,
-     "authors": 4,
-     "status": "building baseline",
-     "baseline": 6.0,
-     "zscore": null,
-     "vs_baseline": 1.0
-    }
-   },
-   "max_zscore": null,
-   "mentions": 194.7,
-   "stocktwits_trending_rank": 18,
-   "name": "VanEck Semiconductor ETF",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$SMH very short 0dte put coming in",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666495277"
-    },
-    {
-     "text": "Can anyone here deny that granny $XRT has been flashing warning for months!! Can anyone deny that this textbook beauty of an island top in $\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666495274"
-    },
-    {
-     "text": "$CRWV $NVDA $SMH Corevana bonds yielding 15% is not an investment, it's a hostage negotiation. The equity was vibes with a ticker; the credi\u2026",
-     "url": "https://bsky.app/profile/sabstuck.com/post/3mxtyktwnpo2o",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "CLSK",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 223.6,
-     "mentions": 223.6,
-     "authors": 25,
+     "value": 875.5,
+     "mentions": 875.5,
+     "authors": 26,
      "status": "building baseline",
      "baseline": null,
      "zscore": null,
      "vs_baseline": null
     },
     "bluesky": {
-     "value": 1.0,
-     "mentions": 1,
-     "authors": 1,
-     "status": "below minimum",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 224.6,
-   "stocktwits_trending_rank": 19,
-   "name": "CLEANSPARK, INC.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$CLSK made thousands off this stock. Keep selling. I\u2019m shorting !!! Weeeeee!!! \ud83d\udcb0\ud83d\udcb0\ud83d\udcb0\ud83d\udcb0",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497784"
-    },
-    {
-     "text": "$CLSK CleanSpark ($CLSK) \u2764\ufe0fis in the process of an impressive transformation that positions the stock as an absolute powerhouse for the long\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666495711"
-    },
-    {
-     "text": "\ud83d\udcc8 Top 10 CRYPTO Sector Leaders: \ud83d\udd0d https://www.insiderdashboard.com/sector/crypto 1. $HUT - +54.60% YTD 2. $RIOT - +42.10% YTD 3. $BITF - +25\u2026",
-     "url": "https://bsky.app/profile/insiderdashboard.bsky.social/post/3mxsuqpcgiu2d",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "BAC",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 385.2,
-     "mentions": 385.2,
-     "authors": 27,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 99.1,
-     "mentions": 99.1,
-     "authors": 16,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 484.29999999999995,
-   "stocktwits_trending_rank": 20,
-   "name": "BANK OF AMERICA CORP /DE/",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$BAC this actually wants to run when the $SPY wants to dump.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498728"
-    },
-    {
-     "text": "$BAC $C $WFC Banks are gearing up for job cuts due to AI, and it's not just junior positions at risk.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498683"
-    },
-    {
-     "text": "These charts from $BAC back up $WFC view that energy price rise is manageable. Yes gas spend accelerated markedly in Q3. Even so, discretion\u2026",
-     "url": "https://bsky.app/profile/retailguru.bsky.social/post/3mxtiz4yahk2g",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "SLV",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 396.4,
-     "mentions": 396.4,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 396.4,
-   "stocktwits_trending_rank": 21,
-   "name": "iShares Silver Trust",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$SLV good spot to pull the trigger imo.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498383"
-    },
-    {
-     "text": "$MSTR $BTC.X $CRCL $SLV Not a sell of a shake out according to the fundamentals buy the dip https://m.youtube.com/watch?v=nEVuU4VNCOM&ra=m",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497637"
-    }
-   ]
-  },
-  {
-   "ticker": "LMT",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 33.9,
-     "mentions": 33.9,
-     "authors": 22,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 2.0,
-     "mentions": 2,
-     "authors": 2,
-     "status": "below minimum",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 35.9,
-   "stocktwits_trending_rank": 22,
-   "name": "LOCKHEED MARTIN CORP",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$LMT So far, on track to close above the yellow 20 day ma, a line it has run away from for weeks:",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497818"
-    },
-    {
-     "text": "$LMT goes up 3% from price target cut. $BA goes sideways from price target raised.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497131"
-    },
-    {
-     "text": "Hot CPI, Decent Bank Earnings, and My Margin Problem | $JPM $GS $C $WFC $BAC $BLK $ASML $AVAV $LMT $PLTR rigatonicapital.substack.com/p/hot-\u2026",
-     "url": "https://bsky.app/profile/rigatonicapital.bsky.social/post/3mxtoqoosc22y",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "NVAX",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 1165.2,
-     "mentions": 1165.2,
-     "authors": 20,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 1.0,
-     "mentions": 1,
-     "authors": 1,
-     "status": "below minimum",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1166.2,
-   "stocktwits_trending_rank": 23,
-   "name": "NOVAVAX INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$NVAX The market-maker ceiling is structurally giving out under an aggressive second wave of buying power. As the tape punches straight back\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498924"
-    },
-    {
-     "text": "$NVAX",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498893"
-    },
-    {
-     "text": "$NVAX-1 $QXO-1 $CRCG-1 $QLD-1 $SKHY-1 $AMJB-1 $SBH-1 $LOFF-1 $DHI-1 $CTVA-1 $SNPS-1 $CARR-1 $SLB-1 $LPTH-1 $PACB-1 $REZI-1 $SMH-1 $HD-1 $GLD\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtvhn52k27",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "SKHY",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 449.3,
-     "mentions": 449.3,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": 250.6,
-     "zscore": null,
-     "vs_baseline": 1.8
-    },
-    "bluesky": {
-     "value": 9.0,
-     "mentions": 9,
-     "authors": 7,
-     "status": "building baseline",
-     "baseline": 4.0,
-     "zscore": null,
-     "vs_baseline": 2.2
-    }
-   },
-   "max_zscore": null,
-   "mentions": 458.3,
-   "stocktwits_trending_rank": 24,
-   "name": "SK hynix Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$SKHY $NBIS DELISTING THIS POS NOW \ud83e\udd21",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498757"
-    },
-    {
-     "text": "$NVDA $QQQ $SKHY $SPY $TSM sounds very bearish",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496668"
-    },
-    {
-     "text": "$NVAX-1 $QXO-1 $CRCG-1 $QLD-1 $SKHY-1 $AMJB-1 $SBH-1 $LOFF-1 $DHI-1 $CTVA-1 $SNPS-1 $CARR-1 $SLB-1 $LPTH-1 $PACB-1 $REZI-1 $SMH-1 $HD-1 $GLD\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtvhn52k27",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "MU",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 2648.9,
-     "mentions": 2648.9,
-     "authors": 25,
-     "status": "building baseline",
-     "baseline": 2880.0,
-     "zscore": null,
-     "vs_baseline": 0.9
-    },
-    "bluesky": {
-     "value": 9.0,
-     "mentions": 9,
-     "authors": 8,
-     "status": "building baseline",
-     "baseline": 16.0,
-     "zscore": null,
-     "vs_baseline": 0.6
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2657.9,
-   "stocktwits_trending_rank": 25,
-   "name": "MICRON TECHNOLOGY INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$MU $SNDK Say it louder for the SLOW KIDS in the Back of the room.. $ $SOXX",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498826"
-    },
-    {
-     "text": "$MU stocks work like gravity. Everything that goes up must come down",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498716"
-    },
-    {
-     "text": "Global chip selloff hits KOSPI, Kioxia and US semis as AI trade gets crowded, while Apple hits $5T and launches $299 HomeView. Will chip vol\u2026",
-     "url": "https://bsky.app/profile/mengli512.bsky.social/post/3mxt2vfh2qc2h",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "OUST",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 30.5,
-     "mentions": 30.5,
-     "authors": 14,
-     "status": "building baseline",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    },
-    "bluesky": {
-     "value": 2.0,
-     "mentions": 2,
-     "authors": 1,
-     "status": "below minimum",
-     "baseline": null,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 32.5,
-   "stocktwits_trending_rank": 26,
-   "name": "Ouster, Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$OUST No debt, lots of cash. Interest income rising. Not worried.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497655"
-    },
-    {
-     "text": "$OUST Screaming BUY",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496331"
-    },
-    {
-     "text": "Is Serv Robotics a viable investment, or does the current price action mask deeper financial risks? #ServRobotics #robot #robotics $SERV $UB\u2026",
-     "url": "https://bsky.app/profile/mengli512.bsky.social/post/3mxtakfjerc24",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "GLXY",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 294.2,
-     "mentions": 294.2,
-     "authors": 18,
-     "status": "building baseline",
-     "baseline": 75.9,
-     "zscore": null,
-     "vs_baseline": 3.9
-    },
-    "bluesky": {
-     "value": 4.0,
-     "mentions": 4,
-     "authors": 4,
-     "status": "below minimum",
-     "baseline": 0.0,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 298.2,
-   "stocktwits_trending_rank": 27,
-   "name": "Galaxy Digital Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$GLXY If i was a mag7 company i would not wanna be associated with someone like Novo who is defending terrorists on twitter. Mikey Mike has \u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498868"
-    },
-    {
-     "text": "$GLXY All kinds of electricity for sale but no buyers? Novo couldn't sell ice-water in Hell.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498179"
-    },
-    {
-     "text": "$OVV-1 $GOOGL-1 $DHT-1 $XOM-1 $FNF-1 $SNXX-1 $GFS-1 $HDB-1 $VPLS-1 $PAGP-1 $NBIS-1 $CORZ-1 $GLXY-1 $PLTU-1 $SXTC-1 $ALC-1 $STEP-1 $FRPT-1 $C\u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtvsryy227",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "ASTS",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 2394.4,
-     "mentions": 2394.4,
-     "authors": 24,
-     "status": "building baseline",
-     "baseline": 849.7,
-     "zscore": null,
-     "vs_baseline": 2.8
-    },
-    "bluesky": {
-     "value": 14.0,
-     "mentions": 14,
-     "authors": 7,
-     "status": "building baseline",
-     "baseline": 12.0,
-     "zscore": null,
-     "vs_baseline": 1.2
-    }
-   },
-   "max_zscore": null,
-   "mentions": 2408.4,
-   "stocktwits_trending_rank": 28,
-   "name": "AST SpaceMobile, Inc.",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$ASTS we are between panic and capitulation\u2026 riding the wave",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498576"
-    },
-    {
-     "text": "$ASTS we just need some time and \ud83d\ude4f It\u2019s all good.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498546"
-    },
-    {
-     "text": "$CRH-1 $MO-1 $BL-1 $SIRI-1 $MUB-1 $AXTI-1 $DHC-1 $ENPH-1 $PINS-1 $KR-1 $KSS-1 $CMS-1 $GILD-1 $DXCM-1 $APLD-1 $BEAM-1 $META-1 $IMSR-1 $ACI-1 \u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtw3ysl227",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "FUN",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 134.1,
-     "mentions": 134.1,
-     "authors": 28,
-     "status": "building baseline",
-     "baseline": 186.1,
-     "zscore": null,
-     "vs_baseline": 0.7
-    },
-    "bluesky": {
-     "value": 1.0,
-     "mentions": 1,
-     "authors": 1,
-     "status": "below minimum",
-     "baseline": 0.0,
-     "zscore": null,
-     "vs_baseline": null
-    }
-   },
-   "max_zscore": null,
-   "mentions": 135.1,
-   "stocktwits_trending_rank": 29,
-   "name": "Six Flags Entertainment Corporation/NEW",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$FUN they cashed in on puts and shorts now institutions are going to run it up imo.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498171"
-    },
-    {
-     "text": "$FUN loaded 9.30",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497736"
-    },
-    {
-     "text": "Most searched small-cap stocks, Tue Oct 13th - $RXRX $DNN $SOUN $NVTS $AMC $SMR $BTE $INTR $ACHR $MARA $ONDS $WFF $TCRT $PURR $PENG $KSS $EF\u2026",
-     "url": "https://bsky.app/profile/smcapstrategist.bsky.social/post/3mxrx4gebwk2o",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "XLV",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 14.0,
-     "mentions": 14.0,
+     "value": 13.0,
+     "mentions": 13,
      "authors": 12,
      "status": "building baseline",
      "baseline": null,
@@ -1329,111 +262,24 @@
     }
    },
    "max_zscore": null,
-   "mentions": 14.0,
-   "stocktwits_trending_rank": 30,
-   "name": "Health Care Select Sector SPDR Fund",
+   "mentions": 888.5,
+   "stocktwits_trending_rank": 6,
+   "name": "ORACLE CORP",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$UNH $PILL $XLV $PFE $MRNA",
+     "text": "$ORCL I remember same thing happened with CRM and boi did I buy and make money when it popped to 260. Only shit cowboy !!!",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666496578"
+     "url": "https://stocktwits.com/message/666544425"
     },
     {
-     "text": "$MRK nice set up on daily for possible leg higher. $XLV breaking out of its flag. health care getting maybe a bit of rotation away from tech\u2026",
+     "text": "$ORCL 116?",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666493365"
-    }
-   ]
-  },
-  {
-   "ticker": "AMZN",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 446.9,
-     "mentions": 446.9,
-     "authors": 29,
-     "status": "building baseline",
-     "baseline": 371.7,
-     "zscore": null,
-     "vs_baseline": 1.2
-    },
-    "bluesky": {
-     "value": 8448.0,
-     "mentions": 8448.0,
-     "authors": 144,
-     "status": "building baseline",
-     "baseline": 8928.0,
-     "zscore": null,
-     "vs_baseline": 0.9
-    }
-   },
-   "max_zscore": null,
-   "mentions": 8894.9,
-   "stocktwits_trending_rank": null,
-   "name": "AMAZON COM INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$AMZN For record had to abort... selling continuing, thought we would get a mid day bounce.",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498817"
+     "url": "https://stocktwits.com/message/666544212"
     },
     {
-     "text": "$SPY $NVDA $AMZN TACO when?",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666497923"
-    },
-    {
-     "text": "EU Hybrid Deal Could Boost Chinese EV Imports library.thecapitolforum.com/docs/9wxx84k... $AAPL $AMZN $APP $AVGO $DIS $FOX $FUFU $GOOG $GOOG\u2026",
-     "url": "https://bsky.app/profile/capitolforum.bsky.social/post/3mxtr6alvus2x",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "MSFT",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 305.9,
-     "mentions": 305.9,
-     "authors": 28,
-     "status": "building baseline",
-     "baseline": 256.1,
-     "zscore": null,
-     "vs_baseline": 1.2
-    },
-    "bluesky": {
-     "value": 2921.3,
-     "mentions": 2921.3,
-     "authors": 100,
-     "status": "building baseline",
-     "baseline": 4372.0,
-     "zscore": null,
-     "vs_baseline": 0.7
-    }
-   },
-   "max_zscore": null,
-   "mentions": 3227.2000000000003,
-   "stocktwits_trending_rank": null,
-   "name": "MICROSOFT CORP",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$MSFT",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498775"
-    },
-    {
-     "text": "$MSFT Holding strong. \ud83d\udcaa\ud83c\udffd",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498641"
-    },
-    {
-     "text": "EU Hybrid Deal Could Boost Chinese EV Imports library.thecapitolforum.com/docs/9wxx84k... $AAPL $AMZN $APP $AVGO $DIS $FOX $FUFU $GOOG $GOOG\u2026",
-     "url": "https://bsky.app/profile/capitolforum.bsky.social/post/3mxtr6alvus2x",
+     "text": "$GTLB-1 $SOFI-1 $HIMS-1 $MRNA-1 $KO-1 $NOG-1 $PLTR-1 $CAI-1 $KOLD-1 $APA-1 $AUGO-1 $PURR-1 $APLD-1 $RVT-1 $OBK-1 $CL-1 $BNC-1 $FTV-1 $O-1 $N\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3lhc3c24",
      "sub": "bluesky"
     }
    ]
@@ -1443,89 +289,1119 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 1567.6,
-     "mentions": 1567.6,
-     "authors": 26,
+     "value": 1930.7,
+     "mentions": 1930.7,
+     "authors": 28,
      "status": "building baseline",
-     "baseline": 884.2,
+     "baseline": 1225.9,
      "zscore": null,
-     "vs_baseline": 1.8
+     "vs_baseline": 1.6
     },
     "bluesky": {
-     "value": 1006.7,
-     "mentions": 1006.7,
-     "authors": 121,
+     "value": 660.2,
+     "mentions": 660.2,
+     "authors": 113,
      "status": "building baseline",
-     "baseline": 1784.8,
+     "baseline": 1395.75,
      "zscore": null,
-     "vs_baseline": 0.6
+     "vs_baseline": 0.5
     }
    },
    "max_zscore": null,
-   "mentions": 2574.3,
-   "stocktwits_trending_rank": null,
+   "mentions": 2590.9,
+   "stocktwits_trending_rank": 7,
    "name": "NVIDIA CORP",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$NVDA Looking bloody out there. Keeping an eye on how it reacts around $220.",
+     "text": "$NVDA AI/ Hardware CEOs \u201ccompanies are going to keep buying exponentially more chips until sales hit infinite singularity cause AI\u201d Failing \u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498967"
+     "url": "https://stocktwits.com/message/666544667"
     },
     {
-     "text": "$NVDA the way to 260 is through 200",
+     "text": "$NVDA back towards 150 keep selling",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498451"
+     "url": "https://stocktwits.com/message/666544574"
     },
     {
-     "text": "market's open. here's where we're at: $SPY 772.91 -0.7% $QQQ 736.14 -1.0% $NVDA 223.99 -2.0% $TSLA 367.57 -2.0% (down) $AAPL 345.88 +1.4% $N\u2026",
-     "url": "https://bsky.app/profile/babytronai.bsky.social/post/3mxtr4ycrkc2f",
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
   },
   {
-   "ticker": "PLTR",
+   "ticker": "IBRX",
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 1006.0,
-     "mentions": 1006.0,
-     "authors": 23,
+     "value": 953.5,
+     "mentions": 953.5,
+     "authors": 27,
      "status": "building baseline",
-     "baseline": 552.7,
+     "baseline": 2880.0,
      "zscore": null,
-     "vs_baseline": 1.8
+     "vs_baseline": 0.3
     },
     "bluesky": {
-     "value": 1232.0,
-     "mentions": 1232.0,
-     "authors": 88,
+     "value": 8.0,
+     "mentions": 8,
+     "authors": 7,
      "status": "building baseline",
-     "baseline": 87.0,
+     "baseline": 5.0,
      "zscore": null,
-     "vs_baseline": 14.2
+     "vs_baseline": 1.6
     }
    },
    "max_zscore": null,
-   "mentions": 2238.0,
-   "stocktwits_trending_rank": null,
-   "name": "Palantir Technologies Inc.",
+   "mentions": 961.5,
+   "stocktwits_trending_rank": 8,
+   "name": "ImmunityBio, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$IBRX Dodgers win tonight, shares shall be up 2 bucks tomorrow! They shall power up! \ud83d\udcaf\ud83c\udfaf\ud83d\udcaf\ud83d\ude80",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544470"
+    },
+    {
+     "text": "$IBRX Someone wants in\u2026..",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544443"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "SMCI",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 726.1,
+     "mentions": 726.1,
+     "authors": 22,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    },
+    "bluesky": {
+     "value": 1.0,
+     "mentions": 1,
+     "authors": 1,
+     "status": "below minimum",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    }
+   },
+   "max_zscore": null,
+   "mentions": 727.1,
+   "stocktwits_trending_rank": 9,
+   "name": "Super Micro Computer, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SMCI This week, CPI/PPI bad new are over, semiconductor AI/SMCI up to company Q3 earnings. SMCI will keep up and up in Q3 earning time.",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544749"
+    },
+    {
+     "text": "$SMCI on the bright side, it's down only 16% in one week. I exited my remaining holding at 37 today. Breach of 50 ma no good. 200 ma next.",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544444"
+    },
+    {
+     "text": "$GTLB-1 $SOFI-1 $HIMS-1 $MRNA-1 $KO-1 $NOG-1 $PLTR-1 $CAI-1 $KOLD-1 $APA-1 $AUGO-1 $PURR-1 $APLD-1 $RVT-1 $OBK-1 $CL-1 $BNC-1 $FTV-1 $O-1 $N\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3lhc3c24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "IREN",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 1399.9,
+     "mentions": 1399.9,
+     "authors": 23,
+     "status": "building baseline",
+     "baseline": 924.7,
+     "zscore": null,
+     "vs_baseline": 1.5
+    },
+    "bluesky": {
+     "value": 3.0,
+     "mentions": 3,
+     "authors": 3,
+     "status": "below minimum",
+     "baseline": 4.0,
+     "zscore": null,
+     "vs_baseline": 0.8
+    }
+   },
+   "max_zscore": null,
+   "mentions": 1402.9,
+   "stocktwits_trending_rank": 10,
+   "name": "IREN Ltd",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$IREN take your loss yet?",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544697"
+    },
+    {
+     "text": "$IREN congrats almost 5 baggers in 18 months \ud83d\udc4d",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544424"
+    },
+    {
+     "text": "This tweet appeared under this Techmeme headline: Shay Boloor / @stocksavvyshay: The neocloud massacre continues \ud83d\ude33 \u2022 $CRWV -15% \u2022 $NBIS -10%\u2026",
+     "url": "https://bsky.app/profile/xchatter.techmeme.com/post/3mxtz6nezen2i",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "SOXX",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 607.9,
+     "mentions": 607.9,
+     "authors": 18,
+     "status": "building baseline",
+     "baseline": 79.7,
+     "zscore": null,
+     "vs_baseline": 7.6
+    },
+    "bluesky": {
+     "value": 5.0,
+     "mentions": 5,
+     "authors": 4,
+     "status": "building baseline",
+     "baseline": 4.0,
+     "zscore": null,
+     "vs_baseline": 1.2
+    }
+   },
+   "max_zscore": null,
+   "mentions": 612.9,
+   "stocktwits_trending_rank": 11,
+   "name": "iShares Semiconductor ETF",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SOXX $SOXL $MRVL $INTC $SOXS All the idiot bulls looking to jump back in thinking the drawdown is over. It\u2019s only begun. They\u2019ll get their \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544358"
+    },
+    {
+     "text": "$SOXL $NVDA $SOXX Party over????",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544000"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "AAPL",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 444.0,
+     "mentions": 444.0,
+     "authors": 22,
+     "status": "building baseline",
+     "baseline": 678.75,
+     "zscore": null,
+     "vs_baseline": 0.7
+    },
+    "bluesky": {
+     "value": 261.6,
+     "mentions": 261.6,
+     "authors": 152,
+     "status": "building baseline",
+     "baseline": 1508.7,
+     "zscore": null,
+     "vs_baseline": 0.2
+    }
+   },
+   "max_zscore": null,
+   "mentions": 705.6,
+   "stocktwits_trending_rank": 12,
+   "name": "Apple Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$AAPL \u2013 Latest price action is showing a corrective pullback in wave (ii), after which a turn higher is anticipated. Group 3 1H Post-Market \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544539"
+    },
+    {
+     "text": "$AAPL 84 cent pump on 300 shares....",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544309"
+    },
+    {
+     "text": "Our model's read on $AAPL today: intraday $340.32-$347.62, close target $345.50 (+0.2%). Five-day target $344.77. Not investment advice.",
+     "url": "https://bsky.app/profile/hadestock.bsky.social/post/3mxuqy4kznx2z",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "MU",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 2880.0,
+     "mentions": 2880.0,
+     "authors": 28,
+     "status": "building baseline",
+     "baseline": 2764.45,
+     "zscore": null,
+     "vs_baseline": 1.0
+    },
+    "bluesky": {
+     "value": 46.8,
+     "mentions": 46.8,
+     "authors": 13,
+     "status": "building baseline",
+     "baseline": 12.5,
+     "zscore": null,
+     "vs_baseline": 3.7
+    }
+   },
+   "max_zscore": null,
+   "mentions": 2926.8,
+   "stocktwits_trending_rank": 13,
+   "name": "MICRON TECHNOLOGY INC",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$MU classic sell on earnings against terrible macro and technicals. I almost bought into it on blow out earnings but glad I didn't. Better o\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544720"
+    },
+    {
+     "text": "$QQQ $SPY $MU $SNDK Where is Fking Donnie Hiding \ud83e\udee3",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544698"
+    },
+    {
+     "text": "Global chip selloff hits KOSPI, Kioxia and US semis as AI trade gets crowded, while Apple hits $5T and launches $299 HomeView. Will chip vol\u2026",
+     "url": "https://bsky.app/profile/mengli512.bsky.social/post/3mxt2vfh2qc2h",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "INTC",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 720.7,
+     "mentions": 720.7,
+     "authors": 22,
+     "status": "building baseline",
+     "baseline": 1121.1,
+     "zscore": null,
+     "vs_baseline": 0.6
+    },
+    "bluesky": {
+     "value": 9.0,
+     "mentions": 9,
+     "authors": 8,
+     "status": "building baseline",
+     "baseline": 23.0,
+     "zscore": null,
+     "vs_baseline": 0.4
+    }
+   },
+   "max_zscore": null,
+   "mentions": 729.7,
+   "stocktwits_trending_rank": 14,
+   "name": "INTEL CORP",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SOXX $SOXL $MRVL $INTC $SOXS All the idiot bulls looking to jump back in thinking the drawdown is over. It\u2019s only begun. They\u2019ll get their \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544358"
+    },
+    {
+     "text": "$INTC",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544345"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "CIFR",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 602.0,
+     "mentions": 602.0,
+     "authors": 29,
+     "status": "building baseline",
+     "baseline": 670.45,
+     "zscore": null,
+     "vs_baseline": 0.9
+    },
+    "bluesky": {
+     "value": 4.0,
+     "mentions": 4,
+     "authors": 4,
+     "status": "below minimum",
+     "baseline": 6.5,
+     "zscore": null,
+     "vs_baseline": 0.6
+    }
+   },
+   "max_zscore": null,
+   "mentions": 606.0,
+   "stocktwits_trending_rank": 15,
+   "name": "Cipher Digital Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$CIFR It seems like a lot of people aren\u2019t appreciating the fact that after going down $21, it can literally only go down $9 more and not a \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544603"
+    },
+    {
+     "text": "$CIFR we are going to break a record for most consecutive red days on the nasdaq",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544204"
+    },
+    {
+     "text": "$AXON-1 $SNY-1 $ARKG-1 $SKYD-1 $CIFR-1 $XLY-1 $FOXA-1 $KLAC-1 $FRO-1 $STGW-1 $MUU-1 $BABA-1 $PTIR-1 $XYZ-1 $WMT-1 $SG-1 $RELX-1 $AXGN-1 $CRK\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3bzgvk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "DELL",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 337.0,
+     "mentions": 337.0,
+     "authors": 25,
+     "status": "building baseline",
+     "baseline": 1216.0,
+     "zscore": null,
+     "vs_baseline": 0.3
+    },
+    "bluesky": {
+     "value": 5.0,
+     "mentions": 5,
+     "authors": 4,
+     "status": "building baseline",
+     "baseline": 5.0,
+     "zscore": null,
+     "vs_baseline": 1.0
+    }
+   },
+   "max_zscore": null,
+   "mentions": 342.0,
+   "stocktwits_trending_rank": 16,
+   "name": "Dell Technologies Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$DELL Price: $507.93 Volume: Above average Catalyst: Strong AI server demand following recent enterprise infrastructure spending updates is \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544669"
+    },
+    {
+     "text": "$DELL crushed!!!",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543627"
+    },
+    {
+     "text": "$AAPL $GOOGL holding, relative strength $DELL $HPE downgrade, failing pm, potential shorts $TSLA under 100d, roadster event tomorrow $SPCX s\u2026",
+     "url": "https://bsky.app/profile/julianthelemur.bsky.social/post/3mxtnhlwxhk27",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "RKLB",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 978.7,
+     "mentions": 978.7,
+     "authors": 26,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    },
+    "bluesky": {
+     "value": 5.0,
+     "mentions": 5,
+     "authors": 5,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    }
+   },
+   "max_zscore": null,
+   "mentions": 983.7,
+   "stocktwits_trending_rank": 17,
+   "name": "Rocket Lab Corp",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$RKLB god dam it it\u2019s because I bought a 100 shares last week at 70",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544673"
+    },
+    {
+     "text": "$RKLB lol this after hours action is crazy. was recovering, plummets, and now just improved 2% right before my eyes. tomorrow is going to be\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544565"
+    },
+    {
+     "text": "What on earth is going on with $RKLB and $ONDS?",
+     "url": "https://bsky.app/profile/optionsjessica.bsky.social/post/3mxu5zdwx4k2l",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "DRAM",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 249.5,
+     "mentions": 249.5,
+     "authors": 16,
+     "status": "building baseline",
+     "baseline": 144.3,
+     "zscore": null,
+     "vs_baseline": 1.7
+    },
+    "bluesky": {
+     "value": 1.0,
+     "mentions": 1,
+     "authors": 1,
+     "status": "below minimum",
+     "baseline": 2.0,
+     "zscore": null,
+     "vs_baseline": 0.5
+    }
+   },
+   "max_zscore": null,
+   "mentions": 250.5,
+   "stocktwits_trending_rank": 18,
+   "name": "Roundhill ETF Trust - Roundhill Memory ETF",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$DRAM is this a 3x fund?",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543950"
+    },
+    {
+     "text": "$DRAM $MU $QQQ $SPY lmao what a scammer",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543919"
+    },
+    {
+     "text": "Memory stocks (in blue) now in a wicked divergence vs. hyperscalers (via Schwab) $DRAM",
+     "url": "https://bsky.app/profile/carlquintanilla.bsky.social/post/3mxtfephxks2z",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "MRVL",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 356.9,
+     "mentions": 356.9,
+     "authors": 25,
+     "status": "building baseline",
+     "baseline": 274.9,
+     "zscore": null,
+     "vs_baseline": 1.3
+    },
+    "bluesky": {
+     "value": 4.0,
+     "mentions": 4,
+     "authors": 3,
+     "status": "below minimum",
+     "baseline": 4.0,
+     "zscore": null,
+     "vs_baseline": 1.0
+    }
+   },
+   "max_zscore": null,
+   "mentions": 360.9,
+   "stocktwits_trending_rank": 19,
+   "name": "Marvell Technology, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$MRVL from $300 to $238 in a week? -20% in 5 trading days, wtf\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544606"
+    },
+    {
+     "text": "$SOXX $SOXL $MRVL $INTC $SOXS All the idiot bulls looking to jump back in thinking the drawdown is over. It\u2019s only begun. They\u2019ll get their \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544358"
+    },
+    {
+     "text": "$GOOGL-2 $NI-2 $CRCL-2 $SITM-2 $MRVL-2 $BMY-1 $XP-1 $ROST-1 $XLI-1 $AKAM-1 $PFFA-1 $META-1 $RSP-1 $CRDO-1 $KVYO-1 $HBAN-1 $S-1 $UAL-1 $TZA-1\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3xkkns24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "AVGO",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 217.2,
+     "mentions": 217.2,
+     "authors": 25,
+     "status": "building baseline",
+     "baseline": 163.3,
+     "zscore": null,
+     "vs_baseline": 1.3
+    },
+    "bluesky": {
+     "value": 14.0,
+     "mentions": 14,
+     "authors": 10,
+     "status": "building baseline",
+     "baseline": 14.0,
+     "zscore": null,
+     "vs_baseline": 1.0
+    }
+   },
+   "max_zscore": null,
+   "mentions": 231.2,
+   "stocktwits_trending_rank": 20,
+   "name": "Broadcom Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$UNH sold on rally and moved to $AVGO ! Hope not a bad move \ud83d\udca4",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543823"
+    },
+    {
+     "text": "$AVGO $SNDK $TSM $AVGO $CLS",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543574"
+    },
+    {
+     "text": "EU Hybrid Deal Could Boost Chinese EV Imports library.thecapitolforum.com/docs/9wxx84k... $AAPL $AMZN $APP $AVGO $DIS $FOX $FUFU $GOOG $GOOG\u2026",
+     "url": "https://bsky.app/profile/capitolforum.bsky.social/post/3mxtr6alvus2x",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "AMD",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 1355.3,
+     "mentions": 1355.3,
+     "authors": 29,
+     "status": "building baseline",
+     "baseline": 487.5,
+     "zscore": null,
+     "vs_baseline": 2.8
+    },
+    "bluesky": {
+     "value": 5.0,
+     "mentions": 5,
+     "authors": 4,
+     "status": "building baseline",
+     "baseline": 7.0,
+     "zscore": null,
+     "vs_baseline": 0.7
+    }
+   },
+   "max_zscore": null,
+   "mentions": 1360.3,
+   "stocktwits_trending_rank": 21,
+   "name": "ADVANCED MICRO DEVICES INC",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$AMD ALL IN AT 420",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544633"
+    },
+    {
+     "text": "$AMD did yall listen?!! 550 gap fill is here. now we head for the 350 gap",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544628"
+    },
+    {
+     "text": "percentage points. This is followed by Micron, $MU, Apple, $AAPL, and Microsoft, $MSFT, each accounting for 9% of the S&P 500\u2019s advance, add\u2026",
+     "url": "https://bsky.app/profile/ownfeed.bsky.social/post/3mxsrku4jg325",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "APLD",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 1261.0,
+     "mentions": 1261.0,
+     "authors": 28,
+     "status": "building baseline",
+     "baseline": 1088.8,
+     "zscore": null,
+     "vs_baseline": 1.2
+    },
+    "bluesky": {
+     "value": 1.0,
+     "mentions": 1,
+     "authors": 1,
+     "status": "below minimum",
+     "baseline": 2.5,
+     "zscore": null,
+     "vs_baseline": 0.4
+    }
+   },
+   "max_zscore": null,
+   "mentions": 1262.0,
+   "stocktwits_trending_rank": 22,
+   "name": "Applied Digital Corp.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$APLD",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544514"
+    },
+    {
+     "text": "$APLD feeling like a coordinated crash before the midterm elections",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544402"
+    },
+    {
+     "text": "$GTLB-1 $SOFI-1 $HIMS-1 $MRNA-1 $KO-1 $NOG-1 $PLTR-1 $CAI-1 $KOLD-1 $APA-1 $AUGO-1 $PURR-1 $APLD-1 $RVT-1 $OBK-1 $CL-1 $BNC-1 $FTV-1 $O-1 $N\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3lhc3c24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "IWM",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 228.6,
+     "mentions": 228.6,
+     "authors": 25,
+     "status": "building baseline",
+     "baseline": 695.6,
+     "zscore": null,
+     "vs_baseline": 0.3
+    },
+    "bluesky": {
+     "value": 19.0,
+     "mentions": 19,
+     "authors": 10,
+     "status": "building baseline",
+     "baseline": 13.0,
+     "zscore": null,
+     "vs_baseline": 1.5
+    }
+   },
+   "max_zscore": null,
+   "mentions": 247.6,
+   "stocktwits_trending_rank": 23,
+   "name": "iShares Russell 2000 ETF",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$QQQ was a volumeless void above 722 so now we get a volumeless retreat. Looks like Situational awareness tried to make another leveraged ru\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544069"
+    },
+    {
+     "text": "This one is for my MOM!!! \ud83e\udef6 $DRAM.X $QQQ $SPY $DIA $IWM",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543131"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "LUNR",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 318.2,
+     "mentions": 318.2,
+     "authors": 19,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    }
+   },
+   "max_zscore": null,
+   "mentions": 318.2,
+   "stocktwits_trending_rank": 24,
+   "name": "Intuitive Machines, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$LUNR Share Price: $11.02 Contract Selected: Nov 06, 2026 $10 Calls Buy Zone: $1.21 \u2013 $1.49 Target Zone: $2.29 \u2013 $2.79 Potential Upside: 79%\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544119"
+    },
+    {
+     "text": "$LUNR rklb just buy this for the q1 landing get out of rklb",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543554"
+    }
+   ]
+  },
+  {
+   "ticker": "SOXS",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 218.9,
+     "mentions": 218.9,
+     "authors": 23,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    },
+    "bluesky": {
+     "value": 5.0,
+     "mentions": 5,
+     "authors": 3,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    }
+   },
+   "max_zscore": null,
+   "mentions": 223.9,
+   "stocktwits_trending_rank": 25,
+   "name": "Direxion Daily Semiconductor Bear 3X ETF",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SOXX $SOXL $MRVL $INTC $SOXS All the idiot bulls looking to jump back in thinking the drawdown is over. It\u2019s only begun. They\u2019ll get their \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544358"
+    },
+    {
+     "text": "$SOXS I am up 30% fast and out for now \ud83d\ude08",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544129"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "DXYZ",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 29.0,
+     "mentions": 29.0,
+     "authors": 16,
+     "status": "building baseline",
+     "baseline": null,
+     "zscore": null,
+     "vs_baseline": null
+    }
+   },
+   "max_zscore": null,
+   "mentions": 29.0,
+   "stocktwits_trending_rank": 26,
+   "name": "Destiny Tech100 Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$DXYZ Not sure who is trying to manipulate this. But this is from the Financial Times. https://www.ft.com/content/11632d03-358c-454b-af95-d0\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543207"
+    },
+    {
+     "text": "@Jeremymartin007 @itsphd @indrasis @judgeyoung2 @jenbunn @ZY786 @TraderRapp @Tradermikes40 @tonyctl @stock808 rapp why no shares available t\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666542988"
+    }
+   ]
+  },
+  {
+   "ticker": "ONDS",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 378.6,
+     "mentions": 378.6,
+     "authors": 21,
+     "status": "building baseline",
+     "baseline": 725.65,
+     "zscore": null,
+     "vs_baseline": 0.5
+    },
+    "bluesky": {
+     "value": 2.0,
+     "mentions": 2,
+     "authors": 1,
+     "status": "below minimum",
+     "baseline": 5.5,
+     "zscore": null,
+     "vs_baseline": 0.4
+    }
+   },
+   "max_zscore": null,
+   "mentions": 380.6,
+   "stocktwits_trending_rank": 27,
+   "name": "Ondas Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$ONDS nothing about this company\u2019s future looks bad including a partnership with Pltr that is everyone\u2019s darling. This makes no sense. Infla\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544638"
+    },
+    {
+     "text": "$ONDS I don't think I'd sweat my losses if a point could be gained as easily as it's lost here, but a point can be dropped in only one day. \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544429"
+    },
+    {
+     "text": "What on earth is going on with $RKLB and $ONDS?",
+     "url": "https://bsky.app/profile/optionsjessica.bsky.social/post/3mxu5zdwx4k2l",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "SOFI",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 465.6,
+     "mentions": 465.6,
+     "authors": 26,
+     "status": "building baseline",
+     "baseline": 1728.45,
+     "zscore": null,
+     "vs_baseline": 0.3
+    },
+    "bluesky": {
+     "value": 43.0,
+     "mentions": 43,
+     "authors": 39,
+     "status": "building baseline",
+     "baseline": 77.15,
+     "zscore": null,
+     "vs_baseline": 0.6
+    }
+   },
+   "max_zscore": null,
+   "mentions": 508.6,
+   "stocktwits_trending_rank": 28,
+   "name": "SoFi Technologies, Inc.",
    "on_watchlist": true,
    "samples": [
     {
-     "text": "$PLTR so when do the big dips start?",
+     "text": "$SOFI then why are you here , Complaining about the people , You should be complaining about the company , as I stated before , operating co\u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498979"
+     "url": "https://stocktwits.com/message/666543998"
     },
     {
-     "text": "$PLTR Hover your cursor over the $QQQ at the top of the page - its a mirror image of our chart. No worries.",
+     "text": "$SOFI Jus ad to buy suh mo",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498892"
+     "url": "https://stocktwits.com/message/666543975"
     },
     {
-     "text": "$CRH-1 $MO-1 $BL-1 $SIRI-1 $MUB-1 $AXTI-1 $DHC-1 $ENPH-1 $PINS-1 $KR-1 $KSS-1 $CMS-1 $GILD-1 $DXCM-1 $APLD-1 $BEAM-1 $META-1 $IMSR-1 $ACI-1 \u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtw3ysl227",
+     "text": "$GTLB-1 $SOFI-1 $HIMS-1 $MRNA-1 $KO-1 $NOG-1 $PLTR-1 $CAI-1 $KOLD-1 $APA-1 $AUGO-1 $PURR-1 $APLD-1 $RVT-1 $OBK-1 $CL-1 $BNC-1 $FTV-1 $O-1 $N\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3lhc3c24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "LULU",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 31.4,
+     "mentions": 31.4,
+     "authors": 13,
+     "status": "building baseline",
+     "baseline": 57.75,
+     "zscore": null,
+     "vs_baseline": 0.5
+    },
+    "bluesky": {
+     "value": 22.0,
+     "mentions": 22,
+     "authors": 20,
+     "status": "building baseline",
+     "baseline": 19.0,
+     "zscore": null,
+     "vs_baseline": 1.2
+    }
+   },
+   "max_zscore": null,
+   "mentions": 53.4,
+   "stocktwits_trending_rank": 29,
+   "name": "lululemon athletica inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$LULU this thing is like a piece of poo stuck to your shoe that won\u2019t come off just go down already",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543335"
+    },
+    {
+     "text": "$LULU $MU $NBIS $PLTR $SOXX At close Burry's $500 put was down 20% He has 8 months to get $MU down to 2.5 PE to break even. Burry will have \u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543268"
+    },
+    {
+     "text": ">how the six-foot-tall caked up blonde haired blue eyed German-American Aryan baddie in the tight Lululemon yoga pants and tank top be looki\u2026",
+     "url": "https://bsky.app/profile/alsvid.bsky.social/post/3mxubynogzk2g",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "SNDK",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 944.8,
+     "mentions": 944.8,
+     "authors": 28,
+     "status": "building baseline",
+     "baseline": 2138.0,
+     "zscore": null,
+     "vs_baseline": 0.4
+    },
+    "bluesky": {
+     "value": 23.0,
+     "mentions": 23,
+     "authors": 6,
+     "status": "building baseline",
+     "baseline": 25.0,
+     "zscore": null,
+     "vs_baseline": 0.9
+    }
+   },
+   "max_zscore": null,
+   "mentions": 967.8,
+   "stocktwits_trending_rank": 30,
+   "name": "Sandisk Corp",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$QQQ $SPY $MU $SNDK Where is Fking Donnie Hiding \ud83e\udee3",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544698"
+    },
+    {
+     "text": "$SNDK ALL IN AT 880",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544679"
+    },
+    {
+     "text": "Global chip selloff hits KOSPI, Kioxia and US semis as AI trade gets crowded, while Apple hits $5T and launches $299 HomeView. Will chip vol\u2026",
+     "url": "https://bsky.app/profile/mengli512.bsky.social/post/3mxt2vfh2qc2h",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "NFLX",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 164.9,
+     "mentions": 164.9,
+     "authors": 27,
+     "status": "building baseline",
+     "baseline": 332.2,
+     "zscore": null,
+     "vs_baseline": 0.5
+    },
+    "bluesky": {
+     "value": 2076.0,
+     "mentions": 2076.0,
+     "authors": 108,
+     "status": "building baseline",
+     "baseline": 1298.9,
+     "zscore": null,
+     "vs_baseline": 1.6
+    }
+   },
+   "max_zscore": null,
+   "mentions": 2240.9,
+   "stocktwits_trending_rank": null,
+   "name": "NETFLIX INC",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$NFLX #Netflix latest update at https://elliottwave-forecast.com?fpr=ewfhendra63 showing a pullback in wave B with potentially another leg u\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544423"
+    },
+    {
+     "text": "Chart of The Day from 9 October: #Netflix #Elliottwave bearish sequence dictates corrective rally failure, downside towards $50 https://elli\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544288"
+    },
+    {
+     "text": "Final Tally - 755/386/361/8 ... OTEs are ... Daily Wrap - Tickers: $QQQ-842 $TQQQ-75 $NVDA-27 $SPY-21 $IWM-13 $INTC-13 $SOXL-10 $SOXS-9 $EXE\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug4hrsuk24",
      "sub": "bluesky"
     }
    ]
@@ -1535,26 +1411,26 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 2.0,
-     "mentions": 2.0,
-     "authors": 2,
+     "value": 1.0,
+     "mentions": 1.0,
+     "authors": 1,
      "status": "below minimum",
-     "baseline": 3.0,
+     "baseline": 2.5,
      "zscore": null,
-     "vs_baseline": 0.7
+     "vs_baseline": 0.4
     },
     "bluesky": {
-     "value": 1798.8,
-     "mentions": 1798.8,
-     "authors": 78,
+     "value": 1194.5,
+     "mentions": 1194.5,
+     "authors": 69,
      "status": "building baseline",
-     "baseline": 1427.4,
+     "baseline": 1613.1,
      "zscore": null,
-     "vs_baseline": 1.3
+     "vs_baseline": 0.7
     }
    },
    "max_zscore": null,
-   "mentions": 1800.8,
+   "mentions": 1195.5,
    "stocktwits_trending_rank": null,
    "name": "Spotify Technology S.A.",
    "on_watchlist": false,
@@ -1570,146 +1446,54 @@
      "url": "https://stocktwits.com/message/666401788"
     },
     {
-     "text": "Deck Your Halls with This Year\u2019s Spotify Singles: Holiday Collection #mediaor",
-     "url": "https://bsky.app/profile/mediaor.com/post/3mxtzxhhgn72z",
+     "text": "AMD Helion, Cloudflare Absorbs Deno & $40B Deepfakes | Tech Field Day News Rundown: October 14, 2026 \ud83c\udfa7 creators.spotify.com/pod/profile/... \u2026",
+     "url": "https://bsky.app/profile/techfieldday.com/post/3mxudqzdzra2k",
      "sub": "bluesky"
     }
    ]
   },
   {
-   "ticker": "TSLA",
+   "ticker": "WMT",
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 1631.7,
-     "mentions": 1631.7,
-     "authors": 26,
+     "value": 229.3,
+     "mentions": 229.3,
+     "authors": 22,
      "status": "building baseline",
-     "baseline": 762.3,
+     "baseline": 283.0,
      "zscore": null,
-     "vs_baseline": 2.1
+     "vs_baseline": 0.8
     },
     "bluesky": {
-     "value": 128.0,
-     "mentions": 128,
-     "authors": 114,
+     "value": 893.0,
+     "mentions": 893.0,
+     "authors": 91,
      "status": "building baseline",
-     "baseline": 768.8,
+     "baseline": 838.7,
      "zscore": null,
-     "vs_baseline": 0.2
+     "vs_baseline": 1.1
     }
    },
    "max_zscore": null,
-   "mentions": 1759.7,
+   "mentions": 1122.3,
    "stocktwits_trending_rank": null,
-   "name": "Tesla, Inc.",
+   "name": "Walmart Inc.",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$TSLA A $40 stock with a $327 Elon fart-huffing premium attached. Tesla operating income for the quarter ending June 30, 2026 was $398M, a 5\u2026",
+     "text": "$WMT https://stocktwits.com/QuantumQ20/message/666231340",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666499058"
+     "url": "https://stocktwits.com/message/666544687"
     },
     {
-     "text": "$TSLA $PLTR $SPCX $DJT $META your bunkers, your islands, your new zealand, argentina escapes, ARE NOT GOING TO SAVE YOU PEDOGRIFTERS https:/\u2026",
+     "text": "$WMT",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498471"
+     "url": "https://stocktwits.com/message/666542688"
     },
     {
-     "text": "market's open. here's where we're at: $SPY 772.91 -0.7% $QQQ 736.14 -1.0% $NVDA 223.99 -2.0% $TSLA 367.57 -2.0% (down) $AAPL 345.88 +1.4% $N\u2026",
-     "url": "https://bsky.app/profile/babytronai.bsky.social/post/3mxtr4ycrkc2f",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "NFLX",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 419.9,
-     "mentions": 419.9,
-     "authors": 26,
-     "status": "building baseline",
-     "baseline": 244.5,
-     "zscore": null,
-     "vs_baseline": 1.7
-    },
-    "bluesky": {
-     "value": 1277.6,
-     "mentions": 1277.6,
-     "authors": 83,
-     "status": "building baseline",
-     "baseline": 1320.2,
-     "zscore": null,
-     "vs_baseline": 1.0
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1697.5,
-   "stocktwits_trending_rank": null,
-   "name": "NETFLIX INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$NFLX Price: $69.915 Volume: Average or below Catalyst: Market digesting recent subscriber growth and ad-tier expansion updates ahead of nex\u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498786"
-    },
-    {
-     "text": "$NFLX pretty clean balance sheet",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498039"
-    },
-    {
-     "text": "$MYRG-2 $GDX-2 $BEPC-2 $HIMS-2 $BF.B-2 $AMZN-2 $NFLX-2 $USO-2 $VST-2 $PENN-2 $O-2 $ROL-2 $XBI-2 $DIA-2 $CELH-1 $MRVL-1 $WM-1 $ELDN-1 $NAC-1 \u2026",
-     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxrtwmio6c27",
-     "sub": "bluesky"
-    }
-   ]
-  },
-  {
-   "ticker": "EBAY",
-   "status": "building baseline",
-   "sources": {
-    "stocktwits": {
-     "value": 12.0,
-     "mentions": 12.0,
-     "authors": 10,
-     "status": "building baseline",
-     "baseline": 80.5,
-     "zscore": null,
-     "vs_baseline": 0.1
-    },
-    "bluesky": {
-     "value": 1590.3,
-     "mentions": 1590.3,
-     "authors": 73,
-     "status": "building baseline",
-     "baseline": 1060.7,
-     "zscore": null,
-     "vs_baseline": 1.5
-    }
-   },
-   "max_zscore": null,
-   "mentions": 1602.3,
-   "stocktwits_trending_rank": null,
-   "name": "EBAY INC",
-   "on_watchlist": false,
-   "samples": [
-    {
-     "text": "$GME.WS $GME $EBAY $AMC",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666494586"
-    },
-    {
-     "text": "$EBAY: Depop has not answered the Rivera drip-pricing suit yet. A Sept 20 listing review allegedly showed no fee on item pages, just a dash \u2026",
-     "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666488522"
-    },
-    {
-     "text": "Time to set up a new media PC workhorse to do random things. Will connect to our main TV in the living room - bought off eBay for $130 Got t\u2026",
-     "url": "https://bsky.app/profile/markcathcart.com/post/3mxtzemkulc2t",
+     "text": "\ud83d\udd34 S&P 500 heatmap: AI trade took a beating. \ud83d\udcc9 Dell -11.5%, Oracle -9.1%, AMD -5.8%, Nvidia -3.2%. Semis, software and hardware bled together\u2026",
+     "url": "https://bsky.app/profile/robot2trade.bsky.social/post/3mxudqqnhu222",
      "sub": "bluesky"
     }
    ]
@@ -1719,39 +1503,131 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 999.4,
-     "mentions": 999.4,
-     "authors": 27,
+     "value": 607.4,
+     "mentions": 607.4,
+     "authors": 23,
      "status": "building baseline",
-     "baseline": 1872.2,
+     "baseline": 1435.8,
      "zscore": null,
-     "vs_baseline": 0.5
+     "vs_baseline": 0.4
     },
     "bluesky": {
-     "value": 100.0,
-     "mentions": 100,
-     "authors": 76,
+     "value": 92.0,
+     "mentions": 92,
+     "authors": 74,
      "status": "building baseline",
-     "baseline": 67.0,
+     "baseline": 83.5,
      "zscore": null,
-     "vs_baseline": 1.5
+     "vs_baseline": 1.1
     }
    },
    "max_zscore": null,
-   "mentions": 1099.4,
+   "mentions": 699.4,
    "stocktwits_trending_rank": null,
    "name": "GameStop Corp.",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$GME Doug Cifu is a fat slob",
+     "text": "$GME remember everyone cohen still got 410 million to spend of personal money that he said he would buy with and the 2billion buyback to pla\u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498556"
+     "url": "https://stocktwits.com/message/666544372"
     },
     {
-     "text": "$GME",
+     "text": "$GME Here\u2019s the low key public service reminder held today to pay your tax bill. Hopefully it will be bigger than prior years. And hopefully\u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666498293"
+     "url": "https://stocktwits.com/message/666544213"
+    },
+    {
+     "text": "market's open. here's where we're at: $SPY 772.91 -0.7% $QQQ 736.14 -1.0% $NVDA 223.99 -2.0% $TSLA 367.57 -2.0% (down) $AAPL 345.88 +1.4% $N\u2026",
+     "url": "https://bsky.app/profile/babytronai.bsky.social/post/3mxtr4ycrkc2f",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "PLTR",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 569.6,
+     "mentions": 569.6,
+     "authors": 22,
+     "status": "building baseline",
+     "baseline": 779.35,
+     "zscore": null,
+     "vs_baseline": 0.7
+    },
+    "bluesky": {
+     "value": 94.0,
+     "mentions": 94,
+     "authors": 80,
+     "status": "building baseline",
+     "baseline": 659.5,
+     "zscore": null,
+     "vs_baseline": 0.1
+    }
+   },
+   "max_zscore": null,
+   "mentions": 663.6,
+   "stocktwits_trending_rank": null,
+   "name": "Palantir Technologies Inc.",
+   "on_watchlist": true,
+   "samples": [
+    {
+     "text": "Tomorrow i have some big plays \ud83e\udd11will i be bull or bear is the question $MRNA $PLTR $PANW $SPCX $SPY",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543523"
+    },
+    {
+     "text": "$DJT $PLTR $QQQ $SPY It\u2019s gonna happen! Vietnam, Iraq, Afghanistan\u2026what\u2019s one more humiliating forfeit? It\u2019s our brand! We\u2019re 40 trillion in\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543366"
+    },
+    {
+     "text": "$GTLB-1 $SOFI-1 $HIMS-1 $MRNA-1 $KO-1 $NOG-1 $PLTR-1 $CAI-1 $KOLD-1 $APA-1 $AUGO-1 $PURR-1 $APLD-1 $RVT-1 $OBK-1 $CL-1 $BNC-1 $FTV-1 $O-1 $N\u2026",
+     "url": "https://bsky.app/profile/vandel883.bsky.social/post/3mxug3lhc3c24",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "TSLA",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 463.0,
+     "mentions": 463.0,
+     "authors": 25,
+     "status": "building baseline",
+     "baseline": 1197.0,
+     "zscore": null,
+     "vs_baseline": 0.4
+    },
+    "bluesky": {
+     "value": 124.0,
+     "mentions": 124,
+     "authors": 99,
+     "status": "building baseline",
+     "baseline": 448.4,
+     "zscore": null,
+     "vs_baseline": 0.3
+    }
+   },
+   "max_zscore": null,
+   "mentions": 587.0,
+   "stocktwits_trending_rank": null,
+   "name": "Tesla, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SPCX >> Has Musk cut off Starlink to Ukraine? Elon Musk's SpaceX did not completely turn off Starlink in Ukraine, but it throttled and impo\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544700"
+    },
+    {
+     "text": "$SPY $TSLA $QQQ $NVDA Dis market is COOKED \ud83d\udcc9",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544349"
     },
     {
      "text": "market's open. here's where we're at: $SPY 772.91 -0.7% $QQQ 736.14 -1.0% $NVDA 223.99 -2.0% $TSLA 367.57 -2.0% (down) $AAPL 345.88 +1.4% $N\u2026",
@@ -1765,43 +1641,181 @@
    "status": "building baseline",
    "sources": {
     "stocktwits": {
-     "value": 4.0,
-     "mentions": 4.0,
-     "authors": 2,
-     "status": "below minimum",
-     "baseline": 2.0,
+     "value": 6.0,
+     "mentions": 6.0,
+     "authors": 5,
+     "status": "building baseline",
+     "baseline": 3.0,
      "zscore": null,
      "vs_baseline": 2.0
     },
     "bluesky": {
-     "value": 942.1,
-     "mentions": 942.1,
-     "authors": 71,
+     "value": 536.3,
+     "mentions": 536.3,
+     "authors": 72,
      "status": "building baseline",
-     "baseline": 560.8,
+     "baseline": 751.45,
      "zscore": null,
-     "vs_baseline": 1.7
+     "vs_baseline": 0.7
     }
    },
    "max_zscore": null,
-   "mentions": 946.1,
+   "mentions": 542.3,
    "stocktwits_trending_rank": null,
    "name": "ETSY INC",
    "on_watchlist": false,
    "samples": [
     {
-     "text": "$ETSY sold",
+     "text": "$ETSY screened as undervalued in this week's run. It has since closed 5 or more percentage points of the gap to our fair value estimate and \u2026",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666468900"
+     "url": "https://stocktwits.com/message/666524741"
     },
     {
-     "text": "$ETSY",
+     "text": "$ETSY damn why it jump up 2 dollar after I closed my calls?",
      "sub": "stocktwits",
-     "url": "https://stocktwits.com/message/666464789"
+     "url": "https://stocktwits.com/message/666522778"
     },
     {
-     "text": "This is a first for us! After all these years, our very first Monkey Wrench Amish quilt. THIS QUILT IS FOR SALE! 50+ other quilts, rugs & ta\u2026",
-     "url": "https://bsky.app/profile/amishspiritquilts.bsky.social/post/3mxtyhhvpns2r",
+     "text": "Adventures not turning up on your doorstep? Jane Austen has the answer \ud83d\ude09 Bring a dash of wit, wanderlust & literary charm to your reading sp\u2026",
+     "url": "https://bsky.app/profile/thistleflat.bsky.social/post/3mxudnmrhzs2t",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "NKE",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 182.2,
+     "mentions": 182.2,
+     "authors": 10,
+     "status": "building baseline",
+     "baseline": 240.1,
+     "zscore": null,
+     "vs_baseline": 0.8
+    },
+    "bluesky": {
+     "value": 349.7,
+     "mentions": 349.7,
+     "authors": 56,
+     "status": "building baseline",
+     "baseline": 341.25,
+     "zscore": null,
+     "vs_baseline": 1.0
+    }
+   },
+   "max_zscore": null,
+   "mentions": 531.9,
+   "stocktwits_trending_rank": null,
+   "name": "NIKE, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$NKE as Mr timing now is not the time to buy Nike",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544034"
+    },
+    {
+     "text": "$NKE while markets red why not here hardly any red when I\u2019m holding puts you bastard",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666542428"
+    },
+    {
+     "text": "$NKE: hold your Nike receipts, but ignore refund texts. Caldwell, 3:26-cv-00923, alleges tariff costs were passed to shoppers. No class is c\u2026",
+     "url": "https://bsky.app/profile/openclassactions.bsky.social/post/3mxui7dmt2s2y",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "HOOD",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 375.7,
+     "mentions": 375.7,
+     "authors": 16,
+     "status": "building baseline",
+     "baseline": 415.9,
+     "zscore": null,
+     "vs_baseline": 0.9
+    },
+    "bluesky": {
+     "value": 62.0,
+     "mentions": 62,
+     "authors": 47,
+     "status": "building baseline",
+     "baseline": 56.0,
+     "zscore": null,
+     "vs_baseline": 1.1
+    }
+   },
+   "max_zscore": null,
+   "mentions": 437.7,
+   "stocktwits_trending_rank": null,
+   "name": "Robinhood Markets, Inc.",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$HOOD Hahaha. Just getting silly at this point.",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544063"
+    },
+    {
+     "text": "$HOOD top of the crash?",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543916"
+    },
+    {
+     "text": "\u2734\ufe0f Bloomberg: SEC approved the launch of binary options on companies' key performance indicators (KPIs) on the Cboe exchange, including Coin\u2026",
+     "url": "https://bsky.app/profile/cryptovka.com/post/3mxujv563ez2i",
+     "sub": "bluesky"
+    }
+   ]
+  },
+  {
+   "ticker": "AMZN",
+   "status": "building baseline",
+   "sources": {
+    "stocktwits": {
+     "value": 143.9,
+     "mentions": 143.9,
+     "authors": 24,
+     "status": "building baseline",
+     "baseline": 409.3,
+     "zscore": null,
+     "vs_baseline": 0.4
+    },
+    "bluesky": {
+     "value": 229.0,
+     "mentions": 229,
+     "authors": 141,
+     "status": "building baseline",
+     "baseline": 8688.0,
+     "zscore": null,
+     "vs_baseline": 0.0
+    }
+   },
+   "max_zscore": null,
+   "mentions": 372.9,
+   "stocktwits_trending_rank": null,
+   "name": "AMAZON COM INC",
+   "on_watchlist": false,
+   "samples": [
+    {
+     "text": "$SPY Guys who are confused about WS not liking the Antropic $16B numbers,.. folks you gotta do much better if yourre talking about a $2T IPO\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666544234"
+    },
+    {
+     "text": "$AMZN more details are coming out on ANT IPO but tough to tell if tech and this is red on ANT or just today\u2019s weak action rolling into tonig\u2026",
+     "sub": "stocktwits",
+     "url": "https://stocktwits.com/message/666543928"
+    },
+    {
+     "text": "$AMZN reported earnings today, this is their revenue breakdown compared to competitors. See more at https://www.insiderdashboard.com/search?\u2026",
+     "url": "https://bsky.app/profile/insiderdashboard.bsky.social/post/3mxuab3lrbp2b",
      "sub": "bluesky"
     }
    ]
@@ -1810,54 +1824,58 @@
  "private": [
   {
    "brand": "openai",
-   "mentions": 101
+   "mentions": 118
   },
   {
    "brand": "chatgpt",
-   "mentions": 95
-  },
-  {
-   "brand": "shein",
-   "mentions": 82
+   "mentions": 89
   },
   {
    "brand": "red bull",
-   "mentions": 79
+   "mentions": 75
   },
   {
    "brand": "spacex",
-   "mentions": 63
+   "mentions": 71
+  },
+  {
+   "brand": "shein",
+   "mentions": 68
   },
   {
    "brand": "trader joe's",
-   "mentions": 36
+   "mentions": 32
   },
   {
    "brand": "skims",
-   "mentions": 12
+   "mentions": 15
   },
   {
    "brand": "owala",
-   "mentions": 5
+   "mentions": 8
   },
   {
    "brand": "olipop",
-   "mentions": 3
+   "mentions": 5
+  },
+  {
+   "brand": "liquid death",
+   "mentions": 2
+  },
+  {
+   "brand": "rare beauty",
+   "mentions": 2
   },
   {
    "brand": "vuori",
    "mentions": 2
   },
   {
-   "brand": "liquid death",
+   "brand": "stanley quencher",
    "mentions": 1
   },
   {
    "brand": "glossier",
-   "mentions": 1
-  },
-  {
-   "brand": "rare beauty",
    "mentions": 1
   },
   {

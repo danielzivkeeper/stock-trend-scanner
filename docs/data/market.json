@@ -1,192 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-10-14",
- "drops": [
-  {
-   "ticker": "SKYD",
-   "name": "Skydance Corporation",
-   "sector": "Communication Services",
-   "pct": -27.13,
-   "close": 6.76,
-   "prev_close": 9.27
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -11.64,
-   "close": 505.86,
-   "prev_close": 572.47
-  }
- ],
+ "market_date": "2026-10-13",
+ "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 203,
- "decliners": 300,
- "median_pct": -0.46,
+ "advancers": 267,
+ "decliners": 236,
+ "median_pct": 0.14,
  "gainers": [
   {
-   "ticker": "CBOE",
-   "name": "Cboe Global Markets",
-   "sector": "Financials",
-   "pct": 4.07,
-   "close": 304.14,
-   "prev_close": 292.25
+   "ticker": "CDW",
+   "name": "CDW Corporation",
+   "sector": "Information Technology",
+   "pct": 5.71,
+   "close": 151.97,
+   "prev_close": 143.76
   },
   {
-   "ticker": "MRK",
-   "name": "Merck & Co.",
-   "sector": "Health Care",
-   "pct": 4.05,
-   "close": 147.73,
-   "prev_close": 141.98
+   "ticker": "VLO",
+   "name": "Valero Energy",
+   "sector": "Energy",
+   "pct": 4.69,
+   "close": 456.46,
+   "prev_close": 436.0
   },
   {
-   "ticker": "LLY",
-   "name": "Lilly (Eli)",
-   "sector": "Health Care",
-   "pct": 3.87,
-   "close": 1211.7,
-   "prev_close": 1166.51
+   "ticker": "CHTR",
+   "name": "Charter Communications",
+   "sector": "Communication Services",
+   "pct": 4.36,
+   "close": 106.95,
+   "prev_close": 102.48
   },
   {
-   "ticker": "ABBV",
-   "name": "AbbVie",
-   "sector": "Health Care",
-   "pct": 3.77,
-   "close": 284.7,
-   "prev_close": 274.36
+   "ticker": "ORCL",
+   "name": "Oracle Corporation",
+   "sector": "Information Technology",
+   "pct": 4.23,
+   "close": 143.2,
+   "prev_close": 137.39
   },
   {
-   "ticker": "MRNA",
-   "name": "Moderna",
-   "sector": "Health Care",
-   "pct": 3.73,
-   "close": 224.32,
-   "prev_close": 216.25
+   "ticker": "EXE",
+   "name": "Expand Energy",
+   "sector": "Energy",
+   "pct": 4.01,
+   "close": 92.37,
+   "prev_close": 88.81
   },
   {
-   "ticker": "PFE",
-   "name": "Pfizer",
-   "sector": "Health Care",
-   "pct": 3.7,
-   "close": 29.42,
-   "prev_close": 28.37
+   "ticker": "PSX",
+   "name": "Phillips 66",
+   "sector": "Energy",
+   "pct": 4.0,
+   "close": 292.73,
+   "prev_close": 281.47
   },
   {
-   "ticker": "BMY",
-   "name": "Bristol Myers Squibb",
-   "sector": "Health Care",
-   "pct": 3.7,
-   "close": 58.76,
-   "prev_close": 56.67
+   "ticker": "MPC",
+   "name": "Marathon Petroleum",
+   "sector": "Energy",
+   "pct": 3.96,
+   "close": 476.98,
+   "prev_close": 458.81
   },
   {
-   "ticker": "REGN",
-   "name": "Regeneron Pharmaceuticals",
-   "sector": "Health Care",
-   "pct": 3.43,
-   "close": 778.98,
-   "prev_close": 753.12
+   "ticker": "FSLR",
+   "name": "First Solar",
+   "sector": "Information Technology",
+   "pct": 3.83,
+   "close": 186.6,
+   "prev_close": 179.72
   },
   {
-   "ticker": "GILD",
-   "name": "Gilead Sciences",
-   "sector": "Health Care",
-   "pct": 3.35,
-   "close": 152.88,
-   "prev_close": 147.92
+   "ticker": "IFF",
+   "name": "International Flavors & Fragrances",
+   "sector": "Materials",
+   "pct": 3.81,
+   "close": 88.2,
+   "prev_close": 84.96
   },
   {
-   "ticker": "UNH",
-   "name": "UnitedHealth Group",
-   "sector": "Health Care",
-   "pct": 3.22,
-   "close": 389.93,
-   "prev_close": 377.76
+   "ticker": "GRMN",
+   "name": "Garmin",
+   "sector": "Consumer Discretionary",
+   "pct": 3.62,
+   "close": 276.41,
+   "prev_close": 266.76
   }
  ],
  "losers": [
   {
-   "ticker": "SKYD",
-   "name": "Skydance Corporation",
-   "sector": "Communication Services",
-   "pct": -27.13,
-   "close": 6.76,
-   "prev_close": 9.27
+   "ticker": "AMAT",
+   "name": "Applied Materials",
+   "sector": "Information Technology",
+   "pct": -6.69,
+   "close": 464.24,
+   "prev_close": 497.53
   },
   {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -11.64,
-   "close": 505.86,
-   "prev_close": 572.47
+   "ticker": "JNJ",
+   "name": "Johnson & Johnson",
+   "sector": "Health Care",
+   "pct": -5.73,
+   "close": 248.61,
+   "prev_close": 263.73
+  },
+  {
+   "ticker": "C",
+   "name": "Citigroup",
+   "sector": "Financials",
+   "pct": -5.6,
+   "close": 124.53,
+   "prev_close": 131.92
   },
   {
    "ticker": "FLEX",
    "name": "Flex Ltd.",
    "sector": "Information Technology",
-   "pct": -9.15,
-   "close": 100.74,
-   "prev_close": 110.88
+   "pct": -5.42,
+   "close": 110.88,
+   "prev_close": 117.24
   },
   {
-   "ticker": "P",
-   "name": "Everpure",
+   "ticker": "DPZ",
+   "name": "Domino's",
+   "sector": "Consumer Discretionary",
+   "pct": -4.76,
+   "close": 296.1,
+   "prev_close": 310.9
+  },
+  {
+   "ticker": "KKR",
+   "name": "KKR & Co.",
+   "sector": "Financials",
+   "pct": -4.75,
+   "close": 87.16,
+   "prev_close": 91.51
+  },
+  {
+   "ticker": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "sector": "Health Care",
+   "pct": -4.3,
+   "close": 485.22,
+   "prev_close": 507.0
+  },
+  {
+   "ticker": "BX",
+   "name": "Blackstone Inc.",
+   "sector": "Financials",
+   "pct": -4.18,
+   "close": 109.98,
+   "prev_close": 114.78
+  },
+  {
+   "ticker": "CDNS",
+   "name": "Cadence Design Systems",
    "sector": "Information Technology",
-   "pct": -9.12,
-   "close": 142.66,
-   "prev_close": 156.97
+   "pct": -4.08,
+   "close": 334.2,
+   "prev_close": 348.42
   },
   {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -9.05,
-   "close": 239.61,
-   "prev_close": 263.45
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": -8.97,
-   "close": 364.47,
-   "prev_close": 400.4
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -8.65,
-   "close": 264.89,
-   "prev_close": 289.98
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -8.55,
-   "close": 903.5,
-   "prev_close": 987.99
-  },
-  {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "sector": "Information Technology",
-   "pct": -8.3,
-   "close": 63.1,
-   "prev_close": 68.81
-  },
-  {
-   "ticker": "AKAM",
-   "name": "Akamai Technologies",
-   "sector": "Information Technology",
-   "pct": -8.25,
-   "close": 91.68,
-   "prev_close": 99.93
+   "ticker": "TTWO",
+   "name": "Take-Two Interactive",
+   "sector": "Communication Services",
+   "pct": -4.07,
+   "close": 200.32,
+   "prev_close": 208.82
   }
  ],
- "as_of": "2026-10-14T17:31:49+00:00"
+ "as_of": "2026-10-15T00:06:35+00:00"
 }
