@@ -4,172 +4,172 @@
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 373,
- "decliners": 130,
- "median_pct": 1.22,
+ "advancers": 380,
+ "decliners": 123,
+ "median_pct": 1.46,
  "gainers": [
-  {
-   "ticker": "IP",
-   "name": "International Paper",
-   "sector": "Materials",
-   "pct": 7.7,
-   "close": 34.35,
-   "prev_close": 31.9
-  },
-  {
-   "ticker": "CSGP",
-   "name": "CoStar Group",
-   "sector": "Real Estate",
-   "pct": 6.89,
-   "close": 32.19,
-   "prev_close": 30.11
-  },
-  {
-   "ticker": "INTU",
-   "name": "Intuit",
-   "sector": "Information Technology",
-   "pct": 6.09,
-   "close": 329.34,
-   "prev_close": 310.44
-  },
-  {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": 6.06,
-   "close": 291.34,
-   "prev_close": 274.69
-  },
-  {
-   "ticker": "IT",
-   "name": "Gartner",
-   "sector": "Information Technology",
-   "pct": 5.93,
-   "close": 207.37,
-   "prev_close": 195.77
-  },
-  {
-   "ticker": "NKE",
-   "name": "Nike, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": 5.86,
-   "close": 37.37,
-   "prev_close": 35.3
-  },
-  {
-   "ticker": "AJG",
-   "name": "Arthur J. Gallagher & Co.",
-   "sector": "Financials",
-   "pct": 5.82,
-   "close": 250.84,
-   "prev_close": 237.04
-  },
   {
    "ticker": "EFX",
    "name": "Equifax",
    "sector": "Industrials",
-   "pct": 5.8,
-   "close": 159.08,
+   "pct": 7.25,
+   "close": 161.26,
    "prev_close": 150.36
   },
   {
-   "ticker": "EBAY",
-   "name": "eBay Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": 5.76,
-   "close": 123.61,
-   "prev_close": 116.88
+   "ticker": "RDDT",
+   "name": "Reddit",
+   "sector": "Communication Services",
+   "pct": 7.24,
+   "close": 159.36,
+   "prev_close": 148.6
+  },
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "sector": "Information Technology",
+   "pct": 6.99,
+   "close": 769.93,
+   "prev_close": 719.63
+  },
+  {
+   "ticker": "IP",
+   "name": "International Paper",
+   "sector": "Materials",
+   "pct": 6.9,
+   "close": 34.1,
+   "prev_close": 31.9
   },
   {
    "ticker": "APP",
    "name": "AppLovin",
    "sector": "Communication Services",
-   "pct": 5.43,
-   "close": 276.43,
+   "pct": 6.52,
+   "close": 279.29,
    "prev_close": 262.19
+  },
+  {
+   "ticker": "INTU",
+   "name": "Intuit",
+   "sector": "Information Technology",
+   "pct": 6.36,
+   "close": 330.17,
+   "prev_close": 310.44
+  },
+  {
+   "ticker": "COIN",
+   "name": "Coinbase",
+   "sector": "Financials",
+   "pct": 6.32,
+   "close": 183.81,
+   "prev_close": 172.89
+  },
+  {
+   "ticker": "CSGP",
+   "name": "CoStar Group",
+   "sector": "Real Estate",
+   "pct": 6.28,
+   "close": 32.0,
+   "prev_close": 30.11
+  },
+  {
+   "ticker": "EXPE",
+   "name": "Expedia Group",
+   "sector": "Consumer Discretionary",
+   "pct": 6.25,
+   "close": 291.87,
+   "prev_close": 274.69
+  },
+  {
+   "ticker": "NOW",
+   "name": "ServiceNow",
+   "sector": "Information Technology",
+   "pct": 6.14,
+   "close": 148.57,
+   "prev_close": 139.98
   }
  ],
  "losers": [
   {
+   "ticker": "HPE",
+   "name": "Hewlett Packard Enterprise",
+   "sector": "Information Technology",
+   "pct": -7.1,
+   "close": 58.63,
+   "prev_close": 63.11
+  },
+  {
    "ticker": "DELL",
    "name": "Dell Technologies",
    "sector": "Information Technology",
-   "pct": -8.9,
-   "close": 462.73,
+   "pct": -6.8,
+   "close": 473.39,
    "prev_close": 507.93
   },
   {
    "ticker": "P",
    "name": "Everpure",
    "sector": "Information Technology",
-   "pct": -7.63,
-   "close": 130.69,
+   "pct": -5.72,
+   "close": 133.4,
    "prev_close": 141.49
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -6.6,
-   "close": 245.93,
-   "prev_close": 263.32
-  },
-  {
-   "ticker": "VRT",
-   "name": "Vertiv",
-   "sector": "Industrials",
-   "pct": -6.6,
-   "close": 208.13,
-   "prev_close": 222.83
-  },
-  {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "sector": "Information Technology",
-   "pct": -6.5,
-   "close": 59.01,
-   "prev_close": 63.11
   },
   {
    "ticker": "ANET",
    "name": "Arista Networks",
    "sector": "Information Technology",
-   "pct": -6.3,
-   "close": 183.1,
+   "pct": -5.04,
+   "close": 185.58,
    "prev_close": 195.42
   },
   {
-   "ticker": "KEYS",
-   "name": "Keysight Technologies",
+   "ticker": "WMB",
+   "name": "Williams Companies",
+   "sector": "Energy",
+   "pct": -4.92,
+   "close": 69.22,
+   "prev_close": 72.8
+  },
+  {
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -6.08,
-   "close": 335.86,
-   "prev_close": 357.62
+   "pct": -4.83,
+   "close": 250.6,
+   "prev_close": 263.32
   },
   {
    "ticker": "TER",
    "name": "Teradyne",
    "sector": "Information Technology",
-   "pct": -6.03,
-   "close": 337.78,
+   "pct": -4.52,
+   "close": 343.21,
    "prev_close": 359.44
   },
   {
-   "ticker": "STX",
-   "name": "Seagate Technology",
+   "ticker": "KEYS",
+   "name": "Keysight Technologies",
    "sector": "Information Technology",
-   "pct": -5.7,
-   "close": 672.84,
-   "prev_close": 713.54
+   "pct": -4.35,
+   "close": 342.08,
+   "prev_close": 357.62
   },
   {
    "ticker": "FIX",
    "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": -5.53,
-   "close": 1456.39,
+   "pct": -3.92,
+   "close": 1481.27,
    "prev_close": 1541.68
+  },
+  {
+   "ticker": "AMAT",
+   "name": "Applied Materials",
+   "sector": "Information Technology",
+   "pct": -3.72,
+   "close": 430.01,
+   "prev_close": 446.63
   }
  ],
- "as_of": "2026-10-15T17:19:40+00:00"
+ "as_of": "2026-10-15T23:50:55+00:00"
 }
