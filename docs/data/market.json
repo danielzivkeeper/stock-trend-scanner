@@ -1,175 +1,184 @@
 {
  "status": "ok",
- "market_date": "2026-10-15",
- "drops": [],
+ "market_date": "2026-10-16",
+ "drops": [
+  {
+   "ticker": "TWLO",
+   "name": "Twilio",
+   "sector": "Information Technology",
+   "pct": -11.39,
+   "close": 242.27,
+   "prev_close": 273.4
+  }
+ ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 380,
- "decliners": 123,
- "median_pct": 1.46,
+ "advancers": 257,
+ "decliners": 246,
+ "median_pct": 0.07,
  "gainers": [
   {
-   "ticker": "EFX",
-   "name": "Equifax",
+   "ticker": "HONA",
+   "name": "Honeywell Aerospace",
    "sector": "Industrials",
-   "pct": 7.25,
-   "close": 161.26,
-   "prev_close": 150.36
+   "pct": 3.68,
+   "close": 169.1,
+   "prev_close": 163.11
   },
   {
-   "ticker": "RDDT",
-   "name": "Reddit",
-   "sector": "Communication Services",
-   "pct": 7.24,
-   "close": 159.36,
-   "prev_close": 148.6
+   "ticker": "EQT",
+   "name": "EQT Corporation",
+   "sector": "Energy",
+   "pct": 3.47,
+   "close": 54.27,
+   "prev_close": 52.45
   },
   {
-   "ticker": "FICO",
-   "name": "Fair Isaac",
+   "ticker": "EXE",
+   "name": "Expand Energy",
+   "sector": "Energy",
+   "pct": 3.37,
+   "close": 93.86,
+   "prev_close": 90.8
+  },
+  {
+   "ticker": "SWKS",
+   "name": "Skyworks Solutions",
    "sector": "Information Technology",
-   "pct": 6.99,
-   "close": 769.93,
-   "prev_close": 719.63
+   "pct": 3.27,
+   "close": 81.68,
+   "prev_close": 79.1
   },
   {
-   "ticker": "IP",
-   "name": "International Paper",
-   "sector": "Materials",
-   "pct": 6.9,
-   "close": 34.1,
-   "prev_close": 31.9
+   "ticker": "NI",
+   "name": "NiSource",
+   "sector": "Utilities",
+   "pct": 3.12,
+   "close": 42.53,
+   "prev_close": 41.25
   },
   {
-   "ticker": "APP",
-   "name": "AppLovin",
-   "sector": "Communication Services",
-   "pct": 6.52,
-   "close": 279.29,
-   "prev_close": 262.19
+   "ticker": "KMI",
+   "name": "Kinder Morgan",
+   "sector": "Energy",
+   "pct": 3.03,
+   "close": 33.81,
+   "prev_close": 32.82
   },
   {
-   "ticker": "INTU",
-   "name": "Intuit",
-   "sector": "Information Technology",
-   "pct": 6.36,
-   "close": 330.17,
-   "prev_close": 310.44
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "sector": "Energy",
+   "pct": 3.03,
+   "close": 48.66,
+   "prev_close": 47.23
   },
   {
-   "ticker": "COIN",
-   "name": "Coinbase",
-   "sector": "Financials",
-   "pct": 6.32,
-   "close": 183.81,
-   "prev_close": 172.89
+   "ticker": "FANG",
+   "name": "Diamondback Energy",
+   "sector": "Energy",
+   "pct": 3.02,
+   "close": 201.5,
+   "prev_close": 195.6
   },
   {
-   "ticker": "CSGP",
-   "name": "CoStar Group",
-   "sector": "Real Estate",
-   "pct": 6.28,
-   "close": 32.0,
-   "prev_close": 30.11
+   "ticker": "IDXX",
+   "name": "Idexx Laboratories",
+   "sector": "Health Care",
+   "pct": 2.91,
+   "close": 563.08,
+   "prev_close": 547.18
   },
   {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": 6.25,
-   "close": 291.87,
-   "prev_close": 274.69
-  },
-  {
-   "ticker": "NOW",
-   "name": "ServiceNow",
-   "sector": "Information Technology",
-   "pct": 6.14,
-   "close": 148.57,
-   "prev_close": 139.98
+   "ticker": "TRGP",
+   "name": "Targa Resources",
+   "sector": "Energy",
+   "pct": 2.9,
+   "close": 290.73,
+   "prev_close": 282.55
   }
  ],
  "losers": [
   {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise",
+   "ticker": "TWLO",
+   "name": "Twilio",
    "sector": "Information Technology",
-   "pct": -7.1,
-   "close": 58.63,
-   "prev_close": 63.11
+   "pct": -11.39,
+   "close": 242.27,
+   "prev_close": 273.4
   },
   {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
+   "ticker": "MRNA",
+   "name": "Moderna",
+   "sector": "Health Care",
+   "pct": -9.74,
+   "close": 213.46,
+   "prev_close": 236.5
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Supermicro",
    "sector": "Information Technology",
-   "pct": -6.8,
-   "close": 473.39,
-   "prev_close": 507.93
+   "pct": -8.86,
+   "close": 31.98,
+   "prev_close": 35.09
+  },
+  {
+   "ticker": "FTNT",
+   "name": "Fortinet",
+   "sector": "Information Technology",
+   "pct": -7.81,
+   "close": 167.71,
+   "prev_close": 181.91
+  },
+  {
+   "ticker": "PANW",
+   "name": "Palo Alto Networks",
+   "sector": "Information Technology",
+   "pct": -7.66,
+   "close": 341.9,
+   "prev_close": 370.27
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": -7.11,
+   "close": 247.31,
+   "prev_close": 266.25
+  },
+  {
+   "ticker": "CRWD",
+   "name": "CrowdStrike",
+   "sector": "Information Technology",
+   "pct": -7.07,
+   "close": 227.28,
+   "prev_close": 244.57
+  },
+  {
+   "ticker": "PLTR",
+   "name": "Palantir Technologies",
+   "sector": "Information Technology",
+   "pct": -6.9,
+   "close": 186.68,
+   "prev_close": 200.5
+  },
+  {
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
+   "sector": "Information Technology",
+   "pct": -6.4,
+   "close": 92.2,
+   "prev_close": 98.5
   },
   {
    "ticker": "P",
    "name": "Everpure",
    "sector": "Information Technology",
-   "pct": -5.72,
-   "close": 133.4,
-   "prev_close": 141.49
-  },
-  {
-   "ticker": "ANET",
-   "name": "Arista Networks",
-   "sector": "Information Technology",
-   "pct": -5.04,
-   "close": 185.58,
-   "prev_close": 195.42
-  },
-  {
-   "ticker": "WMB",
-   "name": "Williams Companies",
-   "sector": "Energy",
-   "pct": -4.92,
-   "close": 69.22,
-   "prev_close": 72.8
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -4.83,
-   "close": 250.6,
-   "prev_close": 263.32
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": -4.52,
-   "close": 343.21,
-   "prev_close": 359.44
-  },
-  {
-   "ticker": "KEYS",
-   "name": "Keysight Technologies",
-   "sector": "Information Technology",
-   "pct": -4.35,
-   "close": 342.08,
-   "prev_close": 357.62
-  },
-  {
-   "ticker": "FIX",
-   "name": "Comfort Systems USA",
-   "sector": "Industrials",
-   "pct": -3.92,
-   "close": 1481.27,
-   "prev_close": 1541.68
-  },
-  {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
-   "sector": "Information Technology",
-   "pct": -3.72,
-   "close": 430.01,
-   "prev_close": 446.63
+   "pct": -5.96,
+   "close": 125.46,
+   "prev_close": 133.4
   }
  ],
- "as_of": "2026-10-15T23:50:55+00:00"
+ "as_of": "2026-10-16T16:55:44+00:00"
 }
