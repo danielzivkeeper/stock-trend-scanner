@@ -6,96 +6,96 @@
    "ticker": "TWLO",
    "name": "Twilio",
    "sector": "Information Technology",
-   "pct": -11.39,
-   "close": 242.27,
+   "pct": -10.62,
+   "close": 244.37,
    "prev_close": 273.4
   }
  ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 257,
- "decliners": 246,
- "median_pct": 0.07,
+ "advancers": 249,
+ "decliners": 254,
+ "median_pct": -0.02,
  "gainers": [
   {
-   "ticker": "HONA",
-   "name": "Honeywell Aerospace",
-   "sector": "Industrials",
-   "pct": 3.68,
-   "close": 169.1,
-   "prev_close": 163.11
-  },
-  {
-   "ticker": "EQT",
-   "name": "EQT Corporation",
+   "ticker": "TRGP",
+   "name": "Targa Resources",
    "sector": "Energy",
-   "pct": 3.47,
-   "close": 54.27,
-   "prev_close": 52.45
+   "pct": 4.37,
+   "close": 294.9,
+   "prev_close": 282.55
   },
   {
-   "ticker": "EXE",
-   "name": "Expand Energy",
+   "ticker": "FANG",
+   "name": "Diamondback Energy",
    "sector": "Energy",
-   "pct": 3.37,
-   "close": 93.86,
-   "prev_close": 90.8
-  },
-  {
-   "ticker": "SWKS",
-   "name": "Skyworks Solutions",
-   "sector": "Information Technology",
-   "pct": 3.27,
-   "close": 81.68,
-   "prev_close": 79.1
-  },
-  {
-   "ticker": "NI",
-   "name": "NiSource",
-   "sector": "Utilities",
-   "pct": 3.12,
-   "close": 42.53,
-   "prev_close": 41.25
+   "pct": 4.27,
+   "close": 203.95,
+   "prev_close": 195.6
   },
   {
    "ticker": "KMI",
    "name": "Kinder Morgan",
    "sector": "Energy",
-   "pct": 3.03,
-   "close": 33.81,
+   "pct": 4.2,
+   "close": 34.2,
    "prev_close": 32.82
   },
   {
    "ticker": "APA",
    "name": "APA Corporation",
    "sector": "Energy",
-   "pct": 3.03,
-   "close": 48.66,
+   "pct": 4.07,
+   "close": 49.15,
    "prev_close": 47.23
   },
   {
-   "ticker": "FANG",
-   "name": "Diamondback Energy",
-   "sector": "Energy",
-   "pct": 3.02,
-   "close": 201.5,
-   "prev_close": 195.6
+   "ticker": "NOC",
+   "name": "Northrop Grumman",
+   "sector": "Industrials",
+   "pct": 4.05,
+   "close": 519.86,
+   "prev_close": 499.63
   },
   {
-   "ticker": "IDXX",
-   "name": "Idexx Laboratories",
-   "sector": "Health Care",
-   "pct": 2.91,
-   "close": 563.08,
-   "prev_close": 547.18
+   "ticker": "RTX",
+   "name": "RTX Corporation",
+   "sector": "Industrials",
+   "pct": 3.73,
+   "close": 193.92,
+   "prev_close": 186.95
   },
   {
-   "ticker": "TRGP",
-   "name": "Targa Resources",
+   "ticker": "LMT",
+   "name": "Lockheed Martin",
+   "sector": "Industrials",
+   "pct": 3.65,
+   "close": 552.09,
+   "prev_close": 532.64
+  },
+  {
+   "ticker": "EOG",
+   "name": "EOG Resources",
    "sector": "Energy",
-   "pct": 2.9,
-   "close": 290.73,
-   "prev_close": 282.55
+   "pct": 3.53,
+   "close": 158.01,
+   "prev_close": 152.62
+  },
+  {
+   "ticker": "EQT",
+   "name": "EQT Corporation",
+   "sector": "Energy",
+   "pct": 3.53,
+   "close": 54.3,
+   "prev_close": 52.45
+  },
+  {
+   "ticker": "NI",
+   "name": "NiSource",
+   "sector": "Utilities",
+   "pct": 3.47,
+   "close": 42.68,
+   "prev_close": 41.25
   }
  ],
  "losers": [
@@ -103,82 +103,82 @@
    "ticker": "TWLO",
    "name": "Twilio",
    "sector": "Information Technology",
-   "pct": -11.39,
-   "close": 242.27,
+   "pct": -10.62,
+   "close": 244.37,
    "prev_close": 273.4
-  },
-  {
-   "ticker": "MRNA",
-   "name": "Moderna",
-   "sector": "Health Care",
-   "pct": -9.74,
-   "close": 213.46,
-   "prev_close": 236.5
   },
   {
    "ticker": "SMCI",
    "name": "Supermicro",
    "sector": "Information Technology",
-   "pct": -8.86,
-   "close": 31.98,
+   "pct": -9.86,
+   "close": 31.63,
    "prev_close": 35.09
-  },
-  {
-   "ticker": "FTNT",
-   "name": "Fortinet",
-   "sector": "Information Technology",
-   "pct": -7.81,
-   "close": 167.71,
-   "prev_close": 181.91
-  },
-  {
-   "ticker": "PANW",
-   "name": "Palo Alto Networks",
-   "sector": "Information Technology",
-   "pct": -7.66,
-   "close": 341.9,
-   "prev_close": 370.27
-  },
-  {
-   "ticker": "DDOG",
-   "name": "Datadog",
-   "sector": "Information Technology",
-   "pct": -7.11,
-   "close": 247.31,
-   "prev_close": 266.25
-  },
-  {
-   "ticker": "CRWD",
-   "name": "CrowdStrike",
-   "sector": "Information Technology",
-   "pct": -7.07,
-   "close": 227.28,
-   "prev_close": 244.57
-  },
-  {
-   "ticker": "PLTR",
-   "name": "Palantir Technologies",
-   "sector": "Information Technology",
-   "pct": -6.9,
-   "close": 186.68,
-   "prev_close": 200.5
   },
   {
    "ticker": "FLEX",
    "name": "Flex Ltd.",
    "sector": "Information Technology",
-   "pct": -6.4,
-   "close": 92.2,
+   "pct": -8.16,
+   "close": 90.46,
    "prev_close": 98.5
+  },
+  {
+   "ticker": "MRNA",
+   "name": "Moderna",
+   "sector": "Health Care",
+   "pct": -7.82,
+   "close": 218.01,
+   "prev_close": 236.5
+  },
+  {
+   "ticker": "PANW",
+   "name": "Palo Alto Networks",
+   "sector": "Information Technology",
+   "pct": -7.63,
+   "close": 342.0,
+   "prev_close": 370.27
+  },
+  {
+   "ticker": "STX",
+   "name": "Seagate Technology",
+   "sector": "Information Technology",
+   "pct": -7.5,
+   "close": 639.01,
+   "prev_close": 690.81
+  },
+  {
+   "ticker": "PLTR",
+   "name": "Palantir Technologies",
+   "sector": "Information Technology",
+   "pct": -7.22,
+   "close": 186.03,
+   "prev_close": 200.5
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": -7.19,
+   "close": 247.11,
+   "prev_close": 266.25
+  },
+  {
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
+   "sector": "Information Technology",
+   "pct": -7.06,
+   "close": 232.9,
+   "prev_close": 250.6
   },
   {
    "ticker": "P",
    "name": "Everpure",
    "sector": "Information Technology",
-   "pct": -5.96,
-   "close": 125.46,
+   "pct": -7.04,
+   "close": 124.01,
    "prev_close": 133.4
   }
  ],
- "as_of": "2026-10-16T16:55:44+00:00"
+ "as_of": "2026-10-16T23:51:44+00:00"
 }
