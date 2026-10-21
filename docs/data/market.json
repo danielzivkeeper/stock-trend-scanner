@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-10-20",
+ "market_date": "2026-10-19",
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 392,
- "decliners": 111,
- "median_pct": 1.02,
+ "advancers": 176,
+ "decliners": 327,
+ "median_pct": -0.5,
  "gainers": [
   {
-   "ticker": "EFX",
-   "name": "Equifax",
-   "sector": "Industrials",
-   "pct": 10.05,
-   "close": 174.5,
-   "prev_close": 158.57
+   "ticker": "WDC",
+   "name": "Western Digital",
+   "sector": "Information Technology",
+   "pct": 6.09,
+   "close": 352.21,
+   "prev_close": 332.0
   },
   {
-   "ticker": "HAS",
-   "name": "Hasbro",
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "sector": "Information Technology",
+   "pct": 5.53,
+   "close": 1371.12,
+   "prev_close": 1299.3
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": 5.36,
+   "close": 260.36,
+   "prev_close": 247.11
+  },
+  {
+   "ticker": "TWLO",
+   "name": "Twilio",
+   "sector": "Information Technology",
+   "pct": 5.29,
+   "close": 257.29,
+   "prev_close": 244.37
+  },
+  {
+   "ticker": "AMZN",
+   "name": "Amazon",
    "sector": "Consumer Discretionary",
-   "pct": 9.24,
-   "close": 107.59,
-   "prev_close": 98.49
+   "pct": 4.98,
+   "close": 262.45,
+   "prev_close": 250.0
   },
   {
-   "ticker": "MMM",
-   "name": "3M",
-   "sector": "Industrials",
-   "pct": 5.75,
-   "close": 171.32,
-   "prev_close": 162.01
+   "ticker": "PLTR",
+   "name": "Palantir Technologies",
+   "sector": "Information Technology",
+   "pct": 4.36,
+   "close": 194.15,
+   "prev_close": 186.03
   },
   {
    "ticker": "MRNA",
    "name": "Moderna",
    "sector": "Health Care",
-   "pct": 5.65,
-   "close": 239.71,
-   "prev_close": 226.89
+   "pct": 4.07,
+   "close": 226.89,
+   "prev_close": 218.01
   },
   {
-   "ticker": "IT",
-   "name": "Gartner",
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": 5.34,
-   "close": 218.81,
-   "prev_close": 207.72
+   "pct": 4.06,
+   "close": 237.09,
+   "prev_close": 227.83
   },
   {
-   "ticker": "SKYD",
-   "name": "Skydance Corporation",
-   "sector": "Communication Services",
-   "pct": 5.07,
-   "close": 7.14,
-   "prev_close": 6.8
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": 3.76,
+   "close": 368.06,
+   "prev_close": 354.72
   },
   {
-   "ticker": "CRL",
-   "name": "Charles River Laboratories",
-   "sector": "Health Care",
-   "pct": 4.79,
-   "close": 314.39,
-   "prev_close": 300.02
-  },
-  {
-   "ticker": "NOC",
-   "name": "Northrop Grumman",
-   "sector": "Industrials",
-   "pct": 4.71,
-   "close": 534.7,
-   "prev_close": 510.65
-  },
-  {
-   "ticker": "BMY",
-   "name": "Bristol Myers Squibb",
-   "sector": "Health Care",
-   "pct": 4.63,
-   "close": 61.56,
-   "prev_close": 58.83
-  },
-  {
-   "ticker": "LLY",
-   "name": "Lilly (Eli)",
-   "sector": "Health Care",
-   "pct": 4.37,
-   "close": 1294.54,
-   "prev_close": 1240.34
+   "ticker": "MPWR",
+   "name": "Monolithic Power Systems",
+   "sector": "Information Technology",
+   "pct": 3.53,
+   "close": 1253.66,
+   "prev_close": 1210.86
   }
  ],
  "losers": [
   {
-   "ticker": "GM",
-   "name": "General Motors",
-   "sector": "Consumer Discretionary",
-   "pct": -8.45,
-   "close": 75.76,
-   "prev_close": 82.75
+   "ticker": "MOS",
+   "name": "Mosaic Company (The)",
+   "sector": "Materials",
+   "pct": -4.78,
+   "close": 17.92,
+   "prev_close": 18.82
   },
   {
-   "ticker": "HWM",
-   "name": "Howmet Aerospace",
-   "sector": "Industrials",
-   "pct": -6.09,
-   "close": 206.63,
-   "prev_close": 220.03
-  },
-  {
-   "ticker": "DVA",
-   "name": "DaVita",
-   "sector": "Health Care",
-   "pct": -5.14,
-   "close": 177.38,
-   "prev_close": 187.0
-  },
-  {
-   "ticker": "FIX",
-   "name": "Comfort Systems USA",
-   "sector": "Industrials",
-   "pct": -4.84,
-   "close": 1393.18,
-   "prev_close": 1464.07
-  },
-  {
-   "ticker": "GE",
-   "name": "GE Aerospace",
-   "sector": "Industrials",
+   "ticker": "NRG",
+   "name": "NRG Energy",
+   "sector": "Utilities",
    "pct": -4.21,
-   "close": 298.18,
-   "prev_close": 311.28
+   "close": 99.38,
+   "prev_close": 103.75
   },
   {
-   "ticker": "PWR",
-   "name": "Quanta Services",
+   "ticker": "AMP",
+   "name": "Ameriprise Financial",
+   "sector": "Financials",
+   "pct": -4.07,
+   "close": 480.41,
+   "prev_close": 500.8
+  },
+  {
+   "ticker": "ES",
+   "name": "Eversource Energy",
+   "sector": "Utilities",
+   "pct": -3.55,
+   "close": 64.48,
+   "prev_close": 66.85
+  },
+  {
+   "ticker": "HONA",
+   "name": "Honeywell Aerospace",
    "sector": "Industrials",
-   "pct": -4.18,
-   "close": 592.57,
-   "prev_close": 618.41
+   "pct": -3.33,
+   "close": 162.49,
+   "prev_close": 168.09
+  },
+  {
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
+   "sector": "Information Technology",
+   "pct": -3.23,
+   "close": 87.54,
+   "prev_close": 90.46
+  },
+  {
+   "ticker": "CEG",
+   "name": "Constellation Energy",
+   "sector": "Utilities",
+   "pct": -3.01,
+   "close": 263.19,
+   "prev_close": 271.37
+  },
+  {
+   "ticker": "DHI",
+   "name": "D. R. Horton",
+   "sector": "Consumer Discretionary",
+   "pct": -2.93,
+   "close": 135.31,
+   "prev_close": 139.39
+  },
+  {
+   "ticker": "BG",
+   "name": "Bunge Global",
+   "sector": "Consumer Staples",
+   "pct": -2.85,
+   "close": 103.11,
+   "prev_close": 106.14
   },
   {
    "ticker": "GPC",
    "name": "Genuine Parts Company",
    "sector": "Consumer Discretionary",
-   "pct": -3.5,
-   "close": 125.62,
-   "prev_close": 130.18
-  },
-  {
-   "ticker": "BAX",
-   "name": "Baxter International",
-   "sector": "Health Care",
-   "pct": -2.98,
-   "close": 24.25,
-   "prev_close": 24.99
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -2.95,
-   "close": 264.17,
-   "prev_close": 272.2
-  },
-  {
-   "ticker": "PH",
-   "name": "Parker Hannifin",
-   "sector": "Industrials",
-   "pct": -2.81,
-   "close": 939.08,
-   "prev_close": 966.26
+   "pct": -2.82,
+   "close": 130.18,
+   "prev_close": 133.96
   }
  ],
- "as_of": "2026-10-20T17:29:33+00:00"
+ "as_of": "2026-10-21T00:07:30+00:00"
 }
