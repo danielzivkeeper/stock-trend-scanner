@@ -3,173 +3,20 @@
  "market_date": "2026-10-21",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 287,
- "decliners": 216,
- "median_pct": 0.22,
+ "checked": 1,
+ "advancers": 1,
+ "decliners": 0,
+ "median_pct": 0.31,
  "gainers": [
   {
-   "ticker": "SMCI",
-   "name": "Supermicro",
-   "sector": "Information Technology",
-   "pct": 10.07,
-   "close": 35.74,
-   "prev_close": 32.47
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
+   "ticker": "HUBB",
+   "name": "Hubbell Incorporated",
    "sector": "Industrials",
-   "pct": 8.18,
-   "close": 240.87,
-   "prev_close": 222.65
-  },
-  {
-   "ticker": "CRL",
-   "name": "Charles River Laboratories",
-   "sector": "Health Care",
-   "pct": 8.09,
-   "close": 340.96,
-   "prev_close": 315.45
-  },
-  {
-   "ticker": "DDOG",
-   "name": "Datadog",
-   "sector": "Information Technology",
-   "pct": 7.76,
-   "close": 276.34,
-   "prev_close": 256.43
-  },
-  {
-   "ticker": "ECHO",
-   "name": "EchoStar",
-   "sector": "Communication Services",
-   "pct": 7.3,
-   "close": 92.7,
-   "prev_close": 86.39
-  },
-  {
-   "ticker": "SKYD",
-   "name": "Skydance Corporation",
-   "sector": "Communication Services",
-   "pct": 7.21,
-   "close": 7.61,
-   "prev_close": 7.1
-  },
-  {
-   "ticker": "UAL",
-   "name": "United Airlines Holdings",
-   "sector": "Industrials",
-   "pct": 6.86,
-   "close": 104.48,
-   "prev_close": 97.77
-  },
-  {
-   "ticker": "CRWD",
-   "name": "CrowdStrike",
-   "sector": "Information Technology",
-   "pct": 6.6,
-   "close": 242.38,
-   "prev_close": 227.37
-  },
-  {
-   "ticker": "ILMN",
-   "name": "Illumina, Inc.",
-   "sector": "Health Care",
-   "pct": 6.19,
-   "close": 284.52,
-   "prev_close": 267.93
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": 5.38,
-   "close": 360.35,
-   "prev_close": 341.95
+   "pct": 0.31,
+   "close": 460.76,
+   "prev_close": 459.32
   }
  ],
- "losers": [
-  {
-   "ticker": "T",
-   "name": "AT&T",
-   "sector": "Communication Services",
-   "pct": -6.15,
-   "close": 21.98,
-   "prev_close": 23.42
-  },
-  {
-   "ticker": "DXCM",
-   "name": "Dexcom",
-   "sector": "Health Care",
-   "pct": -5.27,
-   "close": 81.22,
-   "prev_close": 85.74
-  },
-  {
-   "ticker": "CMG",
-   "name": "Chipotle Mexican Grill",
-   "sector": "Consumer Discretionary",
-   "pct": -4.87,
-   "close": 28.2,
-   "prev_close": 29.65
-  },
-  {
-   "ticker": "NFLX",
-   "name": "Netflix",
-   "sector": "Communication Services",
-   "pct": -4.56,
-   "close": 65.56,
-   "prev_close": 68.69
-  },
-  {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": -4.26,
-   "close": 287.94,
-   "prev_close": 300.76
-  },
-  {
-   "ticker": "CHTR",
-   "name": "Charter Communications",
-   "sector": "Communication Services",
-   "pct": -4.0,
-   "close": 105.62,
-   "prev_close": 110.03
-  },
-  {
-   "ticker": "BKNG",
-   "name": "Booking Holdings",
-   "sector": "Consumer Discretionary",
-   "pct": -3.66,
-   "close": 157.92,
-   "prev_close": 163.92
-  },
-  {
-   "ticker": "ABT",
-   "name": "Abbott Laboratories",
-   "sector": "Health Care",
-   "pct": -3.56,
-   "close": 98.8,
-   "prev_close": 102.45
-  },
-  {
-   "ticker": "CLX",
-   "name": "Clorox",
-   "sector": "Consumer Staples",
-   "pct": -3.39,
-   "close": 84.49,
-   "prev_close": 87.45
-  },
-  {
-   "ticker": "TMUS",
-   "name": "T-Mobile US",
-   "sector": "Communication Services",
-   "pct": -2.9,
-   "close": 153.18,
-   "prev_close": 157.75
-  }
- ],
- "as_of": "2026-10-21T17:35:35+00:00"
+ "losers": [],
+ "as_of": "2026-10-22T00:13:14+00:00"
 }
