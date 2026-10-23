@@ -1,15 +1,29 @@
 {
- "trades": [],
+ "trades": [
+  {
+   "ticker": "HAS",
+   "signal_date": "2026-10-23",
+   "score": 5.72,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike",
+    "chart_patterns"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
+  }
+ ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 0,
-  "pending": 0,
+  "pending": 1,
   "avg_return": null,
   "median_return": null,
   "win_rate": null,
   "avg_excess_vs_spy": null,
   "beat_spy_rate": null
  },
- "generated_at": "2026-10-23T00:12:18+00:00"
+ "generated_at": "2026-10-23T17:28:10+00:00"
 }

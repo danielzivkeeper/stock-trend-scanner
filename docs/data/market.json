@@ -1,22 +1,184 @@
 {
  "status": "ok",
- "market_date": "2026-10-22",
- "drops": [],
- "threshold_pct": 10.0,
- "checked": 1,
- "advancers": 0,
- "decliners": 1,
- "median_pct": -3.25,
- "gainers": [],
- "losers": [
+ "market_date": "2026-10-23",
+ "drops": [
   {
-   "ticker": "HUBB",
-   "name": "Hubbell Incorporated",
+   "ticker": "BE",
+   "name": "Bloom Energy",
    "sector": "Industrials",
-   "pct": -3.25,
-   "close": 445.8,
-   "prev_close": 460.76
+   "pct": -13.15,
+   "close": 189.14,
+   "prev_close": 217.77
   }
  ],
- "as_of": "2026-10-23T00:10:04+00:00"
+ "threshold_pct": 10.0,
+ "checked": 503,
+ "advancers": 124,
+ "decliners": 379,
+ "median_pct": -0.91,
+ "gainers": [
+  {
+   "ticker": "CCI",
+   "name": "Crown Castle",
+   "sector": "Real Estate",
+   "pct": 9.6,
+   "close": 86.39,
+   "prev_close": 78.83
+  },
+  {
+   "ticker": "SLB",
+   "name": "Schlumberger",
+   "sector": "Energy",
+   "pct": 6.5,
+   "close": 52.77,
+   "prev_close": 49.55
+  },
+  {
+   "ticker": "PANW",
+   "name": "Palo Alto Networks",
+   "sector": "Information Technology",
+   "pct": 6.42,
+   "close": 377.71,
+   "prev_close": 354.92
+  },
+  {
+   "ticker": "CRWD",
+   "name": "CrowdStrike",
+   "sector": "Information Technology",
+   "pct": 6.03,
+   "close": 252.28,
+   "prev_close": 237.94
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": 5.45,
+   "close": 271.79,
+   "prev_close": 257.75
+  },
+  {
+   "ticker": "HAL",
+   "name": "Halliburton",
+   "sector": "Energy",
+   "pct": 5.12,
+   "close": 34.89,
+   "prev_close": 33.19
+  },
+  {
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "sector": "Energy",
+   "pct": 4.8,
+   "close": 51.81,
+   "prev_close": 49.44
+  },
+  {
+   "ticker": "ECHO",
+   "name": "EchoStar",
+   "sector": "Communication Services",
+   "pct": 4.62,
+   "close": 89.75,
+   "prev_close": 85.79
+  },
+  {
+   "ticker": "FANG",
+   "name": "Diamondback Energy",
+   "sector": "Energy",
+   "pct": 4.53,
+   "close": 206.07,
+   "prev_close": 197.14
+  },
+  {
+   "ticker": "DVN",
+   "name": "Devon Energy",
+   "sector": "Energy",
+   "pct": 4.31,
+   "close": 51.3,
+   "prev_close": 49.18
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "BE",
+   "name": "Bloom Energy",
+   "sector": "Industrials",
+   "pct": -13.15,
+   "close": 189.14,
+   "prev_close": 217.77
+  },
+  {
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
+   "sector": "Industrials",
+   "pct": -8.88,
+   "close": 1165.82,
+   "prev_close": 1279.37
+  },
+  {
+   "ticker": "GL",
+   "name": "Globe Life",
+   "sector": "Financials",
+   "pct": -7.76,
+   "close": 155.34,
+   "prev_close": 168.41
+  },
+  {
+   "ticker": "TMUS",
+   "name": "T-Mobile US",
+   "sector": "Communication Services",
+   "pct": -6.27,
+   "close": 148.83,
+   "prev_close": 158.79
+  },
+  {
+   "ticker": "T",
+   "name": "AT&T",
+   "sector": "Communication Services",
+   "pct": -6.27,
+   "close": 21.32,
+   "prev_close": 22.74
+  },
+  {
+   "ticker": "DG",
+   "name": "Dollar General",
+   "sector": "Consumer Staples",
+   "pct": -5.82,
+   "close": 131.01,
+   "prev_close": 139.11
+  },
+  {
+   "ticker": "DLTR",
+   "name": "Dollar Tree",
+   "sector": "Consumer Staples",
+   "pct": -5.79,
+   "close": 123.45,
+   "prev_close": 131.04
+  },
+  {
+   "ticker": "CBRE",
+   "name": "CBRE Group",
+   "sector": "Real Estate",
+   "pct": -5.42,
+   "close": 124.12,
+   "prev_close": 131.24
+  },
+  {
+   "ticker": "MET",
+   "name": "MetLife",
+   "sector": "Financials",
+   "pct": -5.33,
+   "close": 98.05,
+   "prev_close": 103.57
+  },
+  {
+   "ticker": "DECK",
+   "name": "Deckers Brands",
+   "sector": "Consumer Discretionary",
+   "pct": -5.19,
+   "close": 80.85,
+   "prev_close": 85.28
+  }
+ ],
+ "as_of": "2026-10-23T17:25:46+00:00"
 }
