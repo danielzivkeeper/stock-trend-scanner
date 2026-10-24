@@ -17106,5 +17106,1296 @@
   "alert": false,
   "close": 27.345,
   "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "HAS",
+  "score": 5.72,
+  "alert": true,
+  "close": 117.23,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup",
+   "social_spike",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "MKC",
+  "score": 3.61,
+  "alert": false,
+  "close": 48.71,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BX",
+  "score": 3.39,
+  "alert": false,
+  "close": 118.75,
+  "fired": [
+   "insider_buying",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SYF",
+  "score": 3.28,
+  "alert": false,
+  "close": 75.09,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "RF",
+  "score": 3.25,
+  "alert": false,
+  "close": 28.4,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AXP",
+  "score": 3.16,
+  "alert": false,
+  "close": 325.17,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BE",
+  "score": 3.16,
+  "alert": false,
+  "close": 217.77,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "COF",
+  "score": 3.16,
+  "alert": false,
+  "close": 203.43,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "DECK",
+  "score": 3.16,
+  "alert": false,
+  "close": 85.28,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ELV",
+  "score": 3.16,
+  "alert": false,
+  "close": 445.28,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "GS",
+  "score": 3.16,
+  "alert": false,
+  "close": 891.3,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NTRS",
+  "score": 3.16,
+  "alert": false,
+  "close": 165.82,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "RTX",
+  "score": 3.16,
+  "alert": false,
+  "close": 194.71,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TRV",
+  "score": 3.16,
+  "alert": false,
+  "close": 405.44,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NKE",
+  "score": 2.97,
+  "alert": false,
+  "close": 38.32,
+  "fired": [
+   "earnings_drift",
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FITB",
+  "score": 2.92,
+  "alert": false,
+  "close": 53.23,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "LUV",
+  "score": 2.9,
+  "alert": false,
+  "close": 42.03,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ISRG",
+  "score": 2.87,
+  "alert": false,
+  "close": 443.85,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NEM",
+  "score": 2.82,
+  "alert": false,
+  "close": 114.11,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "UNH",
+  "score": 2.8,
+  "alert": false,
+  "close": 424.98,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "WDC",
+  "score": 2.77,
+  "alert": false,
+  "close": 354.19,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "KMI",
+  "score": 2.74,
+  "alert": false,
+  "close": 33.72,
+  "fired": [
+   "earnings_drift",
+   "social_spike",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CB",
+  "score": 2.66,
+  "alert": false,
+  "close": 363.95,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "VLO",
+  "score": 2.65,
+  "alert": false,
+  "close": 426.28,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BLK",
+  "score": 2.4,
+  "alert": false,
+  "close": 1137.29,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "GE",
+  "score": 2.4,
+  "alert": false,
+  "close": 293.54,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "DOW",
+  "score": 2.3,
+  "alert": false,
+  "close": 31.81,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "KEY",
+  "score": 2.29,
+  "alert": false,
+  "close": 21.21,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "URI",
+  "score": 2.28,
+  "alert": false,
+  "close": 1111.02,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TROW",
+  "score": 2.11,
+  "alert": false,
+  "close": 103.45,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "DHR",
+  "score": 2.08,
+  "alert": false,
+  "close": 229.75,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NOC",
+  "score": 2.08,
+  "alert": false,
+  "close": 552.35,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PLD",
+  "score": 2.07,
+  "alert": false,
+  "close": 126.66,
+  "fired": [
+   "earnings_drift",
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PG",
+  "score": 2.01,
+  "alert": false,
+  "close": 165.59,
+  "fired": [
+   "earnings_drift",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CHTR",
+  "score": 1.94,
+  "alert": false,
+  "close": 111.77,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TDY",
+  "score": 1.88,
+  "alert": false,
+  "close": 620.47,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "IFF",
+  "score": 1.85,
+  "alert": false,
+  "close": 93.83,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ROP",
+  "score": 1.81,
+  "alert": false,
+  "close": 436.23,
+  "fired": [
+   "short_squeeze_setup",
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SNA",
+  "score": 1.75,
+  "alert": false,
+  "close": 356.46,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "T",
+  "score": 1.75,
+  "alert": false,
+  "close": 22.74,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FIX",
+  "score": 1.74,
+  "alert": false,
+  "close": 1279.37,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NDAQ",
+  "score": 1.74,
+  "alert": false,
+  "close": 103.3,
+  "fired": [
+   "social_spike",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CMCSA",
+  "score": 1.7,
+  "alert": false,
+  "close": 22.84,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "LYV",
+  "score": 1.7,
+  "alert": false,
+  "close": 174.5,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "C",
+  "score": 1.69,
+  "alert": false,
+  "close": 122.51,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BF-B",
+  "score": 1.67,
+  "alert": false,
+  "close": 30.18,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "JBL",
+  "score": 1.65,
+  "alert": false,
+  "close": 267.41,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TXN",
+  "score": 1.65,
+  "alert": false,
+  "close": 279.5,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ED",
+  "score": 1.61,
+  "alert": false,
+  "close": 116.26,
+  "fired": [
+   "short_squeeze_setup",
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "HON",
+  "score": 1.6,
+  "alert": false,
+  "close": 218.31,
+  "fired": [
+   "earnings_drift",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "KMB",
+  "score": 1.6,
+  "alert": false,
+  "close": 112.32,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CSX",
+  "score": 1.59,
+  "alert": false,
+  "close": 51.67,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "DUOL",
+  "score": 1.56,
+  "alert": false,
+  "close": 141.39,
+  "fired": [
+   "short_squeeze_setup",
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AWK",
+  "score": 1.56,
+  "alert": false,
+  "close": 143.23,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "UNP",
+  "score": 1.55,
+  "alert": false,
+  "close": 298.09,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "KDP",
+  "score": 1.53,
+  "alert": false,
+  "close": 35.19,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TPL",
+  "score": 1.52,
+  "alert": false,
+  "close": 333.67,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "LNT",
+  "score": 1.51,
+  "alert": false,
+  "close": 70.3,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PNW",
+  "score": 1.51,
+  "alert": false,
+  "close": 106.61,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "RDDT",
+  "score": 1.48,
+  "alert": false,
+  "close": 150.26,
+  "fired": [
+   "short_squeeze_setup",
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AMCR",
+  "score": 1.44,
+  "alert": false,
+  "close": 46.28,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "RMD",
+  "score": 1.41,
+  "alert": false,
+  "close": 253.06,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "TSLA",
+  "score": 1.4,
+  "alert": false,
+  "close": 374.58,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SWKS",
+  "score": 1.37,
+  "alert": false,
+  "close": 82.39,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FOXA",
+  "score": 1.36,
+  "alert": false,
+  "close": 68.27,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "VITL",
+  "score": 1.36,
+  "alert": false,
+  "close": 9.41,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BIIB",
+  "score": 1.35,
+  "alert": false,
+  "close": 253.84,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PRU",
+  "score": 1.33,
+  "alert": false,
+  "close": 118.17,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "HIMS",
+  "score": 1.32,
+  "alert": false,
+  "close": 29.13,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BAC",
+  "score": 1.32,
+  "alert": false,
+  "close": 51.08,
+  "fired": [
+   "insider_buying"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CRL",
+  "score": 1.31,
+  "alert": false,
+  "close": 339.66,
+  "fired": [
+   "social_spike",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CVNA",
+  "score": 1.3,
+  "alert": false,
+  "close": 58.72,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NFLX",
+  "score": 1.28,
+  "alert": false,
+  "close": 67.05,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ERIE",
+  "score": 1.27,
+  "alert": false,
+  "close": 256.8,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "LII",
+  "score": 1.27,
+  "alert": false,
+  "close": 378.72,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "LMT",
+  "score": 1.26,
+  "alert": false,
+  "close": 589.91,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BXP",
+  "score": 1.25,
+  "alert": false,
+  "close": 61.49,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CCL",
+  "score": 1.25,
+  "alert": false,
+  "close": 27.08,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "WAT",
+  "score": 1.23,
+  "alert": false,
+  "close": 455.59,
+  "fired": [
+   "short_squeeze_setup",
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "APO",
+  "score": 1.21,
+  "alert": false,
+  "close": 114.83,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "IP",
+  "score": 1.18,
+  "alert": false,
+  "close": 33.68,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SKYD",
+  "score": 1.17,
+  "alert": false,
+  "close": 7.79,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ECHO",
+  "score": 1.16,
+  "alert": false,
+  "close": 85.79,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "STZ",
+  "score": 1.13,
+  "alert": false,
+  "close": 138.98,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "XEL",
+  "score": 1.13,
+  "alert": false,
+  "close": 78.9,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AEE",
+  "score": 1.12,
+  "alert": false,
+  "close": 108.94,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "NCLH",
+  "score": 1.12,
+  "alert": false,
+  "close": 15.54,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AOS",
+  "score": 1.1,
+  "alert": false,
+  "close": 62.47,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CBRE",
+  "score": 1.08,
+  "alert": false,
+  "close": 131.24,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "EVRG",
+  "score": 1.08,
+  "alert": false,
+  "close": 84.95,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SPG",
+  "score": 1.08,
+  "alert": false,
+  "close": 212.04,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FE",
+  "score": 1.07,
+  "alert": false,
+  "close": 46.49,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "MU",
+  "score": 1.06,
+  "alert": false,
+  "close": 856.49,
+  "fired": [
+   "earnings_drift"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ABNB",
+  "score": 1.05,
+  "alert": false,
+  "close": 175.76,
+  "fired": [
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "BG",
+  "score": 1.05,
+  "alert": false,
+  "close": 103.15,
+  "fired": [
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "HLT",
+  "score": 1.05,
+  "alert": false,
+  "close": 358.07,
+  "fired": [
+   "chart_patterns"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "HSIC",
+  "score": 1.05,
+  "alert": false,
+  "close": 86.0,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "META",
+  "score": 1.05,
+  "alert": false,
+  "close": 648.85,
+  "fired": [
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "MRNA",
+  "score": 1.05,
+  "alert": false,
+  "close": 202.63,
+  "fired": [
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "AEP",
+  "score": 1.04,
+  "alert": false,
+  "close": 130.64,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CNP",
+  "score": 1.04,
+  "alert": false,
+  "close": 41.2,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FTV",
+  "score": 1.04,
+  "alert": false,
+  "close": 60.05,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CPAY",
+  "score": 1.03,
+  "alert": false,
+  "close": 415.01,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "OMC",
+  "score": 1.03,
+  "alert": false,
+  "close": 82.56,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "DVA",
+  "score": 1.02,
+  "alert": false,
+  "close": 186.1,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "EBAY",
+  "score": 1.02,
+  "alert": false,
+  "close": 122.04,
+  "fired": [
+   "social_spike"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "FOX",
+  "score": 1.02,
+  "alert": false,
+  "close": 60.82,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PSA",
+  "score": 1.01,
+  "alert": false,
+  "close": 309.13,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PTON",
+  "score": 1.0,
+  "alert": false,
+  "close": 5.46,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "SOFI",
+  "score": 0.79,
+  "alert": false,
+  "close": 14.77,
+  "fired": [
+   "short_squeeze_setup"
+  ]
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CELH",
+  "score": 0.0,
+  "alert": false,
+  "close": 28.36,
+  "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ELF",
+  "score": 0.0,
+  "alert": false,
+  "close": 114.99,
+  "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CROX",
+  "score": 0.0,
+  "alert": false,
+  "close": 120.99,
+  "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "ONON",
+  "score": 0.0,
+  "alert": false,
+  "close": 34.0,
+  "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "PLTR",
+  "score": 0.0,
+  "alert": false,
+  "close": 196.19,
+  "fired": []
+ },
+ {
+  "t": "2026-10-24T00:00:55+00:00",
+  "date": "2026-10-24",
+  "ticker": "CMG",
+  "score": 0.0,
+  "alert": false,
+  "close": 28.14,
+  "fired": []
  }
 ]
