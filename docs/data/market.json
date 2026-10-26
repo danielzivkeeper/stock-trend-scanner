@@ -1,240 +1,184 @@
 {
  "status": "ok",
- "market_date": "2026-10-22",
+ "market_date": "2026-10-26",
  "drops": [
   {
-   "ticker": "MRNA",
-   "name": "Moderna",
-   "sector": "Health Care",
-   "pct": -17.57,
-   "close": 202.63,
-   "prev_close": 245.81
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
+   "ticker": "FICO",
+   "name": "Fair Isaac",
    "sector": "Information Technology",
-   "pct": -12.51,
-   "close": 207.82,
-   "prev_close": 237.53
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -11.76,
-   "close": 230.15,
-   "prev_close": 260.81
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -11.54,
-   "close": 752.54,
-   "prev_close": 850.7
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
-   "sector": "Information Technology",
-   "pct": -11.08,
-   "close": 76.69,
-   "prev_close": 86.25
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": -10.71,
-   "close": 322.64,
-   "prev_close": 361.34
-  },
-  {
-   "ticker": "GEV",
-   "name": "GE Vernova",
-   "sector": "Industrials",
-   "pct": -10.64,
-   "close": 827.42,
-   "prev_close": 925.92
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": -10.63,
-   "close": 308.75,
-   "prev_close": 345.49
+   "pct": -14.83,
+   "close": 694.36,
+   "prev_close": 815.31
   }
  ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 337,
- "decliners": 166,
- "median_pct": 1.67,
+ "advancers": 265,
+ "decliners": 238,
+ "median_pct": 0.12,
  "gainers": [
   {
-   "ticker": "ALLE",
-   "name": "Allegion",
+   "ticker": "LITE",
+   "name": "Lumentum",
+   "sector": "Information Technology",
+   "pct": 10.07,
+   "close": 832.35,
+   "prev_close": 756.17
+  },
+  {
+   "ticker": "P",
+   "name": "Everpure",
+   "sector": "Information Technology",
+   "pct": 8.55,
+   "close": 133.88,
+   "prev_close": 123.33
+  },
+  {
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": 11.02,
-   "close": 176.52,
-   "prev_close": 159.0
+   "pct": 7.58,
+   "close": 1248.87,
+   "prev_close": 1160.86
   },
   {
-   "ticker": "ROP",
-   "name": "Roper Technologies",
-   "sector": "Information Technology",
-   "pct": 9.73,
-   "close": 436.23,
-   "prev_close": 397.56
-  },
-  {
-   "ticker": "LEN",
-   "name": "Lennar",
-   "sector": "Consumer Discretionary",
-   "pct": 8.69,
-   "close": 84.45,
-   "prev_close": 77.7
-  },
-  {
-   "ticker": "BX",
-   "name": "Blackstone Inc.",
-   "sector": "Financials",
-   "pct": 8.38,
-   "close": 118.75,
-   "prev_close": 109.57
-  },
-  {
-   "ticker": "GIS",
-   "name": "General Mills",
-   "sector": "Consumer Staples",
-   "pct": 8.01,
-   "close": 35.18,
-   "prev_close": 32.57
-  },
-  {
-   "ticker": "LULU",
-   "name": "Lululemon Athletica",
-   "sector": "Consumer Discretionary",
-   "pct": 7.8,
-   "close": 104.06,
-   "prev_close": 96.53
-  },
-  {
-   "ticker": "HPQ",
-   "name": "HP Inc.",
-   "sector": "Information Technology",
-   "pct": 7.79,
-   "close": 33.76,
-   "prev_close": 31.32
-  },
-  {
-   "ticker": "CSGP",
-   "name": "CoStar Group",
-   "sector": "Real Estate",
-   "pct": 7.75,
-   "close": 35.45,
-   "prev_close": 32.9
-  },
-  {
-   "ticker": "ACN",
-   "name": "Accenture",
-   "sector": "Information Technology",
-   "pct": 7.69,
-   "close": 258.74,
-   "prev_close": 240.26
-  },
-  {
-   "ticker": "NDAQ",
-   "name": "Nasdaq, Inc.",
-   "sector": "Financials",
-   "pct": 7.47,
-   "close": 103.3,
-   "prev_close": 96.12
-  }
- ],
- "losers": [
-  {
-   "ticker": "MRNA",
-   "name": "Moderna",
-   "sector": "Health Care",
-   "pct": -17.57,
-   "close": 202.63,
-   "prev_close": 245.81
+   "ticker": "BE",
+   "name": "Bloom Energy",
+   "sector": "Industrials",
+   "pct": 7.45,
+   "close": 207.71,
+   "prev_close": 193.3
   },
   {
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -12.51,
-   "close": 207.82,
-   "prev_close": 237.53
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -11.76,
-   "close": 230.15,
-   "prev_close": 260.81
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -11.54,
-   "close": 752.54,
-   "prev_close": 850.7
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
-   "sector": "Information Technology",
-   "pct": -11.08,
-   "close": 76.69,
-   "prev_close": 86.25
+   "pct": 7.36,
+   "close": 224.7,
+   "prev_close": 209.29
   },
   {
    "ticker": "CIEN",
    "name": "Ciena",
    "sector": "Information Technology",
-   "pct": -10.71,
-   "close": 322.64,
-   "prev_close": 361.34
+   "pct": 6.87,
+   "close": 342.27,
+   "prev_close": 320.26
   },
   {
-   "ticker": "GEV",
-   "name": "GE Vernova",
-   "sector": "Industrials",
-   "pct": -10.64,
-   "close": 827.42,
-   "prev_close": 925.92
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
+   "ticker": "SNPS",
+   "name": "Synopsys",
    "sector": "Information Technology",
-   "pct": -10.63,
-   "close": 308.75,
-   "prev_close": 345.49
+   "pct": 6.11,
+   "close": 456.43,
+   "prev_close": 430.14
   },
   {
-   "ticker": "VST",
-   "name": "Vistra Corp.",
-   "sector": "Utilities",
-   "pct": -9.81,
-   "close": 140.83,
-   "prev_close": 156.14
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": 5.87,
+   "close": 394.06,
+   "prev_close": 372.22
   },
   {
-   "ticker": "KLAC",
-   "name": "KLA Corporation",
+   "ticker": "INTC",
+   "name": "Intel",
    "sector": "Information Technology",
-   "pct": -9.55,
-   "close": 147.83,
-   "prev_close": 163.43
+   "pct": 5.65,
+   "close": 91.88,
+   "prev_close": 86.96
+  },
+  {
+   "ticker": "NXPI",
+   "name": "NXP Semiconductors",
+   "sector": "Information Technology",
+   "pct": 5.62,
+   "close": 248.13,
+   "prev_close": 234.92
   }
  ],
- "as_of": "2026-10-24T00:01:24+00:00"
+ "losers": [
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "sector": "Information Technology",
+   "pct": -14.83,
+   "close": 694.36,
+   "prev_close": 815.31
+  },
+  {
+   "ticker": "SKYD",
+   "name": "Skydance Corporation",
+   "sector": "Communication Services",
+   "pct": -5.76,
+   "close": 7.32,
+   "prev_close": 7.77
+  },
+  {
+   "ticker": "CHTR",
+   "name": "Charter Communications",
+   "sector": "Communication Services",
+   "pct": -5.13,
+   "close": 103.04,
+   "prev_close": 108.61
+  },
+  {
+   "ticker": "DG",
+   "name": "Dollar General",
+   "sector": "Consumer Staples",
+   "pct": -4.82,
+   "close": 126.29,
+   "prev_close": 132.69
+  },
+  {
+   "ticker": "RDDT",
+   "name": "Reddit",
+   "sector": "Communication Services",
+   "pct": -4.82,
+   "close": 137.29,
+   "prev_close": 144.25
+  },
+  {
+   "ticker": "NVR",
+   "name": "NVR, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -4.28,
+   "close": 5727.43,
+   "prev_close": 5983.68
+  },
+  {
+   "ticker": "PYPL",
+   "name": "PayPal",
+   "sector": "Financials",
+   "pct": -4.28,
+   "close": 54.58,
+   "prev_close": 57.02
+  },
+  {
+   "ticker": "NFLX",
+   "name": "Netflix",
+   "sector": "Communication Services",
+   "pct": -4.22,
+   "close": 63.07,
+   "prev_close": 65.85
+  },
+  {
+   "ticker": "OMC",
+   "name": "Omnicom Group",
+   "sector": "Communication Services",
+   "pct": -4.18,
+   "close": 79.22,
+   "prev_close": 82.68
+  },
+  {
+   "ticker": "VZ",
+   "name": "Verizon",
+   "sector": "Communication Services",
+   "pct": -3.73,
+   "close": 42.99,
+   "prev_close": 44.66
+  }
+ ],
+ "as_of": "2026-10-26T18:51:58+00:00"
 }
