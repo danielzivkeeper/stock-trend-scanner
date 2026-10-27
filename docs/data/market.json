@@ -1,184 +1,184 @@
 {
  "status": "ok",
- "market_date": "2026-10-23",
+ "market_date": "2026-10-27",
  "drops": [
   {
-   "ticker": "BE",
-   "name": "Bloom Energy",
+   "ticker": "XYL",
+   "name": "Xylem Inc.",
    "sector": "Industrials",
-   "pct": -11.24,
-   "close": 193.3,
-   "prev_close": 217.77
+   "pct": -12.6,
+   "close": 94.6,
+   "prev_close": 108.24
   }
  ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 136,
- "decliners": 367,
- "median_pct": -0.85,
+ "advancers": 222,
+ "decliners": 281,
+ "median_pct": -0.18,
  "gainers": [
   {
-   "ticker": "CCI",
-   "name": "Crown Castle",
-   "sector": "Real Estate",
-   "pct": 9.06,
-   "close": 85.97,
-   "prev_close": 78.83
+   "ticker": "PNR",
+   "name": "Pentair",
+   "sector": "Industrials",
+   "pct": 13.12,
+   "close": 62.47,
+   "prev_close": 55.22
   },
-  {
-   "ticker": "CRWD",
-   "name": "CrowdStrike",
-   "sector": "Information Technology",
-   "pct": 8.25,
-   "close": 257.57,
-   "prev_close": 237.94
-  },
-  {
-   "ticker": "PANW",
-   "name": "Palo Alto Networks",
-   "sector": "Information Technology",
-   "pct": 7.22,
-   "close": 380.55,
-   "prev_close": 354.92
-  },
-  {
-   "ticker": "SLB",
-   "name": "Schlumberger",
-   "sector": "Energy",
-   "pct": 7.08,
-   "close": 53.06,
-   "prev_close": 49.55
-  },
-  {
-   "ticker": "HAL",
-   "name": "Halliburton",
-   "sector": "Energy",
-   "pct": 5.21,
-   "close": 34.92,
-   "prev_close": 33.19
-  },
-  {
-   "ticker": "APA",
-   "name": "APA Corporation",
-   "sector": "Energy",
-   "pct": 4.98,
-   "close": 51.9,
-   "prev_close": 49.44
-  },
-  {
-   "ticker": "VYLR",
-   "name": "Vylor",
-   "sector": "Consumer Staples",
-   "pct": 4.88,
-   "close": 74.59,
-   "prev_close": 71.12
-  },
-  {
-   "ticker": "DDOG",
-   "name": "Datadog",
-   "sector": "Information Technology",
-   "pct": 4.62,
-   "close": 269.65,
-   "prev_close": 257.75
-  },
-  {
-   "ticker": "DVN",
-   "name": "Devon Energy",
-   "sector": "Energy",
-   "pct": 4.49,
-   "close": 51.39,
-   "prev_close": 49.18
-  },
-  {
-   "ticker": "TRGP",
-   "name": "Targa Resources",
-   "sector": "Energy",
-   "pct": 4.43,
-   "close": 302.37,
-   "prev_close": 289.54
-  }
- ],
- "losers": [
   {
    "ticker": "BE",
    "name": "Bloom Energy",
    "sector": "Industrials",
-   "pct": -11.24,
-   "close": 193.3,
-   "prev_close": 217.77
+   "pct": 8.28,
+   "close": 220.8,
+   "prev_close": 203.92
   },
   {
-   "ticker": "FIX",
-   "name": "Comfort Systems USA",
-   "sector": "Industrials",
-   "pct": -9.26,
-   "close": 1160.86,
-   "prev_close": 1279.37
+   "ticker": "DELL",
+   "name": "Dell Technologies",
+   "sector": "Information Technology",
+   "pct": 7.73,
+   "close": 503.2,
+   "prev_close": 467.09
   },
   {
-   "ticker": "GL",
-   "name": "Globe Life",
-   "sector": "Financials",
-   "pct": -8.09,
-   "close": 154.79,
-   "prev_close": 168.41
+   "ticker": "WDC",
+   "name": "Western Digital",
+   "sector": "Information Technology",
+   "pct": 7.38,
+   "close": 382.39,
+   "prev_close": 356.13
   },
   {
-   "ticker": "T",
-   "name": "AT&T",
-   "sector": "Communication Services",
-   "pct": -7.96,
-   "close": 20.93,
-   "prev_close": 22.74
+   "ticker": "CDNS",
+   "name": "Cadence Design Systems",
+   "sector": "Information Technology",
+   "pct": 7.37,
+   "close": 345.93,
+   "prev_close": 322.17
   },
   {
-   "ticker": "TMUS",
-   "name": "T-Mobile US",
-   "sector": "Communication Services",
-   "pct": -7.71,
-   "close": 146.54,
-   "prev_close": 158.79
+   "ticker": "SMCI",
+   "name": "Supermicro",
+   "sector": "Information Technology",
+   "pct": 6.96,
+   "close": 34.97,
+   "prev_close": 32.69
   },
   {
-   "ticker": "CBRE",
-   "name": "CBRE Group",
-   "sector": "Real Estate",
-   "pct": -6.05,
-   "close": 123.3,
-   "prev_close": 131.24
-  },
-  {
-   "ticker": "DECK",
-   "name": "Deckers Brands",
+   "ticker": "RCL",
+   "name": "Royal Caribbean Group",
    "sector": "Consumer Discretionary",
-   "pct": -4.91,
-   "close": 81.09,
-   "prev_close": 85.28
+   "pct": 6.41,
+   "close": 298.59,
+   "prev_close": 280.6
   },
   {
-   "ticker": "MGM",
-   "name": "MGM Resorts",
-   "sector": "Consumer Discretionary",
-   "pct": -4.88,
-   "close": 28.06,
-   "prev_close": 29.5
+   "ticker": "ALB",
+   "name": "Albemarle Corporation",
+   "sector": "Materials",
+   "pct": 6.27,
+   "close": 99.28,
+   "prev_close": 93.42
   },
   {
-   "ticker": "LULU",
-   "name": "Lululemon Athletica",
-   "sector": "Consumer Discretionary",
-   "pct": -4.85,
-   "close": 99.01,
-   "prev_close": 104.06
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
+   "sector": "Information Technology",
+   "pct": 6.2,
+   "close": 235.24,
+   "prev_close": 221.5
   },
   {
-   "ticker": "DG",
-   "name": "Dollar General",
-   "sector": "Consumer Staples",
-   "pct": -4.62,
-   "close": 132.69,
-   "prev_close": 139.11
+   "ticker": "LITE",
+   "name": "Lumentum",
+   "sector": "Information Technology",
+   "pct": 6.0,
+   "close": 867.18,
+   "prev_close": 818.1
   }
  ],
- "as_of": "2026-10-27T00:46:42+00:00"
+ "losers": [
+  {
+   "ticker": "XYL",
+   "name": "Xylem Inc.",
+   "sector": "Industrials",
+   "pct": -12.6,
+   "close": 94.6,
+   "prev_close": 108.24
+  },
+  {
+   "ticker": "BA",
+   "name": "Boeing",
+   "sector": "Industrials",
+   "pct": -9.7,
+   "close": 170.04,
+   "prev_close": 188.31
+  },
+  {
+   "ticker": "VLO",
+   "name": "Valero Energy",
+   "sector": "Energy",
+   "pct": -8.19,
+   "close": 391.81,
+   "prev_close": 426.76
+  },
+  {
+   "ticker": "MPC",
+   "name": "Marathon Petroleum",
+   "sector": "Energy",
+   "pct": -6.55,
+   "close": 439.8,
+   "prev_close": 470.64
+  },
+  {
+   "ticker": "WELL",
+   "name": "Welltower",
+   "sector": "Real Estate",
+   "pct": -6.35,
+   "close": 225.34,
+   "prev_close": 240.61
+  },
+  {
+   "ticker": "PSX",
+   "name": "Phillips 66",
+   "sector": "Energy",
+   "pct": -6.26,
+   "close": 270.77,
+   "prev_close": 288.85
+  },
+  {
+   "ticker": "UHS",
+   "name": "Universal Health Services",
+   "sector": "Health Care",
+   "pct": -6.25,
+   "close": 174.1,
+   "prev_close": 185.71
+  },
+  {
+   "ticker": "CTAS",
+   "name": "Cintas",
+   "sector": "Industrials",
+   "pct": -5.38,
+   "close": 213.79,
+   "prev_close": 225.93
+  },
+  {
+   "ticker": "BRO",
+   "name": "Brown & Brown",
+   "sector": "Financials",
+   "pct": -5.26,
+   "close": 67.34,
+   "prev_close": 71.08
+  },
+  {
+   "ticker": "HUBB",
+   "name": "Hubbell Incorporated",
+   "sector": "Industrials",
+   "pct": -5.05,
+   "close": 436.2,
+   "prev_close": 459.4
+  }
+ ],
+ "as_of": "2026-10-27T18:14:08+00:00"
 }
