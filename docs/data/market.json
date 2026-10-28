@@ -1,184 +1,184 @@
 {
  "status": "ok",
- "market_date": "2026-10-27",
+ "market_date": "2026-10-26",
  "drops": [
   {
-   "ticker": "XYL",
-   "name": "Xylem Inc.",
-   "sector": "Industrials",
-   "pct": -12.6,
-   "close": 94.6,
-   "prev_close": 108.24
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "sector": "Information Technology",
+   "pct": -13.15,
+   "close": 708.07,
+   "prev_close": 815.31
   }
  ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 222,
- "decliners": 281,
- "median_pct": -0.18,
+ "advancers": 289,
+ "decliners": 214,
+ "median_pct": 0.21,
  "gainers": [
   {
-   "ticker": "PNR",
-   "name": "Pentair",
+   "ticker": "LITE",
+   "name": "Lumentum",
+   "sector": "Information Technology",
+   "pct": 8.19,
+   "close": 818.1,
+   "prev_close": 756.17
+  },
+  {
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": 13.12,
-   "close": 62.47,
-   "prev_close": 55.22
+   "pct": 7.18,
+   "close": 1244.19,
+   "prev_close": 1160.86
   },
   {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": 8.28,
-   "close": 220.8,
-   "prev_close": 203.92
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
+   "ticker": "P",
+   "name": "Everpure",
    "sector": "Information Technology",
-   "pct": 7.73,
-   "close": 503.2,
-   "prev_close": 467.09
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": 7.38,
-   "close": 382.39,
-   "prev_close": 356.13
-  },
-  {
-   "ticker": "CDNS",
-   "name": "Cadence Design Systems",
-   "sector": "Information Technology",
-   "pct": 7.37,
-   "close": 345.93,
-   "prev_close": 322.17
-  },
-  {
-   "ticker": "SMCI",
-   "name": "Supermicro",
-   "sector": "Information Technology",
-   "pct": 6.96,
-   "close": 34.97,
-   "prev_close": 32.69
-  },
-  {
-   "ticker": "RCL",
-   "name": "Royal Caribbean Group",
-   "sector": "Consumer Discretionary",
-   "pct": 6.41,
-   "close": 298.59,
-   "prev_close": 280.6
-  },
-  {
-   "ticker": "ALB",
-   "name": "Albemarle Corporation",
-   "sector": "Materials",
-   "pct": 6.27,
-   "close": 99.28,
-   "prev_close": 93.42
+   "pct": 6.49,
+   "close": 131.33,
+   "prev_close": 123.33
   },
   {
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": 6.2,
-   "close": 235.24,
-   "prev_close": 221.5
+   "pct": 5.83,
+   "close": 221.5,
+   "prev_close": 209.29
   },
   {
-   "ticker": "LITE",
-   "name": "Lumentum",
+   "ticker": "SNPS",
+   "name": "Synopsys",
    "sector": "Information Technology",
-   "pct": 6.0,
-   "close": 867.18,
-   "prev_close": 818.1
+   "pct": 5.62,
+   "close": 454.33,
+   "prev_close": 430.14
+  },
+  {
+   "ticker": "BE",
+   "name": "Bloom Energy",
+   "sector": "Industrials",
+   "pct": 5.49,
+   "close": 203.92,
+   "prev_close": 193.3
+  },
+  {
+   "ticker": "AKAM",
+   "name": "Akamai Technologies",
+   "sector": "Information Technology",
+   "pct": 5.31,
+   "close": 98.5,
+   "prev_close": 93.53
+  },
+  {
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": 5.21,
+   "close": 391.62,
+   "prev_close": 372.22
+  },
+  {
+   "ticker": "LMT",
+   "name": "Lockheed Martin",
+   "sector": "Industrials",
+   "pct": 5.13,
+   "close": 635.2,
+   "prev_close": 604.18
+  },
+  {
+   "ticker": "GEV",
+   "name": "GE Vernova",
+   "sector": "Industrials",
+   "pct": 4.92,
+   "close": 855.12,
+   "prev_close": 815.0
   }
  ],
  "losers": [
   {
-   "ticker": "XYL",
-   "name": "Xylem Inc.",
-   "sector": "Industrials",
-   "pct": -12.6,
-   "close": 94.6,
-   "prev_close": 108.24
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "sector": "Information Technology",
+   "pct": -13.15,
+   "close": 708.07,
+   "prev_close": 815.31
   },
   {
-   "ticker": "BA",
-   "name": "Boeing",
-   "sector": "Industrials",
-   "pct": -9.7,
-   "close": 170.04,
-   "prev_close": 188.31
+   "ticker": "DASH",
+   "name": "DoorDash",
+   "sector": "Consumer Discretionary",
+   "pct": -6.1,
+   "close": 168.44,
+   "prev_close": 179.38
   },
   {
-   "ticker": "VLO",
-   "name": "Valero Energy",
-   "sector": "Energy",
-   "pct": -8.19,
-   "close": 391.81,
-   "prev_close": 426.76
+   "ticker": "CHTR",
+   "name": "Charter Communications",
+   "sector": "Communication Services",
+   "pct": -5.92,
+   "close": 102.18,
+   "prev_close": 108.61
   },
   {
-   "ticker": "MPC",
-   "name": "Marathon Petroleum",
-   "sector": "Energy",
-   "pct": -6.55,
-   "close": 439.8,
-   "prev_close": 470.64
+   "ticker": "NVR",
+   "name": "NVR, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -4.28,
+   "close": 5727.77,
+   "prev_close": 5983.68
   },
   {
-   "ticker": "WELL",
-   "name": "Welltower",
-   "sector": "Real Estate",
-   "pct": -6.35,
-   "close": 225.34,
-   "prev_close": 240.61
+   "ticker": "RDDT",
+   "name": "Reddit",
+   "sector": "Communication Services",
+   "pct": -4.02,
+   "close": 138.45,
+   "prev_close": 144.25
   },
   {
-   "ticker": "PSX",
-   "name": "Phillips 66",
-   "sector": "Energy",
-   "pct": -6.26,
-   "close": 270.77,
-   "prev_close": 288.85
+   "ticker": "SKYD",
+   "name": "Skydance",
+   "sector": "Communication Services",
+   "pct": -3.6,
+   "close": 7.49,
+   "prev_close": 7.77
   },
   {
-   "ticker": "UHS",
-   "name": "Universal Health Services",
-   "sector": "Health Care",
-   "pct": -6.25,
-   "close": 174.1,
-   "prev_close": 185.71
-  },
-  {
-   "ticker": "CTAS",
-   "name": "Cintas",
-   "sector": "Industrials",
-   "pct": -5.38,
-   "close": 213.79,
-   "prev_close": 225.93
-  },
-  {
-   "ticker": "BRO",
-   "name": "Brown & Brown",
+   "ticker": "PYPL",
+   "name": "PayPal",
    "sector": "Financials",
-   "pct": -5.26,
-   "close": 67.34,
-   "prev_close": 71.08
+   "pct": -3.56,
+   "close": 54.99,
+   "prev_close": 57.02
   },
   {
-   "ticker": "HUBB",
-   "name": "Hubbell Incorporated",
-   "sector": "Industrials",
-   "pct": -5.05,
-   "close": 436.2,
-   "prev_close": 459.4
+   "ticker": "VZ",
+   "name": "Verizon",
+   "sector": "Communication Services",
+   "pct": -3.49,
+   "close": 43.1,
+   "prev_close": 44.66
+  },
+  {
+   "ticker": "OMC",
+   "name": "Omnicom Group",
+   "sector": "Communication Services",
+   "pct": -3.45,
+   "close": 79.83,
+   "prev_close": 82.68
+  },
+  {
+   "ticker": "DG",
+   "name": "Dollar General",
+   "sector": "Consumer Staples",
+   "pct": -3.22,
+   "close": 128.42,
+   "prev_close": 132.69
   }
  ],
- "as_of": "2026-10-27T18:14:08+00:00"
+ "as_of": "2026-10-28T00:45:08+00:00"
 }
