@@ -13,19 +13,31 @@
    "status": "pending",
    "entry_date": "2026-10-26",
    "entry": 117.95999908447266,
-   "note": "1 of 10 trading days elapsed"
+   "note": "3 of 10 trading days elapsed"
+  },
+  {
+   "ticker": "BXP",
+   "signal_date": "2026-10-29",
+   "score": 5.46,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 0,
-  "pending": 1,
+  "pending": 2,
   "avg_return": null,
   "median_return": null,
   "win_rate": null,
   "avg_excess_vs_spy": null,
   "beat_spy_rate": null
  },
- "generated_at": "2026-10-29T01:16:34+00:00"
+ "generated_at": "2026-10-29T18:42:29+00:00"
 }
