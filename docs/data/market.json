@@ -1,216 +1,208 @@
 {
  "status": "ok",
- "market_date": "2026-10-29",
+ "market_date": "2026-11-02",
  "drops": [
   {
-   "ticker": "NOW",
-   "name": "ServiceNow",
+   "ticker": "LITE",
+   "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": -26.95,
-   "close": 109.67,
-   "prev_close": 150.13
-  },
-  {
-   "ticker": "FTNT",
-   "name": "Fortinet",
-   "sector": "Information Technology",
-   "pct": -20.09,
-   "close": 139.1,
-   "prev_close": 174.08
+   "pct": -18.59,
+   "close": 684.4,
+   "prev_close": 840.7
   },
   {
    "ticker": "MRVL",
    "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": -13.24,
-   "close": 218.34,
-   "prev_close": 251.65
+   "pct": -12.72,
+   "close": 171.41,
+   "prev_close": 196.4
   },
   {
-   "ticker": "GOOGL",
-   "name": "Alphabet Inc. (Class A)",
-   "sector": "Communication Services",
-   "pct": -12.64,
-   "close": 283.82,
-   "prev_close": 324.89
+   "ticker": "CIEN",
+   "name": "Ciena",
+   "sector": "Information Technology",
+   "pct": -11.34,
+   "close": 284.34,
+   "prev_close": 320.72
   },
   {
-   "ticker": "GOOG",
-   "name": "Alphabet Inc. (Class C)",
-   "sector": "Communication Services",
-   "pct": -12.29,
-   "close": 282.32,
-   "prev_close": 321.89
+   "ticker": "P",
+   "name": "Everpure",
+   "sector": "Information Technology",
+   "pct": -10.4,
+   "close": 113.78,
+   "prev_close": 126.98
   }
  ],
  "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 406,
- "decliners": 97,
- "median_pct": 1.46,
+ "checked": 502,
+ "advancers": 346,
+ "decliners": 156,
+ "median_pct": 1.07,
  "gainers": [
   {
-   "ticker": "GEN",
-   "name": "Gen Digital",
-   "sector": "Information Technology",
-   "pct": 15.81,
-   "close": 28.2,
-   "prev_close": 24.35
-  },
-  {
-   "ticker": "CVNA",
-   "name": "Carvana",
-   "sector": "Consumer Discretionary",
-   "pct": 15.68,
-   "close": 68.31,
-   "prev_close": 59.05
-  },
-  {
-   "ticker": "NCLH",
-   "name": "Norwegian Cruise Line Holdings",
-   "sector": "Consumer Discretionary",
-   "pct": 13.45,
-   "close": 18.22,
-   "prev_close": 16.06
-  },
-  {
-   "ticker": "HII",
-   "name": "Huntington Ingalls Industries",
-   "sector": "Industrials",
-   "pct": 13.23,
-   "close": 316.21,
-   "prev_close": 279.26
-  },
-  {
-   "ticker": "TXT",
-   "name": "Textron",
-   "sector": "Industrials",
-   "pct": 11.67,
-   "close": 87.46,
-   "prev_close": 78.32
-  },
-  {
-   "ticker": "CMG",
-   "name": "Chipotle Mexican Grill",
-   "sector": "Consumer Discretionary",
-   "pct": 8.88,
-   "close": 31.28,
-   "prev_close": 28.73
-  },
-  {
-   "ticker": "LHX",
-   "name": "L3Harris",
-   "sector": "Industrials",
-   "pct": 6.84,
-   "close": 278.43,
-   "prev_close": 260.61
-  },
-  {
-   "ticker": "LLY",
-   "name": "Lilly (Eli)",
+   "ticker": "IDXX",
+   "name": "Idexx Laboratories",
    "sector": "Health Care",
-   "pct": 6.63,
-   "close": 1373.7,
-   "prev_close": 1288.3
+   "pct": 21.85,
+   "close": 671.64,
+   "prev_close": 551.21
   },
   {
-   "ticker": "TSCO",
-   "name": "Tractor Supply",
-   "sector": "Consumer Discretionary",
-   "pct": 6.45,
-   "close": 33.65,
-   "prev_close": 31.61
-  },
-  {
-   "ticker": "IR",
-   "name": "Ingersoll Rand",
+   "ticker": "HWM",
+   "name": "Howmet Aerospace",
    "sector": "Industrials",
-   "pct": 6.04,
-   "close": 80.01,
-   "prev_close": 75.45
+   "pct": 6.91,
+   "close": 212.99,
+   "prev_close": 199.22
+  },
+  {
+   "ticker": "PNR",
+   "name": "Pentair",
+   "sector": "Industrials",
+   "pct": 6.49,
+   "close": 70.56,
+   "prev_close": 66.26
+  },
+  {
+   "ticker": "CRH",
+   "name": "CRH plc",
+   "sector": "Materials",
+   "pct": 6.36,
+   "close": 96.59,
+   "prev_close": 90.81
+  },
+  {
+   "ticker": "DASH",
+   "name": "DoorDash",
+   "sector": "Consumer Discretionary",
+   "pct": 6.19,
+   "close": 190.07,
+   "prev_close": 178.99
+  },
+  {
+   "ticker": "CBRE",
+   "name": "CBRE Group",
+   "sector": "Real Estate",
+   "pct": 6.13,
+   "close": 136.75,
+   "prev_close": 128.85
+  },
+  {
+   "ticker": "CPRT",
+   "name": "Copart",
+   "sector": "Industrials",
+   "pct": 5.97,
+   "close": 31.93,
+   "prev_close": 30.13
+  },
+  {
+   "ticker": "SHW",
+   "name": "Sherwin-Williams",
+   "sector": "Materials",
+   "pct": 5.94,
+   "close": 352.37,
+   "prev_close": 332.61
+  },
+  {
+   "ticker": "ARE",
+   "name": "Alexandria Real Estate Equities",
+   "sector": "Real Estate",
+   "pct": 5.9,
+   "close": 42.57,
+   "prev_close": 40.2
+  },
+  {
+   "ticker": "TDG",
+   "name": "TransDigm Group",
+   "sector": "Industrials",
+   "pct": 5.83,
+   "close": 1213.62,
+   "prev_close": 1146.81
   }
  ],
  "losers": [
   {
-   "ticker": "NOW",
-   "name": "ServiceNow",
+   "ticker": "LITE",
+   "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": -26.95,
-   "close": 109.67,
-   "prev_close": 150.13
-  },
-  {
-   "ticker": "FTNT",
-   "name": "Fortinet",
-   "sector": "Information Technology",
-   "pct": -20.09,
-   "close": 139.1,
-   "prev_close": 174.08
+   "pct": -18.59,
+   "close": 684.4,
+   "prev_close": 840.7
   },
   {
    "ticker": "MRVL",
    "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": -13.24,
-   "close": 218.34,
-   "prev_close": 251.65
+   "pct": -12.72,
+   "close": 171.41,
+   "prev_close": 196.4
   },
   {
-   "ticker": "GOOGL",
-   "name": "Alphabet Inc. (Class A)",
-   "sector": "Communication Services",
-   "pct": -12.64,
-   "close": 283.82,
-   "prev_close": 324.89
-  },
-  {
-   "ticker": "GOOG",
-   "name": "Alphabet Inc. (Class C)",
-   "sector": "Communication Services",
-   "pct": -12.29,
-   "close": 282.32,
-   "prev_close": 321.89
-  },
-  {
-   "ticker": "HONA",
-   "name": "Honeywell Aerospace",
-   "sector": "Industrials",
-   "pct": -9.6,
-   "close": 160.04,
-   "prev_close": 177.03
-  },
-  {
-   "ticker": "CAT",
-   "name": "Caterpillar Inc.",
-   "sector": "Industrials",
-   "pct": -9.25,
-   "close": 647.39,
-   "prev_close": 713.38
-  },
-  {
-   "ticker": "BAX",
-   "name": "Baxter International",
-   "sector": "Health Care",
-   "pct": -7.7,
-   "close": 23.5,
-   "prev_close": 25.46
-  },
-  {
-   "ticker": "CTSH",
-   "name": "Cognizant",
+   "ticker": "CIEN",
+   "name": "Ciena",
    "sector": "Information Technology",
-   "pct": -5.79,
-   "close": 62.52,
-   "prev_close": 66.36
+   "pct": -11.34,
+   "close": 284.34,
+   "prev_close": 320.72
   },
   {
-   "ticker": "TER",
-   "name": "Teradyne",
+   "ticker": "P",
+   "name": "Everpure",
    "sector": "Information Technology",
-   "pct": -5.43,
-   "close": 296.23,
-   "prev_close": 313.24
+   "pct": -10.4,
+   "close": 113.78,
+   "prev_close": 126.98
+  },
+  {
+   "ticker": "INTC",
+   "name": "Intel",
+   "sector": "Information Technology",
+   "pct": -8.8,
+   "close": 59.97,
+   "prev_close": 65.76
+  },
+  {
+   "ticker": "ORCL",
+   "name": "Oracle Corporation",
+   "sector": "Information Technology",
+   "pct": -8.76,
+   "close": 119.22,
+   "prev_close": 130.67
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": -8.15,
+   "close": 216.1,
+   "prev_close": 235.27
+  },
+  {
+   "ticker": "STX",
+   "name": "Seagate Technology",
+   "sector": "Information Technology",
+   "pct": -7.88,
+   "close": 593.76,
+   "prev_close": 644.58
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Supermicro",
+   "sector": "Information Technology",
+   "pct": -7.62,
+   "close": 30.44,
+   "prev_close": 32.95
+  },
+  {
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "sector": "Energy",
+   "pct": -7.57,
+   "close": 48.82,
+   "prev_close": 52.82
   }
  ],
- "as_of": "2026-10-31T01:02:43+00:00"
+ "as_of": "2026-11-02T21:55:37+00:00"
 }
