@@ -13,7 +13,7 @@
    "status": "pending",
    "entry_date": "2026-10-26",
    "entry": 117.95999908447266,
-   "note": "5 of 10 trading days elapsed"
+   "note": "6 of 10 trading days elapsed"
   },
   {
    "ticker": "BXP",
@@ -27,19 +27,31 @@
    "status": "pending",
    "entry_date": "2026-10-30",
    "entry": 62.79999923706055,
-   "note": "1 of 10 trading days elapsed"
+   "note": "2 of 10 trading days elapsed"
+  },
+  {
+   "ticker": "ECHO",
+   "signal_date": "2026-11-03",
+   "score": 5.22,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 0,
-  "pending": 2,
+  "pending": 3,
   "avg_return": null,
   "median_return": null,
   "win_rate": null,
   "avg_excess_vs_spy": null,
   "beat_spy_rate": null
  },
- "generated_at": "2026-11-03T03:07:37+00:00"
+ "generated_at": "2026-11-03T19:48:23+00:00"
 }
