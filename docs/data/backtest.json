@@ -13,7 +13,7 @@
    "status": "pending",
    "entry_date": "2026-10-26",
    "entry": 117.95999908447266,
-   "note": "7 of 10 trading days elapsed"
+   "note": "9 of 10 trading days elapsed"
   },
   {
    "ticker": "BXP",
@@ -27,7 +27,7 @@
    "status": "pending",
    "entry_date": "2026-10-30",
    "entry": 62.79999923706055,
-   "note": "3 of 10 trading days elapsed"
+   "note": "5 of 10 trading days elapsed"
   },
   {
    "ticker": "ECHO",
@@ -41,7 +41,7 @@
    "status": "pending",
    "entry_date": "2026-11-04",
    "entry": 98.62000274658203,
-   "note": "0 of 10 trading days elapsed"
+   "note": "2 of 10 trading days elapsed"
   },
   {
    "ticker": "FOXA",
@@ -53,7 +53,9 @@
     "chart_patterns"
    ],
    "status": "pending",
-   "note": "entry day not reached yet"
+   "entry_date": "2026-11-06",
+   "entry": 67.76000213623047,
+   "note": "0 of 10 trading days elapsed"
   },
   {
    "ticker": "KHC",
@@ -65,6 +67,20 @@
     "chart_patterns"
    ],
    "status": "pending",
+   "entry_date": "2026-11-06",
+   "entry": 24.709999084472656,
+   "note": "0 of 10 trading days elapsed"
+  },
+  {
+   "ticker": "TPR",
+   "signal_date": "2026-11-06",
+   "score": 5.07,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike"
+   ],
+   "status": "pending",
    "note": "entry day not reached yet"
   }
  ],
@@ -72,12 +88,12 @@
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 0,
-  "pending": 5,
+  "pending": 6,
   "avg_return": null,
   "median_return": null,
   "win_rate": null,
   "avg_excess_vs_spy": null,
   "beat_spy_rate": null
  },
- "generated_at": "2026-11-06T01:50:38+00:00"
+ "generated_at": "2026-11-06T19:43:27+00:00"
 }
