@@ -1,432 +1,264 @@
 {
  "status": "ok",
- "market_date": "2026-11-05",
+ "market_date": "2026-11-04",
  "drops": [
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
+   "sector": "Financials",
+   "pct": -23.67,
+   "close": 29.76,
+   "prev_close": 38.99
+  },
+  {
+   "ticker": "TRMB",
+   "name": "Trimble Inc.",
    "sector": "Information Technology",
-   "pct": -19.34,
-   "close": 836.72,
-   "prev_close": 1037.4
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -16.31,
-   "close": 524.55,
-   "prev_close": 626.75
-  },
-  {
-   "ticker": "P",
-   "name": "Everpure",
-   "sector": "Information Technology",
-   "pct": -15.54,
-   "close": 94.4,
-   "prev_close": 111.77
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -15.36,
-   "close": 169.61,
-   "prev_close": 200.4
-  },
-  {
-   "ticker": "AMD",
-   "name": "Advanced Micro Devices",
-   "sector": "Information Technology",
-   "pct": -15.36,
-   "close": 413.68,
-   "prev_close": 488.78
-  },
-  {
-   "ticker": "MU",
-   "name": "Micron Technology",
-   "sector": "Information Technology",
-   "pct": -15.29,
-   "close": 673.64,
-   "prev_close": 795.23
-  },
-  {
-   "ticker": "STX",
-   "name": "Seagate Technology",
-   "sector": "Information Technology",
-   "pct": -15.15,
-   "close": 472.65,
-   "prev_close": 557.06
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": -14.88,
-   "close": 275.63,
-   "prev_close": 323.83
-  },
-  {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
-   "sector": "Information Technology",
-   "pct": -14.44,
-   "close": 136.73,
-   "prev_close": 159.8
-  },
-  {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": -14.11,
-   "close": 271.3,
-   "prev_close": 315.88
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -14.11,
-   "close": 190.18,
-   "prev_close": 221.43
-  },
-  {
-   "ticker": "MCHP",
-   "name": "Microchip Technology",
-   "sector": "Information Technology",
-   "pct": -13.87,
-   "close": 64.89,
-   "prev_close": 75.34
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": -13.82,
-   "close": 234.6,
-   "prev_close": 272.24
-  },
-  {
-   "ticker": "VRT",
-   "name": "Vertiv",
-   "sector": "Industrials",
-   "pct": -13.72,
-   "close": 177.35,
-   "prev_close": 205.55
-  },
-  {
-   "ticker": "ROK",
-   "name": "Rockwell Automation",
-   "sector": "Industrials",
-   "pct": -13.57,
-   "close": 383.62,
-   "prev_close": 443.88
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": -13.23,
-   "close": 217.79,
-   "prev_close": 250.99
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -13.12,
-   "close": 323.5,
-   "prev_close": 372.36
-  },
-  {
-   "ticker": "NWS",
-   "name": "News Corp (Class B)",
-   "sector": "Communication Services",
-   "pct": -12.25,
-   "close": 29.3,
-   "prev_close": 33.39
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -12.25,
-   "close": 171.19,
-   "prev_close": 195.09
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
-   "sector": "Information Technology",
-   "pct": -12.25,
-   "close": 67.78,
-   "prev_close": 77.24
-  },
-  {
-   "ticker": "PWR",
-   "name": "Quanta Services",
-   "sector": "Industrials",
-   "pct": -11.89,
-   "close": 511.4,
-   "prev_close": 580.44
-  },
-  {
-   "ticker": "NWSA",
-   "name": "News Corp (Class A)",
-   "sector": "Communication Services",
-   "pct": -11.83,
-   "close": 26.94,
-   "prev_close": 30.56
-  },
-  {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
-   "sector": "Information Technology",
-   "pct": -11.8,
-   "close": 325.82,
-   "prev_close": 369.4
-  },
-  {
-   "ticker": "GLW",
-   "name": "Corning Inc.",
-   "sector": "Information Technology",
-   "pct": -11.71,
-   "close": 104.86,
-   "prev_close": 118.77
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": -11.46,
-   "close": 341.05,
-   "prev_close": 385.19
+   "pct": -17.31,
+   "close": 54.25,
+   "prev_close": 65.61
   },
   {
    "ticker": "FIX",
    "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": -11.12,
-   "close": 969.96,
-   "prev_close": 1091.31
+   "pct": -15.08,
+   "close": 1091.31,
+   "prev_close": 1285.13
   },
   {
-   "ticker": "AXON",
-   "name": "Axon Enterprise",
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "sector": "Information Technology",
+   "pct": -14.42,
+   "close": 188.72,
+   "prev_close": 220.52
+  },
+  {
+   "ticker": "VST",
+   "name": "Vistra Corp.",
+   "sector": "Utilities",
+   "pct": -13.83,
+   "close": 120.29,
+   "prev_close": 139.59
+  },
+  {
+   "ticker": "NRG",
+   "name": "NRG Energy",
+   "sector": "Utilities",
+   "pct": -13.52,
+   "close": 83.25,
+   "prev_close": 96.26
+  },
+  {
+   "ticker": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "sector": "Energy",
+   "pct": -13.36,
+   "close": 287.65,
+   "prev_close": 332.0
+  },
+  {
+   "ticker": "VRT",
+   "name": "Vertiv",
    "sector": "Industrials",
-   "pct": -10.9,
-   "close": 377.94,
-   "prev_close": 424.18
+   "pct": -12.89,
+   "close": 205.55,
+   "prev_close": 235.97
   },
   {
-   "ticker": "IRM",
-   "name": "Iron Mountain",
-   "sector": "Real Estate",
-   "pct": -10.86,
-   "close": 105.77,
-   "prev_close": 118.66
+   "ticker": "CVS",
+   "name": "CVS Health",
+   "sector": "Health Care",
+   "pct": -12.53,
+   "close": 79.96,
+   "prev_close": 91.41
   },
   {
-   "ticker": "ON",
-   "name": "ON Semiconductor",
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
    "sector": "Information Technology",
-   "pct": -10.65,
-   "close": 63.65,
-   "prev_close": 71.24
+   "pct": -12.33,
+   "close": 77.24,
+   "prev_close": 88.1
   },
   {
-   "ticker": "HOOD",
-   "name": "Robinhood Markets",
-   "sector": "Financials",
-   "pct": -10.64,
-   "close": 78.11,
-   "prev_close": 87.41
-  },
-  {
-   "ticker": "KLAC",
-   "name": "KLA Corporation",
-   "sector": "Information Technology",
-   "pct": -10.55,
-   "close": 133.99,
-   "prev_close": 149.79
-  },
-  {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "sector": "Information Technology",
-   "pct": -10.06,
-   "close": 45.05,
-   "prev_close": 50.09
+   "ticker": "PWR",
+   "name": "Quanta Services",
+   "sector": "Industrials",
+   "pct": -11.65,
+   "close": 580.44,
+   "prev_close": 657.0
   }
  ],
  "threshold_pct": 10.0,
  "checked": 502,
- "advancers": 65,
- "decliners": 437,
- "median_pct": -2.36,
+ "advancers": 375,
+ "decliners": 127,
+ "median_pct": 2.57,
  "gainers": [
-  {
-   "ticker": "APP",
-   "name": "AppLovin",
-   "sector": "Communication Services",
-   "pct": 29.99,
-   "close": 353.26,
-   "prev_close": 271.75
-  },
-  {
-   "ticker": "CPAY",
-   "name": "Corpay",
-   "sector": "Financials",
-   "pct": 8.5,
-   "close": 454.19,
-   "prev_close": 418.6
-  },
-  {
-   "ticker": "TPR",
-   "name": "Tapestry, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": 7.17,
-   "close": 134.3,
-   "prev_close": 125.31
-  },
-  {
-   "ticker": "VRSK",
-   "name": "Verisk Analytics",
-   "sector": "Industrials",
-   "pct": 5.86,
-   "close": 209.45,
-   "prev_close": 197.85
-  },
-  {
-   "ticker": "CF",
-   "name": "CF Industries",
-   "sector": "Materials",
-   "pct": 5.61,
-   "close": 117.95,
-   "prev_close": 111.68
-  },
-  {
-   "ticker": "MSI",
-   "name": "Motorola Solutions",
-   "sector": "Information Technology",
-   "pct": 4.96,
-   "close": 521.64,
-   "prev_close": 496.99
-  },
-  {
-   "ticker": "BR",
-   "name": "Broadridge Financial Solutions",
-   "sector": "Industrials",
-   "pct": 2.82,
-   "close": 194.63,
-   "prev_close": 189.29
-  },
-  {
-   "ticker": "CAH",
-   "name": "Cardinal Health",
-   "sector": "Health Care",
-   "pct": 2.82,
-   "close": 269.32,
-   "prev_close": 261.93
-  },
   {
    "ticker": "MOS",
    "name": "Mosaic Company (The)",
    "sector": "Materials",
-   "pct": 2.43,
-   "close": 22.15,
-   "prev_close": 21.62
+   "pct": 17.37,
+   "close": 21.62,
+   "prev_close": 18.42
   },
   {
-   "ticker": "ALB",
-   "name": "Albemarle Corporation",
-   "sector": "Materials",
-   "pct": 2.41,
-   "close": 97.25,
-   "prev_close": 94.97
+   "ticker": "XYZ",
+   "name": "Block, Inc.",
+   "sector": "Financials",
+   "pct": 15.3,
+   "close": 87.63,
+   "prev_close": 76.0
+  },
+  {
+   "ticker": "ZBH",
+   "name": "Zimmer Biomet",
+   "sector": "Health Care",
+   "pct": 13.49,
+   "close": 110.15,
+   "prev_close": 97.06
+  },
+  {
+   "ticker": "MRNA",
+   "name": "Moderna",
+   "sector": "Health Care",
+   "pct": 13.11,
+   "close": 258.38,
+   "prev_close": 228.44
+  },
+  {
+   "ticker": "SWK",
+   "name": "Stanley Black & Decker",
+   "sector": "Industrials",
+   "pct": 13.1,
+   "close": 118.33,
+   "prev_close": 104.62
+  },
+  {
+   "ticker": "CDW",
+   "name": "CDW Corporation",
+   "sector": "Information Technology",
+   "pct": 12.67,
+   "close": 168.75,
+   "prev_close": 149.77
+  },
+  {
+   "ticker": "CNC",
+   "name": "Centene Corporation",
+   "sector": "Health Care",
+   "pct": 12.64,
+   "close": 76.01,
+   "prev_close": 67.48
+  },
+  {
+   "ticker": "UHS",
+   "name": "Universal Health Services",
+   "sector": "Health Care",
+   "pct": 10.91,
+   "close": 196.46,
+   "prev_close": 177.13
+  },
+  {
+   "ticker": "JKHY",
+   "name": "Jack Henry & Associates",
+   "sector": "Financials",
+   "pct": 10.83,
+   "close": 179.16,
+   "prev_close": 161.66
+  },
+  {
+   "ticker": "APP",
+   "name": "AppLovin",
+   "sector": "Communication Services",
+   "pct": 10.69,
+   "close": 271.75,
+   "prev_close": 245.51
   }
  ],
  "losers": [
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -19.34,
-   "close": 836.72,
-   "prev_close": 1037.4
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
+   "sector": "Financials",
+   "pct": -23.67,
+   "close": 29.76,
+   "prev_close": 38.99
   },
   {
-   "ticker": "LITE",
-   "name": "Lumentum",
+   "ticker": "TRMB",
+   "name": "Trimble Inc.",
    "sector": "Information Technology",
-   "pct": -16.31,
-   "close": 524.55,
-   "prev_close": 626.75
+   "pct": -17.31,
+   "close": 54.25,
+   "prev_close": 65.61
   },
   {
-   "ticker": "P",
-   "name": "Everpure",
-   "sector": "Information Technology",
-   "pct": -15.54,
-   "close": 94.4,
-   "prev_close": 111.77
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": -15.36,
-   "close": 169.61,
-   "prev_close": 200.4
+   "pct": -15.08,
+   "close": 1091.31,
+   "prev_close": 1285.13
   },
   {
-   "ticker": "AMD",
-   "name": "Advanced Micro Devices",
+   "ticker": "DDOG",
+   "name": "Datadog",
    "sector": "Information Technology",
-   "pct": -15.36,
-   "close": 413.68,
-   "prev_close": 488.78
+   "pct": -14.42,
+   "close": 188.72,
+   "prev_close": 220.52
   },
   {
-   "ticker": "MU",
-   "name": "Micron Technology",
+   "ticker": "VST",
+   "name": "Vistra Corp.",
+   "sector": "Utilities",
+   "pct": -13.83,
+   "close": 120.29,
+   "prev_close": 139.59
+  },
+  {
+   "ticker": "NRG",
+   "name": "NRG Energy",
+   "sector": "Utilities",
+   "pct": -13.52,
+   "close": 83.25,
+   "prev_close": 96.26
+  },
+  {
+   "ticker": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "sector": "Energy",
+   "pct": -13.36,
+   "close": 287.65,
+   "prev_close": 332.0
+  },
+  {
+   "ticker": "VRT",
+   "name": "Vertiv",
+   "sector": "Industrials",
+   "pct": -12.89,
+   "close": 205.55,
+   "prev_close": 235.97
+  },
+  {
+   "ticker": "CVS",
+   "name": "CVS Health",
+   "sector": "Health Care",
+   "pct": -12.53,
+   "close": 79.96,
+   "prev_close": 91.41
+  },
+  {
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
    "sector": "Information Technology",
-   "pct": -15.29,
-   "close": 673.64,
-   "prev_close": 795.23
-  },
-  {
-   "ticker": "STX",
-   "name": "Seagate Technology",
-   "sector": "Information Technology",
-   "pct": -15.15,
-   "close": 472.65,
-   "prev_close": 557.06
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": -14.88,
-   "close": 275.63,
-   "prev_close": 323.83
-  },
-  {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
-   "sector": "Information Technology",
-   "pct": -14.44,
-   "close": 136.73,
-   "prev_close": 159.8
-  },
-  {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": -14.11,
-   "close": 271.3,
-   "prev_close": 315.88
+   "pct": -12.33,
+   "close": 77.24,
+   "prev_close": 88.1
   }
  ],
- "as_of": "2026-11-05T20:15:44+00:00"
+ "as_of": "2026-11-06T01:48:40+00:00"
 }
