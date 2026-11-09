@@ -1,472 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-11-05",
- "drops": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -22.26,
-   "close": 806.43,
-   "prev_close": 1037.4
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -18.68,
-   "close": 509.7,
-   "prev_close": 626.75
-  },
-  {
-   "ticker": "MU",
-   "name": "Micron Technology",
-   "sector": "Information Technology",
-   "pct": -17.46,
-   "close": 656.39,
-   "prev_close": 795.23
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": -17.35,
-   "close": 267.63,
-   "prev_close": 323.83
-  },
-  {
-   "ticker": "AMD",
-   "name": "Advanced Micro Devices",
-   "sector": "Information Technology",
-   "pct": -17.26,
-   "close": 404.4,
-   "prev_close": 488.78
-  },
-  {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
-   "sector": "Information Technology",
-   "pct": -16.43,
-   "close": 133.55,
-   "prev_close": 159.8
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -16.41,
-   "close": 167.52,
-   "prev_close": 200.4
-  },
-  {
-   "ticker": "P",
-   "name": "Everpure",
-   "sector": "Information Technology",
-   "pct": -16.4,
-   "close": 93.44,
-   "prev_close": 111.77
-  },
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -16.36,
-   "close": 185.2,
-   "prev_close": 221.43
-  },
-  {
-   "ticker": "STX",
-   "name": "Seagate Technology",
-   "sector": "Information Technology",
-   "pct": -16.25,
-   "close": 466.53,
-   "prev_close": 557.06
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": -15.24,
-   "close": 212.74,
-   "prev_close": 250.99
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": -15.22,
-   "close": 230.81,
-   "prev_close": 272.24
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -14.89,
-   "close": 316.91,
-   "prev_close": 372.36
-  },
-  {
-   "ticker": "ROK",
-   "name": "Rockwell Automation",
-   "sector": "Industrials",
-   "pct": -14.15,
-   "close": 381.05,
-   "prev_close": 443.88
-  },
-  {
-   "ticker": "VRT",
-   "name": "Vertiv",
-   "sector": "Industrials",
-   "pct": -14.02,
-   "close": 176.73,
-   "prev_close": 205.55
-  },
-  {
-   "ticker": "MCHP",
-   "name": "Microchip Technology",
-   "sector": "Information Technology",
-   "pct": -13.92,
-   "close": 64.85,
-   "prev_close": 75.34
-  },
-  {
-   "ticker": "EXPE",
-   "name": "Expedia Group",
-   "sector": "Consumer Discretionary",
-   "pct": -13.74,
-   "close": 272.48,
-   "prev_close": 315.88
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
-   "sector": "Information Technology",
-   "pct": -13.61,
-   "close": 66.73,
-   "prev_close": 77.24
-  },
-  {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
-   "sector": "Information Technology",
-   "pct": -13.58,
-   "close": 319.25,
-   "prev_close": 369.4
-  },
-  {
-   "ticker": "NWSA",
-   "name": "News Corp (Class A)",
-   "sector": "Communication Services",
-   "pct": -13.35,
-   "close": 26.48,
-   "prev_close": 30.56
-  },
-  {
-   "ticker": "KLAC",
-   "name": "KLA Corporation",
-   "sector": "Information Technology",
-   "pct": -13.35,
-   "close": 129.8,
-   "prev_close": 149.79
-  },
-  {
-   "ticker": "NWS",
-   "name": "News Corp (Class B)",
-   "sector": "Communication Services",
-   "pct": -13.24,
-   "close": 28.97,
-   "prev_close": 33.39
-  },
+ "market_date": "2026-11-09",
+ "drops": [],
+ "threshold_pct": 10.0,
+ "checked": 502,
+ "advancers": 422,
+ "decliners": 80,
+ "median_pct": 2.02,
+ "gainers": [
   {
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -12.98,
-   "close": 169.76,
-   "prev_close": 195.09
-  },
-  {
-   "ticker": "GLW",
-   "name": "Corning Inc.",
-   "sector": "Information Technology",
-   "pct": -12.92,
-   "close": 103.43,
-   "prev_close": 118.77
-  },
-  {
-   "ticker": "PWR",
-   "name": "Quanta Services",
-   "sector": "Industrials",
-   "pct": -12.3,
-   "close": 509.06,
-   "prev_close": 580.44
-  },
-  {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "sector": "Information Technology",
-   "pct": -11.84,
-   "close": 44.16,
-   "prev_close": 50.09
-  },
-  {
-   "ticker": "FIX",
-   "name": "Comfort Systems USA",
-   "sector": "Industrials",
-   "pct": -11.58,
-   "close": 964.94,
-   "prev_close": 1091.31
-  },
-  {
-   "ticker": "ON",
-   "name": "ON Semiconductor",
-   "sector": "Information Technology",
-   "pct": -11.55,
-   "close": 63.01,
-   "prev_close": 71.24
-  },
-  {
-   "ticker": "ADI",
-   "name": "Analog Devices",
-   "sector": "Information Technology",
-   "pct": -11.13,
-   "close": 361.01,
-   "prev_close": 406.24
-  },
-  {
-   "ticker": "IRM",
-   "name": "Iron Mountain",
-   "sector": "Real Estate",
-   "pct": -11.09,
-   "close": 105.5,
-   "prev_close": 118.66
-  },
-  {
-   "ticker": "ANET",
-   "name": "Arista Networks",
-   "sector": "Information Technology",
-   "pct": -10.82,
-   "close": 159.16,
-   "prev_close": 178.48
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": -10.77,
-   "close": 343.69,
-   "prev_close": 385.19
-  },
-  {
-   "ticker": "TXN",
-   "name": "Texas Instruments",
-   "sector": "Information Technology",
-   "pct": -10.7,
-   "close": 278.15,
-   "prev_close": 311.49
-  },
-  {
-   "ticker": "AVGO",
-   "name": "Broadcom",
-   "sector": "Information Technology",
-   "pct": -10.43,
-   "close": 291.53,
-   "prev_close": 325.48
-  },
-  {
-   "ticker": "INTC",
-   "name": "Intel",
-   "sector": "Information Technology",
-   "pct": -10.33,
-   "close": 52.25,
-   "prev_close": 58.27
-  },
-  {
-   "ticker": "HOOD",
-   "name": "Robinhood Markets",
-   "sector": "Financials",
-   "pct": -10.32,
-   "close": 78.39,
-   "prev_close": 87.41
+   "pct": 16.79,
+   "close": 225.19,
+   "prev_close": 192.81
   },
   {
    "ticker": "MPWR",
    "name": "Monolithic Power Systems",
    "sector": "Information Technology",
-   "pct": -10.28,
-   "close": 1131.43,
-   "prev_close": 1261.08
-  }
- ],
- "threshold_pct": 10.0,
- "checked": 501,
- "advancers": 73,
- "decliners": 428,
- "median_pct": -2.27,
- "gainers": [
-  {
-   "ticker": "APP",
-   "name": "AppLovin",
-   "sector": "Communication Services",
-   "pct": 31.04,
-   "close": 356.1,
-   "prev_close": 271.75
-  },
-  {
-   "ticker": "TPR",
-   "name": "Tapestry, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": 7.07,
-   "close": 134.17,
-   "prev_close": 125.31
-  },
-  {
-   "ticker": "VRSK",
-   "name": "Verisk Analytics",
-   "sector": "Industrials",
-   "pct": 6.88,
-   "close": 211.47,
-   "prev_close": 197.85
-  },
-  {
-   "ticker": "CPAY",
-   "name": "Corpay",
-   "sector": "Financials",
-   "pct": 6.78,
-   "close": 447.0,
-   "prev_close": 418.6
-  },
-  {
-   "ticker": "CF",
-   "name": "CF Industries",
-   "sector": "Materials",
-   "pct": 6.17,
-   "close": 118.57,
-   "prev_close": 111.68
-  },
-  {
-   "ticker": "CHTR",
-   "name": "Charter Communications",
-   "sector": "Communication Services",
-   "pct": 4.67,
-   "close": 125.86,
-   "prev_close": 120.25
-  },
-  {
-   "ticker": "MSI",
-   "name": "Motorola Solutions",
-   "sector": "Information Technology",
-   "pct": 4.03,
-   "close": 517.01,
-   "prev_close": 496.99
-  },
-  {
-   "ticker": "ALB",
-   "name": "Albemarle Corporation",
-   "sector": "Materials",
-   "pct": 3.58,
-   "close": 98.37,
-   "prev_close": 94.97
-  },
-  {
-   "ticker": "MOS",
-   "name": "Mosaic Company (The)",
-   "sector": "Materials",
-   "pct": 3.28,
-   "close": 22.33,
-   "prev_close": 21.62
-  },
-  {
-   "ticker": "STE",
-   "name": "Steris",
-   "sector": "Health Care",
-   "pct": 2.5,
-   "close": 254.12,
-   "prev_close": 247.91
-  }
- ],
- "losers": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -22.26,
-   "close": 806.43,
-   "prev_close": 1037.4
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -18.68,
-   "close": 509.7,
-   "prev_close": 626.75
-  },
-  {
-   "ticker": "MU",
-   "name": "Micron Technology",
-   "sector": "Information Technology",
-   "pct": -17.46,
-   "close": 656.39,
-   "prev_close": 795.23
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": -17.35,
-   "close": 267.63,
-   "prev_close": 323.83
+   "pct": 16.6,
+   "close": 1388.05,
+   "prev_close": 1190.44
   },
   {
    "ticker": "AMD",
    "name": "Advanced Micro Devices",
    "sector": "Information Technology",
-   "pct": -17.26,
-   "close": 404.4,
-   "prev_close": 488.78
+   "pct": 13.26,
+   "close": 508.58,
+   "prev_close": 449.04
   },
   {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
+   "ticker": "TER",
+   "name": "Teradyne",
    "sector": "Information Technology",
-   "pct": -16.43,
-   "close": 133.55,
-   "prev_close": 159.8
+   "pct": 12.73,
+   "close": 246.0,
+   "prev_close": 218.22
+  },
+  {
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
+   "sector": "Information Technology",
+   "pct": 12.02,
+   "close": 78.17,
+   "prev_close": 69.78
   },
   {
    "ticker": "BE",
    "name": "Bloom Energy",
    "sector": "Industrials",
-   "pct": -16.41,
-   "close": 167.52,
-   "prev_close": 200.4
+   "pct": 11.91,
+   "close": 193.88,
+   "prev_close": 173.24
   },
   {
-   "ticker": "P",
-   "name": "Everpure",
+   "ticker": "AMAT",
+   "name": "Applied Materials",
    "sector": "Information Technology",
-   "pct": -16.4,
-   "close": 93.44,
-   "prev_close": 111.77
+   "pct": 11.37,
+   "close": 370.55,
+   "prev_close": 332.72
   },
   {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -16.36,
-   "close": 185.2,
-   "prev_close": 221.43
+   "ticker": "FERG",
+   "name": "Ferguson Enterprises",
+   "sector": "Industrials",
+   "pct": 11.22,
+   "close": 259.93,
+   "prev_close": 233.7
   },
   {
-   "ticker": "STX",
-   "name": "Seagate Technology",
+   "ticker": "LITE",
+   "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": -16.25,
-   "close": 466.53,
-   "prev_close": 557.06
+   "pct": 10.69,
+   "close": 596.16,
+   "prev_close": 538.59
+  },
+  {
+   "ticker": "CIEN",
+   "name": "Ciena",
+   "sector": "Information Technology",
+   "pct": 10.66,
+   "close": 269.33,
+   "prev_close": 243.39
   }
  ],
- "as_of": "2026-11-07T01:09:50+00:00"
+ "losers": [
+  {
+   "ticker": "FSLR",
+   "name": "First Solar",
+   "sector": "Information Technology",
+   "pct": -4.74,
+   "close": 191.61,
+   "prev_close": 201.14
+  },
+  {
+   "ticker": "NVDA",
+   "name": "Nvidia",
+   "sector": "Information Technology",
+   "pct": -4.27,
+   "close": 178.67,
+   "prev_close": 186.64
+  },
+  {
+   "ticker": "TTWO",
+   "name": "Take-Two Interactive",
+   "sector": "Communication Services",
+   "pct": -3.48,
+   "close": 207.4,
+   "prev_close": 214.87
+  },
+  {
+   "ticker": "AKAM",
+   "name": "Akamai Technologies",
+   "sector": "Information Technology",
+   "pct": -3.37,
+   "close": 80.29,
+   "prev_close": 83.09
+  },
+  {
+   "ticker": "AXON",
+   "name": "Axon Enterprise",
+   "sector": "Industrials",
+   "pct": -3.14,
+   "close": 303.18,
+   "prev_close": 313.0
+  },
+  {
+   "ticker": "DVA",
+   "name": "DaVita",
+   "sector": "Health Care",
+   "pct": -3.04,
+   "close": 185.54,
+   "prev_close": 191.35
+  },
+  {
+   "ticker": "HSY",
+   "name": "Hershey Company (The)",
+   "sector": "Consumer Staples",
+   "pct": -2.58,
+   "close": 173.48,
+   "prev_close": 178.08
+  },
+  {
+   "ticker": "HUM",
+   "name": "Humana",
+   "sector": "Health Care",
+   "pct": -2.43,
+   "close": 423.22,
+   "prev_close": 433.74
+  },
+  {
+   "ticker": "PM",
+   "name": "Philip Morris International",
+   "sector": "Consumer Staples",
+   "pct": -2.41,
+   "close": 193.12,
+   "prev_close": 197.88
+  },
+  {
+   "ticker": "ACN",
+   "name": "Accenture",
+   "sector": "Information Technology",
+   "pct": -2.35,
+   "close": 254.37,
+   "prev_close": 260.5
+  }
+ ],
+ "as_of": "2026-11-09T22:41:22+00:00"
 }
