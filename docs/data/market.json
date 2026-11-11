@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-11-09",
+ "market_date": "2026-11-11",
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 423,
- "decliners": 80,
- "median_pct": 2.03,
+ "advancers": 305,
+ "decliners": 198,
+ "median_pct": 0.28,
  "gainers": [
   {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
+   "ticker": "SNDK",
+   "name": "Sandisk",
    "sector": "Information Technology",
-   "pct": 16.79,
-   "close": 225.19,
-   "prev_close": 192.81
-  },
-  {
-   "ticker": "MPWR",
-   "name": "Monolithic Power Systems",
-   "sector": "Information Technology",
-   "pct": 16.6,
-   "close": 1388.05,
-   "prev_close": 1190.44
-  },
-  {
-   "ticker": "AMD",
-   "name": "Advanced Micro Devices",
-   "sector": "Information Technology",
-   "pct": 13.26,
-   "close": 508.58,
-   "prev_close": 449.04
-  },
-  {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": 12.73,
-   "close": 246.0,
-   "prev_close": 218.22
-  },
-  {
-   "ticker": "FLEX",
-   "name": "Flex Ltd.",
-   "sector": "Information Technology",
-   "pct": 12.02,
-   "close": 78.17,
-   "prev_close": 69.78
+   "pct": 15.81,
+   "close": 995.91,
+   "prev_close": 859.99
   },
   {
    "ticker": "BE",
    "name": "Bloom Energy",
    "sector": "Industrials",
-   "pct": 11.91,
-   "close": 193.88,
-   "prev_close": 173.24
+   "pct": 14.51,
+   "close": 212.32,
+   "prev_close": 185.42
   },
   {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
+   "ticker": "MU",
+   "name": "Micron Technology",
    "sector": "Information Technology",
-   "pct": 11.37,
-   "close": 370.55,
-   "prev_close": 332.72
-  },
-  {
-   "ticker": "FERG",
-   "name": "Ferguson Enterprises",
-   "sector": "Industrials",
-   "pct": 11.22,
-   "close": 259.93,
-   "prev_close": 233.7
+   "pct": 12.89,
+   "close": 818.59,
+   "prev_close": 725.11
   },
   {
    "ticker": "LITE",
    "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": 10.69,
-   "close": 596.16,
-   "prev_close": 538.59
+   "pct": 12.8,
+   "close": 660.49,
+   "prev_close": 585.57
+  },
+  {
+   "ticker": "DELL",
+   "name": "Dell Technologies",
+   "sector": "Information Technology",
+   "pct": 12.79,
+   "close": 377.14,
+   "prev_close": 334.38
+  },
+  {
+   "ticker": "STX",
+   "name": "Seagate Technology",
+   "sector": "Information Technology",
+   "pct": 10.88,
+   "close": 556.21,
+   "prev_close": 501.62
+  },
+  {
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
+   "sector": "Information Technology",
+   "pct": 10.6,
+   "close": 237.42,
+   "prev_close": 214.66
+  },
+  {
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
+   "sector": "Information Technology",
+   "pct": 10.4,
+   "close": 170.44,
+   "prev_close": 154.39
+  },
+  {
+   "ticker": "SMCI",
+   "name": "Supermicro",
+   "sector": "Information Technology",
+   "pct": 10.2,
+   "close": 30.62,
+   "prev_close": 27.79
   },
   {
    "ticker": "CIEN",
    "name": "Ciena",
    "sector": "Information Technology",
-   "pct": 10.66,
-   "close": 269.33,
-   "prev_close": 243.39
+   "pct": 9.98,
+   "close": 299.26,
+   "prev_close": 272.1
   }
  ],
  "losers": [
   {
-   "ticker": "FSLR",
-   "name": "First Solar",
+   "ticker": "BF-B",
+   "name": "Brown\u2013Forman",
+   "sector": "Consumer Staples",
+   "pct": -2.95,
+   "close": 29.91,
+   "prev_close": 30.82
+  },
+  {
+   "ticker": "ABNB",
+   "name": "Airbnb",
+   "sector": "Consumer Discretionary",
+   "pct": -2.68,
+   "close": 181.9,
+   "prev_close": 186.9
+  },
+  {
+   "ticker": "NVR",
+   "name": "NVR, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -2.66,
+   "close": 5875.75,
+   "prev_close": 6036.42
+  },
+  {
+   "ticker": "CLX",
+   "name": "Clorox",
+   "sector": "Consumer Staples",
+   "pct": -2.36,
+   "close": 104.08,
+   "prev_close": 106.6
+  },
+  {
+   "ticker": "MSFT",
+   "name": "Microsoft",
    "sector": "Information Technology",
-   "pct": -4.74,
-   "close": 191.61,
-   "prev_close": 201.14
+   "pct": -2.35,
+   "close": 520.62,
+   "prev_close": 533.16
   },
   {
-   "ticker": "NVDA",
-   "name": "Nvidia",
-   "sector": "Information Technology",
-   "pct": -4.27,
-   "close": 178.67,
-   "prev_close": 186.64
-  },
-  {
-   "ticker": "TTWO",
-   "name": "Take-Two Interactive",
-   "sector": "Communication Services",
-   "pct": -3.48,
-   "close": 207.4,
-   "prev_close": 214.87
-  },
-  {
-   "ticker": "AKAM",
-   "name": "Akamai Technologies",
-   "sector": "Information Technology",
-   "pct": -3.37,
-   "close": 80.29,
-   "prev_close": 83.09
-  },
-  {
-   "ticker": "AXON",
-   "name": "Axon Enterprise",
+   "ticker": "LDOS",
+   "name": "Leidos",
    "sector": "Industrials",
-   "pct": -3.14,
-   "close": 303.18,
-   "prev_close": 313.0
-  },
-  {
-   "ticker": "DVA",
-   "name": "DaVita",
-   "sector": "Health Care",
-   "pct": -3.04,
-   "close": 185.54,
-   "prev_close": 191.35
-  },
-  {
-   "ticker": "HSY",
-   "name": "Hershey Company (The)",
-   "sector": "Consumer Staples",
-   "pct": -2.58,
-   "close": 173.48,
-   "prev_close": 178.08
-  },
-  {
-   "ticker": "HUM",
-   "name": "Humana",
-   "sector": "Health Care",
-   "pct": -2.43,
-   "close": 423.22,
-   "prev_close": 433.74
-  },
-  {
-   "ticker": "PM",
-   "name": "Philip Morris International",
-   "sector": "Consumer Staples",
-   "pct": -2.41,
-   "close": 193.12,
-   "prev_close": 197.88
+   "pct": -2.19,
+   "close": 134.23,
+   "prev_close": 137.24
   },
   {
    "ticker": "ACN",
    "name": "Accenture",
    "sector": "Information Technology",
-   "pct": -2.35,
-   "close": 254.37,
-   "prev_close": 260.5
+   "pct": -2.08,
+   "close": 253.13,
+   "prev_close": 258.51
+  },
+  {
+   "ticker": "KMB",
+   "name": "Kimberly-Clark",
+   "sector": "Consumer Staples",
+   "pct": -2.04,
+   "close": 108.5,
+   "prev_close": 110.76
+  },
+  {
+   "ticker": "TPR",
+   "name": "Tapestry, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -2.04,
+   "close": 132.85,
+   "prev_close": 135.62
+  },
+  {
+   "ticker": "SYK",
+   "name": "Stryker Corporation",
+   "sector": "Health Care",
+   "pct": -2.01,
+   "close": 317.79,
+   "prev_close": 324.29
   }
  ],
- "as_of": "2026-11-11T01:29:09+00:00"
+ "as_of": "2026-11-11T19:51:47+00:00"
 }
