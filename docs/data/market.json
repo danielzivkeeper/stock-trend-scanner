@@ -1,175 +1,192 @@
 {
  "status": "ok",
- "market_date": "2026-11-10",
- "drops": [],
- "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 250,
- "decliners": 253,
- "median_pct": 0.0,
- "gainers": [
+ "market_date": "2026-11-12",
+ "drops": [
   {
-   "ticker": "CHTR",
-   "name": "Charter Communications",
-   "sector": "Communication Services",
-   "pct": 10.61,
-   "close": 134.06,
-   "prev_close": 121.2
-  },
-  {
-   "ticker": "TTWO",
-   "name": "Take-Two Interactive",
-   "sector": "Communication Services",
-   "pct": 8.31,
-   "close": 224.64,
-   "prev_close": 207.4
-  },
-  {
-   "ticker": "CVS",
-   "name": "CVS Health",
-   "sector": "Health Care",
-   "pct": 4.41,
-   "close": 89.01,
-   "prev_close": 85.25
-  },
-  {
-   "ticker": "AKAM",
-   "name": "Akamai Technologies",
+   "ticker": "SMCI",
+   "name": "Supermicro",
    "sector": "Information Technology",
-   "pct": 4.26,
-   "close": 83.71,
-   "prev_close": 80.29
-  },
-  {
-   "ticker": "EQT",
-   "name": "EQT Corporation",
-   "sector": "Energy",
-   "pct": 4.19,
-   "close": 52.0,
-   "prev_close": 49.91
-  },
-  {
-   "ticker": "AVGO",
-   "name": "Broadcom",
-   "sector": "Information Technology",
-   "pct": 3.91,
-   "close": 331.98,
-   "prev_close": 319.48
+   "pct": -10.25,
+   "close": 27.31,
+   "prev_close": 30.43
   },
   {
    "ticker": "GPN",
    "name": "Global Payments",
    "sector": "Financials",
-   "pct": 3.91,
-   "close": 101.59,
-   "prev_close": 97.77
-  },
+   "pct": -10.24,
+   "close": 89.97,
+   "prev_close": 100.23
+  }
+ ],
+ "threshold_pct": 10.0,
+ "checked": 503,
+ "advancers": 151,
+ "decliners": 352,
+ "median_pct": -0.5,
+ "gainers": [
   {
-   "ticker": "STLD",
-   "name": "Steel Dynamics",
-   "sector": "Materials",
-   "pct": 3.76,
-   "close": 236.12,
-   "prev_close": 227.56
-  },
-  {
-   "ticker": "TWLO",
-   "name": "Twilio",
+   "ticker": "AMD",
+   "name": "Advanced Micro Devices",
    "sector": "Information Technology",
-   "pct": 3.66,
-   "close": 214.21,
-   "prev_close": 206.64
+   "pct": 5.63,
+   "close": 584.03,
+   "prev_close": 552.9
   },
   {
-   "ticker": "HUM",
-   "name": "Humana",
-   "sector": "Health Care",
-   "pct": 3.51,
-   "close": 438.06,
-   "prev_close": 423.22
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "sector": "Information Technology",
+   "pct": 5.18,
+   "close": 363.11,
+   "prev_close": 345.22
+  },
+  {
+   "ticker": "ANET",
+   "name": "Arista Networks",
+   "sector": "Information Technology",
+   "pct": 4.65,
+   "close": 205.82,
+   "prev_close": 196.68
+  },
+  {
+   "ticker": "VLO",
+   "name": "Valero Energy",
+   "sector": "Energy",
+   "pct": 3.34,
+   "close": 375.84,
+   "prev_close": 363.71
+  },
+  {
+   "ticker": "SWKS",
+   "name": "Skyworks Solutions",
+   "sector": "Information Technology",
+   "pct": 3.24,
+   "close": 90.48,
+   "prev_close": 87.64
+  },
+  {
+   "ticker": "DVN",
+   "name": "Devon Energy",
+   "sector": "Energy",
+   "pct": 3.13,
+   "close": 46.35,
+   "prev_close": 44.95
+  },
+  {
+   "ticker": "P",
+   "name": "Everpure",
+   "sector": "Information Technology",
+   "pct": 3.11,
+   "close": 109.81,
+   "prev_close": 106.5
+  },
+  {
+   "ticker": "APA",
+   "name": "APA Corporation",
+   "sector": "Energy",
+   "pct": 2.97,
+   "close": 48.13,
+   "prev_close": 46.74
+  },
+  {
+   "ticker": "MPC",
+   "name": "Marathon Petroleum",
+   "sector": "Energy",
+   "pct": 2.8,
+   "close": 414.11,
+   "prev_close": 402.84
+  },
+  {
+   "ticker": "CEG",
+   "name": "Constellation Energy",
+   "sector": "Utilities",
+   "pct": 2.55,
+   "close": 281.73,
+   "prev_close": 274.73
   }
  ],
  "losers": [
   {
-   "ticker": "SKYD",
-   "name": "Skydance",
-   "sector": "Communication Services",
-   "pct": -7.59,
-   "close": 8.04,
-   "prev_close": 8.7
+   "ticker": "SMCI",
+   "name": "Supermicro",
+   "sector": "Information Technology",
+   "pct": -10.25,
+   "close": 27.31,
+   "prev_close": 30.43
+  },
+  {
+   "ticker": "GPN",
+   "name": "Global Payments",
+   "sector": "Financials",
+   "pct": -10.24,
+   "close": 89.97,
+   "prev_close": 100.23
   },
   {
    "ticker": "MRNA",
    "name": "Moderna",
    "sector": "Health Care",
-   "pct": -6.75,
-   "close": 250.83,
-   "prev_close": 269.0
+   "pct": -6.91,
+   "close": 231.5,
+   "prev_close": 248.69
   },
   {
-   "ticker": "FSLR",
-   "name": "First Solar",
+   "ticker": "KDP",
+   "name": "Keurig Dr Pepper",
+   "sector": "Consumer Staples",
+   "pct": -6.78,
+   "close": 35.65,
+   "prev_close": 38.25
+  },
+  {
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
+   "sector": "Financials",
+   "pct": -5.73,
+   "close": 28.48,
+   "prev_close": 30.21
+  },
+  {
+   "ticker": "RDDT",
+   "name": "Reddit",
+   "sector": "Communication Services",
+   "pct": -5.68,
+   "close": 99.66,
+   "prev_close": 105.66
+  },
+  {
+   "ticker": "UAL",
+   "name": "United Airlines Holdings",
+   "sector": "Industrials",
+   "pct": -5.51,
+   "close": 111.85,
+   "prev_close": 118.37
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
    "sector": "Information Technology",
-   "pct": -5.55,
-   "close": 180.98,
-   "prev_close": 191.61
+   "pct": -5.35,
+   "close": 925.43,
+   "prev_close": 977.69
   },
   {
    "ticker": "NVDA",
    "name": "Nvidia",
    "sector": "Information Technology",
-   "pct": -5.47,
-   "close": 168.89,
-   "prev_close": 178.67
+   "pct": -5.25,
+   "close": 164.62,
+   "prev_close": 173.73
   },
   {
-   "ticker": "LEN",
-   "name": "Lennar",
-   "sector": "Consumer Discretionary",
-   "pct": -5.37,
-   "close": 86.66,
-   "prev_close": 91.58
-  },
-  {
-   "ticker": "NVR",
-   "name": "NVR, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": -4.76,
-   "close": 6036.42,
-   "prev_close": 6338.38
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": -4.68,
-   "close": 214.66,
-   "prev_close": 225.19
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
+   "ticker": "DAL",
+   "name": "Delta Air Lines",
    "sector": "Industrials",
-   "pct": -4.36,
-   "close": 185.42,
-   "prev_close": 193.88
-  },
-  {
-   "ticker": "CVNA",
-   "name": "Carvana",
-   "sector": "Consumer Discretionary",
-   "pct": -4.25,
-   "close": 73.02,
-   "prev_close": 76.26
-  },
-  {
-   "ticker": "ALB",
-   "name": "Albemarle Corporation",
-   "sector": "Materials",
-   "pct": -4.23,
-   "close": 94.93,
-   "prev_close": 99.12
+   "pct": -4.94,
+   "close": 86.81,
+   "prev_close": 91.32
   }
  ],
- "as_of": "2026-11-12T02:30:17+00:00"
+ "as_of": "2026-11-12T20:20:08+00:00"
 }
