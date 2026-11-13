@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-11-11",
+ "market_date": "2026-11-13",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 332,
- "decliners": 171,
- "median_pct": 0.39,
+ "checked": 502,
+ "advancers": 290,
+ "decliners": 212,
+ "median_pct": 0.16,
  "gainers": [
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": 13.69,
-   "close": 977.69,
-   "prev_close": 859.99
+   "ticker": "CHTR",
+   "name": "Charter Communications",
+   "sector": "Communication Services",
+   "pct": 4.71,
+   "close": 138.91,
+   "prev_close": 132.66
   },
   {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": 12.97,
-   "close": 209.47,
-   "prev_close": 185.42
+   "ticker": "GPN",
+   "name": "Global Payments",
+   "sector": "Financials",
+   "pct": 4.41,
+   "close": 92.07,
+   "prev_close": 88.19
   },
   {
-   "ticker": "MU",
-   "name": "Micron Technology",
+   "ticker": "FOXA",
+   "name": "Fox Corporation (Class A)",
+   "sector": "Communication Services",
+   "pct": 3.93,
+   "close": 68.29,
+   "prev_close": 65.71
+  },
+  {
+   "ticker": "STE",
+   "name": "Steris",
+   "sector": "Health Care",
+   "pct": 3.92,
+   "close": 263.37,
+   "prev_close": 253.44
+  },
+  {
+   "ticker": "APP",
+   "name": "AppLovin",
+   "sector": "Communication Services",
+   "pct": 3.86,
+   "close": 408.89,
+   "prev_close": 393.68
+  },
+  {
+   "ticker": "FOX",
+   "name": "Fox Corporation (Class B)",
+   "sector": "Communication Services",
+   "pct": 3.61,
+   "close": 60.83,
+   "prev_close": 58.71
+  },
+  {
+   "ticker": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "sector": "Energy",
+   "pct": 3.59,
+   "close": 291.27,
+   "prev_close": 281.18
+  },
+  {
+   "ticker": "FIS",
+   "name": "Fidelity National Information Services",
+   "sector": "Financials",
+   "pct": 3.54,
+   "close": 29.36,
+   "prev_close": 28.36
+  },
+  {
+   "ticker": "FISV",
+   "name": "Fiserv",
+   "sector": "Financials",
+   "pct": 3.38,
+   "close": 63.58,
+   "prev_close": 61.5
+  },
+  {
+   "ticker": "KDP",
+   "name": "Keurig Dr Pepper",
+   "sector": "Consumer Staples",
+   "pct": 3.15,
+   "close": 36.53,
+   "prev_close": 35.42
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "AMD",
+   "name": "Advanced Micro Devices",
    "sector": "Information Technology",
-   "pct": 11.89,
-   "close": 811.3,
-   "prev_close": 725.11
+   "pct": -8.85,
+   "close": 533.48,
+   "prev_close": 585.3
   },
   {
    "ticker": "DELL",
    "name": "Dell Technologies",
    "sector": "Information Technology",
-   "pct": 11.75,
-   "close": 373.68,
-   "prev_close": 334.38
+   "pct": -7.67,
+   "close": 342.69,
+   "prev_close": 371.17
   },
   {
-   "ticker": "LITE",
-   "name": "Lumentum",
+   "ticker": "SNDK",
+   "name": "Sandisk",
    "sector": "Information Technology",
-   "pct": 10.67,
-   "close": 648.06,
-   "prev_close": 585.57
+   "pct": -6.47,
+   "close": 876.83,
+   "prev_close": 937.46
   },
   {
-   "ticker": "STX",
-   "name": "Seagate Technology",
+   "ticker": "CSCO",
+   "name": "Cisco",
    "sector": "Information Technology",
-   "pct": 9.99,
-   "close": 551.72,
-   "prev_close": 501.62
-  },
-  {
-   "ticker": "SMCI",
-   "name": "Supermicro",
-   "sector": "Information Technology",
-   "pct": 9.5,
-   "close": 30.43,
-   "prev_close": 27.79
-  },
-  {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
-   "sector": "Information Technology",
-   "pct": 9.33,
-   "close": 168.8,
-   "prev_close": 154.39
+   "pct": -6.18,
+   "close": 95.71,
+   "prev_close": 102.01
   },
   {
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": 9.25,
-   "close": 234.51,
-   "prev_close": 214.66
+   "pct": -5.82,
+   "close": 218.58,
+   "prev_close": 232.08
   },
   {
-   "ticker": "MPWR",
-   "name": "Monolithic Power Systems",
-   "sector": "Information Technology",
-   "pct": 8.92,
-   "close": 1478.69,
-   "prev_close": 1357.6
-  }
- ],
- "losers": [
-  {
-   "ticker": "ABNB",
-   "name": "Airbnb",
-   "sector": "Consumer Discretionary",
-   "pct": -3.09,
-   "close": 181.13,
-   "prev_close": 186.9
-  },
-  {
-   "ticker": "LULU",
-   "name": "Lululemon Athletica",
-   "sector": "Consumer Discretionary",
-   "pct": -2.65,
-   "close": 107.45,
-   "prev_close": 110.37
-  },
-  {
-   "ticker": "MCD",
-   "name": "McDonald's",
-   "sector": "Consumer Discretionary",
-   "pct": -2.61,
-   "close": 274.8,
-   "prev_close": 282.17
-  },
-  {
-   "ticker": "LDOS",
-   "name": "Leidos",
+   "ticker": "BE",
+   "name": "Bloom Energy",
    "sector": "Industrials",
-   "pct": -2.44,
-   "close": 133.89,
-   "prev_close": 137.24
+   "pct": -5.49,
+   "close": 190.84,
+   "prev_close": 201.93
   },
   {
-   "ticker": "NVR",
-   "name": "NVR, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": -2.34,
-   "close": 5895.4,
-   "prev_close": 6036.42
-  },
-  {
-   "ticker": "BF-B",
-   "name": "Brown\u2013Forman",
-   "sector": "Consumer Staples",
-   "pct": -2.34,
-   "close": 30.1,
-   "prev_close": 30.82
-  },
-  {
-   "ticker": "MSFT",
-   "name": "Microsoft",
+   "ticker": "WDC",
+   "name": "Western Digital",
    "sector": "Information Technology",
-   "pct": -2.26,
-   "close": 521.13,
-   "prev_close": 533.16
+   "pct": -5.19,
+   "close": 295.06,
+   "prev_close": 311.21
   },
   {
-   "ticker": "WYNN",
-   "name": "Wynn Resorts",
-   "sector": "Consumer Discretionary",
-   "pct": -2.2,
-   "close": 85.38,
-   "prev_close": 87.3
+   "ticker": "TER",
+   "name": "Teradyne",
+   "sector": "Information Technology",
+   "pct": -5.05,
+   "close": 250.43,
+   "prev_close": 263.75
   },
   {
-   "ticker": "TSCO",
-   "name": "Tractor Supply",
-   "sector": "Consumer Discretionary",
-   "pct": -2.03,
-   "close": 36.74,
-   "prev_close": 37.5
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "sector": "Information Technology",
+   "pct": -4.9,
+   "close": 346.52,
+   "prev_close": 364.36
   },
   {
-   "ticker": "META",
-   "name": "Meta Platforms",
-   "sector": "Communication Services",
-   "pct": -1.97,
-   "close": 628.77,
-   "prev_close": 641.39
+   "ticker": "ANET",
+   "name": "Arista Networks",
+   "sector": "Information Technology",
+   "pct": -4.81,
+   "close": 196.7,
+   "prev_close": 206.63
   }
  ],
- "as_of": "2026-11-13T02:07:34+00:00"
+ "as_of": "2026-11-13T20:00:16+00:00"
 }
