@@ -31,7 +31,7 @@
    "status": "pending",
    "entry_date": "2026-10-30",
    "entry": 62.79999923706055,
-   "note": "9 of 10 trading days elapsed"
+   "note": "8 of 10 trading days elapsed"
   },
   {
    "ticker": "ECHO",
@@ -45,7 +45,7 @@
    "status": "pending",
    "entry_date": "2026-11-04",
    "entry": 98.62000274658203,
-   "note": "6 of 10 trading days elapsed"
+   "note": "5 of 10 trading days elapsed"
   },
   {
    "ticker": "FOXA",
@@ -59,7 +59,7 @@
    "status": "pending",
    "entry_date": "2026-11-06",
    "entry": 66.63999938964844,
-   "note": "4 of 10 trading days elapsed"
+   "note": "3 of 10 trading days elapsed"
   },
   {
    "ticker": "KHC",
@@ -73,7 +73,7 @@
    "status": "pending",
    "entry_date": "2026-11-06",
    "entry": 24.610000610351562,
-   "note": "4 of 10 trading days elapsed"
+   "note": "3 of 10 trading days elapsed"
   },
   {
    "ticker": "TPR",
@@ -87,7 +87,7 @@
    "status": "pending",
    "entry_date": "2026-11-09",
    "entry": 136.07000732421875,
-   "note": "3 of 10 trading days elapsed"
+   "note": "2 of 10 trading days elapsed"
   },
   {
    "ticker": "TKO",
@@ -101,7 +101,7 @@
    "status": "pending",
    "entry_date": "2026-11-10",
    "entry": 199.22000122070312,
-   "note": "2 of 10 trading days elapsed"
+   "note": "1 of 10 trading days elapsed"
   },
   {
    "ticker": "LKNCY",
@@ -127,18 +127,30 @@
    ],
    "status": "pending",
    "note": "entry day not reached yet"
+  },
+  {
+   "ticker": "SG",
+   "signal_date": "2026-11-13",
+   "score": 5.04,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "chart_patterns"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 1,
-  "pending": 8,
+  "pending": 9,
   "avg_return": 0.0251,
   "median_return": 0.0251,
   "win_rate": 1.0,
   "avg_excess_vs_spy": 0.0417,
   "beat_spy_rate": 1.0
  },
- "generated_at": "2026-11-12T20:24:13+00:00"
+ "generated_at": "2026-11-13T02:09:34+00:00"
 }
