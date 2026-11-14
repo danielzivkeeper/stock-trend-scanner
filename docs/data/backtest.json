@@ -32,10 +32,10 @@
    "entry_date": "2026-10-30",
    "entry": 62.79999923706055,
    "exit_date": "2026-11-13",
-   "exit": 63.4900016784668,
-   "return": 0.011,
-   "spy_return": -0.0032,
-   "excess": 0.0142
+   "exit": 63.779998779296875,
+   "return": 0.0156,
+   "spy_return": -0.0018,
+   "excess": 0.0174
   },
   {
    "ticker": "ECHO",
@@ -63,7 +63,7 @@
    "status": "pending",
    "entry_date": "2026-11-06",
    "entry": 66.63999938964844,
-   "note": "5 of 10 trading days elapsed"
+   "note": "4 of 10 trading days elapsed"
   },
   {
    "ticker": "KHC",
@@ -77,7 +77,7 @@
    "status": "pending",
    "entry_date": "2026-11-06",
    "entry": 24.610000610351562,
-   "note": "5 of 10 trading days elapsed"
+   "note": "4 of 10 trading days elapsed"
   },
   {
    "ticker": "TPR",
@@ -130,9 +130,7 @@
     "chart_patterns"
    ],
    "status": "pending",
-   "entry_date": "2026-11-13",
-   "entry": 60.84000015258789,
-   "note": "0 of 10 trading days elapsed"
+   "note": "entry day not reached yet"
   },
   {
    "ticker": "NBIS",
@@ -164,11 +162,11 @@
   "min_score": 5.0,
   "completed": 2,
   "pending": 9,
-  "avg_return": 0.0181,
-  "median_return": 0.0181,
+  "avg_return": 0.0204,
+  "median_return": 0.0204,
   "win_rate": 1.0,
-  "avg_excess_vs_spy": 0.028,
+  "avg_excess_vs_spy": 0.0295,
   "beat_spy_rate": 1.0
  },
- "generated_at": "2026-11-13T20:02:22+00:00"
+ "generated_at": "2026-11-14T01:45:23+00:00"
 }

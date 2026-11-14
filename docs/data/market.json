@@ -3,90 +3,90 @@
  "market_date": "2026-11-13",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 502,
- "advancers": 290,
- "decliners": 212,
- "median_pct": 0.16,
+ "checked": 432,
+ "advancers": 282,
+ "decliners": 150,
+ "median_pct": 0.36,
  "gainers": [
   {
    "ticker": "CHTR",
    "name": "Charter Communications",
    "sector": "Communication Services",
-   "pct": 4.71,
-   "close": 138.91,
+   "pct": 4.32,
+   "close": 138.39,
    "prev_close": 132.66
-  },
-  {
-   "ticker": "GPN",
-   "name": "Global Payments",
-   "sector": "Financials",
-   "pct": 4.41,
-   "close": 92.07,
-   "prev_close": 88.19
-  },
-  {
-   "ticker": "FOXA",
-   "name": "Fox Corporation (Class A)",
-   "sector": "Communication Services",
-   "pct": 3.93,
-   "close": 68.29,
-   "prev_close": 65.71
   },
   {
    "ticker": "STE",
    "name": "Steris",
    "sector": "Health Care",
-   "pct": 3.92,
-   "close": 263.37,
+   "pct": 4.29,
+   "close": 264.32,
    "prev_close": 253.44
   },
   {
-   "ticker": "APP",
-   "name": "AppLovin",
-   "sector": "Communication Services",
-   "pct": 3.86,
-   "close": 408.89,
-   "prev_close": 393.68
-  },
-  {
-   "ticker": "FOX",
-   "name": "Fox Corporation (Class B)",
-   "sector": "Communication Services",
-   "pct": 3.61,
-   "close": 60.83,
-   "prev_close": 58.71
-  },
-  {
-   "ticker": "TPL",
-   "name": "Texas Pacific Land Corporation",
-   "sector": "Energy",
-   "pct": 3.59,
-   "close": 291.27,
-   "prev_close": 281.18
+   "ticker": "GPN",
+   "name": "Global Payments",
+   "sector": "Financials",
+   "pct": 4.21,
+   "close": 91.9,
+   "prev_close": 88.19
   },
   {
    "ticker": "FIS",
    "name": "Fidelity National Information Services",
    "sector": "Financials",
-   "pct": 3.54,
-   "close": 29.36,
+   "pct": 4.16,
+   "close": 29.54,
    "prev_close": 28.36
+  },
+  {
+   "ticker": "TPL",
+   "name": "Texas Pacific Land Corporation",
+   "sector": "Energy",
+   "pct": 3.82,
+   "close": 291.91,
+   "prev_close": 281.18
   },
   {
    "ticker": "FISV",
    "name": "Fiserv",
    "sector": "Financials",
-   "pct": 3.38,
-   "close": 63.58,
+   "pct": 3.71,
+   "close": 63.78,
    "prev_close": 61.5
   },
   {
-   "ticker": "KDP",
-   "name": "Keurig Dr Pepper",
+   "ticker": "HAL",
+   "name": "Halliburton",
+   "sector": "Energy",
+   "pct": 3.11,
+   "close": 33.78,
+   "prev_close": 32.76
+  },
+  {
+   "ticker": "COR",
+   "name": "Cencora",
+   "sector": "Health Care",
+   "pct": 2.96,
+   "close": 359.03,
+   "prev_close": 348.72
+  },
+  {
+   "ticker": "CSGP",
+   "name": "CoStar Group",
+   "sector": "Real Estate",
+   "pct": 2.86,
+   "close": 30.96,
+   "prev_close": 30.1
+  },
+  {
+   "ticker": "ADM",
+   "name": "Archer Daniels Midland",
    "sector": "Consumer Staples",
-   "pct": 3.15,
-   "close": 36.53,
-   "prev_close": 35.42
+   "pct": 2.72,
+   "close": 72.9,
+   "prev_close": 70.97
   }
  ],
  "losers": [
@@ -94,82 +94,82 @@
    "ticker": "AMD",
    "name": "Advanced Micro Devices",
    "sector": "Information Technology",
-   "pct": -8.85,
-   "close": 533.48,
+   "pct": -8.75,
+   "close": 534.06,
    "prev_close": 585.3
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -7.67,
-   "close": 342.69,
-   "prev_close": 371.17
-  },
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -6.47,
-   "close": 876.83,
-   "prev_close": 937.46
   },
   {
    "ticker": "CSCO",
    "name": "Cisco",
    "sector": "Information Technology",
-   "pct": -6.18,
-   "close": 95.71,
+   "pct": -6.24,
+   "close": 95.64,
    "prev_close": 102.01
   },
   {
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -5.82,
-   "close": 218.58,
+   "pct": -6.0,
+   "close": 218.15,
    "prev_close": 232.08
-  },
-  {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -5.49,
-   "close": 190.84,
-   "prev_close": 201.93
-  },
-  {
-   "ticker": "WDC",
-   "name": "Western Digital",
-   "sector": "Information Technology",
-   "pct": -5.19,
-   "close": 295.06,
-   "prev_close": 311.21
   },
   {
    "ticker": "TER",
    "name": "Teradyne",
    "sector": "Information Technology",
-   "pct": -5.05,
-   "close": 250.43,
+   "pct": -5.38,
+   "close": 249.55,
    "prev_close": 263.75
+  },
+  {
+   "ticker": "WDC",
+   "name": "Western Digital",
+   "sector": "Information Technology",
+   "pct": -5.0,
+   "close": 295.65,
+   "prev_close": 311.21
   },
   {
    "ticker": "AVGO",
    "name": "Broadcom",
    "sector": "Information Technology",
-   "pct": -4.9,
-   "close": 346.52,
+   "pct": -4.76,
+   "close": 347.01,
    "prev_close": 364.36
   },
   {
-   "ticker": "ANET",
-   "name": "Arista Networks",
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": -4.81,
-   "close": 196.7,
-   "prev_close": 206.63
+   "pct": -4.68,
+   "close": 156.76,
+   "prev_close": 164.45
+  },
+  {
+   "ticker": "CIEN",
+   "name": "Ciena",
+   "sector": "Information Technology",
+   "pct": -4.57,
+   "close": 280.54,
+   "prev_close": 293.99
+  },
+  {
+   "ticker": "GLW",
+   "name": "Corning Inc.",
+   "sector": "Information Technology",
+   "pct": -4.31,
+   "close": 114.08,
+   "prev_close": 119.22
+  },
+  {
+   "ticker": "FLEX",
+   "name": "Flex Ltd.",
+   "sector": "Information Technology",
+   "pct": -4.02,
+   "close": 74.98,
+   "prev_close": 78.12
   }
  ],
- "as_of": "2026-11-13T20:00:16+00:00"
+ "as_of": "2026-11-14T01:43:27+00:00"
 }
