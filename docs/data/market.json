@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-11-16",
+ "market_date": "2026-11-17",
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 149,
- "decliners": 354,
- "median_pct": -0.79,
+ "advancers": 75,
+ "decliners": 428,
+ "median_pct": -1.35,
  "gainers": [
   {
-   "ticker": "TSN",
-   "name": "Tyson Foods",
-   "sector": "Consumer Staples",
-   "pct": 8.72,
-   "close": 63.95,
-   "prev_close": 58.82
-  },
-  {
-   "ticker": "CNC",
-   "name": "Centene Corporation",
-   "sector": "Health Care",
-   "pct": 4.91,
-   "close": 74.77,
-   "prev_close": 71.27
-  },
-  {
-   "ticker": "TSCO",
-   "name": "Tractor Supply",
-   "sector": "Consumer Discretionary",
-   "pct": 4.12,
-   "close": 37.95,
-   "prev_close": 36.45
-  },
-  {
-   "ticker": "ELV",
-   "name": "Elevance Health",
-   "sector": "Health Care",
-   "pct": 3.86,
-   "close": 446.28,
-   "prev_close": 429.69
-  },
-  {
-   "ticker": "LUV",
-   "name": "Southwest Airlines",
+   "ticker": "FIX",
+   "name": "Comfort Systems USA",
    "sector": "Industrials",
-   "pct": 3.34,
-   "close": 46.44,
-   "prev_close": 44.94
+   "pct": 3.91,
+   "close": 1099.02,
+   "prev_close": 1057.68
   },
   {
-   "ticker": "PCG",
-   "name": "PG&E Corporation",
-   "sector": "Utilities",
-   "pct": 3.25,
-   "close": 13.68,
-   "prev_close": 13.25
-  },
-  {
-   "ticker": "EIX",
-   "name": "Edison International",
-   "sector": "Utilities",
-   "pct": 2.97,
-   "close": 61.97,
-   "prev_close": 60.18
-  },
-  {
-   "ticker": "HRL",
-   "name": "Hormel Foods",
-   "sector": "Consumer Staples",
-   "pct": 2.81,
-   "close": 22.71,
-   "prev_close": 22.09
-  },
-  {
-   "ticker": "GIS",
-   "name": "General Mills",
-   "sector": "Consumer Staples",
-   "pct": 2.68,
-   "close": 35.24,
-   "prev_close": 34.32
-  },
-  {
-   "ticker": "HCA",
-   "name": "HCA Healthcare",
-   "sector": "Health Care",
-   "pct": 2.55,
-   "close": 511.78,
-   "prev_close": 499.05
-  }
- ],
- "losers": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": -8.58,
-   "close": 809.11,
-   "prev_close": 885.01
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": -8.48,
-   "close": 546.0,
-   "prev_close": 596.62
+   "pct": 3.65,
+   "close": 210.86,
+   "prev_close": 203.43
   },
   {
    "ticker": "CIEN",
    "name": "Ciena",
    "sector": "Information Technology",
-   "pct": -8.19,
-   "close": 257.56,
-   "prev_close": 280.54
+   "pct": 2.82,
+   "close": 264.82,
+   "prev_close": 257.56
   },
   {
-   "ticker": "BE",
-   "name": "Bloom Energy",
-   "sector": "Industrials",
-   "pct": -7.66,
-   "close": 177.28,
-   "prev_close": 191.99
-  },
-  {
-   "ticker": "MU",
-   "name": "Micron Technology",
+   "ticker": "LITE",
+   "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": -7.62,
-   "close": 719.02,
-   "prev_close": 778.31
+   "pct": 2.56,
+   "close": 559.97,
+   "prev_close": 546.0
   },
   {
-   "ticker": "HOOD",
-   "name": "Robinhood Markets",
-   "sector": "Financials",
-   "pct": -7.45,
-   "close": 72.06,
-   "prev_close": 77.86
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "sector": "Information Technology",
+   "pct": 2.46,
+   "close": 341.6,
+   "prev_close": 333.4
+  },
+  {
+   "ticker": "CHRW",
+   "name": "C.H. Robinson",
+   "sector": "Industrials",
+   "pct": 2.44,
+   "close": 137.95,
+   "prev_close": 134.67
+  },
+  {
+   "ticker": "ILMN",
+   "name": "Illumina, Inc.",
+   "sector": "Health Care",
+   "pct": 2.33,
+   "close": 202.61,
+   "prev_close": 198.0
   },
   {
    "ticker": "MRVL",
    "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": -7.27,
-   "close": 145.36,
-   "prev_close": 156.76
+   "pct": 2.33,
+   "close": 148.74,
+   "prev_close": 145.36
   },
   {
-   "ticker": "TER",
-   "name": "Teradyne",
-   "sector": "Information Technology",
-   "pct": -7.07,
-   "close": 231.9,
-   "prev_close": 249.55
+   "ticker": "SYK",
+   "name": "Stryker Corporation",
+   "sector": "Health Care",
+   "pct": 2.23,
+   "close": 317.65,
+   "prev_close": 310.72
   },
   {
-   "ticker": "INTC",
-   "name": "Intel",
+   "ticker": "GLW",
+   "name": "Corning Inc.",
    "sector": "Information Technology",
-   "pct": -7.02,
-   "close": 55.47,
-   "prev_close": 59.66
-  },
-  {
-   "ticker": "DELL",
-   "name": "Dell Technologies",
-   "sector": "Information Technology",
-   "pct": -6.96,
-   "close": 320.55,
-   "prev_close": 344.53
+   "pct": 2.19,
+   "close": 108.49,
+   "prev_close": 106.17
   }
  ],
- "as_of": "2026-11-17T04:11:20+00:00"
+ "losers": [
+  {
+   "ticker": "CRM",
+   "name": "Salesforce",
+   "sector": "Information Technology",
+   "pct": -9.45,
+   "close": 194.52,
+   "prev_close": 214.83
+  },
+  {
+   "ticker": "INTU",
+   "name": "Intuit",
+   "sector": "Information Technology",
+   "pct": -7.17,
+   "close": 320.79,
+   "prev_close": 345.56
+  },
+  {
+   "ticker": "NOW",
+   "name": "ServiceNow",
+   "sector": "Information Technology",
+   "pct": -6.51,
+   "close": 92.9,
+   "prev_close": 99.37
+  },
+  {
+   "ticker": "SBAC",
+   "name": "SBA Communications",
+   "sector": "Real Estate",
+   "pct": -6.46,
+   "close": 174.56,
+   "prev_close": 186.61
+  },
+  {
+   "ticker": "NKE",
+   "name": "Nike, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -6.3,
+   "close": 35.85,
+   "prev_close": 38.26
+  },
+  {
+   "ticker": "FSLR",
+   "name": "First Solar",
+   "sector": "Information Technology",
+   "pct": -5.84,
+   "close": 152.97,
+   "prev_close": 162.45
+  },
+  {
+   "ticker": "CCI",
+   "name": "Crown Castle",
+   "sector": "Real Estate",
+   "pct": -5.82,
+   "close": 84.16,
+   "prev_close": 89.36
+  },
+  {
+   "ticker": "WDAY",
+   "name": "Workday, Inc.",
+   "sector": "Information Technology",
+   "pct": -5.8,
+   "close": 182.8,
+   "prev_close": 194.06
+  },
+  {
+   "ticker": "FICO",
+   "name": "Fair Isaac",
+   "sector": "Information Technology",
+   "pct": -5.68,
+   "close": 676.52,
+   "prev_close": 717.28
+  },
+  {
+   "ticker": "UNH",
+   "name": "UnitedHealth Group",
+   "sector": "Health Care",
+   "pct": -5.42,
+   "close": 389.68,
+   "prev_close": 412.02
+  }
+ ],
+ "as_of": "2026-11-17T21:15:56+00:00"
 }
