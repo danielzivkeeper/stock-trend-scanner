@@ -1,175 +1,192 @@
 {
  "status": "ok",
- "market_date": "2026-11-17",
- "drops": [],
- "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 75,
- "decliners": 428,
- "median_pct": -1.35,
- "gainers": [
+ "market_date": "2026-11-18",
+ "drops": [
   {
-   "ticker": "FIX",
-   "name": "Comfort Systems USA",
-   "sector": "Industrials",
-   "pct": 3.91,
-   "close": 1099.02,
-   "prev_close": 1057.68
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "sector": "Information Technology",
-   "pct": 3.65,
-   "close": 210.86,
-   "prev_close": 203.43
-  },
-  {
-   "ticker": "CIEN",
-   "name": "Ciena",
-   "sector": "Information Technology",
-   "pct": 2.82,
-   "close": 264.82,
-   "prev_close": 257.56
-  },
-  {
-   "ticker": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "pct": 2.56,
-   "close": 559.97,
-   "prev_close": 546.0
-  },
-  {
-   "ticker": "AVGO",
-   "name": "Broadcom",
-   "sector": "Information Technology",
-   "pct": 2.46,
-   "close": 341.6,
-   "prev_close": 333.4
-  },
-  {
-   "ticker": "CHRW",
-   "name": "C.H. Robinson",
-   "sector": "Industrials",
-   "pct": 2.44,
-   "close": 137.95,
-   "prev_close": 134.67
-  },
-  {
-   "ticker": "ILMN",
-   "name": "Illumina, Inc.",
+   "ticker": "HUM",
+   "name": "Humana",
    "sector": "Health Care",
-   "pct": 2.33,
-   "close": 202.61,
-   "prev_close": 198.0
-  },
-  {
-   "ticker": "MRVL",
-   "name": "Marvell Technology",
-   "sector": "Information Technology",
-   "pct": 2.33,
-   "close": 148.74,
-   "prev_close": 145.36
-  },
-  {
-   "ticker": "SYK",
-   "name": "Stryker Corporation",
-   "sector": "Health Care",
-   "pct": 2.19,
-   "close": 317.54,
-   "prev_close": 310.72
-  },
-  {
-   "ticker": "GLW",
-   "name": "Corning Inc.",
-   "sector": "Information Technology",
-   "pct": 2.19,
-   "close": 108.49,
-   "prev_close": 106.17
-  }
- ],
- "losers": [
-  {
-   "ticker": "CRM",
-   "name": "Salesforce",
-   "sector": "Information Technology",
-   "pct": -9.45,
-   "close": 194.52,
-   "prev_close": 214.83
-  },
-  {
-   "ticker": "INTU",
-   "name": "Intuit",
-   "sector": "Information Technology",
-   "pct": -7.17,
-   "close": 320.79,
-   "prev_close": 345.56
-  },
-  {
-   "ticker": "NOW",
-   "name": "ServiceNow",
-   "sector": "Information Technology",
-   "pct": -6.51,
-   "close": 92.9,
-   "prev_close": 99.37
-  },
-  {
-   "ticker": "SBAC",
-   "name": "SBA Communications",
-   "sector": "Real Estate",
-   "pct": -6.46,
-   "close": 174.56,
-   "prev_close": 186.61
-  },
-  {
-   "ticker": "NKE",
-   "name": "Nike, Inc.",
-   "sector": "Consumer Discretionary",
-   "pct": -6.3,
-   "close": 35.85,
-   "prev_close": 38.26
-  },
-  {
-   "ticker": "FSLR",
-   "name": "First Solar",
-   "sector": "Information Technology",
-   "pct": -5.84,
-   "close": 152.97,
-   "prev_close": 162.45
-  },
-  {
-   "ticker": "CCI",
-   "name": "Crown Castle",
-   "sector": "Real Estate",
-   "pct": -5.82,
-   "close": 84.16,
-   "prev_close": 89.36
-  },
-  {
-   "ticker": "WDAY",
-   "name": "Workday, Inc.",
-   "sector": "Information Technology",
-   "pct": -5.8,
-   "close": 182.8,
-   "prev_close": 194.06
-  },
-  {
-   "ticker": "FICO",
-   "name": "Fair Isaac",
-   "sector": "Information Technology",
-   "pct": -5.68,
-   "close": 676.52,
-   "prev_close": 717.28
+   "pct": -12.88,
+   "close": 386.23,
+   "prev_close": 443.34
   },
   {
    "ticker": "UNH",
    "name": "UnitedHealth Group",
    "sector": "Health Care",
-   "pct": -5.42,
-   "close": 389.68,
-   "prev_close": 412.02
+   "pct": -10.08,
+   "close": 350.39,
+   "prev_close": 389.68
   }
  ],
- "as_of": "2026-11-18T03:09:27+00:00"
+ "threshold_pct": 10.0,
+ "checked": 503,
+ "advancers": 241,
+ "decliners": 262,
+ "median_pct": -0.06,
+ "gainers": [
+  {
+   "ticker": "OKTA",
+   "name": "Okta, Inc.",
+   "sector": "Information Technology",
+   "pct": 11.91,
+   "close": 195.33,
+   "prev_close": 174.54
+  },
+  {
+   "ticker": "GNRC",
+   "name": "Generac",
+   "sector": "Industrials",
+   "pct": 9.7,
+   "close": 205.14,
+   "prev_close": 187.0
+  },
+  {
+   "ticker": "PANW",
+   "name": "Palo Alto Networks",
+   "sector": "Information Technology",
+   "pct": 8.99,
+   "close": 337.11,
+   "prev_close": 309.29
+  },
+  {
+   "ticker": "TJX",
+   "name": "TJX Companies",
+   "sector": "Consumer Discretionary",
+   "pct": 8.58,
+   "close": 140.99,
+   "prev_close": 129.85
+  },
+  {
+   "ticker": "CRWD",
+   "name": "CrowdStrike",
+   "sector": "Information Technology",
+   "pct": 8.31,
+   "close": 237.82,
+   "prev_close": 219.58
+  },
+  {
+   "ticker": "AKAM",
+   "name": "Akamai Technologies",
+   "sector": "Information Technology",
+   "pct": 8.18,
+   "close": 91.56,
+   "prev_close": 84.64
+  },
+  {
+   "ticker": "TTWO",
+   "name": "Take-Two Interactive",
+   "sector": "Communication Services",
+   "pct": 6.61,
+   "close": 217.41,
+   "prev_close": 203.93
+  },
+  {
+   "ticker": "LULU",
+   "name": "Lululemon Athletica",
+   "sector": "Consumer Discretionary",
+   "pct": 6.01,
+   "close": 110.4,
+   "prev_close": 104.14
+  },
+  {
+   "ticker": "FTNT",
+   "name": "Fortinet",
+   "sector": "Information Technology",
+   "pct": 5.71,
+   "close": 131.62,
+   "prev_close": 124.5
+  },
+  {
+   "ticker": "DIS",
+   "name": "Walt Disney Company (The)",
+   "sector": "Communication Services",
+   "pct": 4.93,
+   "close": 122.71,
+   "prev_close": 116.94
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "HUM",
+   "name": "Humana",
+   "sector": "Health Care",
+   "pct": -12.88,
+   "close": 386.23,
+   "prev_close": 443.34
+  },
+  {
+   "ticker": "UNH",
+   "name": "UnitedHealth Group",
+   "sector": "Health Care",
+   "pct": -10.08,
+   "close": 350.39,
+   "prev_close": 389.68
+  },
+  {
+   "ticker": "ELV",
+   "name": "Elevance Health",
+   "sector": "Health Care",
+   "pct": -7.79,
+   "close": 400.12,
+   "prev_close": 433.93
+  },
+  {
+   "ticker": "CNC",
+   "name": "Centene Corporation",
+   "sector": "Health Care",
+   "pct": -6.92,
+   "close": 67.53,
+   "prev_close": 72.55
+  },
+  {
+   "ticker": "FCX",
+   "name": "Freeport-McMoRan",
+   "sector": "Materials",
+   "pct": -6.75,
+   "close": 51.57,
+   "prev_close": 55.3
+  },
+  {
+   "ticker": "DVA",
+   "name": "DaVita",
+   "sector": "Health Care",
+   "pct": -6.25,
+   "close": 162.19,
+   "prev_close": 173.0
+  },
+  {
+   "ticker": "NEM",
+   "name": "Newmont",
+   "sector": "Materials",
+   "pct": -6.22,
+   "close": 104.35,
+   "prev_close": 111.26
+  },
+  {
+   "ticker": "VLO",
+   "name": "Valero Energy",
+   "sector": "Energy",
+   "pct": -5.53,
+   "close": 343.67,
+   "prev_close": 363.77
+  },
+  {
+   "ticker": "HCA",
+   "name": "HCA Healthcare",
+   "sector": "Health Care",
+   "pct": -5.49,
+   "close": 473.66,
+   "prev_close": 501.19
+  },
+  {
+   "ticker": "CVS",
+   "name": "CVS Health",
+   "sector": "Health Care",
+   "pct": -5.41,
+   "close": 81.17,
+   "prev_close": 85.81
+  }
+ ],
+ "as_of": "2026-11-18T20:52:16+00:00"
 }
