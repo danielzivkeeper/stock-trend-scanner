@@ -6,104 +6,104 @@
    "ticker": "HUM",
    "name": "Humana",
    "sector": "Health Care",
-   "pct": -12.88,
-   "close": 386.23,
+   "pct": -12.98,
+   "close": 385.78,
    "prev_close": 443.34
   },
   {
    "ticker": "UNH",
    "name": "UnitedHealth Group",
    "sector": "Health Care",
-   "pct": -10.08,
-   "close": 350.39,
+   "pct": -10.21,
+   "close": 349.91,
    "prev_close": 389.68
   }
  ],
  "threshold_pct": 10.0,
  "checked": 503,
- "advancers": 241,
- "decliners": 262,
- "median_pct": -0.06,
+ "advancers": 237,
+ "decliners": 266,
+ "median_pct": -0.09,
  "gainers": [
   {
    "ticker": "OKTA",
    "name": "Okta, Inc.",
    "sector": "Information Technology",
-   "pct": 11.91,
-   "close": 195.33,
+   "pct": 12.07,
+   "close": 195.61,
    "prev_close": 174.54
-  },
-  {
-   "ticker": "GNRC",
-   "name": "Generac",
-   "sector": "Industrials",
-   "pct": 9.7,
-   "close": 205.14,
-   "prev_close": 187.0
   },
   {
    "ticker": "PANW",
    "name": "Palo Alto Networks",
    "sector": "Information Technology",
-   "pct": 8.99,
-   "close": 337.11,
+   "pct": 9.9,
+   "close": 339.92,
    "prev_close": 309.29
+  },
+  {
+   "ticker": "GNRC",
+   "name": "Generac",
+   "sector": "Industrials",
+   "pct": 9.87,
+   "close": 205.45,
+   "prev_close": 187.0
+  },
+  {
+   "ticker": "AKAM",
+   "name": "Akamai Technologies",
+   "sector": "Information Technology",
+   "pct": 8.34,
+   "close": 91.7,
+   "prev_close": 84.64
   },
   {
    "ticker": "TJX",
    "name": "TJX Companies",
    "sector": "Consumer Discretionary",
-   "pct": 8.58,
-   "close": 140.99,
+   "pct": 8.05,
+   "close": 140.3,
    "prev_close": 129.85
   },
   {
    "ticker": "CRWD",
    "name": "CrowdStrike",
    "sector": "Information Technology",
-   "pct": 8.31,
-   "close": 237.82,
+   "pct": 7.95,
+   "close": 237.03,
    "prev_close": 219.58
-  },
-  {
-   "ticker": "AKAM",
-   "name": "Akamai Technologies",
-   "sector": "Information Technology",
-   "pct": 8.18,
-   "close": 91.56,
-   "prev_close": 84.64
-  },
-  {
-   "ticker": "TTWO",
-   "name": "Take-Two Interactive",
-   "sector": "Communication Services",
-   "pct": 6.61,
-   "close": 217.41,
-   "prev_close": 203.93
   },
   {
    "ticker": "LULU",
    "name": "Lululemon Athletica",
    "sector": "Consumer Discretionary",
-   "pct": 6.01,
-   "close": 110.4,
+   "pct": 6.38,
+   "close": 110.78,
    "prev_close": 104.14
+  },
+  {
+   "ticker": "TTWO",
+   "name": "Take-Two Interactive",
+   "sector": "Communication Services",
+   "pct": 6.22,
+   "close": 216.61,
+   "prev_close": 203.93
   },
   {
    "ticker": "FTNT",
    "name": "Fortinet",
    "sector": "Information Technology",
-   "pct": 5.71,
-   "close": 131.62,
+   "pct": 5.87,
+   "close": 131.81,
    "prev_close": 124.5
   },
   {
-   "ticker": "DIS",
-   "name": "Walt Disney Company (The)",
-   "sector": "Communication Services",
-   "pct": 4.93,
-   "close": 122.71,
-   "prev_close": 116.94
+   "ticker": "AMD",
+   "name": "Advanced Micro Devices",
+   "sector": "Information Technology",
+   "pct": 5.31,
+   "close": 530.14,
+   "prev_close": 503.41
   }
  ],
  "losers": [
@@ -111,82 +111,82 @@
    "ticker": "HUM",
    "name": "Humana",
    "sector": "Health Care",
-   "pct": -12.88,
-   "close": 386.23,
+   "pct": -12.98,
+   "close": 385.78,
    "prev_close": 443.34
   },
   {
    "ticker": "UNH",
    "name": "UnitedHealth Group",
    "sector": "Health Care",
-   "pct": -10.08,
-   "close": 350.39,
+   "pct": -10.21,
+   "close": 349.91,
    "prev_close": 389.68
   },
   {
    "ticker": "ELV",
    "name": "Elevance Health",
    "sector": "Health Care",
-   "pct": -7.79,
-   "close": 400.12,
+   "pct": -7.63,
+   "close": 400.84,
    "prev_close": 433.93
   },
   {
    "ticker": "CNC",
    "name": "Centene Corporation",
    "sector": "Health Care",
-   "pct": -6.92,
-   "close": 67.53,
+   "pct": -7.03,
+   "close": 67.45,
    "prev_close": 72.55
   },
   {
    "ticker": "FCX",
    "name": "Freeport-McMoRan",
    "sector": "Materials",
-   "pct": -6.75,
-   "close": 51.57,
+   "pct": -6.96,
+   "close": 51.45,
    "prev_close": 55.3
   },
   {
    "ticker": "DVA",
    "name": "DaVita",
    "sector": "Health Care",
-   "pct": -6.25,
-   "close": 162.19,
+   "pct": -6.48,
+   "close": 161.79,
    "prev_close": 173.0
   },
   {
    "ticker": "NEM",
    "name": "Newmont",
    "sector": "Materials",
-   "pct": -6.22,
-   "close": 104.35,
+   "pct": -6.05,
+   "close": 104.53,
    "prev_close": 111.26
   },
   {
    "ticker": "VLO",
    "name": "Valero Energy",
    "sector": "Energy",
-   "pct": -5.53,
-   "close": 343.67,
+   "pct": -5.52,
+   "close": 343.7,
    "prev_close": 363.77
   },
   {
-   "ticker": "HCA",
-   "name": "HCA Healthcare",
-   "sector": "Health Care",
-   "pct": -5.49,
-   "close": 473.66,
-   "prev_close": 501.19
+   "ticker": "MPC",
+   "name": "Marathon Petroleum",
+   "sector": "Energy",
+   "pct": -5.23,
+   "close": 373.86,
+   "prev_close": 394.51
   },
   {
    "ticker": "CVS",
    "name": "CVS Health",
    "sector": "Health Care",
-   "pct": -5.41,
-   "close": 81.17,
+   "pct": -5.2,
+   "close": 81.35,
    "prev_close": 85.81
   }
  ],
- "as_of": "2026-11-18T20:52:16+00:00"
+ "as_of": "2026-11-19T02:48:54+00:00"
 }
