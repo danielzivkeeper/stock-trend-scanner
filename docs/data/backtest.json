@@ -64,10 +64,14 @@
     "short_squeeze_setup",
     "chart_patterns"
    ],
-   "status": "pending",
+   "status": "done",
    "entry_date": "2026-11-06",
    "entry": 66.63999938964844,
-   "note": "8 of 10 trading days elapsed"
+   "exit_date": "2026-11-20",
+   "exit": 62.744998931884766,
+   "return": -0.0584,
+   "spy_return": -0.0611,
+   "excess": 0.0026
   },
   {
    "ticker": "KHC",
@@ -78,10 +82,14 @@
     "short_squeeze_setup",
     "chart_patterns"
    ],
-   "status": "pending",
+   "status": "done",
    "entry_date": "2026-11-06",
    "entry": 24.610000610351562,
-   "note": "8 of 10 trading days elapsed"
+   "exit_date": "2026-11-20",
+   "exit": 25.469999313354492,
+   "return": 0.0349,
+   "spy_return": -0.0611,
+   "excess": 0.096
   },
   {
    "ticker": "TPR",
@@ -95,7 +103,7 @@
    "status": "pending",
    "entry_date": "2026-11-09",
    "entry": 136.07000732421875,
-   "note": "8 of 10 trading days elapsed"
+   "note": "9 of 10 trading days elapsed"
   },
   {
    "ticker": "TKO",
@@ -109,7 +117,7 @@
    "status": "pending",
    "entry_date": "2026-11-10",
    "entry": 199.22000122070312,
-   "note": "7 of 10 trading days elapsed"
+   "note": "8 of 10 trading days elapsed"
   },
   {
    "ticker": "LKNCY",
@@ -122,7 +130,7 @@
    "status": "pending",
    "entry_date": "2026-11-11",
    "entry": 36.869998931884766,
-   "note": "6 of 10 trading days elapsed"
+   "note": "7 of 10 trading days elapsed"
   },
   {
    "ticker": "FOX",
@@ -136,7 +144,7 @@
    "status": "pending",
    "entry_date": "2026-11-13",
    "entry": 61.11000061035156,
-   "note": "3 of 10 trading days elapsed"
+   "note": "5 of 10 trading days elapsed"
   },
   {
    "ticker": "NBIS",
@@ -150,7 +158,7 @@
    "status": "pending",
    "entry_date": "2026-11-16",
    "entry": 107.12999725341797,
-   "note": "2 of 10 trading days elapsed"
+   "note": "4 of 10 trading days elapsed"
   },
   {
    "ticker": "SG",
@@ -164,7 +172,7 @@
    "status": "pending",
    "entry_date": "2026-11-16",
    "entry": 12.109999656677246,
-   "note": "2 of 10 trading days elapsed"
+   "note": "4 of 10 trading days elapsed"
   },
   {
    "ticker": "PRU",
@@ -178,19 +186,19 @@
    "status": "pending",
    "entry_date": "2026-11-17",
    "entry": 122.33999633789062,
-   "note": "2 of 10 trading days elapsed"
+   "note": "3 of 10 trading days elapsed"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
-  "completed": 3,
-  "pending": 9,
-  "avg_return": 0.0078,
+  "completed": 5,
+  "pending": 7,
+  "avg_return": 0.0,
   "median_return": 0.0156,
-  "win_rate": 0.6667,
-  "avg_excess_vs_spy": 0.0299,
+  "win_rate": 0.6,
+  "avg_excess_vs_spy": 0.0376,
   "beat_spy_rate": 1.0
  },
- "generated_at": "2026-11-20T02:37:27+00:00"
+ "generated_at": "2026-11-20T20:44:18+00:00"
 }
