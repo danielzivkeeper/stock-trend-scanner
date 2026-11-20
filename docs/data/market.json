@@ -6,96 +6,96 @@
    "ticker": "WSM",
    "name": "Williams-Sonoma, Inc.",
    "sector": "Consumer Discretionary",
-   "pct": -14.98,
-   "close": 221.13,
+   "pct": -15.16,
+   "close": 220.66,
    "prev_close": 260.09
   }
  ],
  "threshold_pct": 10.0,
- "checked": 502,
- "advancers": 36,
- "decliners": 466,
- "median_pct": -1.66,
+ "checked": 433,
+ "advancers": 32,
+ "decliners": 401,
+ "median_pct": -1.61,
  "gainers": [
-  {
-   "ticker": "PANW",
-   "name": "Palo Alto Networks",
-   "sector": "Information Technology",
-   "pct": 6.47,
-   "close": 361.9,
-   "prev_close": 339.92
-  },
-  {
-   "ticker": "OKTA",
-   "name": "Okta, Inc.",
-   "sector": "Information Technology",
-   "pct": 5.89,
-   "close": 207.14,
-   "prev_close": 195.61
-  },
-  {
-   "ticker": "P",
-   "name": "Everpure",
-   "sector": "Information Technology",
-   "pct": 5.07,
-   "close": 105.85,
-   "prev_close": 100.74
-  },
   {
    "ticker": "WDC",
    "name": "Western Digital",
    "sector": "Information Technology",
-   "pct": 3.08,
-   "close": 297.07,
+   "pct": 2.98,
+   "close": 296.78,
    "prev_close": 288.19
-  },
-  {
-   "ticker": "CRWD",
-   "name": "CrowdStrike",
-   "sector": "Information Technology",
-   "pct": 2.74,
-   "close": 243.52,
-   "prev_close": 237.03
-  },
-  {
-   "ticker": "INTC",
-   "name": "Intel",
-   "sector": "Information Technology",
-   "pct": 2.2,
-   "close": 55.88,
-   "prev_close": 54.67
   },
   {
    "ticker": "EXPD",
    "name": "Expeditors International",
    "sector": "Industrials",
-   "pct": 2.17,
-   "close": 192.98,
+   "pct": 2.26,
+   "close": 193.14,
    "prev_close": 188.88
   },
   {
    "ticker": "AXON",
    "name": "Axon Enterprise",
    "sector": "Industrials",
-   "pct": 2.12,
-   "close": 307.05,
+   "pct": 2.09,
+   "close": 306.98,
    "prev_close": 300.69
+  },
+  {
+   "ticker": "INTC",
+   "name": "Intel",
+   "sector": "Information Technology",
+   "pct": 1.92,
+   "close": 55.72,
+   "prev_close": 54.67
   },
   {
    "ticker": "CF",
    "name": "CF Industries",
    "sector": "Materials",
-   "pct": 1.82,
-   "close": 115.77,
+   "pct": 1.81,
+   "close": 115.76,
    "prev_close": 113.7
+  },
+  {
+   "ticker": "PCG",
+   "name": "PG&E Corporation",
+   "sector": "Utilities",
+   "pct": 1.68,
+   "close": 13.94,
+   "prev_close": 13.71
   },
   {
    "ticker": "QCOM",
    "name": "Qualcomm",
    "sector": "Information Technology",
-   "pct": 1.71,
-   "close": 162.55,
+   "pct": 1.38,
+   "close": 162.01,
    "prev_close": 159.81
+  },
+  {
+   "ticker": "STX",
+   "name": "Seagate Technology",
+   "sector": "Information Technology",
+   "pct": 1.06,
+   "close": 521.39,
+   "prev_close": 515.9
+  },
+  {
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
+   "sector": "Information Technology",
+   "pct": 0.99,
+   "close": 214.94,
+   "prev_close": 212.84
+  },
+  {
+   "ticker": "HAL",
+   "name": "Halliburton",
+   "sector": "Energy",
+   "pct": 0.92,
+   "close": 31.73,
+   "prev_close": 31.44
   }
  ],
  "losers": [
@@ -103,82 +103,82 @@
    "ticker": "WSM",
    "name": "Williams-Sonoma, Inc.",
    "sector": "Consumer Discretionary",
-   "pct": -14.98,
-   "close": 221.13,
+   "pct": -15.16,
+   "close": 220.66,
    "prev_close": 260.09
-  },
-  {
-   "ticker": "TWLO",
-   "name": "Twilio",
-   "sector": "Information Technology",
-   "pct": -8.66,
-   "close": 178.96,
-   "prev_close": 195.93
   },
   {
    "ticker": "AMD",
    "name": "Advanced Micro Devices",
    "sector": "Information Technology",
-   "pct": -7.53,
-   "close": 490.2,
+   "pct": -7.72,
+   "close": 489.19,
    "prev_close": 530.14
   },
   {
    "ticker": "FISV",
    "name": "Fiserv",
    "sector": "Financials",
-   "pct": -6.27,
-   "close": 56.69,
+   "pct": -6.38,
+   "close": 56.62,
    "prev_close": 60.48
   },
   {
    "ticker": "UHS",
    "name": "Universal Health Services",
    "sector": "Health Care",
-   "pct": -6.25,
-   "close": 174.44,
+   "pct": -5.96,
+   "close": 174.98,
    "prev_close": 186.07
   },
   {
-   "ticker": "XYZ",
-   "name": "Block, Inc.",
-   "sector": "Financials",
-   "pct": -6.05,
-   "close": 74.23,
-   "prev_close": 79.01
+   "ticker": "DECK",
+   "name": "Deckers Brands",
+   "sector": "Consumer Discretionary",
+   "pct": -5.56,
+   "close": 78.95,
+   "prev_close": 83.6
   },
   {
-   "ticker": "DASH",
-   "name": "DoorDash",
-   "sector": "Consumer Discretionary",
-   "pct": -5.79,
-   "close": 157.14,
-   "prev_close": 166.8
+   "ticker": "UNH",
+   "name": "UnitedHealth Group",
+   "sector": "Health Care",
+   "pct": -5.55,
+   "close": 330.48,
+   "prev_close": 349.91
   },
   {
    "ticker": "RCL",
    "name": "Royal Caribbean Group",
    "sector": "Consumer Discretionary",
    "pct": -5.46,
-   "close": 303.14,
+   "close": 303.15,
    "prev_close": 320.65
   },
   {
-   "ticker": "ZTS",
-   "name": "Zoetis",
-   "sector": "Health Care",
-   "pct": -5.4,
-   "close": 80.95,
-   "prev_close": 85.57
+   "ticker": "NKE",
+   "name": "Nike, Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -5.45,
+   "close": 34.33,
+   "prev_close": 36.31
   },
   {
-   "ticker": "DECK",
-   "name": "Deckers Brands",
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
+   "sector": "Information Technology",
+   "pct": -4.86,
+   "close": 138.47,
+   "prev_close": 145.54
+  },
+  {
+   "ticker": "CCL",
+   "name": "Carnival Corporation",
    "sector": "Consumer Discretionary",
-   "pct": -5.37,
-   "close": 79.11,
-   "prev_close": 83.6
+   "pct": -4.83,
+   "close": 27.57,
+   "prev_close": 28.97
   }
  ],
- "as_of": "2026-11-19T20:58:20+00:00"
+ "as_of": "2026-11-20T02:35:19+00:00"
 }
