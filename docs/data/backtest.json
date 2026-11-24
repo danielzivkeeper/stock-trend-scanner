@@ -118,10 +118,14 @@
     "short_squeeze_setup",
     "social_spike"
    ],
-   "status": "pending",
+   "status": "done",
    "entry_date": "2026-11-10",
    "entry": 199.22000122070312,
-   "note": "9 of 10 trading days elapsed"
+   "exit_date": "2026-11-24",
+   "exit": 189.4499969482422,
+   "return": -0.049,
+   "spy_return": -0.0415,
+   "excess": -0.0075
   },
   {
    "ticker": "LKNCY",
@@ -134,7 +138,7 @@
    "status": "pending",
    "entry_date": "2026-11-11",
    "entry": 36.869998931884766,
-   "note": "8 of 10 trading days elapsed"
+   "note": "9 of 10 trading days elapsed"
   },
   {
    "ticker": "FOX",
@@ -148,7 +152,7 @@
    "status": "pending",
    "entry_date": "2026-11-13",
    "entry": 61.11000061035156,
-   "note": "6 of 10 trading days elapsed"
+   "note": "7 of 10 trading days elapsed"
   },
   {
    "ticker": "NBIS",
@@ -162,7 +166,7 @@
    "status": "pending",
    "entry_date": "2026-11-16",
    "entry": 107.12999725341797,
-   "note": "5 of 10 trading days elapsed"
+   "note": "6 of 10 trading days elapsed"
   },
   {
    "ticker": "SG",
@@ -176,7 +180,7 @@
    "status": "pending",
    "entry_date": "2026-11-16",
    "entry": 12.109999656677246,
-   "note": "5 of 10 trading days elapsed"
+   "note": "6 of 10 trading days elapsed"
   },
   {
    "ticker": "PRU",
@@ -190,19 +194,19 @@
    "status": "pending",
    "entry_date": "2026-11-17",
    "entry": 122.33999633789062,
-   "note": "4 of 10 trading days elapsed"
+   "note": "5 of 10 trading days elapsed"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
-  "completed": 6,
-  "pending": 6,
-  "avg_return": -0.0117,
-  "median_return": -0.0008,
-  "win_rate": 0.5,
-  "avg_excess_vs_spy": 0.0267,
-  "beat_spy_rate": 0.8333
+  "completed": 7,
+  "pending": 5,
+  "avg_return": -0.017,
+  "median_return": -0.0172,
+  "win_rate": 0.4286,
+  "avg_excess_vs_spy": 0.0218,
+  "beat_spy_rate": 0.7143
  },
- "generated_at": "2026-11-24T05:33:25+00:00"
+ "generated_at": "2026-11-24T22:46:23+00:00"
 }
