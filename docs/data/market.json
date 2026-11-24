@@ -3,10 +3,10 @@
  "market_date": "2026-11-23",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 503,
+ "checked": 502,
  "advancers": 418,
- "decliners": 85,
- "median_pct": 2.1,
+ "decliners": 84,
+ "median_pct": 2.11,
  "gainers": [
   {
    "ticker": "NVDA",
@@ -99,14 +99,6 @@
    "prev_close": 229.44
   },
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -7.08,
-   "close": 87.71,
-   "prev_close": 94.39
-  },
-  {
    "ticker": "IP",
    "name": "International Paper",
    "sector": "Materials",
@@ -169,7 +161,15 @@
    "pct": -2.85,
    "close": 137.82,
    "prev_close": 141.87
+  },
+  {
+   "ticker": "AMT",
+   "name": "American Tower",
+   "sector": "Real Estate",
+   "pct": -2.66,
+   "close": 179.31,
+   "prev_close": 184.21
   }
  ],
- "as_of": "2026-11-24T00:15:29+00:00"
+ "as_of": "2026-11-24T05:31:31+00:00"
 }
