@@ -3,14 +3,6 @@
  "market_date": "2026-11-24",
  "drops": [
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -17.42,
-   "close": 77.95,
-   "prev_close": 94.39
-  },
-  {
    "ticker": "ADI",
    "name": "Analog Devices",
    "sector": "Information Technology",
@@ -76,10 +68,10 @@
   }
  ],
  "threshold_pct": 10.0,
- "checked": 503,
- "advancers": 346,
- "decliners": 157,
- "median_pct": 0.95,
+ "checked": 502,
+ "advancers": 348,
+ "decliners": 154,
+ "median_pct": 0.98,
  "gainers": [
   {
    "ticker": "DLTR",
@@ -133,8 +125,8 @@
    "ticker": "AMGN",
    "name": "Amgen",
    "sector": "Health Care",
-   "pct": 5.54,
-   "close": 473.93,
+   "pct": 5.55,
+   "close": 473.94,
    "prev_close": 449.04
   },
   {
@@ -163,14 +155,6 @@
   }
  ],
  "losers": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -17.42,
-   "close": 77.95,
-   "prev_close": 94.39
-  },
   {
    "ticker": "ADI",
    "name": "Analog Devices",
@@ -242,7 +226,15 @@
    "pct": -9.62,
    "close": 239.27,
    "prev_close": 264.73
+  },
+  {
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
+   "sector": "Information Technology",
+   "pct": -9.1,
+   "close": 131.57,
+   "prev_close": 144.74
   }
  ],
- "as_of": "2026-11-24T22:44:21+00:00"
+ "as_of": "2026-11-25T04:34:29+00:00"
 }
