@@ -1,20 +1,11 @@
 {
  "status": "ok",
  "market_date": "2026-11-25",
- "drops": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -22.02,
-   "close": 73.61,
-   "prev_close": 94.39
-  }
- ],
+ "drops": [],
  "threshold_pct": 10.0,
  "checked": 502,
- "advancers": 371,
- "decliners": 131,
+ "advancers": 372,
+ "decliners": 130,
  "median_pct": 0.89,
  "gainers": [
   {
@@ -45,9 +36,9 @@
    "ticker": "CDW",
    "name": "CDW Corporation",
    "sector": "Information Technology",
-   "pct": 6.59,
+   "pct": 7.03,
    "close": 174.97,
-   "prev_close": 164.16
+   "prev_close": 163.48
   },
   {
    "ticker": "ADI",
@@ -99,14 +90,6 @@
   }
  ],
  "losers": [
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -22.02,
-   "close": 73.61,
-   "prev_close": 94.39
-  },
   {
    "ticker": "LRCX",
    "name": "Lam Research",
@@ -178,7 +161,15 @@
    "pct": -3.9,
    "close": 235.28,
    "prev_close": 244.84
+  },
+  {
+   "ticker": "AMAT",
+   "name": "Applied Materials",
+   "sector": "Information Technology",
+   "pct": -3.89,
+   "close": 311.18,
+   "prev_close": 323.76
   }
  ],
- "as_of": "2026-11-25T21:58:30+00:00"
+ "as_of": "2026-11-26T03:47:41+00:00"
 }

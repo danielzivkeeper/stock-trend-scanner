@@ -199,18 +199,30 @@
    "entry_date": "2026-11-17",
    "entry": 120.90624237060547,
    "note": "6 of 10 trading days elapsed"
+  },
+  {
+   "ticker": "HSY",
+   "signal_date": "2026-11-26",
+   "score": 5.03,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 8,
-  "pending": 4,
+  "pending": 5,
   "avg_return": -0.0117,
   "median_return": -0.0008,
   "win_rate": 0.5,
   "avg_excess_vs_spy": 0.0294,
   "beat_spy_rate": 0.75
  },
- "generated_at": "2026-11-25T22:00:23+00:00"
+ "generated_at": "2026-11-26T03:49:42+00:00"
 }
