@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T03:47:08+00:00",
+ "generated_at": "2026-11-26T21:52:27+00:00",
  "alert_threshold": 5.0,
  "watch_threshold": 3.5,
  "hold_days": 10,
@@ -356,10 +356,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -1.06
+       "wikipedia": 0.64
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -481,7 +481,7 @@
      "detail": "No unusual attention (wikipedia z=-1.0; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.95
+       "wikipedia": -1.01
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -593,13 +593,14 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {
       "zscores": {
-       "wikipedia": 0.12
+       "wikipedia": null
       },
       "notes": {
+       "wikipedia": "HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
@@ -710,10 +711,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.2; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.64
+       "wikipedia": -1.15
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -826,10 +827,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.2; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.88
+       "wikipedia": -1.16
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -1063,10 +1064,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.6; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": 1.93
+       "wikipedia": 1.55
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -1195,122 +1196,6 @@
      "raw": {
       "zscores": {
        "wikipedia": 25.22
-      },
-      "notes": {
-       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
-      }
-     },
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {
-      "confirmed": {},
-      "forming": {}
-     },
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "SJM",
-   "keyword": "J.M. Smucker Company (The)",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Consumer Staples",
-   "last_close": 130.06,
-   "tier": "watch",
-   "score": 4.21,
-   "alert": false,
-   "summary": "4.2/10 - 2 of 6 signals fired (earnings_drift, social_spike); below alert threshold (5).",
-   "math": "Math: 4.00 pts / 9.5 possible x 10 = 4.21. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": true,
-     "strength": 1.0,
-     "points": 3.0,
-     "score_contribution": 3.16,
-     "status": "ok",
-     "detail": "EPS beat estimates by +25.0% on 2026-11-24 (2d ago) (reported 3.2 vs est. 2.56).",
-     "raw": {
-      "report_date": "2026-11-24",
-      "days_since_report": 2,
-      "eps_estimate": 2.56,
-      "eps_reported": 3.2,
-      "surprise_pct": 25.0
-     },
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {
-      "distinct_insiders": 0,
-      "insiders": [],
-      "titles": [],
-      "purchase_count": 0,
-      "ignored_small_buyers": [],
-      "ignored_10b5_1_plan_purchases": 0,
-      "total_value_usd": 0,
-      "source": "SEC EDGAR Form 4"
-     },
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 3.8% of float, 3.3 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {
-      "short_pct_float": 3.78,
-      "days_to_cover": 3.31,
-      "short_interest_as_of": "2026-11-13"
-     },
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": true,
-     "strength": 1.0,
-     "points": 1.0,
-     "score_contribution": 1.05,
-     "status": "ok",
-     "detail": "Attention spike: wikipedia z=+11.8. Short-lived signal - often reverses within days.",
-     "raw": {
-      "zscores": {
-       "wikipedia": 11.78
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -1539,10 +1424,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.63
+       "wikipedia": -0.82
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -1886,14 +1771,13 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": null
+       "wikipedia": -0.48
       },
       "notes": {
-       "wikipedia": "HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m",
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
       }
      },
@@ -2841,7 +2725,7 @@
      "detail": "No unusual attention (wikipedia z=+0.8; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": 0.76
+       "wikipedia": 0.77
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -2960,10 +2844,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.16
+       "wikipedia": -0.49
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -3428,7 +3312,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -3974,7 +3858,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -4075,7 +3959,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -4168,7 +4052,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -5385,7 +5269,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -5571,7 +5455,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -5664,7 +5548,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6222,7 +6106,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6408,7 +6292,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6500,8 +6384,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6593,8 +6477,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6686,8 +6570,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -6873,7 +6757,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -7058,8 +6942,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -7151,8 +7035,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+1.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -7245,7 +7129,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -7532,7 +7416,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -7923,6 +7807,99 @@
    ]
   },
   {
+   "ticker": "SJM",
+   "keyword": "J.M. Smucker Company (The)",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Consumer Staples",
+   "last_close": 130.06,
+   "tier": null,
+   "score": 3.16,
+   "alert": false,
+   "summary": "3.2/10 - 1 of 6 signals fired (earnings_drift); below alert threshold (5).",
+   "math": "Math: 3.00 pts / 9.5 possible x 10 = 3.16. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": true,
+     "strength": 1.0,
+     "points": 3.0,
+     "score_contribution": 3.16,
+     "status": "ok",
+     "detail": "EPS beat estimates by +25.0% on 2026-11-24 (2d ago) (reported 3.2 vs est. 2.56).",
+     "raw": {
+      "report_date": "2026-11-24",
+      "days_since_report": 2,
+      "eps_estimate": 2.56,
+      "eps_reported": 3.2,
+      "surprise_pct": 25.0
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 3.8% of float, 3.3 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
    "ticker": "SKYD",
    "keyword": "Skydance",
    "source": "sp500",
@@ -8090,7 +8067,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -8760,8 +8737,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -9234,7 +9211,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -9729,10 +9706,10 @@
    "sector": "Financials",
    "last_close": 76.1,
    "tier": null,
-   "score": 3.05,
+   "score": 3.1,
    "alert": false,
-   "summary": "3.0/10 - 2 of 6 signals fired (earnings_drift, social_spike); below alert threshold (5).",
-   "math": "Math: 2.90 pts / 9.5 possible x 10 = 3.05. Alert threshold 5.",
+   "summary": "3.1/10 - 2 of 6 signals fired (earnings_drift, social_spike); below alert threshold (5).",
+   "math": "Math: 2.94 pts / 9.5 possible x 10 = 3.10. Alert threshold 5.",
    "signals": [
     {
      "name": "earnings_drift",
@@ -9792,14 +9769,14 @@
      "name": "social_spike",
      "weight": 1.0,
      "triggered": true,
-     "strength": 0.9546,
-     "points": 0.9546,
-     "score_contribution": 1.0,
+     "strength": 1.0,
+     "points": 1.0,
+     "score_contribution": 1.05,
      "status": "ok",
-     "detail": "Attention spike: wikipedia z=+3.8. Short-lived signal - often reverses within days.",
+     "detail": "Attention spike: wikipedia z=+4.2. Short-lived signal - often reverses within days.",
      "raw": {
       "zscores": {
-       "wikipedia": 3.82
+       "wikipedia": 4.18
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -10393,7 +10370,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -10419,106 +10396,6 @@
        }
       }
      },
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "CRWD",
-   "keyword": "CrowdStrike",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Information Technology",
-   "last_close": 209.3,
-   "tier": null,
-   "score": 2.77,
-   "alert": false,
-   "summary": "2.8/10 - 2 of 6 signals fired (earnings_drift, social_spike); below alert threshold (5).",
-   "math": "Math: 2.63 pts / 9.5 possible x 10 = 2.77. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": true,
-     "strength": 0.6452,
-     "points": 1.9356,
-     "score_contribution": 2.04,
-     "status": "ok",
-     "detail": "EPS beat estimates by +9.7% on 2026-11-23 (3d ago) (reported 0.34 vs est. 0.31).",
-     "raw": {
-      "report_date": "2026-11-23",
-      "days_since_report": 3,
-      "eps_estimate": 0.31,
-      "eps_reported": 0.34,
-      "surprise_pct": 9.68
-     },
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 2.2% of float, 2.4 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": true,
-     "strength": 0.6916,
-     "points": 0.6916,
-     "score_contribution": 0.73,
-     "status": "ok",
-     "detail": "Attention spike: wikipedia z=+2.8. Short-lived signal - often reverses within days.",
-     "raw": {
-      "zscores": {
-       "wikipedia": 2.77
-      },
-      "notes": {
-       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
-      }
-     },
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
      "evidence": "mixed"
     }
    ]
@@ -10598,7 +10475,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -10695,7 +10572,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -11376,7 +11253,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -11774,7 +11651,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -11867,7 +11744,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -12078,10 +11955,10 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.61
+       "wikipedia": -0.25
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -12565,7 +12442,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -13038,7 +12915,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -13324,8 +13201,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -13526,7 +13403,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -13619,7 +13496,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -13909,8 +13786,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -14007,7 +13884,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -14100,7 +13977,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -14795,6 +14672,99 @@
    ]
   },
   {
+   "ticker": "CRWD",
+   "keyword": "CrowdStrike",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Information Technology",
+   "last_close": 209.3,
+   "tier": null,
+   "score": 2.04,
+   "alert": false,
+   "summary": "2.0/10 - 1 of 6 signals fired (earnings_drift); below alert threshold (5).",
+   "math": "Math: 1.94 pts / 9.5 possible x 10 = 2.04. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": true,
+     "strength": 0.6452,
+     "points": 1.9356,
+     "score_contribution": 2.04,
+     "status": "ok",
+     "detail": "EPS beat estimates by +9.7% on 2026-11-23 (3d ago) (reported 0.34 vs est. 0.31).",
+     "raw": {
+      "report_date": "2026-11-23",
+      "days_since_report": 3,
+      "eps_estimate": 0.31,
+      "eps_reported": 0.34,
+      "surprise_pct": 9.68
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 2.2% of float, 2.4 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
    "ticker": "STE",
    "keyword": "Steris",
    "source": "sp500",
@@ -15346,7 +15316,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -15689,6 +15659,106 @@
    ]
   },
   {
+   "ticker": "EXPE",
+   "keyword": "Expedia Group",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Consumer Discretionary",
+   "last_close": 241.27,
+   "tier": null,
+   "score": 1.95,
+   "alert": false,
+   "summary": "1.9/10 - 2 of 6 signals fired (earnings_drift, social_spike); below alert threshold (5).",
+   "math": "Math: 1.85 pts / 9.5 possible x 10 = 1.95. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": true,
+     "strength": 0.375,
+     "points": 1.125,
+     "score_contribution": 1.18,
+     "status": "ok",
+     "detail": "EPS beat estimates by +5.6% on 2026-11-04 (22d ago) (reported 9.39 vs est. 8.89).",
+     "raw": {
+      "report_date": "2026-11-04",
+      "days_since_report": 22,
+      "eps_estimate": 8.89,
+      "eps_reported": 9.39,
+      "surprise_pct": 5.62
+     },
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 10.9% of float, 4.8 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": true,
+     "strength": 0.7298,
+     "points": 0.7298,
+     "score_contribution": 0.77,
+     "status": "ok",
+     "detail": "Attention spike: wikipedia z=+2.9. Short-lived signal - often reverses within days.",
+     "raw": {
+      "zscores": {
+       "wikipedia": 2.92
+      },
+      "notes": {
+       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
+      }
+     },
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
    "ticker": "DXCM",
    "keyword": "Dexcom",
    "source": "sp500",
@@ -15763,7 +15833,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -16050,7 +16120,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -16143,7 +16213,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -16902,8 +16972,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -17292,7 +17362,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -17392,8 +17462,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -17575,7 +17645,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -18142,7 +18212,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -18348,8 +18418,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-2.0; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -18636,7 +18706,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -18913,7 +18983,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -19192,7 +19262,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -19285,7 +19355,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -19378,7 +19448,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -19470,8 +19540,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -19564,7 +19634,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20138,7 +20208,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20532,8 +20602,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20626,7 +20696,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20719,7 +20789,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20811,101 +20881,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
-     "raw": {},
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "EXPE",
-   "keyword": "Expedia Group",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Consumer Discretionary",
-   "last_close": 241.27,
-   "tier": null,
-   "score": 1.18,
-   "alert": false,
-   "summary": "1.2/10 - 1 of 6 signals fired (earnings_drift); below alert threshold (5).",
-   "math": "Math: 1.12 pts / 9.5 possible x 10 = 1.18. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": true,
-     "strength": 0.375,
-     "points": 1.125,
-     "score_contribution": 1.18,
-     "status": "ok",
-     "detail": "EPS beat estimates by +5.6% on 2026-11-04 (22d ago) (reported 9.39 vs est. 8.89).",
-     "raw": {
-      "report_date": "2026-11-04",
-      "days_since_report": 22,
-      "eps_estimate": 8.89,
-      "eps_reported": 9.39,
-      "surprise_pct": 5.62
-     },
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 10.9% of float, 4.8 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -20998,7 +20975,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -21366,7 +21343,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -21459,7 +21436,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -21643,7 +21620,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -21824,10 +21801,10 @@
      "points": 1.0,
      "score_contribution": 1.05,
      "status": "ok",
-     "detail": "Attention spike: wikipedia z=+5.0. Short-lived signal - often reverses within days.",
+     "detail": "Attention spike: wikipedia z=+7.0. Short-lived signal - often reverses within days.",
      "raw": {
       "zscores": {
-       "wikipedia": 4.98
+       "wikipedia": 6.97
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -22024,7 +22001,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -22214,7 +22191,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -22317,7 +22294,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -22408,7 +22385,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -22525,7 +22502,7 @@
      "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {
       "zscores": {
-       "wikipedia": -0.76
+       "wikipedia": -0.83
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -23208,100 +23185,6 @@
    ]
   },
   {
-   "ticker": "ADI",
-   "keyword": "Analog Devices",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Information Technology",
-   "last_close": 333.11,
-   "tier": null,
-   "score": 0.85,
-   "alert": false,
-   "summary": "0.8/10 - 1 of 6 signals fired (social_spike); below alert threshold (5).",
-   "math": "Math: 0.81 pts / 9.5 possible x 10 = 0.85. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "EPS surprise +4.6% on 2026-11-24 (2d ago) is below the +5% threshold.",
-     "raw": {},
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 2.2% of float, 2.0 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": true,
-     "strength": 0.811,
-     "points": 0.811,
-     "score_contribution": 0.85,
-     "status": "ok",
-     "detail": "Attention spike: wikipedia z=+3.2. Short-lived signal - often reverses within days.",
-     "raw": {
-      "zscores": {
-       "wikipedia": 3.24
-      },
-      "notes": {
-       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
-      }
-     },
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
    "ticker": "L",
    "keyword": "Loews Corporation",
    "source": "sp500",
@@ -23477,7 +23360,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -23568,7 +23451,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -23853,7 +23736,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -24414,7 +24297,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -24516,7 +24399,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -25180,8 +25063,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -25271,8 +25154,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -25462,7 +25345,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -25555,100 +25438,6 @@
      "status": "ok",
      "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "JNJ",
-   "keyword": "Johnson & Johnson",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Health Care",
-   "last_close": 273.94,
-   "tier": null,
-   "score": 0.64,
-   "alert": false,
-   "summary": "0.6/10 - 1 of 6 signals fired (social_spike); below alert threshold (5).",
-   "math": "Math: 0.61 pts / 9.5 possible x 10 = 0.64. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Last report 2026-10-13 (44d ago) is older than the 30-day drift window (surprise was +2.8%).",
-     "raw": {},
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 0.8% of float, 2.2 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": true,
-     "strength": 0.6082,
-     "points": 0.6082,
-     "score_contribution": 0.64,
-     "status": "ok",
-     "detail": "Attention spike: wikipedia z=+2.4. Short-lived signal - often reverses within days.",
-     "raw": {
-      "zscores": {
-       "wikipedia": 2.43
-      },
-      "notes": {
-       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
-      }
-     },
      "evidence": "short-lived"
     },
     {
@@ -25760,12 +25549,12 @@
    ]
   },
   {
-   "ticker": "SBAC",
-   "keyword": "SBA Communications",
+   "ticker": "STZ",
+   "keyword": "Constellation Brands",
    "source": "sp500",
    "on_watchlist": false,
-   "sector": "Real Estate",
-   "last_close": 174.73,
+   "sector": "Consumer Staples",
+   "last_close": 139.97,
    "tier": null,
    "score": 0.58,
    "alert": false,
@@ -25780,7 +25569,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "EPS surprise +4.3% on 2026-11-02 (24d ago) is below the +5% threshold.",
+     "detail": "Last report 2026-10-06 (51d ago) is older than the 30-day drift window (surprise was +5.4%).",
      "raw": {},
      "evidence": "strong"
     },
@@ -25804,7 +25593,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "Short interest 4.4% of float, 2.8 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "detail": "Short interest 5.6% of float, 3.7 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
      "raw": {},
      "evidence": "mixed"
     },
@@ -25824,108 +25613,14 @@
      "name": "social_spike",
      "weight": 1.0,
      "triggered": true,
-     "strength": 0.551,
-     "points": 0.551,
+     "strength": 0.5529,
+     "points": 0.5529,
      "score_contribution": 0.58,
      "status": "ok",
      "detail": "Attention spike: wikipedia z=+2.2. Short-lived signal - often reverses within days.",
      "raw": {
       "zscores": {
-       "wikipedia": 2.2
-      },
-      "notes": {
-       "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
-      }
-     },
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "CRM",
-   "keyword": "Salesforce",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Information Technology",
-   "last_close": 197.21,
-   "tier": null,
-   "score": 0.56,
-   "alert": false,
-   "summary": "0.6/10 - 1 of 6 signals fired (social_spike); below alert threshold (5).",
-   "math": "Math: 0.53 pts / 9.5 possible x 10 = 0.56. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Last report 2026-08-26 (92d ago) is older than the 30-day drift window (surprise was +80.4%).",
-     "raw": {},
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 3.1% of float, 3.2 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": true,
-     "strength": 0.5324,
-     "points": 0.5324,
-     "score_contribution": 0.56,
-     "status": "ok",
-     "detail": "Attention spike: wikipedia z=+2.1. Short-lived signal - often reverses within days.",
-     "raw": {
-      "zscores": {
-       "wikipedia": 2.13
+       "wikipedia": 2.21
       },
       "notes": {
        "reddit": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)"
@@ -26015,8 +25710,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -26228,7 +25923,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -26402,7 +26097,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -26490,6 +26185,93 @@
      "score_contribution": 0.0,
      "status": "ok",
      "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
+   "ticker": "ADI",
+   "keyword": "Analog Devices",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Information Technology",
+   "last_close": 333.11,
+   "tier": null,
+   "score": 0.0,
+   "alert": false,
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "EPS surprise +4.6% on 2026-11-24 (2d ago) is below the +5% threshold.",
+     "raw": {},
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 2.2% of float, 2.0 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+1.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -27019,7 +26801,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -27106,7 +26888,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -27695,7 +27477,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "Last report 2026-09-02 (85d ago) is older than the 30-day drift window (surprise was +2.5%).",
+     "detail": "Last report 2026-06-03 (176d ago) is older than the 30-day drift window (surprise was +1.7%).",
      "raw": {},
      "evidence": "strong"
     },
@@ -28186,7 +27968,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -28534,7 +28316,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -28621,7 +28403,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29151,7 +28933,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29246,7 +29028,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29333,7 +29115,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29420,7 +29202,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29768,7 +29550,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -29942,7 +29724,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -30472,7 +30254,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -30733,7 +30515,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -30821,6 +30603,93 @@
      "score_contribution": 0.0,
      "status": "ok",
      "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
+   "ticker": "CRM",
+   "keyword": "Salesforce",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Information Technology",
+   "last_close": 197.21,
+   "tier": null,
+   "score": 0.0,
+   "alert": false,
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-08-26 (92d ago) is older than the 30-day drift window (surprise was +80.4%).",
+     "raw": {},
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 3.1% of float, 3.2 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+1.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31081,7 +30950,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.8; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31255,7 +31124,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+1.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31429,7 +31298,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31698,7 +31567,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31785,7 +31654,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -31959,7 +31828,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -32418,7 +32287,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -32592,7 +32461,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -32766,7 +32635,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -32853,7 +32722,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -33126,7 +32995,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -33474,7 +33343,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -33648,7 +33517,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -33830,7 +33699,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.9; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34091,7 +33960,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34178,7 +34047,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34265,7 +34134,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34352,7 +34221,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34439,7 +34308,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34613,7 +34482,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -34997,7 +34866,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35055,8 +34924,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35084,7 +34953,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35142,8 +35011,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35171,7 +35040,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35229,8 +35098,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.8; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35258,7 +35127,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35316,8 +35185,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35353,7 +35222,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35411,8 +35280,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35440,7 +35309,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -35498,8 +35367,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.1; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35760,7 +35629,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -35847,7 +35716,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -36135,6 +36004,93 @@
    ]
   },
   {
+   "ticker": "JNJ",
+   "keyword": "Johnson & Johnson",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Health Care",
+   "last_close": 273.94,
+   "tier": null,
+   "score": 0.0,
+   "alert": false,
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Last report 2026-10-13 (44d ago) is older than the 30-day drift window (surprise was +2.8%).",
+     "raw": {},
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 0.8% of float, 2.2 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
    "ticker": "JPM",
    "keyword": "JPMorgan Chase",
    "source": "sp500",
@@ -36203,7 +36159,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -36290,7 +36246,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -37556,7 +37512,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -37643,7 +37599,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38391,7 +38347,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38449,8 +38405,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-1.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38478,7 +38434,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38536,8 +38492,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38565,7 +38521,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38623,8 +38579,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-1.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38652,7 +38608,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38710,8 +38666,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38739,7 +38695,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38797,8 +38753,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38826,7 +38782,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38884,8 +38840,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -38913,7 +38869,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -38971,8 +38927,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39000,7 +38956,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -39058,8 +39014,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39087,7 +39043,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -39145,8 +39101,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39174,7 +39130,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -39232,8 +39188,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39668,7 +39624,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39755,7 +39711,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -39893,7 +39849,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "Last report 2026-09-02 (85d ago) is older than the 30-day drift window (surprise was +21.7%).",
+     "detail": "Last report 2026-05-28 (182d ago) is older than the 30-day drift window (surprise was +7.0%).",
      "raw": {},
      "evidence": "strong"
     },
@@ -40028,7 +39984,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -40202,7 +40158,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -40289,7 +40245,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -40637,7 +40593,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -40724,7 +40680,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-2.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -41159,7 +41115,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -41254,7 +41210,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -41697,7 +41653,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -42148,7 +42104,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.7; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -42235,7 +42191,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -42417,7 +42373,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -42513,6 +42469,93 @@
      "score_contribution": 0.0,
      "status": "ok",
      "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "raw": {},
+     "evidence": "short-lived"
+    },
+    {
+     "name": "chart_patterns",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No confirmed breakout pattern.",
+     "raw": {},
+     "evidence": "mixed"
+    }
+   ]
+  },
+  {
+   "ticker": "SBAC",
+   "keyword": "SBA Communications",
+   "source": "sp500",
+   "on_watchlist": false,
+   "sector": "Real Estate",
+   "last_close": 174.73,
+   "tier": null,
+   "score": 0.0,
+   "alert": false,
+   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
+   "signals": [
+    {
+     "name": "earnings_drift",
+     "weight": 3.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "EPS surprise +4.3% on 2026-11-02 (24d ago) is below the +5% threshold.",
+     "raw": {},
+     "evidence": "strong"
+    },
+    {
+     "name": "insider_buying",
+     "weight": 2.5,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
+     "raw": {},
+     "evidence": "moderate"
+    },
+    {
+     "name": "short_squeeze_setup",
+     "weight": 2.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "Short interest 4.4% of float, 2.8 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
+     "raw": {},
+     "evidence": "mixed"
+    },
+    {
+     "name": "congressional_trades",
+     "weight": 0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "unavailable",
+     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
+     "raw": {},
+     "evidence": "weak"
+    },
+    {
+     "name": "social_spike",
+     "weight": 1.0,
+     "triggered": false,
+     "strength": 0.0,
+     "points": 0.0,
+     "score_contribution": 0.0,
+     "status": "ok",
+     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -42785,7 +42828,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -43228,94 +43271,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
-     "raw": {},
-     "evidence": "short-lived"
-    },
-    {
-     "name": "chart_patterns",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No confirmed breakout pattern.",
-     "raw": {},
-     "evidence": "mixed"
-    }
-   ]
-  },
-  {
-   "ticker": "STZ",
-   "keyword": "Constellation Brands",
-   "source": "sp500",
-   "on_watchlist": false,
-   "sector": "Consumer Staples",
-   "last_close": 139.97,
-   "tier": null,
-   "score": 0.0,
-   "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
-   "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
-   "signals": [
-    {
-     "name": "earnings_drift",
-     "weight": 3.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Last report 2026-10-06 (51d ago) is older than the 30-day drift window (surprise was +5.4%).",
-     "raw": {},
-     "evidence": "strong"
-    },
-    {
-     "name": "insider_buying",
-     "weight": 2.5,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "0 insiders bought $10,000+ in the last 14 days; need 2+ distinct buyers.",
-     "raw": {},
-     "evidence": "moderate"
-    },
-    {
-     "name": "short_squeeze_setup",
-     "weight": 2.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "Short interest 5.6% of float, 3.7 days to cover (FINRA data as of 2026-11-13); needs >= 15% or >= 5 days.",
-     "raw": {},
-     "evidence": "mixed"
-    },
-    {
-     "name": "congressional_trades",
-     "weight": 0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "unavailable",
-     "detail": "Congress-trade mirrors unreachable (house: HTTP 403; senate: HTTP 403). Source appears to be offline.",
-     "raw": {},
-     "evidence": "weak"
-    },
-    {
-     "name": "social_spike",
-     "weight": 1.0,
-     "triggered": false,
-     "strength": 0.0,
-     "points": 0.0,
-     "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.2; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -43861,7 +43817,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+1.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-0.8; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44035,7 +43991,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.1; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44122,7 +44078,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.1; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44296,7 +44252,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.0; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44652,7 +44608,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.9; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44834,7 +44790,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.0; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -44921,7 +44877,7 @@
      "points": 0.0,
      "score_contribution": 0.0,
      "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "detail": "No unusual attention (wikipedia z=-1.6; need z >= 2).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45123,7 +45079,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45181,8 +45137,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.4; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45210,7 +45166,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45268,8 +45224,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45297,7 +45253,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45355,8 +45311,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.8; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45384,7 +45340,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45442,8 +45398,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45471,7 +45427,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45529,8 +45485,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.6; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45558,7 +45514,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45616,8 +45572,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.2; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45645,7 +45601,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45703,8 +45659,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.3; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45740,7 +45696,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45798,8 +45754,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.7; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45827,7 +45783,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45885,8 +45841,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -45914,7 +45870,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -45972,8 +45928,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=+0.6; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -46001,7 +45957,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -46059,8 +46015,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.2; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -46088,7 +46044,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -46146,8 +46102,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-1.1; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
@@ -46183,7 +46139,7 @@
    "tier": null,
    "score": 0.0,
    "alert": false,
-   "summary": "0.0/10 - no signals fired (5 of 6 could be checked); below alert threshold (5).",
+   "summary": "0.0/10 - no signals fired (4 of 6 could be checked); below alert threshold (5).",
    "math": "Math: 0.00 pts / 9.5 possible x 10 = 0.00. Alert threshold 5.",
    "signals": [
     {
@@ -46241,8 +46197,8 @@
      "strength": 0.0,
      "points": 0.0,
      "score_contribution": 0.0,
-     "status": "ok",
-     "detail": "No unusual attention (wikipedia z=-0.5; need z >= 2).",
+     "status": "unavailable",
+     "detail": "No social data (wikipedia: HTTPError: 429 Client Error: Too Many Requests for url: https://wikimedia.org/api/rest_v1/m; reddit: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (skipped)).",
      "raw": {},
      "evidence": "short-lived"
     },
