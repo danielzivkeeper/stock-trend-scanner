@@ -1,175 +1,175 @@
 {
  "status": "ok",
- "market_date": "2026-11-25",
+ "market_date": "2026-11-27",
  "drops": [],
  "threshold_pct": 10.0,
- "checked": 501,
- "advancers": 371,
- "decliners": 130,
- "median_pct": 0.88,
+ "checked": 502,
+ "advancers": 406,
+ "decliners": 96,
+ "median_pct": 0.9,
  "gainers": [
   {
-   "ticker": "HPQ",
-   "name": "HP Inc.",
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
    "sector": "Information Technology",
-   "pct": 11.49,
-   "close": 31.15,
-   "prev_close": 27.94
+   "pct": 14.07,
+   "close": 223.79,
+   "prev_close": 196.19
   },
   {
-   "ticker": "CHTR",
-   "name": "Charter Communications",
-   "sector": "Communication Services",
-   "pct": 8.39,
-   "close": 147.27,
-   "prev_close": 135.87
-  },
-  {
-   "ticker": "AXON",
-   "name": "Axon Enterprise",
-   "sector": "Industrials",
-   "pct": 7.43,
-   "close": 343.05,
-   "prev_close": 319.32
-  },
-  {
-   "ticker": "CDW",
-   "name": "CDW Corporation",
+   "ticker": "LITE",
+   "name": "Lumentum",
    "sector": "Information Technology",
-   "pct": 7.03,
-   "close": 174.97,
-   "prev_close": 163.48
+   "pct": 7.98,
+   "close": 514.63,
+   "prev_close": 476.58
   },
   {
-   "ticker": "ADI",
-   "name": "Analog Devices",
+   "ticker": "STX",
+   "name": "Seagate Technology",
    "sector": "Information Technology",
-   "pct": 6.44,
-   "close": 333.11,
-   "prev_close": 312.95
-  },
-  {
-   "ticker": "EXE",
-   "name": "Expand Energy",
-   "sector": "Energy",
-   "pct": 5.75,
-   "close": 86.77,
-   "prev_close": 82.05
-  },
-  {
-   "ticker": "BG",
-   "name": "Bunge Global",
-   "sector": "Consumer Staples",
-   "pct": 4.87,
-   "close": 88.15,
-   "prev_close": 84.06
-  },
-  {
-   "ticker": "IP",
-   "name": "International Paper",
-   "sector": "Materials",
-   "pct": 4.77,
-   "close": 32.08,
-   "prev_close": 30.62
-  },
-  {
-   "ticker": "TXN",
-   "name": "Texas Instruments",
-   "sector": "Information Technology",
-   "pct": 4.55,
-   "close": 270.19,
-   "prev_close": 258.44
-  },
-  {
-   "ticker": "DE",
-   "name": "Deere & Company",
-   "sector": "Industrials",
-   "pct": 4.44,
-   "close": 641.02,
-   "prev_close": 613.76
-  }
- ],
- "losers": [
-  {
-   "ticker": "LRCX",
-   "name": "Lam Research",
-   "sector": "Information Technology",
-   "pct": -5.68,
-   "close": 185.01,
-   "prev_close": 196.16
-  },
-  {
-   "ticker": "ORCL",
-   "name": "Oracle Corporation",
-   "sector": "Information Technology",
-   "pct": -5.13,
-   "close": 103.88,
-   "prev_close": 109.5
+   "pct": 7.9,
+   "close": 509.66,
+   "prev_close": 472.33
   },
   {
    "ticker": "MU",
    "name": "Micron Technology",
    "sector": "Information Technology",
-   "pct": -4.53,
-   "close": 601.25,
-   "prev_close": 629.79
+   "pct": 7.6,
+   "close": 646.95,
+   "prev_close": 601.25
   },
   {
-   "ticker": "DDOG",
-   "name": "Datadog",
+   "ticker": "GNRC",
+   "name": "Generac",
+   "sector": "Industrials",
+   "pct": 7.44,
+   "close": 219.17,
+   "prev_close": 203.99
+  },
+  {
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
    "sector": "Information Technology",
-   "pct": -4.31,
-   "close": 158.25,
-   "prev_close": 165.38
+   "pct": 7.34,
+   "close": 140.54,
+   "prev_close": 130.93
   },
   {
-   "ticker": "J",
-   "name": "Jacobs Solutions",
-   "sector": "Industrials",
-   "pct": -4.27,
-   "close": 145.49,
-   "prev_close": 151.98
+   "ticker": "WDC",
+   "name": "Western Digital",
+   "sector": "Information Technology",
+   "pct": 7.22,
+   "close": 292.11,
+   "prev_close": 272.45
   },
   {
-   "ticker": "PWR",
-   "name": "Quanta Services",
-   "sector": "Industrials",
-   "pct": -4.1,
-   "close": 565.47,
-   "prev_close": 589.64
+   "ticker": "P",
+   "name": "Everpure",
+   "sector": "Information Technology",
+   "pct": 7.15,
+   "close": 101.46,
+   "prev_close": 94.69
+  },
+  {
+   "ticker": "IP",
+   "name": "International Paper",
+   "sector": "Materials",
+   "pct": 6.89,
+   "close": 34.29,
+   "prev_close": 32.08
+  },
+  {
+   "ticker": "DELL",
+   "name": "Dell Technologies",
+   "sector": "Information Technology",
+   "pct": 6.7,
+   "close": 316.96,
+   "prev_close": 297.06
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "sector": "Information Technology",
+   "pct": -9.57,
+   "close": 85.36,
+   "prev_close": 94.39
+  },
+  {
+   "ticker": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "sector": "Health Care",
+   "pct": -5.24,
+   "close": 534.57,
+   "prev_close": 564.12
+  },
+  {
+   "ticker": "PODD",
+   "name": "Insulet Corporation",
+   "sector": "Health Care",
+   "pct": -2.65,
+   "close": 138.9,
+   "prev_close": 142.68
+  },
+  {
+   "ticker": "SJM",
+   "name": "J.M. Smucker Company (The)",
+   "sector": "Consumer Staples",
+   "pct": -2.46,
+   "close": 126.86,
+   "prev_close": 130.06
+  },
+  {
+   "ticker": "DLTR",
+   "name": "Dollar Tree",
+   "sector": "Consumer Staples",
+   "pct": -2.42,
+   "close": 148.53,
+   "prev_close": 152.21
+  },
+  {
+   "ticker": "GDDY",
+   "name": "GoDaddy",
+   "sector": "Information Technology",
+   "pct": -1.97,
+   "close": 103.07,
+   "prev_close": 105.14
+  },
+  {
+   "ticker": "EBAY",
+   "name": "eBay Inc.",
+   "sector": "Consumer Discretionary",
+   "pct": -1.91,
+   "close": 113.33,
+   "prev_close": 115.54
   },
   {
    "ticker": "WST",
    "name": "West Pharmaceutical Services",
    "sector": "Health Care",
-   "pct": -4.07,
-   "close": 372.94,
-   "prev_close": 388.75
+   "pct": -1.82,
+   "close": 366.17,
+   "prev_close": 372.94
   },
   {
-   "ticker": "NVDA",
-   "name": "Nvidia",
-   "sector": "Information Technology",
-   "pct": -3.91,
-   "close": 149.3,
-   "prev_close": 155.38
+   "ticker": "TRGP",
+   "name": "Targa Resources",
+   "sector": "Energy",
+   "pct": -1.74,
+   "close": 280.55,
+   "prev_close": 285.53
   },
   {
-   "ticker": "CEG",
-   "name": "Constellation Energy",
-   "sector": "Utilities",
-   "pct": -3.9,
-   "close": 235.28,
-   "prev_close": 244.84
-  },
-  {
-   "ticker": "AMAT",
-   "name": "Applied Materials",
-   "sector": "Information Technology",
-   "pct": -3.89,
-   "close": 311.18,
-   "prev_close": 323.76
+   "ticker": "BAX",
+   "name": "Baxter International",
+   "sector": "Health Care",
+   "pct": -1.72,
+   "close": 26.79,
+   "prev_close": 27.26
   }
  ],
- "as_of": "2026-11-27T03:48:52+00:00"
+ "as_of": "2026-11-27T21:35:35+00:00"
 }
