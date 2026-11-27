@@ -211,18 +211,30 @@
    ],
    "status": "pending",
    "note": "entry day not reached yet"
+  },
+  {
+   "ticker": "LYV",
+   "signal_date": "2026-11-27",
+   "score": 5.21,
+   "fired": [
+    "earnings_drift",
+    "short_squeeze_setup",
+    "social_spike"
+   ],
+   "status": "pending",
+   "note": "entry day not reached yet"
   }
  ],
  "summary": {
   "hold_days": 10,
   "min_score": 5.0,
   "completed": 8,
-  "pending": 5,
+  "pending": 6,
   "avg_return": -0.0117,
   "median_return": -0.0008,
   "win_rate": 0.5,
   "avg_excess_vs_spy": 0.0294,
   "beat_spy_rate": 0.75
  },
- "generated_at": "2026-11-26T21:55:15+00:00"
+ "generated_at": "2026-11-27T03:51:21+00:00"
 }
