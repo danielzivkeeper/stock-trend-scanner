@@ -4,9 +4,9 @@
  "drops": [],
  "threshold_pct": 10.0,
  "checked": 502,
- "advancers": 406,
- "decliners": 96,
- "median_pct": 0.9,
+ "advancers": 409,
+ "decliners": 93,
+ "median_pct": 0.91,
  "gainers": [
   {
    "ticker": "COHR",
@@ -91,14 +91,6 @@
  ],
  "losers": [
   {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "sector": "Information Technology",
-   "pct": -9.57,
-   "close": 85.36,
-   "prev_close": 94.39
-  },
-  {
    "ticker": "VRTX",
    "name": "Vertex Pharmaceuticals",
    "sector": "Health Care",
@@ -166,10 +158,18 @@
    "ticker": "BAX",
    "name": "Baxter International",
    "sector": "Health Care",
-   "pct": -1.72,
+   "pct": -1.69,
    "close": 26.79,
-   "prev_close": 27.26
+   "prev_close": 27.25
+  },
+  {
+   "ticker": "HRL",
+   "name": "Hormel Foods",
+   "sector": "Consumer Staples",
+   "pct": -1.6,
+   "close": 22.72,
+   "prev_close": 23.09
   }
  ],
- "as_of": "2026-11-27T21:35:35+00:00"
+ "as_of": "2026-11-28T03:32:18+00:00"
 }
